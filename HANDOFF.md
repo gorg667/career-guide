@@ -30,8 +30,8 @@
 | Step | Status | Notes |
 |---|---|---|
 | Scaffold repo (README, HANDOFF, OUTLINE, build.sh) | DONE | |
-| Research: macro labor market / AI impact / BLS | TODO | -> research/01-macro.md |
-| Research: field-by-field data (salaries, growth) | TODO | -> research/02-fields.md |
+| Research: macro labor market / AI impact / BLS | DONE | -> research/01-macro.md |
+| Research: field-by-field data (salaries, growth) | DONE | -> research/02-fields.md |
 | Section 00: Front matter + TL;DR | TODO | |
 | Section 01: The 2027–2031 landscape | TODO | |
 | Section 02: How to think about career choice (framework) | TODO | |
@@ -49,3 +49,4 @@
 
 ## Log (append newest at bottom)
 - 2026-09-03: Repo was empty. Created scaffold. Branch genspark_ai_developer.
+- 2026-09-03: Research phase done (research/01-macro.md, research/02-fields.md). Starting sections.
