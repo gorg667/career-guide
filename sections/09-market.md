@@ -83,3 +83,69 @@ All figures are US total compensation (base + bonus + equity where applicable) i
 | **Consulting (tech/AI)** | Big Four, Accenture, MBB digital, boutique AI consultancies | Broad exposure, client skills, easy to get | Shallow technical work; up-or-out; increasingly AI-exposed | Usually not recommended as a first engineering job |
 
 **Guidance for the first job:** optimize for **learning rate and brand** in years 1–3, not for comp or mission. A Big Tech, semis leader, frontier lab, top security vendor, or neo-prime name on your résumé at 25 compounds for a decade. Startups and mission-driven work are better *second* jobs unless you have a specific reason.
+
+---
+
+## 9.4 Security Clearances: The Citizen's Moat
+
+A US security clearance is the most valuable credential available to a US-citizen CS/CE graduate, for four reasons:
+
+1. **It is a legal moat.** Clearances require US citizenship. Roughly a quarter to a third of US CS graduates (international students) cannot compete for these roles at all; the cleared labor pool is structurally short.
+2. **The sector is growing.** Defense budgets, space, cyber operations, and intelligence-community AI adoption are all expanding, and the defense-tech startup boom (Anduril, Palantir, SpaceX, Shield AI, and dozens more) created a private-sector market for cleared engineers that pays Big Tech-competitive comp ($185–320k mid-career for cleared autonomy engineers; defense startups carry ~5.2 open roles per company vs 3.5 for software companies).
+3. **It is counter-cyclical.** Defense hiring held or grew through the 2022–25 tech downturn.
+4. **It is portable and lasts.** A clearance follows you between employers (within a window) and is renewed, not re-earned.
+
+**Levels:** Public Trust → Secret → Top Secret (TS) → TS/SCI (compartmented) → with polygraph (CI or Full-Scope; required at NSA/CIA). Higher levels take longer (Secret: months; TS/SCI with polygraph: often 1–2 years) and command higher premiums.
+
+**How a student gets one:**
+- **Scholarship-for-service programs** (SMART, SFS) — the sponsor processes you before graduation.
+- **Internships at defense primes, FFRDCs, national labs, or agencies** — many sponsor interim clearances for interns; apply in fall of year 2 or 3, because processing takes months.
+- **ROTC** — commissions come with clearances.
+- **First job at a cleared employer** — sponsorship is normal; the offer is contingent on adjudication.
+
+**What disqualifies or delays:** recent drug use (policies vary and have loosened for cannabis at some agencies, not all), unreported foreign contacts, serious debt problems, and above all dishonesty on the SF-86. Be honest and be boring for a few years before you apply. Dual citizenship and extensive foreign travel complicate but rarely block.
+
+**Career note:** you do not have to stay in defense. Many engineers spend 3–5 years cleared, then move to Big Tech or startups, and can return to the cleared world at any time.
+
+---
+
+## 9.5 International Students: Realistic Planning
+
+Roughly a third of US CS/CE undergrads and a majority of master's students are international. The environment became materially harder from 2025 on, and a student enrolling in 2027 must plan for it explicitly.
+
+**What changed (as of 2026):**
+- **H-1B $100k fee** (September 2025 proclamation) applies to new petitions for beneficiaries outside the US; USCIS guidance (Nov 2025) exempted most F-1 → H-1B change-of-status filings, which is the path most students use — but the policy is litigated and could move either way.
+- **OPT under threat.** In August 2026 the administration was reported to be considering fees or restrictions on Optional Practical Training, the 12-month (plus 24-month STEM extension) post-graduation work authorization that nearly every international student depends on. A 2027 enrollee must assume OPT *may* be curtailed by 2031 and plan alternatives.
+- **H-1B lottery** odds for bachelor's holders remained roughly 20–30%; master's holders get a second draw. Wage-weighted selection would favor higher-paid roles (AI/ML, quant).
+- **Visa scrutiny** (social-media review, interview delays, revocations) increased in 2025–26.
+- **Clearance-required sectors** (defense, aerospace, much of government) remain closed regardless.
+
+**Strategy for an international student:**
+1. **Choose fields where employers sponsor.** Big Tech, semis, AI labs, quant, data-infra, and large fintechs sponsor routinely; small companies, defense, government, and many non-tech F500s do not. Tier 1 fields are the sponsoring fields — another reason to aim for them.
+2. **Aim for high-wage roles.** Wage-weighted or fee-based systems favor the top of the comp distribution: AI/ML engineering, quant, senior-track infra.
+3. **Plan for an MS.** A US master's gives the STEM-OPT extension, the advanced-degree H-1B draw, and a second recruiting cycle. Choose a 4+1 or a strong terminal MS in a specific domain (Section 8.8). Master's enrollment fell 26% in 2024–26, so admission and funding may be easier by 2031.
+4. **Build an O-1 record.** Research publications, competition wins, open-source prominence, and press all count toward an O-1 "extraordinary ability" visa, which has no lottery. Frontier labs and startups increasingly use it. Start in year 2.
+5. **Keep a parallel plan.** Canada, the UK (Global Talent visa), Germany, Singapore, and the UAE actively recruit US-trained CS grads, and many US employers will hire you into a foreign office and transfer you later (L-1). Know your options before you need them.
+6. **Use campus resources early.** International office, OPT timelines, and CPT rules for internships (you need CPT authorization to intern; plan it a semester ahead).
+7. **Do not pay for a low-value master's as a visa strategy.** If the program has no placement pipeline, you are buying a delay, not a job.
+
+---
+
+## 9.6 Remote and Hybrid Work
+
+- **New-grad remote roles are rare and should not be your plan.** Employers bring juniors into the office; the roles that are remote at entry level are disproportionately low-comp or contract.
+- **Hybrid (3 days) is the norm** at most large employers; fully in-office at many AI labs, defense, semis (labs and fabs), and robotics (hardware).
+- **Remote becomes realistic at 3–5 years of experience** in software, data, security, and cloud roles. It is rare in semis, robotics hardware, defense (classified spaces), and lab-based research.
+- **Geographic arbitrage** mostly ended — most large employers now pay by location tier. Exceptions are some startups and remote-first companies.
+- **Field choice affects this:** if location flexibility at 30 matters to you, data engineering, security, cloud/infra, and general SWE are the most remote-friendly of the recommended fields; semis and robotics hardware are the least.
+
+---
+
+## 9.7 Section Summary
+
+- **Live in your field's hub for the first 3–5 years.** Bay Area for AI and infra; DC/NoVA for security and defense; Silicon Valley/Austin/Phoenix/Portland for semis; Pittsburgh/Boston/Bay Area for robotics.
+- **Comp is trimodal;** Tier 1 fields matter because they give access to the top mode ($150–250k+ new-grad, $350k+ senior). The AI premium is real and widening.
+- **First job: optimize for learning rate and brand,** not mission or equity. Frontier labs, Big Tech, semis leaders, top security vendors, and neo-primes are the strongest launchpads.
+- **US citizens: a clearance is the most valuable credential you can get,** and SMART/SFS/defense internships hand it to you.
+- **International students: aim at sponsoring, high-wage Tier 1 employers; plan for an MS; build an O-1 record; keep a parallel non-US plan.** Assume OPT rules may tighten by 2031.
+- **Do not plan on remote work as a new grad;** it becomes realistic in software/data/security/cloud around year 3–5.
