@@ -86,3 +86,4 @@ CE = scarcer degree, unlocks semis/robotics/embedded/defense/energy, and every C
 - 2026-09-03 (resume #3): Section 09 write was interrupted and lost (file never landed). 00–08 committed/pushed (HEAD e1b8c96). Rewriting 09 in two chunks (09a market/comp/employers; 09b clearances/international/remote) to reduce loss risk. Then 10, 11, 12, build, PR.
 
 - 2026-09-03 (resume #3, cont.): Sections 09 (2 chunks), 10, 11, 12 written and pushed. Full build: 36,608 words / 2,232 lines. README updated. Next: squash + PR genspark_ai_developer → main. STATUS: CONTENT COMPLETE.
+- 2026-09-03: PR #1 created: https://github.com/gorg667/career-guide/pull/1 (genspark_ai_developer → main). TASK COMPLETE. Any further work: edit sections/*.md, run build.sh, commit, push — PR auto-updates.
