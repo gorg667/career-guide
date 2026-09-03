@@ -40,7 +40,7 @@
 | Section 05: Tier-3 / niche / contrarian | DONE | |
 | Section 06: CS vs CE — which majors map to which careers | DONE | |
 | Section 07: Year-by-year roadmap 2027→2031 | DONE | |
-| Section 08: Skills, projects, internships, grad school | TODO | |
+| Section 08: Skills, projects, internships, grad school | DONE | |
 | Section 09: Geography, compensation, visa, industry choice | TODO | |
 | Section 10: Comparison tables + decision matrix | TODO | |
 | Section 11: FAQs, myths, risks | TODO | |
