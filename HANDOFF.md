@@ -37,7 +37,7 @@
 | Section 02: How to think about career choice (framework) | DONE | |
 | Section 03: Tier-1 careers deep dives | DONE (03a, 03b) | |
 | Section 04: Tier-2 careers deep dives | DONE | |
-| Section 05: Tier-3 / niche / contrarian | TODO | |
+| Section 05: Tier-3 / niche / contrarian | DONE | |
 | Section 06: CS vs CE — which majors map to which careers | TODO | |
 | Section 07: Year-by-year roadmap 2027→2031 | TODO | |
 | Section 08: Skills, projects, internships, grad school | TODO | |

@@ -65,3 +65,76 @@ Covered partly in 4.9. The game *industry* combines high passion supply with cyc
 | D1 | D2 | D3 | D4 | D5 | D6 |
 |---|---|---|---|---|---|
 | 2 | 2 | 2 | 2 | 3 | 3 |
+
+---
+
+## 5.6 Research Scientist / Academia (PhD path)
+
+**The situation.** CS PhD production hit a record (1,909 in 2025, +51% in five years, CRA Taulbee) while new PhD enrollment fell 15%; 61% of new PhDs go to industry. Frontier AI labs pay research scientists $500k–$2M+ and have absorbed a large share of top talent. Tenure-track positions are scarce and pay a fraction of industry — but offer freedom and stability — and federal research funding is under pressure in the 2025–2027 budget cycles.
+
+**Verdict.** A PhD is a **superb investment for a specific student**: one who has done serious undergraduate research, loves open-ended problems, and targets AI/ML, systems, security, architecture, robotics, or quantum — fields where a PhD unlocks the very top of industry pay. It is a poor choice as a way to "wait out" a bad job market or delay deciding. Do it for the research, with an industry exit in mind, and never pay for a CS PhD (they are funded).
+
+| D1 | D2 | D3 | D4 | D5 | D6 |
+|---|---|---|---|---|---|
+| 3 | 5 | 5 | 2 (academia) / 5 (lab research) | 4 | 1 |
+
+---
+
+## 5.7 Founding a Startup
+
+**The situation.** The cost of building software has collapsed — a two-person team with agents ships what took twenty people in 2019. Capital is flowing again (Anthropic and OpenAI filed for IPOs in June 2026; venture funding for AI-native and "hard tech" startups is at records). Recent Y Combinator batches are dominated by very young technical founders. Simultaneously, distribution is harder, incumbents move faster, and AI-application moats are thin.
+
+**Verdict.** The best time in history to *try* — and the worst time to try *without a differentiated insight*. For a 2031 graduate: either work 1–3 years at a fast-growing company to learn how a real one works and meet co-founders, or, if you have genuine traction from college, go straight in with a safety net (a deferred offer, savings, a program like YC). Technical founders who understand a *hard* domain (chips, robotics, biotech, defense, infrastructure) are having a moment. Founding is a risk-tolerance choice more than a career choice; a CS/CE degree makes the downside recoverable.
+
+---
+
+## 5.8 Computing + Law / Policy / Government
+
+AI policy, technology regulation, privacy law, export controls, and antitrust are all growing — and very few people understand both the technology and the institutions. Paths: CS/CE → law school (patent law with an engineering degree is lucrative; tech-policy and privacy practices are growing); CS/CE → policy master's → think tanks, Congress, agencies (NIST, CISA, FTC, Commerce/BIS); CS/CE → government technologist programs (US Digital Service successors, Presidential Innovation Fellows, state digital services).
+
+**Verdict:** excellent for the right student; low competition; high impact; pay ranges from government scale ($70–120k) to Big Law ($225k+ first-year). A genuine contrarian opportunity.
+
+---
+
+## 5.9 Computing + Medicine (MD/DO path)
+
+A CS/CE undergrad with pre-med requirements is a strong medical-school applicant and an even stronger physician: clinical informatics, radiology/pathology AI, surgical robotics, and health-system leadership all reward technical fluency. Long (11+ years) and expensive, but among the most AI-resistant and stable careers in existence — and physicians who can *build* are extraordinarily rare.
+
+---
+
+## 5.10 Teaching Computer Science (K-12 and Community College)
+
+Every state has a shortage of qualified CS teachers; demand is structural; the work is meaningful and secure. Pay is a fraction of industry ($55–90k), though some states pay CS teachers a premium. Consider it seriously if you love teaching; consider it as a later-career move otherwise.
+
+---
+
+## 5.11 Contrarian Bets: Where Talent Is Fleeing and Demand Is Not
+
+Areas we think are *under*-supplied in 2031 precisely because they are unfashionable:
+
+1. **Mainframe / COBOL / legacy modernization** — banks, insurers, airlines, and governments run on it; the workforce is retiring; AI *helps* translate but humans who understand both worlds are scarce and paid $120–200k.
+2. **Analog / mixed-signal / RF circuit design** — chronically short, very well paid, requires the EE curriculum most students avoid (see 3.3).
+3. **Power electronics and grid software** — see 4.6.
+4. **Industrial automation / PLC / OT software and security** — factories, water systems, energy; huge installed base, serious security exposure, aging workforce.
+5. **Embedded firmware for medical devices** — regulated (IEC 62304), stable, under-supplied, CE-native.
+6. **Formal verification and high-assurance software** — seL4, Rust-for-Linux, Lean/Coq/Isabelle, DO-178C. As AI writes more code, *proving* it correct becomes more valuable. Tiny field, extraordinary moat.
+7. **Cryptography and post-quantum migration** — a decade-long, mandated (NIST / CNSA 2.0 timelines to 2030–2035), industry-wide project.
+8. **Accessibility and internationalization engineering** — regulation-driven (ADA, European Accessibility Act), under-staffed, unglamorous.
+
+---
+
+## 5.12 Tier 3 Summary
+
+| Path | Verdict for a 2031 CS/CE grad |
+|---|---|
+| Generalist web/full-stack | Foundation skill, not a destination; add a moat |
+| Native mobile | Skill, not career plan |
+| QA / IT support / sysadmin | Not targets; one-year bridge at most |
+| Data/BI analyst | Being automated; move to analytics engineering or statistics |
+| Game studios | Eyes open; aim for engine/graphics/infra |
+| Research / PhD | Excellent for the research-driven; not a hiding place |
+| Founding | Best time to try with an insight; worst without one |
+| Law / policy | Strong contrarian opportunity |
+| Medicine | Long, expensive, extraordinarily durable |
+| Teaching | Meaningful; consider later-career |
+| Contrarian niches | Legacy, analog, OT, formal methods, PQC, medical firmware — under-supplied and durable |
