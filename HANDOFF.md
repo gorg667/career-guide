@@ -45,7 +45,7 @@
 | Section 10: Comparison tables + decision matrix | DONE | |
 | Section 11: FAQs, myths, risks | DONE | |
 | Section 12: Sources | DONE | |
-| Build final MD, PR | TODO | |
+| Build final MD, PR | DONE | |
 
 ## EDITORIAL DECISIONS & REASONING (so a successor with compacted context can continue seamlessly)
 
