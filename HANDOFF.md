@@ -43,7 +43,7 @@
 | Section 08: Skills, projects, internships, grad school | DONE | |
 | Section 09: Geography, compensation, visa, industry choice | DONE | |
 | Section 10: Comparison tables + decision matrix | DONE | |
-| Section 11: FAQs, myths, risks | TODO | |
+| Section 11: FAQs, myths, risks | DONE | |
 | Section 12: Sources | TODO | |
 | Build final MD, PR | TODO | |
 
