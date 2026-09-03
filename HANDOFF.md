@@ -32,9 +32,9 @@
 | Scaffold repo (README, HANDOFF, OUTLINE, build.sh) | DONE | |
 | Research: macro labor market / AI impact / BLS | DONE | -> research/01-macro.md |
 | Research: field-by-field data (salaries, growth) | DONE | -> research/02-fields.md |
-| Section 00: Front matter + TL;DR | TODO | |
-| Section 01: The 2027–2031 landscape | TODO | |
-| Section 02: How to think about career choice (framework) | TODO | |
+| Section 00: Front matter + TL;DR | DONE | |
+| Section 01: The 2027–2031 landscape | DONE | |
+| Section 02: How to think about career choice (framework) | DONE | |
 | Section 03: Tier-1 careers deep dives | TODO | |
 | Section 04: Tier-2 careers deep dives | TODO | |
 | Section 05: Tier-3 / niche / contrarian | TODO | |
