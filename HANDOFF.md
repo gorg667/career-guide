@@ -42,7 +42,7 @@
 | Section 07: Year-by-year roadmap 2027→2031 | DONE | |
 | Section 08: Skills, projects, internships, grad school | DONE | |
 | Section 09: Geography, compensation, visa, industry choice | DONE | |
-| Section 10: Comparison tables + decision matrix | TODO | |
+| Section 10: Comparison tables + decision matrix | DONE | |
 | Section 11: FAQs, myths, risks | TODO | |
 | Section 12: Sources | TODO | |
 | Build final MD, PR | TODO | |
