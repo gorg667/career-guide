@@ -84,3 +84,5 @@ CE = scarcer degree, unlocks semis/robotics/embedded/defense/energy, and every C
 - 2026-09-03: Research phase done (research/01-macro.md, research/02-fields.md). Starting sections.
 - 2026-09-03: Section 05 write was interrupted by credit exhaustion (file never landed). Added full editorial-decisions block to HANDOFF so successor can continue. Re-writing 05 now.
 - 2026-09-03 (resume #3): Section 09 write was interrupted and lost (file never landed). 00–08 committed/pushed (HEAD e1b8c96). Rewriting 09 in two chunks (09a market/comp/employers; 09b clearances/international/remote) to reduce loss risk. Then 10, 11, 12, build, PR.
+
+- 2026-09-03 (resume #3, cont.): Sections 09 (2 chunks), 10, 11, 12 written and pushed. Full build: 36,608 words / 2,232 lines. README updated. Next: squash + PR genspark_ai_developer → main. STATUS: CONTENT COMPLETE.
