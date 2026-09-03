@@ -44,7 +44,7 @@
 | Section 09: Geography, compensation, visa, industry choice | DONE | |
 | Section 10: Comparison tables + decision matrix | DONE | |
 | Section 11: FAQs, myths, risks | DONE | |
-| Section 12: Sources | TODO | |
+| Section 12: Sources | DONE | |
 | Build final MD, PR | TODO | |
 
 ## EDITORIAL DECISIONS & REASONING (so a successor with compacted context can continue seamlessly)
