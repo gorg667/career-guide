@@ -18,6 +18,7 @@ Dependencies: pip install markdown pymdown-extensions
 """
 from __future__ import annotations
 
+import datetime
 import html
 import json
 import os
@@ -38,6 +39,21 @@ SITE_TAGLINE = "Choosing Your Future — careers for students entering CS or CE 
 REPO_URL = "https://github.com/gorg667/career-guide"
 SITE_URL = "https://gorg667.github.io/career-guide/"  # links to this prefix in the MD become relative on the site
 WPM = 230  # reading speed for the estimate
+BUILD_DATE = datetime.date.today().isoformat()
+
+
+def guide_version() -> str:
+    """Read the version number from the front matter ('**Version:** 2.1 — ...') so the footer never drifts."""
+    text = (SECTIONS / "00-frontmatter.md").read_text(encoding="utf-8")
+    m = re.search(r"\*\*Version:\*\*\s*([0-9]+\.[0-9]+)", text)
+    return m.group(1) if m else "?"
+
+
+def guide_month() -> str:
+    """'September 2026' from the front matter's 'compiled September 2026'."""
+    text = (SECTIONS / "00-frontmatter.md").read_text(encoding="utf-8")
+    m = re.search(r"compiled\s+([A-Z][a-z]+ \d{4})", text)
+    return m.group(1) if m else "2026"
 
 # ---------------------------------------------------------------------------
 # Page map: (output file, short nav title, list of source md files, section number or None)
@@ -65,6 +81,7 @@ TOOLS = [
     ("compare.html",   "Compare careers",  "Put two or three careers side by side: scores, comp bands, majors, scenario robustness."),
     ("quiz.html",      "Which career fits me?", "Ten questions that turn the §10.2 decision matrix into a ranked shortlist."),
     ("roadmap.html",   "Interactive timeline", "The Summer 2027 → May 2031 master calendar with recruiting windows and a 'you are here' marker."),
+    ("indicators.html", "Is the guide still right?", "The five falsifiable predictions and seven yearly indicators as a checklist — thresholds, last known values, where to look."),
     ("checklists.html", "Checklists",       "Semester-by-semester, recruiting-season, and offer checklists that remember what you have ticked."),
     ("glossary.html",  "Glossary",         "~105 terms with instant filtering."),
 ]
@@ -331,6 +348,84 @@ def render_page(template: str, **ctx) -> str:
     return out
 
 
+def page_description(body_html: str, fallback: str) -> str:
+    """First substantive paragraph of a page, trimmed to ~155 chars, for <meta description> / OpenGraph."""
+    for m in re.finditer(r"<p[^>]*>(.*?)</p>", body_html, flags=re.S):
+        text = re.sub(r"\s+", " ", strip_tags(m.group(1))).strip()
+        if len(text) < 60 or text.startswith(("Version:", "Author", "Prepared")):
+            continue
+        if len(text) > 155:
+            text = text[:152].rsplit(" ", 1)[0].rstrip(",;:") + "\u2026"
+        return text
+    return fallback
+
+
+def head_meta(file: str, title: str, description: str, kind: str, version: str) -> str:
+    """OpenGraph / Twitter / canonical / last-modified tags plus a JSON-LD block.
+
+    kind: 'website' (index), 'article' (content page) or 'tool' (interactive page).
+    Everything is derived from data the build already has, so nothing here can drift from the content.
+    """
+    url = SITE_URL + ("" if file == "index.html" else file)
+    t = html.escape(title, quote=True)
+    d = html.escape(description, quote=True)
+    tags = [
+        f'<link rel="canonical" href="{url}">',
+        f'<meta name="last-modified" content="{BUILD_DATE}">',
+        f'<meta name="guide-version" content="{version}">',
+        f'<meta property="og:type" content="{"website" if kind == "website" else "article"}">',
+        f'<meta property="og:site_name" content="{html.escape(SITE_TITLE, quote=True)}">',
+        f'<meta property="og:title" content="{t}">',
+        f'<meta property="og:description" content="{d}">',
+        f'<meta property="og:url" content="{url}">',
+        f'<meta property="og:image" content="{SITE_URL}static/og-card.svg">',
+        '<meta name="twitter:card" content="summary">',
+        f'<meta name="twitter:title" content="{t}">',
+        f'<meta name="twitter:description" content="{d}">',
+    ]
+    if kind == "website":
+        ld = {
+            "@context": "https://schema.org", "@type": "WebSite",
+            "name": SITE_TITLE, "url": SITE_URL, "description": description,
+            "inLanguage": "en-US", "version": version, "dateModified": BUILD_DATE,
+            "potentialAction": {"@type": "SearchAction", "target": SITE_URL + "?q={search_term_string}",
+                                "query-input": "required name=search_term_string"},
+        }
+    elif kind == "tool":
+        ld = {
+            "@context": "https://schema.org", "@type": "WebApplication",
+            "name": title, "url": url, "description": description, "applicationCategory": "EducationalApplication",
+            "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "isAccessibleForFree": True,
+            "isPartOf": {"@type": "WebSite", "name": SITE_TITLE, "url": SITE_URL},
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+        }
+    else:
+        ld = {
+            "@context": "https://schema.org", "@type": "Article",
+            "headline": title, "url": url, "description": description, "inLanguage": "en-US",
+            "dateModified": BUILD_DATE, "version": version,
+            "isPartOf": {"@type": "WebSite", "name": SITE_TITLE, "url": SITE_URL},
+            "about": ["computer science careers", "computer engineering careers", "college major choice", "AI and the software job market"],
+            "audience": {"@type": "EducationalAudience", "educationalRole": "student"},
+            "isAccessibleForFree": True,
+            "sameAs": REPO_URL,
+        }
+    tags.append('<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>")
+    return "\n".join(tags)
+
+
+def write_sitemap(files: list) -> None:
+    """docs/sitemap.xml + robots.txt. index first, then content pages, then tools."""
+    rows = []
+    for f in files:
+        loc = SITE_URL + ("" if f == "index.html" else f)
+        prio = "1.0" if f == "index.html" else "0.8" if re.match(r"\d\d-", f) else "0.6"
+        rows.append(f"  <url><loc>{loc}</loc><lastmod>{BUILD_DATE}</lastmod><changefreq>monthly</changefreq><priority>{prio}</priority></url>")
+    xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(rows) + "\n</urlset>\n"
+    (OUT / "sitemap.xml").write_text(xml, encoding="utf-8")
+    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}sitemap.xml\n", encoding="utf-8")
+
+
 # ---------------------------------------------------------------------------
 # Special handling for the front matter (index) page
 # ---------------------------------------------------------------------------
@@ -356,7 +451,83 @@ def tools_cards_html() -> str:
     return '<div class="cards">' + "".join(cards) + "</div>"
 
 
+
+# ---------------------------------------------------------------------------
+# Consistency check: careers.json must agree with the §10.1 master scorecard
+# ---------------------------------------------------------------------------
+def parse_scorecard_md() -> dict:
+    """Parse §10.1 rows from sections/10-tables.md.
+
+    Returns {(ref, tier, keyword): {"D1":..,"D6":..,"total":..}} where keyword is the
+    first significant word of the career label (needed because two rows share ref 4.10).
+    Rows: | # | Career (X.Y) | Tier | D1 | D2 | D3 | D4 | D5 | D6 | Total | ...
+    """
+    text = (SECTIONS / "10-tables.md").read_text(encoding="utf-8")
+    part = text.split("## 10.1", 1)[1].split("\n## ", 1)[0]
+    rows = {}
+    for line in part.splitlines():
+        if not re.match(r"^\|\s*\d+\s*\|", line):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) < 10:
+            continue
+        label = cells[1]
+        m = re.search(r"\((\d+\.\d+)\)\s*$", label)
+        if not m:
+            continue
+        ref = m.group(1)
+        tier = int(cells[2])
+        def num(x):
+            x = x.replace("*", "").strip()
+            return float(x) if re.match(r"^\d+(\.\d+)?$", x) else None
+        scores = {f"D{i}": num(cells[2 + i]) for i in range(1, 7)}
+        total = num(cells[9])
+        kw = re.sub(r"[^a-z ]", "", label.lower().replace("*", "").split("(")[0]).strip()
+        rows[(ref, tier, kw)] = {**scores, "total": total, "label": label}
+    return rows
+
+
+def check_careers_json_consistency() -> None:
+    """Fail the build if any career's tier or D1–D6 in careers.json drifts from §10.1.
+
+    Careers without scores in the MD (e.g. 'founder', scored '—') are skipped.
+    """
+    data = json.loads((SITE / "data" / "careers.json").read_text(encoding="utf-8"))
+    md_rows = parse_scorecard_md()
+    if len(md_rows) < 20:
+        raise SystemExit(f"consistency check: parsed only {len(md_rows)} rows from §10.1 — parser broken?")
+    problems = []
+    matched = 0
+    for c in data["careers"]:
+        if any(v is None for v in c["scores"].values()):
+            continue  # unscored in the guide (founder)
+        cands = [k for k in md_rows if k[0] == c["ref"] and k[1] == c["tier"]]
+        if len(cands) > 1:
+            # Two §10.1 rows share a ref (e.g. 4.10 dev tools vs DevRel): careers.json must
+            # carry "md_label": a substring of the §10.1 career label to disambiguate.
+            hint = re.sub(r"[^a-z ]", "", c.get("md_label", "").lower()).strip()
+            cands = [k for k in cands if hint and hint in k[2]]
+            if len(cands) != 1:
+                problems.append(f"{c['id']}: ambiguous §10.1 rows for ref {c['ref']} — set a unique \"md_label\" in careers.json")
+                continue
+        if not cands:
+            problems.append(f"{c['id']}: no §10.1 row with ref {c['ref']} tier {c['tier']}")
+            continue
+        row = md_rows[cands[0]]
+        for d in ("D1", "D2", "D3", "D4", "D5", "D6"):
+            if row[d] is not None and float(c["scores"][d]) != row[d]:
+                problems.append(f"{c['id']} {d}: json={c['scores'][d]} md={row[d]}  ({row['label'][:50]})")
+        matched += 1
+    if problems:
+        print("careers.json is out of sync with §10.1:", file=sys.stderr)
+        for p in problems:
+            print("  - " + p, file=sys.stderr)
+        raise SystemExit(1)
+    print(f"  consistency check: {matched} careers match §10.1 scores")
+
+
 def main():
+    check_careers_json_consistency()
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
@@ -368,7 +539,10 @@ def main():
     (OUT / ".nojekyll").write_text("")
 
     base = load_template("base.html")
+    version = guide_version()
+    base = base.replace("{{version}}", version).replace("{{month}}", guide_month()).replace("{{build_date}}", BUILD_DATE)
     search_records = []
+    built_files = []
     all_headings = {}
     page_bodies = {}
 
@@ -409,22 +583,24 @@ def main():
         if file == "index.html":
             page_title = SITE_TITLE
         search_records += build_search_records(file, page_title, body)
+        desc = SITE_TAGLINE if file == "index.html" else page_description(body, SITE_TAGLINE)
         page_html = render_page(
             base,
             title=html.escape(page_title),
             site_title=SITE_TITLE,
-            description=html.escape(SITE_TAGLINE),
+            description=html.escape(desc, quote=True),
             nav=nav_html(file),
             toc=toc_html(headings),
             body=body,
             prevnext=prevnext_html(idx),
             reading=f"{max(1, round(words / WPM))} min read · {words:,} words",
-            extra_head="",
+            extra_head=head_meta(file, page_title, desc, "website" if file == "index.html" else "article", version),
             extra_scripts=('<script src="static/checklists.js" defer></script>' if file == "checklists.html"
                            else '<script src="static/glossary.js" defer></script>' if file == "glossary.html" else ""),
             body_class=f"page-{file.replace('.html', '')}",
         )
         (OUT / file).write_text(page_html, encoding="utf-8")
+        built_files.append(file)
         print(f"  {file:22s} {words:6,} words  {len(headings):3d} headings")
 
     # Tool pages (static shells in site/pages/*.html get the same chrome)
@@ -434,16 +610,20 @@ def main():
         ptitle = m.group(1) if m else f.stem.title()
         ms = re.search(r"<!--\s*scripts:\s*(.*?)\s*-->", raw)
         scripts = ms.group(1) if ms else ""
+        tool_desc = next((t[2] for t in TOOLS if t[0] == f.name), None) or page_description(raw, SITE_TAGLINE)
         page_html = render_page(
             base,
-            title=html.escape(ptitle), site_title=SITE_TITLE, description=html.escape(SITE_TAGLINE),
+            title=html.escape(ptitle), site_title=SITE_TITLE, description=html.escape(tool_desc, quote=True),
             nav=nav_html(f.name), toc="", body=raw, prevnext="", reading="Interactive tool",
-            extra_head="", extra_scripts=scripts, body_class=f"page-tool page-{f.stem}",
+            extra_head=head_meta(f.name, ptitle, tool_desc, "tool", version),
+            extra_scripts=scripts, body_class=f"page-tool page-{f.stem}",
         )
         (OUT / f.name).write_text(page_html, encoding="utf-8")
+        built_files.append(f.name)
         print(f"  {f.name:22s} (tool)")
 
     (OUT / "search-index.json").write_text(json.dumps(search_records, ensure_ascii=False), encoding="utf-8")
+    write_sitemap(built_files)
     # 404 page → index
     (OUT / "404.html").write_text('<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./index.html"><a href="./index.html">Home</a>')
     print(f"Built {len(prepared)} pages + tools; search index {len(search_records)} records -> {OUT}")

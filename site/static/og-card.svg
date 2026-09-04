@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b2a5b"/>
+  <rect x="0" y="0" width="1200" height="14" fill="#0b5fd1"/>
+  <g transform="translate(80 120)">
+    <rect width="96" height="96" rx="18" fill="#0b5fd1"/>
+    <path d="M24 66V30l24 18 24-18v36" fill="none" stroke="#fff" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <text x="80" y="300" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#ffffff">The 2027 CS/CE Career Guide</text>
+  <text x="80" y="370" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" fill="#c7d7f2">Choosing Your Future — 29 careers scored on six dimensions,</text>
+  <text x="80" y="418" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" fill="#c7d7f2">a four-year roadmap, and five predictions you can check.</text>
+  <text x="80" y="540" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#8fb0e8">For students entering CS or CE in Fall 2027 · BLS 2025–35 projections · ~57,000 words · free</text>
+</svg>

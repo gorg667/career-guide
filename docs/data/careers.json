@@ -30,7 +30,7 @@
       "id": "security", "name": "Security Engineer (cloud, AppSec, AI security, detection & response)", "short": "Security",
       "tier": 1, "ref": "3.2", "page": "03-tier1.html#sec-3-2",
       "scores": {"D1": 5, "D2": 5, "D3": 4, "D4": 4, "D5": 4, "D6": 5},
-      "summary": "BLS +29% growth; AI both attacks and defends; counter-cyclical demand; a citizenship moat in government and defense. The most BS-accessible Tier 1 field.",
+      "summary": "BLS +21% growth 2025–35 (~5× the all-occupation rate); AI both attacks and defends; counter-cyclical demand; a citizenship moat in government and defense. The most BS-accessible Tier 1 field.",
       "degree": "CS (CE for hardware security)", "degree_note": "OS, networks, crypto; CTF team; Security+ if defense-bound.",
       "comp": {"new_grad": "$100–160k", "mid": "$180–280k", "senior": "$280–450k", "trend": "↑ steady"},
       "scenario": {"A": 1, "B": 1, "C": 1}, "robustness": "Highest",
@@ -82,7 +82,7 @@
       "id": "data", "name": "Data Engineer / Engineering-heavy Data Scientist", "short": "Data engineering",
       "tier": 1, "ref": "3.6", "page": "03-tier1.html#sec-3-6",
       "scores": {"D1": 5, "D2": 3, "D3": 3, "D4": 3.5, "D5": 4, "D6": 5},
-      "summary": "BLS +34% growth for data scientists; every AI system is a data pipeline. Tier 1 with a caveat: the analyst/dashboard layer is automating; the platform and engineering layer is growing.",
+      "summary": "BLS +35% growth for data scientists 2025–35; every AI system is a data pipeline. Tier 1 with a caveat: the analyst/dashboard layer is automating; the platform and engineering layer is growing.",
       "degree": "CS (+ stats)", "degree_note": "Databases, statistics; SQL depth; one warehouse; orchestration.",
       "comp": {"new_grad": "$100–150k", "mid": "$160–220k", "senior": "$220–320k", "trend": "→ (DS bifurcating)"},
       "scenario": {"A": 1, "B": 0, "C": 1}, "robustness": "Medium-high",
@@ -210,7 +210,7 @@
       "avoid_if": ["You want a large job market", "You want to make games at a studio (see 5.5)"]
     },
     {
-      "id": "devtools", "name": "Developer Tools (engineering track)", "short": "Developer tools",
+      "id": "devtools", "md_label": "Developer tools", "name": "Developer Tools (engineering track)", "short": "Developer tools",
       "tier": 2, "ref": "4.10", "page": "04-tier2.html#sec-4-10",
       "scores": {"D1": 4, "D2": 4, "D3": 3, "D4": 4, "D5": 4, "D6": 3},
       "summary": "Compilers, languages, build systems, IDEs, AI coding tools. Tool builders with compilers/PL/systems depth are scarce; the AI-coding-tools boom raised demand.",
@@ -236,7 +236,7 @@
       "avoid_if": ["Top-of-market comp is your priority"]
     },
     {
-      "id": "devrel", "name": "Developer Relations / Technical Education", "short": "DevRel",
+      "id": "devrel", "md_label": "Developer relations", "name": "Developer Relations / Technical Education", "short": "DevRel",
       "tier": 2, "ref": "4.10", "page": "04-tier2.html#sec-4-10",
       "scores": {"D1": 2, "D2": 3, "D3": 3, "D4": 3, "D5": 4, "D6": 3},
       "summary": "For engineers who love teaching and writing. Funded from marketing budgets, so volatile; best as a later move from an engineering role.",
@@ -370,7 +370,7 @@
       "id": "qa", "name": "QA / Test Engineering, IT Support, Sysadmin", "short": "QA / IT support",
       "tier": 3, "ref": "5.3", "page": "05-tier3.html#sec-5-3",
       "scores": {"D1": 1, "D2": 1, "D3": 1, "D4": 1, "D5": 3, "D6": 5},
-      "summary": "BLS projects programmer and support employment to shrink; manual QA is the most automated role in software. Do not aim here with a CS/CE degree.",
+      "summary": "BLS projects computer-programmer employment to shrink 7% by 2035 and support roles to stagnate; manual QA is the most automated role in software. Do not aim here with a CS/CE degree.",
       "degree": "—", "degree_note": "Not a target for a CS/CE graduate.",
       "comp": {"new_grad": "$50–75k", "mid": "$65–95k", "senior": "$80–120k", "trend": "↓↓"},
       "scenario": {"A": -1, "B": -2, "C": -1}, "robustness": "Lowest",

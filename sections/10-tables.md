@@ -85,14 +85,14 @@ US total compensation, 2026 dollars, typical ranges. New-grad = 0–1 year; Mid 
 |---|---|---|---|---|---|
 | AI/ML engineer | $130–220k | $250–400k | $400–700k+ | — (MLE Levels.fyi median $279k) | ↑ premium widening |
 | Quant dev / researcher | $200–350k | $400–700k | $600k–$1.5M+ | — | → elite, stable |
-| General SWE at top-tier employers (4.11) | $140–200k | $220–350k | $350–500k | $135,980 (developers, all employers) | → flat real; entry ramp narrow |
+| General SWE at top-tier employers (4.11) | $140–200k | $220–350k | $350–500k | $135,980 (developers, all employers, May 2025) | → flat real; entry ramp narrow |
 | Infrastructure / SRE / distributed | $130–190k | $220–350k | $350–500k | — | ↑ AI-infra demand |
-| Security engineer | $100–160k | $180–280k | $280–450k | $124,910 (infosec analysts) | ↑ steady |
-| Semiconductor design / verification | $110–150k (BS); $130–175k (MS) | $180–260k | $260–400k+ (NVIDIA/Apple/AMD higher) | $155,020 (hardware eng) | ↑ CHIPS + AI silicon |
+| Security engineer | $100–160k | $180–280k | $280–450k | $129,180 (infosec analysts, May 2025) | ↑ steady |
+| Semiconductor design / verification | $110–150k (BS); $130–175k (MS) | $180–260k | $260–400k+ (NVIDIA/Apple/AMD higher) | $161,740 (hardware eng, May 2025) | ↑ CHIPS + AI silicon |
 | Robotics / autonomy | $100–150k | $150–205k | $205–300k+ | — | ↑ physical AI |
 | Forward-deployed engineer | $130–180k | $200–350k | $350–550k | — | ↑↑ if enterprise AI adoption continues |
 | Data engineer | $100–150k | $160–220k | $220–320k | — | → |
-| Data scientist | $85–140k | $150–220k | $220–350k | $112,590 | ↔ bifurcating |
+| Data scientist | $85–140k | $150–220k | $220–350k | $120,230 (May 2025) | ↔ bifurcating |
 | Defense / aerospace (cleared) | $85–130k | $140–200k (primes) / $185–320k (defense-tech) | $200–350k | $134,830 (aerospace eng) | ↑ clearance premium |
 | Energy / grid computing | $90–130k | $140–200k | $200–280k | $118,780 (EE) | ↑ |
 | Health / biotech computing | $90–140k | $140–210k | $200–300k | — | → |
@@ -187,11 +187,11 @@ The whole guide compressed: one row per career, sorted by tier then §10.1 total
 | # | Career | Tier | § | Total | Degree | New-grad TC | Grad school? | Verdict |
 |---|---|---|---|---|---|---|---|---|
 | 1 | **Infrastructure** | 1 | 3.4 | 28 | CS or CE | $130–190k | Not needed | The picks and shovels of AI: GPU clusters, inference serving, storage, networking, observability. The only Tier 1 field that is simultaneously BS-accessible, high-optionality, and AI-resistant — the safest single bet. |
-| 2 | **Security** | 1 | 3.2 | 27 | CS (CE for hardware security) | $100–160k | Not needed | BLS +29% growth; AI both attacks and defends; counter-cyclical demand; a citizenship moat in government and defense. The most BS-accessible Tier 1 field. |
+| 2 | **Security** | 1 | 3.2 | 27 | CS (CE for hardware security) | $100–160k | Not needed | BLS +21% growth 2025–35 (~5× the all-occupation rate); AI both attacks and defends; counter-cyclical demand; a citizenship moat in government and defense. The most BS-accessible Tier 1 field. |
 | 3 | **Robotics & embedded** | 1 | 3.5 | 27 | CE (CS for perception/ML) | $100–150k | Helpful for perception/planning | Humanoids, drones, autonomous vehicles, defense systems. Needs hardware + software + ML at once — a rare combination that AI cannot yet replace because the work touches the physical world. |
 | 4 | **Semiconductors** | 1 | 3.3 | 26.5 | CE (or EE) | $110–150k (BS); $130–175k (MS) | MS recommended for design/architecture | Highest median pay of any computing occupation ($155k BLS); acute talent shortage (~67k unfilled by 2030); CHIPS Act fabs and the AI accelerator race. The best moat in computing; DV/FPGA/test are BS-accessible. |
 | 5 | **AI/ML engineering** | 1 | 3.1 | 26.5 | CS (+ math) | $130–220k | MS raises odds at labs | Fastest-growing, highest-paid engineering discipline (openings +60% YoY; median MLE comp ~$279k). Lowest moat in Tier 1 and the most crowded — the best bet for students who can stand out. |
-| 6 | **Data engineering** | 1 | 3.6 | 23.5 | CS (+ stats) | $100–150k | MS in stats/DS common but not required | BLS +34% growth for data scientists; every AI system is a data pipeline. Tier 1 with a caveat: the analyst/dashboard layer is automating; the platform and engineering layer is growing. |
+| 6 | **Data engineering** | 1 | 3.6 | 23.5 | CS (+ stats) | $100–150k | MS in stats/DS common but not required | BLS +35% growth for data scientists 2025–35; every AI system is a data pipeline. Tier 1 with a caveat: the analyst/dashboard layer is automating; the platform and engineering layer is growing. |
 | 7 | **Defense & aerospace** | 2 | 4.2 | 26.5 | CS or CE | $85–130k | Not needed | Clearance = citizen-only moat; neo-primes (Anduril, SpaceX, Palantir) hiring intensely; budget-driven and counter-cyclical. Scores 26.5 — Tier 1 for US citizens; Tier 2 only because of the citizenship gate. |
 | 8 | **Energy & grid** | 2 | 4.6 | 25 | CE or EE | $90–130k | Not needed | Data-center power demand is structural; grid software, power electronics, and controls are under-supplied and unfashionable. Mission with a tailwind; utility-scale pay is the drawback. |
 | 9 | **Fintech & quant** | 2 | 4.5 | 25 | CS | $200–350k (quant) | Not needed for quant dev | The highest new-grad pay in computing ($200–350k at HFT firms) behind brutal selection; fintech more broadly is cyclical but large. For elite algorithmic/math talent. |
@@ -213,5 +213,5 @@ The whole guide compressed: one row per career, sorted by tier then §10.1 total
 | 25 | **Native mobile** | 3 | 5.2 | 16 | CS | $80–130k | Not needed | Cross-platform frameworks and AI compress it; a declining specialty. Useful skill, weak career identity. |
 | 26 | **Game studios** | 3 | 5.5 | 14 | CS | $60–95k | Not needed | Layoffs, crunch, and low pay for the passion premium. If you love games, build engines, graphics, or simulation (4.9) instead. |
 | 27 | **Data / BI analyst** | 3 | 5.4 | 14 | CS | $60–90k | Not needed | Dashboards and SQL-to-insight are exactly what AI agents now do. The most exposed layer of the data stack; move to data engineering (3.6) instead. |
-| 28 | **QA / IT support** | 3 | 5.3 | 12 | — | $50–75k | Not needed | BLS projects programmer and support employment to shrink; manual QA is the most automated role in software. Do not aim here with a CS/CE degree. |
+| 28 | **QA / IT support** | 3 | 5.3 | 12 | — | $50–75k | Not needed | BLS projects computer-programmer employment to shrink 7% by 2035 and support roles to stagnate; manual QA is the most automated role in software. Do not aim here with a CS/CE degree. |
 | 29 | **Founding a startup** | 3 | 5.7 | — | Either | $0–80k (founder salary) | Not needed | Extreme variance; better as a second act after a Tier 1 first job that gives you a network, savings, and a real problem to solve. |

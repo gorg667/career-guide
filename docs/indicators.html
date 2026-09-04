@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Interactive four-year timeline — The 2027 CS/CE Career Guide</title>
-<meta name="description" content="The Summer 2027 → May 2031 master calendar with recruiting windows and a &#x27;you are here&#x27; marker.">
+<title>Indicators dashboard — is the guide still right? — The 2027 CS/CE Career Guide</title>
+<meta name="description" content="The five falsifiable predictions and seven yearly indicators as a checklist — thresholds, last known values, where to look.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="static/style.css">
@@ -12,21 +12,21 @@
 // Apply saved theme before first paint to avoid a flash.
 (function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
 </script>
-<link rel="canonical" href="https://gorg667.github.io/career-guide/roadmap.html">
+<link rel="canonical" href="https://gorg667.github.io/career-guide/indicators.html">
 <meta name="last-modified" content="2026-09-04">
 <meta name="guide-version" content="2.1">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The 2027 CS/CE Career Guide">
-<meta property="og:title" content="Interactive four-year timeline">
-<meta property="og:description" content="The Summer 2027 → May 2031 master calendar with recruiting windows and a &#x27;you are here&#x27; marker.">
-<meta property="og:url" content="https://gorg667.github.io/career-guide/roadmap.html">
+<meta property="og:title" content="Indicators dashboard — is the guide still right?">
+<meta property="og:description" content="The five falsifiable predictions and seven yearly indicators as a checklist — thresholds, last known values, where to look.">
+<meta property="og:url" content="https://gorg667.github.io/career-guide/indicators.html">
 <meta property="og:image" content="https://gorg667.github.io/career-guide/static/og-card.svg">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Interactive four-year timeline">
-<meta name="twitter:description" content="The Summer 2027 → May 2031 master calendar with recruiting windows and a &#x27;you are here&#x27; marker.">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Interactive four-year timeline", "url": "https://gorg667.github.io/career-guide/roadmap.html", "description": "The Summer 2027 → May 2031 master calendar with recruiting windows and a 'you are here' marker.", "applicationCategory": "EducationalApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "isAccessibleForFree": true, "isPartOf": {"@type": "WebSite", "name": "The 2027 CS/CE Career Guide", "url": "https://gorg667.github.io/career-guide/"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<meta name="twitter:title" content="Indicators dashboard — is the guide still right?">
+<meta name="twitter:description" content="The five falsifiable predictions and seven yearly indicators as a checklist — thresholds, last known values, where to look.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Indicators dashboard — is the guide still right?", "url": "https://gorg667.github.io/career-guide/indicators.html", "description": "The five falsifiable predictions and seven yearly indicators as a checklist — thresholds, last known values, where to look.", "applicationCategory": "EducationalApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "isAccessibleForFree": true, "isPartOf": {"@type": "WebSite", "name": "The 2027 CS/CE Career Guide", "url": "https://gorg667.github.io/career-guide/"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
 </head>
-<body class="page-tool page-roadmap">
+<body class="page-tool page-indicators">
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="topbar">
@@ -58,8 +58,8 @@
 <a href="explorer.html">Career explorer</a>
 <a href="compare.html">Compare careers</a>
 <a href="quiz.html">Which career fits me?</a>
-<a href="roadmap.html" class="active">Interactive timeline</a>
-<a href="indicators.html">Is the guide still right?</a>
+<a href="roadmap.html">Interactive timeline</a>
+<a href="indicators.html" class="active">Is the guide still right?</a>
 <div class="nav-group">Download</div>
 <a href="CS_CE_Career_Guide_2027.md" download>Full guide (Markdown)</a>
 <a href="https://github.com/gorg667/career-guide" target="_blank" rel="noopener">Source on GitHub</a>
@@ -68,25 +68,28 @@
   <main id="main" class="content" tabindex="-1">
     <div class="meta-line" id="top">Interactive tool</div>
     <article class="prose">
-      <!-- title: Interactive four-year timeline -->
-<!-- scripts: <script src="static/roadmap.js" defer></script> -->
-<h1>Interactive four-year timeline</h1>
-<p class="tool-intro">The master calendar from <a href="07-roadmap.html#sec-7-1">Section 7.1</a>, laid out against real dates from Summer 2027 to graduation in May 2031. The <strong>today</strong> marker is computed from your device clock, so this page tells you which recruiting windows are open <em>right now</em> and what the guide says you should be doing this term. Each period links to the detailed year-by-year section.</p>
+      <!-- title: Indicators dashboard — is the guide still right? -->
+<!-- scripts: <script src="static/indicators.js" defer></script> -->
+<h1>Indicators dashboard: is the guide still right?</h1>
+<p class="tool-intro">This guide was compiled in September 2026 for a student who graduates in 2031. It will age. <a href="01-landscape.html#sec-1-4">Section 1.4</a> made five falsifiable predictions and <a href="12-sources.html#sec-12-5">Section 12.5</a> lists the seven indicators to re-check each year. This page turns both into a checklist: what to look up, where, what the threshold is, what the last known value was, and what to conclude if it fails. Tick each card when you have checked it this year — ticks are saved in your browser.</p>
 
-<div id="nowBox" class="panel"></div>
+<div class="panel row" id="indSummary" aria-live="polite"></div>
 
-<h2 id="windows">Recruiting windows (Gantt view)</h2>
-<p class="small muted">Bars show when applications are typically open. The single most expensive mistake in the guide is missing the <strong>August–October</strong> opening of each cycle — many programs fill on a rolling basis long before their stated deadline.</p>
-<div class="table-wrap wide"><div id="gantt" class="gantt"></div></div>
+<h2 id="predictions">The five falsifiable predictions</h2>
+<p class="small muted">Status as of the guide's compile date (<span id="asOf"></span>). <strong>Holding</strong> = latest value on the guide's side; <strong>Watch</strong> = mixed or slow; <strong>Failing</strong> = contradicts the guide. Update your own reading with the "I checked this" box — the page never fetches live data.</p>
+<div id="predCards" class="ind-grid"></div>
 
-<h2 id="periods">Period by period</h2>
-<div class="tl-controls small">
-  <label><input type="checkbox" id="hidePast"> Hide periods that are already over</label>
-</div>
-<ol id="timeline" class="tl"></ol>
+<h2 id="yearly">The seven yearly indicators</h2>
+<p class="small muted">In order of importance. Each card says why it matters, where to look, how often it updates, and what "healthy" looks like for a 2027 entrant.</p>
+<div id="indCards" class="ind-grid"></div>
 
-<div class="callout small" style="margin-top:20px">
-  <strong>Dates are typical, not guaranteed.</strong> Big Tech, quant, and defense primes open in August–September; smaller companies recruit January–April; REU deadlines cluster in February; PhD applications are due December 1–15; MS applications December–March. Verify each employer's page every August. The full reasoning for each period is in <a href="07-roadmap.html">Section 7</a>, and the tickable version is <a href="checklists.html">Appendix B</a>.
+<h2 id="rule">The decision rule</h2>
+<div class="callout" id="decisionRule"></div>
+
+<div class="row" style="margin:16px 0">
+  <button class="btn sm" id="resetChecks">Clear my ticks</button>
+  <button class="btn sm" id="printInd" type="button">Print this page</button>
+  <span class="small muted">Best used once a year, each September, after the BLS release.</span>
 </div>
 
     </article>
@@ -111,6 +114,6 @@
 </div>
 
 <script src="static/site.js" defer></script>
-<script src="static/roadmap.js" defer></script>
+<script src="static/indicators.js" defer></script>
 </body>
 </html>

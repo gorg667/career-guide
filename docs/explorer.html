@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Career explorer — The 2027 CS/CE Career Guide</title>
-<meta name="description" content="Choosing Your Future — careers for students entering CS or CE in Fall 2027">
+<meta name="description" content="Sortable, filterable scorecard of all 29 careers — re-weight the six dimensions to match your priorities.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="static/style.css">
@@ -12,7 +12,19 @@
 // Apply saved theme before first paint to avoid a flash.
 (function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
 </script>
-
+<link rel="canonical" href="https://gorg667.github.io/career-guide/explorer.html">
+<meta name="last-modified" content="2026-09-04">
+<meta name="guide-version" content="2.1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The 2027 CS/CE Career Guide">
+<meta property="og:title" content="Career explorer">
+<meta property="og:description" content="Sortable, filterable scorecard of all 29 careers — re-weight the six dimensions to match your priorities.">
+<meta property="og:url" content="https://gorg667.github.io/career-guide/explorer.html">
+<meta property="og:image" content="https://gorg667.github.io/career-guide/static/og-card.svg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Career explorer">
+<meta name="twitter:description" content="Sortable, filterable scorecard of all 29 careers — re-weight the six dimensions to match your priorities.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Career explorer", "url": "https://gorg667.github.io/career-guide/explorer.html", "description": "Sortable, filterable scorecard of all 29 careers — re-weight the six dimensions to match your priorities.", "applicationCategory": "EducationalApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "isAccessibleForFree": true, "isPartOf": {"@type": "WebSite", "name": "The 2027 CS/CE Career Guide", "url": "https://gorg667.github.io/career-guide/"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
 </head>
 <body class="page-tool page-explorer">
 <a class="skip" href="#main">Skip to content</a>
@@ -47,6 +59,7 @@
 <a href="compare.html">Compare careers</a>
 <a href="quiz.html">Which career fits me?</a>
 <a href="roadmap.html">Interactive timeline</a>
+<a href="indicators.html">Is the guide still right?</a>
 <div class="nav-group">Download</div>
 <a href="CS_CE_Career_Guide_2027.md" download>Full guide (Markdown)</a>
 <a href="https://github.com/gorg667/career-guide" target="_blank" rel="noopener">Source on GitHub</a>
@@ -108,7 +121,7 @@
   </table>
 </div>
 
-<div class="row" style="margin:10px 0 18px"><a class="btn primary" id="compareLink" href="compare.html">Compare selected →</a><span class="muted small" id="compareHint">Tick up to 3 careers in the last column.</span></div>
+<div class="row" style="margin:10px 0 18px"><a class="btn primary" id="compareLink" href="compare.html">Compare selected →</a><button class="btn" id="printSel" type="button" title="One printable page per selected career (scores, comp, degree, scenarios, link)">Print cards for selected</button><span class="muted small" id="compareHint">Tick up to 3 careers in the last column.</span></div>
 
 <div class="callout small">
   <strong>How the weighted total works.</strong> Each 1–5 score is multiplied by its weight and the result is rescaled so the maximum is still 30, keeping numbers comparable to the guide's table. "Founding a startup" is unscored on D1–D4 in the guide and is listed without a total. Weights and selections are saved in this browser only. Scores are exactly those in <a href="10-tables.html#sec-10-1">§10.1</a>; the profile sections (<a href="03-tier1.html">3</a>, <a href="04-tier2.html">4</a>, <a href="05-tier3.html">5</a>) explain every number.
@@ -121,7 +134,7 @@
     </article>
     <div class="prevnext"></div>
     <footer class="foot">
-      <p><em>Choosing Your Future</em>, v2.0 (September 2026). Written for students entering CS/CE in Fall 2027. All figures are cited in <a href="12-sources.html">Section 12</a>; projections are judgments, labelled as such. <a href="CS_CE_Career_Guide_2027.md" download>Download the full Markdown</a>.</p>
+      <p><em>Choosing Your Future</em>, v2.1 (September 2026; site built 2026-09-04). Written for students entering CS/CE in Fall 2027. All figures are cited in <a href="12-sources.html">Section 12</a>; projections are judgments, labelled as such. Check whether the guide is still right on the <a href="indicators.html">indicators page</a>. <a href="CS_CE_Career_Guide_2027.md" download>Download the full Markdown</a>.</p>
     </footer>
   </main>
 

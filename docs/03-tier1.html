@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Section 3 — Tier 1 Careers: Highest Conviction — The 2027 CS/CE Career Guide</title>
-<meta name="description" content="Choosing Your Future — careers for students entering CS or CE in Fall 2027">
+<meta name="description" content="These six careers score ≥4 on demand durability, AI-resistance, and moat, and win in all three 2031 scenarios. They are listed in our order of…">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="static/style.css">
@@ -12,7 +12,19 @@
 // Apply saved theme before first paint to avoid a flash.
 (function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
 </script>
-
+<link rel="canonical" href="https://gorg667.github.io/career-guide/03-tier1.html">
+<meta name="last-modified" content="2026-09-04">
+<meta name="guide-version" content="2.1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The 2027 CS/CE Career Guide">
+<meta property="og:title" content="Section 3 — Tier 1 Careers: Highest Conviction">
+<meta property="og:description" content="These six careers score ≥4 on demand durability, AI-resistance, and moat, and win in all three 2031 scenarios. They are listed in our order of…">
+<meta property="og:url" content="https://gorg667.github.io/career-guide/03-tier1.html">
+<meta property="og:image" content="https://gorg667.github.io/career-guide/static/og-card.svg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Section 3 — Tier 1 Careers: Highest Conviction">
+<meta name="twitter:description" content="These six careers score ≥4 on demand durability, AI-resistance, and moat, and win in all three 2031 scenarios. They are listed in our order of…">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Section 3 — Tier 1 Careers: Highest Conviction", "url": "https://gorg667.github.io/career-guide/03-tier1.html", "description": "These six careers score ≥4 on demand durability, AI-resistance, and moat, and win in all three 2031 scenarios. They are listed in our order of…", "inLanguage": "en-US", "dateModified": "2026-09-04", "version": "2.1", "isPartOf": {"@type": "WebSite", "name": "The 2027 CS/CE Career Guide", "url": "https://gorg667.github.io/career-guide/"}, "about": ["computer science careers", "computer engineering careers", "college major choice", "AI and the software job market"], "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "sameAs": "https://github.com/gorg667/career-guide"}</script>
 </head>
 <body class="page-03-tier1">
 <a class="skip" href="#main">Skip to content</a>
@@ -47,13 +59,14 @@
 <a href="compare.html">Compare careers</a>
 <a href="quiz.html">Which career fits me?</a>
 <a href="roadmap.html">Interactive timeline</a>
+<a href="indicators.html">Is the guide still right?</a>
 <div class="nav-group">Download</div>
 <a href="CS_CE_Career_Guide_2027.md" download>Full guide (Markdown)</a>
 <a href="https://github.com/gorg667/career-guide" target="_blank" rel="noopener">Source on GitHub</a>
   </nav>
 
   <main id="main" class="content" tabindex="-1">
-    <div class="meta-line" id="top">29 min read · 6,775 words</div>
+    <div class="meta-line" id="top">37 min read · 8,587 words</div>
     <article class="prose">
       <h1 id="sec-3">Section 3 — Tier 1 Careers: Highest Conviction</h1>
 <p>These six careers score ≥4 on demand durability, AI-resistance, and moat, and win in all three 2031 scenarios. They are listed in our order of preference for a <em>typical</em> strong student, but the right one for <em>you</em> depends on the fit factors noted in each profile.</p>
@@ -111,8 +124,8 @@
 <td>BLS OOH</td>
 </tr>
 <tr>
-<td>BLS "Data scientists" growth 2024–34</td>
-<td>+34%</td>
+<td>BLS "Data scientists" growth 2025–35</td>
+<td>+35%</td>
 <td>BLS OOH</td>
 </tr>
 <tr>
@@ -133,6 +146,9 @@
 </ol>
 <h3 id="sec-3-1-a-day-in-the-life-mid-level-2026">A day in the life (mid-level, 2026)</h3>
 <p>Morning: review overnight eval-suite results for a new model version; a regression in tool-calling accuracy on one customer's workflow. Investigate with an agent's help, trace it to a prompt-template change, write a targeted eval so it cannot recur. Midday: pair with a data engineer on a pipeline that produces training examples from production logs (with privacy filtering). Afternoon: profile inference latency on the serving cluster; try a quantized variant; measure quality delta; write up the tradeoff for the team. Late: read one paper, skim the model release notes from two labs.</p>
+<h3 id="sec-3-1-a-week-in-the-life-new-grad-first-year-applied-ai-team-at-a">A week in the life (new grad, first year, applied-AI team at a mid-size product company)</h3>
+<p><strong>Monday.</strong> Team planning. Your ticket for the sprint: the customer-support agent is hallucinating refund policies for one product line. You are handed a Notion page of 40 bad transcripts and told to "figure out why and make an eval." <strong>Tuesday.</strong> You cluster the failures (an agent helps; you check its clusters by hand), discover the retrieval step is returning the <em>old</em> policy document, and write 25 golden test cases into the eval harness so the regression is caught automatically next time. <strong>Wednesday.</strong> Fix the retrieval filter; the eval goes from 60% to 96%; your PR gets three review comments, two about logging, one about a missing unit test. You learn that "it works in the notebook" is not a merge criterion. <strong>Thursday.</strong> Shadow the on-call engineer; watch how they read the inference-cost dashboard; realize how much of the job is cost-per-request, not model quality. <strong>Friday.</strong> Demo the eval to the team in a 10-minute slot; write the two-paragraph internal post; spend the last hour reading the model-release notes from two labs and updating a shared "what changed this month" doc that a senior engineer started and you have quietly taken over.
+<em>What is missing from this week:</em> training a model. Almost no new grad trains models. You measured, fixed a pipeline, wrote tests, and communicated. That is the job.</p>
 <h3 id="sec-3-1-entry-path-from-a-bs-no-grad-school">Entry path from a BS (no grad school)</h3>
 <p>Realistic — but the bar is high. The 2031 new-grad who lands an MLE role typically has:</p>
 <ul>
@@ -192,7 +208,7 @@
 <p>Security engineers make systems hard to attack and fast to recover. Unlike the "SOC analyst watching dashboards" stereotype, the modern <em>security engineer</em> is a software/systems engineer who specializes in adversarial thinking: designing authentication and authorization systems, auditing and hardening cloud infrastructure, finding and fixing vulnerabilities in code (yours and your dependencies'), building detection pipelines, running incident response, and — the fastest-growing piece — <strong>securing and red-teaming AI systems</strong> (prompt injection, data exfiltration via tools, model supply chain, agent permissioning).</p>
 <h3 id="sec-3-2-why-it-s-tier-1">Why it's Tier 1</h3>
 <ul>
-<li><strong>Demand is structural and accelerating.</strong> BLS projects information security analysts <strong>+29% (2024–34)</strong> — the second-fastest-growing occupation in the entire computer/math group after data scientists, and about <em>ten times</em> the all-occupation average. BLS explicitly cites AI adoption as a growth driver.</li>
+<li><strong>Demand is structural.</strong> BLS projects information security analysts <strong>+21% (2025–35)</strong> — still "much faster than average" and roughly <em>five times</em> the all-occupation rate, with ~14,100 openings a year. Note the honest downgrade: the prior cycle (2024–34) said +29%. The August 2026 re-basing trimmed growth across the whole computer group (from +10.1% to +7.3%) as the BLS folded in AI-productivity assumptions; security was trimmed <em>less</em> than software development, and the private-sector gap measures (CyberSeek's ~500k unfilled US roles) did not move. Our D1 score stays at 5 because the tiering rule scores <em>unfilled demand relative to supply</em>, not the BLS growth rate alone — but if the 2027 CyberSeek count falls below ~400k, revisit it.</li>
 <li><strong>AI is a force multiplier for both sides</strong>, which means more attacks, more surface area (every agent with tool access is a new attack vector), and more demand for defenders who understand both security <em>and</em> AI. There is no scenario in <a href="01-landscape.html#sec-1-5">Section 1.5</a> where this demand falls.</li>
 <li><strong>Multiple stacked moats:</strong> adversarial expertise is hard to fake; in government, defense, finance, and critical infrastructure a <strong>security clearance (US citizens only)</strong> or regulatory expertise adds a second moat; and the cost of error (breaches averaging $4–5M per IBM's annual study, plus regulatory fines) keeps accountable humans firmly in the loop.</li>
 <li><strong>Employer breadth.</strong> Every organization with data is a potential employer: tech, finance (16% of BLS infosec employment), government, healthcare, energy, defense, consultancies, and a large vendor ecosystem (CrowdStrike, Palo Alto, Wiz — whose engineering headcount grew <strong>+84% in two years</strong> before Google acquired it for $32B).</li>
@@ -208,14 +224,19 @@
 </thead>
 <tbody>
 <tr>
-<td>BLS growth 2024–34</td>
-<td>+29% (182,800 → 234,900)</td>
-<td>BLS OOH</td>
+<td>BLS growth 2025–35</td>
+<td>+21% (192,900 → 233,500); ~14,100 openings/yr</td>
+<td>BLS OOH (Aug 2026)</td>
 </tr>
 <tr>
-<td>BLS median pay (May 2024)</td>
-<td>$124,910; 90th pct $186,420</td>
-<td>BLS OOH</td>
+<td>BLS growth, prior cycle 2024–34</td>
+<td>+29% — downgraded in the Aug 2026 re-basing</td>
+<td>BLS OOH (Aug 2025)</td>
+</tr>
+<tr>
+<td>BLS median pay (May 2025)</td>
+<td>$129,180 (May 2024: $124,910; 90th pct $186,420)</td>
+<td>BLS OOH / OEWS</td>
 </tr>
 <tr>
 <td>Openings/yr</td>
@@ -258,6 +279,9 @@
 </ol>
 <h3 id="sec-3-2-a-day-in-the-life-product-security-engineer-mid-level">A day in the life (product security engineer, mid-level)</h3>
 <p>Morning: triage three new findings from the automated code-scanning pipeline; two are false positives (annotate and tune the rule), one is a real authorization bypass in a new API — write a proof of concept, file a P1, pair with the owning team on the fix. Midday: threat-model a new feature that lets an internal AI agent call external APIs on behalf of users; identify prompt-injection paths and propose a permission-scoping design. Afternoon: review a vendor's SOC 2 report; update the dependency-policy allowlist. Late: 30 minutes on a CTF challenge to keep sharp.</p>
+<h3 id="sec-3-2-a-week-in-the-life-new-grad-product-security-cloud-company">A week in the life (new grad, product security, cloud company)</h3>
+<p><strong>Monday.</strong> Vulnerability-management standup: 14 new findings from the code-scanning pipeline over the weekend. You own triage for two services. Nine are noise — you tune the rule and write down why. <strong>Tuesday.</strong> One finding is real: an internal API accepts a user ID from the request body instead of the session. You write a three-line proof of concept, record a 40-second screen capture, file it as a P1, and pair with the owning team's engineer on the fix. They are gracious; you learn to lead with the fix, not the blame. <strong>Wednesday.</strong> Threat-modeling session for a new feature; you are the junior in the room, so your job is the diagram and the notes — but you spot that an AI agent's tool permissions are not scoped per-tenant, and the senior engineer says "good catch" in front of everyone. <strong>Thursday.</strong> Bug-bounty queue: reproduce two external reports, reject one as a duplicate with a polite explanation, escalate the other. Read a vendor's pentest report and summarize it for the compliance team. <strong>Friday.</strong> Run a 45-minute "secure code review" session for a partner team using their own codebase; spend the afternoon on your quarterly project — a linter rule that catches the Tuesday bug class everywhere.
+<em>What is missing:</em> hacking. You spent the week reading other people's code, writing small tools, and talking. Offensive skill is the entry ticket; communication is the job.</p>
 <h3 id="sec-3-2-entry-path-from-a-bs">Entry path from a BS</h3>
 <p>Very realistic; security is one of the more BS-accessible Tier 1 fields.</p>
 <ul>
@@ -324,7 +348,7 @@
 </ul>
 <h3 id="sec-3-3-why-it-s-tier-1">Why it's Tier 1</h3>
 <ul>
-<li><strong>Highest median pay of any computing occupation in the BLS data: $155,020</strong> (computer hardware engineers, May 2024), with the semiconductor-manufacturing industry paying $162k and R&amp;D $179k medians. The 90th percentile is $224k <em>economy-wide</em> — and that excludes the equity that has made mid-career NVIDIA, Broadcom, and AMD engineers wealthy.</li>
+<li><strong>Highest median pay of any computing occupation in the BLS data: $161,740</strong> (computer hardware engineers, May 2025 — up from $155,020 a year earlier, a 4.3% rise that outpaced software developers), with the semiconductor-manufacturing industry paying $162k and R&amp;D $179k medians in the May 2024 detail. The 90th percentile was $224k <em>economy-wide</em> in 2024 — and that excludes the equity that has made mid-career NVIDIA, Broadcom, and AMD engineers wealthy.</li>
 <li><strong>Acute, documented talent shortage.</strong> SIA/Oxford Economics project the US semiconductor workforce growing ~115,000 jobs by 2030 with <strong>~67,000 (58%) at risk of going unfilled</strong>, including ~27,000 engineers and computer scientists. IEEE Spectrum, EE Times, and every industry CEO say the same thing: the pipeline is too thin, because a generation of US students chose software.</li>
 <li><strong>Geopolitics guarantees the investment.</strong> The CHIPS and Science Act ($39B manufacturing + $11B R&amp;D) plus $400B+ in announced private fab investment (TSMC Arizona, Intel Ohio/Arizona, Samsung Texas, Micron New York/Idaho, GlobalFoundries, TI) come online <strong>2027–2030 — precisely your college years and first job.</strong> Export controls and US–China competition make domestic chip talent a national-security priority that is very unlikely to reverse before 2031 under either party.</li>
 <li><strong>The AI boom is a chip boom.</strong> Every hyperscaler is now designing its own silicon (Google TPU, AWS Trainium/Inferentia, Microsoft Maia, Meta MTIA, OpenAI/Broadcom, Tesla Dojo) in addition to NVIDIA, AMD, and a dozen well-funded startups (Cerebras, Groq, SambaNova, Etched, Tenstorrent, d-Matrix). Cadence entered the top-20 companies by <em>software</em> openings in 2026; Micron, Qualcomm, and AMD are hiring far more software engineers than a year ago.</li>
@@ -342,9 +366,9 @@
 </thead>
 <tbody>
 <tr>
-<td>BLS median, computer hardware engineers (2024)</td>
-<td>$155,020; 90th pct $223,820</td>
-<td>BLS OOH</td>
+<td>BLS median, computer hardware engineers (May 2025)</td>
+<td>$161,740 (May 2024: $155,020; 90th pct $223,820)</td>
+<td>BLS OOH / OEWS</td>
 </tr>
 <tr>
 <td>Median in semiconductor mfg / R&amp;D industries</td>
@@ -352,9 +376,9 @@
 <td>BLS OOH</td>
 </tr>
 <tr>
-<td>BLS growth 2024–34</td>
-<td>+7% (76,800 → 82,400) — but see note</td>
-<td>BLS OOH</td>
+<td>BLS growth 2025–35</td>
+<td>+9% (76,100 → 83,000; ~4,100 openings/yr) — <em>raised</em> from +7% in the prior cycle; see note</td>
+<td>BLS OOH (Aug 2026)</td>
 </tr>
 <tr>
 <td>Electrical &amp; electronics engineers median</td>
@@ -378,7 +402,7 @@
 </tr>
 </tbody>
 </table></div>
-<p><em>Note on the BLS +7%:</em> that is the occupation "computer hardware engineer" narrowly defined. Much silicon work is classified by BLS as software developer, electrical engineer, or computer research scientist, and the BLS projections were made before the full scale of the AI-silicon capex wave. The <em>industry</em> forecasts (SIA, McKinsey's $1T-by-2030 semiconductor market) are the better guide to demand.</p>
+<p><em>Note on the BLS +9%:</em> that is the occupation "computer hardware engineer" narrowly defined. Much silicon work is classified by BLS as software developer, electrical engineer, or computer research scientist. It is worth noticing the direction of revision: in the August 2026 re-basing, the BLS <em>cut</em> the growth outlook for almost every software occupation and <em>raised</em> it for hardware engineers — the only Tier 1 occupation to be revised upward. The <em>industry</em> forecasts (SIA, McKinsey's $1T-by-2030 semiconductor market) are the better guide to demand.</p>
 <h3 id="sec-3-3-sub-specialties-ranked-by-supply-demand-imbalance-best-first">Sub-specialties ranked by supply/demand imbalance (best first)</h3>
 <ol>
 <li><strong>Design verification (DV)</strong> — the most under-supplied, the most BS-accessible, and a superb foundation for everything else. Start here if unsure.</li>
@@ -392,6 +416,9 @@
 </ol>
 <h3 id="sec-3-3-a-day-in-the-life-dv-engineer-2-years-in">A day in the life (DV engineer, 2 years in)</h3>
 <p>Morning: the nightly regression flagged 3 failures out of 4,000 tests on the memory-controller block. Debug waveforms; one is a testbench bug, two are a real corner-case in the arbitration logic. File the design bug with a minimal reproducer. Midday: extend the UVM sequence library for a new feature; write coverage points so you can <em>prove</em> the corner is tested. Afternoon: formal-verify an assertion the designer swears is impossible to violate (it isn't). Late: review a junior's testbench; help them use the AI assistant to generate constrained-random stimulus faster.</p>
+<h3 id="sec-3-3-a-week-in-the-life-new-grad-design-verification-gpu-accelera">A week in the life (new grad, design verification, GPU/accelerator team)</h3>
+<p><strong>Monday.</strong> The overnight regression on your block — a cache-coherence unit — shows 6 failures in 3,200 tests. Two are the same root cause: your testbench's scoreboard is mis-modeling a corner of the protocol. You fix the model; two failures disappear; the other four are real design bugs, and the designer wants a <em>minimal</em> reproducer for each. <strong>Tuesday.</strong> Minimal reproducers. This takes all day; you learn to read waveforms fast and to write a two-sentence bug description a designer can act on in 30 seconds. <strong>Wednesday.</strong> Coverage review with your lead. You are at 78% functional coverage; the gaps are the interesting part — three scenarios nobody has a test for. You write constrained-random sequences to hit them, using the AI assistant to generate the boilerplate and your own brain to decide what "interesting" means. <strong>Thursday.</strong> Tapeout is 11 weeks out, so the weekly triage meeting is tense; you present your block's status in 90 seconds with one slide. Afternoon: help a summer intern set up the simulator. <strong>Friday.</strong> Formal verification: try to prove an assertion the designer says is impossible to violate. The tool finds a 47-cycle counterexample. You have found a bug that no simulation would have hit before silicon. You go home early.
+<em>What is missing:</em> designing a chip. Nobody lets a new grad write RTL for a shipping block. But DV engineers know the design better than anyone but its author, and after two years you can move to design, architecture, or silicon software from a position of strength.</p>
 <h3 id="sec-3-3-entry-path-from-a-bs">Entry path from a BS</h3>
 <p>Realistic for DV, FPGA, silicon software, physical design, and test/product roles. RTL design and architecture increasingly prefer an MS, but strong BS candidates with tape-out or serious FPGA project experience get in.</p>
 <ul>
@@ -513,6 +540,9 @@
 </ol>
 <h3 id="sec-3-4-a-day-in-the-life-ml-infra-engineer-mid-level">A day in the life (ML infra engineer, mid-level)</h3>
 <p>Morning: a training job on 512 GPUs stalled at 87% utilization; profile and find a straggler node with a degraded NVLink; automate detection so the scheduler drains such nodes. Midday: design review for moving inference from a monolithic serving stack to disaggregated prefill/decode; model the cost and latency. Afternoon: capacity plan for next quarter — how many H200/B200-class nodes, what mix, what storage bandwidth. Late: on-call handoff; write up a postmortem from Tuesday's incident with an agent drafting the timeline from logs.</p>
+<h3 id="sec-3-4-a-week-in-the-life-new-grad-infrastructure-platform-team-at">A week in the life (new grad, infrastructure / platform team at a company running its own GPU fleet)</h3>
+<p><strong>Monday.</strong> On-call shadow week. Overnight a batch-training job silently ran at 60% of expected throughput for six hours — nobody paged because nothing <em>failed</em>. You are asked to figure out how the system could have noticed. <strong>Tuesday.</strong> You correlate node-level metrics, find one host whose interconnect is degraded, and write a detector: if any node's collective-op latency is 3× the median for 5 minutes, drain it and page. Small Python service, big consequence. <strong>Wednesday.</strong> Design review for a new internal tool that lets ML teams request GPU capacity without a Slack message to your team. You present the API; two senior engineers take it apart; you rewrite it. Afternoon: the Kubernetes upgrade you have been dreading goes fine because someone senior wrote a runbook in 2024, and you add three lines to it. <strong>Thursday.</strong> Capacity planning: a spreadsheet, a cost model, a question from finance about why utilization is 71% and not 90%. You learn that "because researchers hoard allocations" is true but not an acceptable answer, and you propose a preemptible-job tier instead. <strong>Friday.</strong> Write the postmortem for Monday's silent slowdown — with an agent drafting the timeline from logs and you rewriting every sentence that assigns blame into one that describes a system gap. Publish it company-wide. Ship the detector to production behind a flag.
+<em>What is missing:</em> glamour. You wrote perhaps 400 lines of code all week and prevented a recurring six-figure waste. Infrastructure is the job where a new grad can have a P&amp;L-visible impact in month three.</p>
 <h3 id="sec-3-4-entry-path-from-a-bs">Entry path from a BS</h3>
 <p>Very realistic — infrastructure teams at hyperscalers and infra companies hire new grads and interns steadily (new-grad SRE and infra rotations are among the most reliable Big Tech entry points).</p>
 <ul>
@@ -630,6 +660,9 @@
 </ol>
 <h3 id="sec-3-5-a-day-in-the-life-embedded-autonomy-engineer-at-a-drone-comp">A day in the life (embedded/autonomy engineer at a drone company)</h3>
 <p>Morning: a flight-test log shows a 40 ms hiccup in the control loop when the vision module saturates the bus; reproduce on the bench, trace it to a DMA priority misconfiguration, fix, and add a watchdog. Midday: integrate a new IMU driver; validate against the sim. Afternoon: pair with the ML team to quantize a perception model so it fits the thermal budget of the edge SoC. Late: pre-flight checklist review for tomorrow's range test.</p>
+<h3 id="sec-3-5-a-week-in-the-life-new-grad-embedded-autonomy-drone-or-robot">A week in the life (new grad, embedded / autonomy, drone or robotics company)</h3>
+<p><strong>Monday.</strong> Flight-test debrief from Friday's range day: one vehicle showed a 40 ms control-loop stall when the camera pipeline saturated the bus. You get the log files and the bench unit. <strong>Tuesday.</strong> Reproduce on the bench with a scripted load; trace the stall to a DMA priority setting nobody has touched since a 2025 board revision; fix; add a watchdog that logs and degrades gracefully instead of stalling. Hardware-in-the-loop test passes. <strong>Wednesday.</strong> Integrate a new IMU driver from the vendor; the datasheet is wrong about one register; you find this out the hard way and write it on the team wiki with a photo of the oscilloscope trace. <strong>Thursday.</strong> Pair with the perception engineer to get a quantized detection model to fit the SoC's thermal budget — you own the profiler and the power measurements; they own the model. Afternoon: the mechanical team wants a firmware change to a motor-controller timing parameter; you say no, then explain why, then find a compromise. <strong>Friday.</strong> Range day. You are the junior, so you carry batteries, run the pre-flight checklist, and watch the telemetry. Your Tuesday fix works on the real vehicle. A senior engineer lets you fly the last test.
+<em>What is missing:</em> AI, mostly. You touched a model for one afternoon. The rest was timing, buses, drivers, power, and physical reality — which is exactly why this job is hard to automate and hard to fill.</p>
 <h3 id="sec-3-5-entry-path-from-a-bs">Entry path from a BS</h3>
 <p>Realistic for embedded, robotics software infra, controls (with strong math), and hardware roles. Perception/learning research roles typically want an MS or PhD.</p>
 <ul>
@@ -685,7 +718,7 @@
 <p>Designing and operating the pipelines, warehouses, lakehouses, and quality systems that turn raw data into something models and decision-makers can use — and, on the data-science side, applying statistics and ML to answer questions and build predictive systems. In 2026 the two roles have converged toward each other: data scientists are expected to engineer, and data engineers are expected to understand modeling. The center of gravity has shifted decisively toward the <strong>engineering</strong> side ("analytics engineering," "ML data engineering," "data platform") and away from the "make dashboards and run notebooks" side, which is being automated.</p>
 <h3 id="sec-3-6-why-it-s-tier-1-with-a-caveat">Why it's Tier 1 (with a caveat)</h3>
 <ul>
-<li><strong>BLS's fastest-growing computing-adjacent occupation: data scientists +34% (2024–34)</strong>, from 245,900 to 328,300 jobs, ~23,400 openings a year. Even discounting for BLS's pre-agentic-AI assumptions, that is exceptional.</li>
+<li><strong>BLS's fastest-growing computing-adjacent occupation: data scientists +35% (2025–35)</strong>, from 275,600 to ~371,000 jobs, ~24,800 openings a year, median $120,230 (May 2025). Notably, in the August 2026 re-basing — which <em>cut</em> the outlook for the computer group as a whole — data scientists were one of the few computing occupations whose growth rate was held or nudged <em>up</em>, and the occupation is on the BLS top-ten fastest-growing list nationally.</li>
 <li><strong>Every AI system is a data system.</strong> Training data curation, synthetic data generation, evaluation datasets, feature stores, streaming pipelines for real-time ML, and data governance for AI compliance are all <em>growing</em> as a share of AI work. The frontier labs' most valuable asset after compute is data engineering.</li>
 <li><strong>Employer ubiquity.</strong> Unlike semiconductors or robotics, data roles exist in every industry and every metro: insurance (10% of BLS data-scientist employment), finance, healthcare, retail, government, and tech.</li>
 <li><strong>The caveat:</strong> the <em>low</em> end of this field — junior analyst roles that are mostly SQL, Excel, and dashboards — is being rapidly automated and is <strong>not</strong> Tier 1. We rate the <em>engineering-heavy</em> version Tier 1 and the analyst version Tier 3. Choose accordingly.</li>
@@ -701,9 +734,9 @@
 </thead>
 <tbody>
 <tr>
-<td>BLS data scientists growth 2024–34</td>
-<td>+34% (+82,500)</td>
-<td>BLS OOH</td>
+<td>BLS data scientists growth 2025–35</td>
+<td>+35% (+95,400); ~24,800 openings/yr; median $120,230</td>
+<td>BLS OOH (Aug 2026)</td>
 </tr>
 <tr>
 <td>BLS data scientists median (2024)</td>
@@ -736,6 +769,11 @@
 <li><strong>Domain data science</strong> — healthcare outcomes, insurance/actuarial ML, climate, sports, finance. The domain is the moat.</li>
 <li><strong>Data governance, privacy &amp; AI compliance engineering</strong> — a growing regulated niche (GDPR, CCPA, EU AI Act, HIPAA).</li>
 </ol>
+<h3 id="sec-3-6-a-day-in-the-life-data-platform-engineer-mid-level">A day in the life (data platform engineer, mid-level)</h3>
+<p>Morning: the nightly warehouse load finished four hours late because an upstream team changed a column type without notice; add a schema-contract check so the pipeline fails fast and pages the <em>owning</em> team, not yours. Midday: design review for moving the event stream from batch to Flink; argue for Iceberg tables so the ML team and the analytics team read the same data. Afternoon: profile a $30k/month query that a dashboard runs every five minutes; rewrite it into an incremental model; the bill drops 90%. Late: write the metric definitions for a new "active customer" measure that three teams currently compute differently.</p>
+<h3 id="sec-3-6-a-week-in-the-life-new-grad-data-engineering-fintech-or-e-co">A week in the life (new grad, data engineering, fintech or e-commerce)</h3>
+<p><strong>Monday.</strong> Data-quality standup: two dashboards disagreed on Friday's revenue by 0.4%. You are asked to find out why. <strong>Tuesday.</strong> The discrepancy is a timezone bug in a dbt model written in 2023 by someone who has left; you fix it, add a test that asserts daily totals reconcile against the ledger, and write a one-paragraph explanation the finance team can understand. <strong>Wednesday.</strong> Your sprint project: migrate a nightly Python script that three teams secretly depend on into the orchestrator with retries, alerts, and an owner. Half the work is finding the three teams. <strong>Thursday.</strong> Pair with an ML engineer who needs a feature table for a fraud model — 40 features, point-in-time correct, backfilled two years. You learn what "leakage" means in the worst possible way and rebuild the backfill. <strong>Friday.</strong> Cost review: the warehouse bill rose 18% last month; you find one exploratory notebook scanning a 4 TB table every hour and have a kind conversation with its owner. Afternoon: publish the "revenue metric — canonical definition" page, which will be read more than anything else you write this year.
+<em>What is missing:</em> modeling and statistics. Most new-grad data roles are plumbing, contracts, and definitions. The people who do this well become the ones trusted to build the ML data platform two years later.</p>
 <h3 id="sec-3-6-entry-path-from-a-bs">Entry path from a BS</h3>
 <p>Realistic. Data engineering is among the most BS-friendly Tier 1 paths; data-science roles at top companies increasingly prefer an MS in statistics/CS but hire strong BS candidates with research or internship depth.</p>
 <ul>
@@ -822,7 +860,7 @@
     </article>
     <div class="prevnext"><a class="pn prev" href="02-framework.html"><span>← Previous</span><strong>2 · The framework</strong></a><a class="pn next" href="04-tier2.html"><span>Next →</span><strong>4 · Tier 2 careers</strong></a></div>
     <footer class="foot">
-      <p><em>Choosing Your Future</em>, v2.0 (September 2026). Written for students entering CS/CE in Fall 2027. All figures are cited in <a href="12-sources.html">Section 12</a>; projections are judgments, labelled as such. <a href="CS_CE_Career_Guide_2027.md" download>Download the full Markdown</a>.</p>
+      <p><em>Choosing Your Future</em>, v2.1 (September 2026; site built 2026-09-04). Written for students entering CS/CE in Fall 2027. All figures are cited in <a href="12-sources.html">Section 12</a>; projections are judgments, labelled as such. Check whether the guide is still right on the <a href="indicators.html">indicators page</a>. <a href="CS_CE_Career_Guide_2027.md" download>Download the full Markdown</a>.</p>
     </footer>
   </main>
 
@@ -834,6 +872,7 @@
 <li class="toc-l3"><a href="#sec-3-1-the-data">The data</a></li>
 <li class="toc-l3"><a href="#sec-3-1-sub-specialties-pick-one-by-junior-year">Sub-specialties (pick one by junior year)</a></li>
 <li class="toc-l3"><a href="#sec-3-1-a-day-in-the-life-mid-level-2026">A day in the life (mid-level, 2026)</a></li>
+<li class="toc-l3"><a href="#sec-3-1-a-week-in-the-life-new-grad-first-year-applied-ai-team-at-a">A week in the life (new grad, first year, applied-AI team at a mid-size product company)</a></li>
 <li class="toc-l3"><a href="#sec-3-1-entry-path-from-a-bs-no-grad-school">Entry path from a BS (no grad school)</a></li>
 <li class="toc-l3"><a href="#sec-3-1-compensation-trajectory-us-2026-dollars-tech-company-employe">Compensation trajectory (US, 2026 dollars, tech-company employers)</a></li>
 <li class="toc-l3"><a href="#sec-3-1-risks-and-how-to-hedge">Risks and how to hedge</a></li>
@@ -846,6 +885,7 @@
 <li class="toc-l3"><a href="#sec-3-2-the-data">The data</a></li>
 <li class="toc-l3"><a href="#sec-3-2-sub-specialties">Sub-specialties</a></li>
 <li class="toc-l3"><a href="#sec-3-2-a-day-in-the-life-product-security-engineer-mid-level">A day in the life (product security engineer, mid-level)</a></li>
+<li class="toc-l3"><a href="#sec-3-2-a-week-in-the-life-new-grad-product-security-cloud-company">A week in the life (new grad, product security, cloud company)</a></li>
 <li class="toc-l3"><a href="#sec-3-2-entry-path-from-a-bs">Entry path from a BS</a></li>
 <li class="toc-l3"><a href="#sec-3-2-compensation-trajectory">Compensation trajectory</a></li>
 <li class="toc-l3"><a href="#sec-3-2-risks-and-how-to-hedge">Risks and how to hedge</a></li>
@@ -858,6 +898,7 @@
 <li class="toc-l3"><a href="#sec-3-3-the-data">The data</a></li>
 <li class="toc-l3"><a href="#sec-3-3-sub-specialties-ranked-by-supply-demand-imbalance-best-first">Sub-specialties ranked by supply/demand imbalance (best first)</a></li>
 <li class="toc-l3"><a href="#sec-3-3-a-day-in-the-life-dv-engineer-2-years-in">A day in the life (DV engineer, 2 years in)</a></li>
+<li class="toc-l3"><a href="#sec-3-3-a-week-in-the-life-new-grad-design-verification-gpu-accelera">A week in the life (new grad, design verification, GPU/accelerator team)</a></li>
 <li class="toc-l3"><a href="#sec-3-3-entry-path-from-a-bs">Entry path from a BS</a></li>
 <li class="toc-l3"><a href="#sec-3-3-compensation-trajectory">Compensation trajectory</a></li>
 <li class="toc-l3"><a href="#sec-3-3-risks-and-how-to-hedge">Risks and how to hedge</a></li>
@@ -870,6 +911,7 @@
 <li class="toc-l3"><a href="#sec-3-4-the-data">The data</a></li>
 <li class="toc-l3"><a href="#sec-3-4-sub-specialties">Sub-specialties</a></li>
 <li class="toc-l3"><a href="#sec-3-4-a-day-in-the-life-ml-infra-engineer-mid-level">A day in the life (ML infra engineer, mid-level)</a></li>
+<li class="toc-l3"><a href="#sec-3-4-a-week-in-the-life-new-grad-infrastructure-platform-team-at">A week in the life (new grad, infrastructure / platform team at a company running its own GPU fleet)</a></li>
 <li class="toc-l3"><a href="#sec-3-4-entry-path-from-a-bs">Entry path from a BS</a></li>
 <li class="toc-l3"><a href="#sec-3-4-compensation-trajectory">Compensation trajectory</a></li>
 <li class="toc-l3"><a href="#sec-3-4-risks-and-how-to-hedge">Risks and how to hedge</a></li>
@@ -882,6 +924,7 @@
 <li class="toc-l3"><a href="#sec-3-5-the-data">The data</a></li>
 <li class="toc-l3"><a href="#sec-3-5-sub-specialties">Sub-specialties</a></li>
 <li class="toc-l3"><a href="#sec-3-5-a-day-in-the-life-embedded-autonomy-engineer-at-a-drone-comp">A day in the life (embedded/autonomy engineer at a drone company)</a></li>
+<li class="toc-l3"><a href="#sec-3-5-a-week-in-the-life-new-grad-embedded-autonomy-drone-or-robot">A week in the life (new grad, embedded / autonomy, drone or robotics company)</a></li>
 <li class="toc-l3"><a href="#sec-3-5-entry-path-from-a-bs">Entry path from a BS</a></li>
 <li class="toc-l3"><a href="#sec-3-5-compensation-trajectory">Compensation trajectory</a></li>
 <li class="toc-l3"><a href="#sec-3-5-risks-and-how-to-hedge">Risks and how to hedge</a></li>
@@ -893,6 +936,8 @@
 <li class="toc-l3"><a href="#sec-3-6-why-it-s-tier-1-with-a-caveat">Why it&#x27;s Tier 1 (with a caveat)</a></li>
 <li class="toc-l3"><a href="#sec-3-6-the-data">The data</a></li>
 <li class="toc-l3"><a href="#sec-3-6-sub-specialties">Sub-specialties</a></li>
+<li class="toc-l3"><a href="#sec-3-6-a-day-in-the-life-data-platform-engineer-mid-level">A day in the life (data platform engineer, mid-level)</a></li>
+<li class="toc-l3"><a href="#sec-3-6-a-week-in-the-life-new-grad-data-engineering-fintech-or-e-co">A week in the life (new grad, data engineering, fintech or e-commerce)</a></li>
 <li class="toc-l3"><a href="#sec-3-6-entry-path-from-a-bs">Entry path from a BS</a></li>
 <li class="toc-l3"><a href="#sec-3-6-compensation-trajectory">Compensation trajectory</a></li>
 <li class="toc-l3"><a href="#sec-3-6-risks-and-how-to-hedge">Risks and how to hedge</a></li>
