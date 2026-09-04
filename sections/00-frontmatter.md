@@ -3,8 +3,8 @@
 
 *A data-driven, long-horizon essay and reference guide for the US student who starts a CS or CE degree in September 2027, graduates around May 2031, and will be mid-career in the 2040s.*
 
-**Version:** 1.0 — compiled September 2026
-**Length:** ~30,000 words. Read the TL;DR first; use the table of contents to jump.
+**Version:** 2.0 — compiled September 2026; revised after a full self-review (changes summarized in Section 12.1)
+**Length:** ~48,000 words. Read the TL;DR first; pick a reading path below; use the table of contents to jump.
 
 ---
 
@@ -16,7 +16,26 @@ This document is written for three readers:
 2. **The parent or counselor** who wants a candid, numbers-first answer to "Is this still a good bet?"
 3. **The already-admitted student** who wants a concrete four-year plan (2027–2031) that maximizes their odds of landing in the right career.
 
-Every major claim is tied to a source in Section 12. Where the data is contested, we say so. Where we are making a judgment call, we label it as a judgment. Our projections are for the **2029–2035 hiring window** — the years you will be looking for internships, your first job, and your first promotion — not for today.
+Every major statistical claim is tied to a primary source in Section 12.2; supporting figures from secondary reporting are listed in Section 12.3. Where the data is contested, we say so. Where we are making a judgment call, we label it as a judgment. Our projections are for the **2029–2035 hiring window** — the years you will be looking for internships, your first job, and your first promotion — not for today.
+
+### Reading paths
+
+| You have… | Read |
+|---|---|
+| **5 minutes** | The TL;DR below, then the One-Page Summary (Section 10.6). |
+| **30 minutes** | TL;DR → Section 1.5 (three scenarios) → Section 2.2–2.3 (how we score, the three questions) → Section 3.7 (choosing among the Tier 1 six) → Section 10.1 (master scorecard) → Section 7.1 (the master calendar). |
+| **Two hours** | Sections 1, 2, 3, 6, 7, and 10 in order, then the FAQ (Section 11.1). |
+| **The whole thing** | Front to back; it is written to be read that way. Then keep Appendix B pinned to a wall. |
+
+| You are… | Start with |
+|---|---|
+| **A high-school student choosing a major** | TL;DR → Section 6 (CS vs. CE) → Section 2.5 (personality and fit) → Section 10.2 (decision matrix) → the "How do I know if I'll like this?" FAQ. |
+| **A parent or counselor** | TL;DR → Section 1 (what happened and why) → Section 9.7 (paying for the degree) → Section 11.3 (risks and hedges) → the "I'm a parent — how can I help?" FAQ. |
+| **An already-admitted student** | Section 7 (the roadmap) → Section 8 (skills and proof) → Appendix B (checklists) → your target career's profile in Sections 3–4. |
+| **An international student** | Section 9.5 first, then the rest — it changes which fields and employers are realistic. |
+| **A US citizen open to defense or government** | Section 9.4 (clearances) and Section 8.9 (funded programs) early; they are your largest structural advantage. |
+
+**A note on "rank" versus "tier."** The TL;DR table below ranks careers by *expected value for a strong student who can stand out*, which rewards AI/ML's compensation ceiling and job count. The master scorecard in Section 10.1 sums *robustness* dimensions, which rewards infrastructure's accessibility and semiconductors' moat, and orders them differently. Both orderings are correct for their purpose; Section 2.2 explains the rule, and the honest answer is that any Tier 1 field pursued with depth beats any Tier 2 field pursued generically.
 
 ---
 
@@ -55,15 +74,41 @@ Every major claim is tied to a source in Section 12. Where the data is contested
 
 ## Table of Contents
 
-1. **The Landscape: What Happened 2022–2026 and What 2031 Will Look Like**
-2. **A Framework for Evaluating Any Tech Career**
-3. **Tier 1 Careers — Highest Conviction**
-4. **Tier 2 Careers — Strong Options**
-5. **Tier 3, Niche, and Contrarian Paths (and the Honest Take on Web Dev)**
-6. **CS vs. CE: Which Degree, Which Careers**
-7. **The Four-Year Roadmap: Summer 2027 → May 2031**
-8. **The Durable Skill Stack, Projects, Internships, Certifications, and Grad School**
-9. **Geography, Compensation, Employer Types, Clearances, and Immigration**
-10. **Master Comparison Tables and Decision Matrix**
-11. **FAQs, Myths, Risks, and Hedges**
-12. **Sources**
+**1. The Landscape: What Happened 2022–2026 and What 2031 Will Look Like**
+1.1 The Shock: 2022–2026 in Numbers · 1.2 Structural vs. Cyclical · 1.3 The Cobweb Cycle · 1.4 What the 2031 Market Will Probably Look Like (incl. falsifiable predictions) · 1.5 Three Scenarios for 2031 · 1.6 Key Takeaways
+
+**2. A Framework for Evaluating Any Tech Career**
+2.1 The Seven Dimensions · 2.2 How We Combine Them (tiering rule; tier ≠ rank) · 2.3 The Three Questions to Ask About Any Role · 2.4 The CS-vs-CE Lens · 2.5 Personality and Fit · 2.6 Worked Example: Scoring a Career This Guide Does Not Cover
+
+**3. Tier 1 Careers — Highest Conviction**
+3.1 AI / Machine Learning Engineer · 3.2 Security Engineer · 3.3 Semiconductor / Chip Design, Verification & Architecture · 3.4 Infrastructure / Distributed Systems / Platform (incl. AI Infrastructure) · 3.5 Robotics, Embedded & Autonomy ("Physical AI") · 3.6 Data Engineer / Data Scientist (Engineering-Heavy) · 3.7 How to Choose Among the Tier 1 Six
+
+**4. Tier 2 Careers — Strong Options**
+4.1 Forward Deployed Engineer · 4.2 Defense, Aerospace & National Security · 4.3 Quantum Computing · 4.4 Healthcare, Biotech & Life-Sciences Computing · 4.5 Fintech & Quantitative Development · 4.6 Energy, Climate & Grid · 4.7 Technical Product Management · 4.8 Cloud / DevOps at Non-Tech Enterprises · 4.9 Graphics, Game Engines & Spatial Computing · 4.10 Developer Tools & DevRel · 4.11 General Software Engineering at Top-Tier Employers · 4.12 Tier 2 Summary
+
+**5. Tier 3, Niche, and Contrarian Paths**
+5.1 Generalist Web / Full-Stack — The Honest Take · 5.2 Native Mobile · 5.3 QA / IT Support / SysAdmin · 5.4 Data / BI Analyst · 5.5 Game Development (Studios) · 5.6 Research Scientist / Academia · 5.7 Founding a Startup · 5.8 Computing + Law / Policy · 5.9 Computing + Medicine · 5.10 Teaching CS · 5.11 Contrarian Bets (COBOL/mainframe, EDA, HPC, and more) · 5.12 Tier 3 Summary
+
+**6. CS vs. CE: Which Degree, Which Careers**
+6.1 What Each Degree Is · 6.2 Which Careers Favor Which Degree · 6.3 The Case for CE · 6.4 The Case for CS · 6.5 A Decision Procedure · 6.6 Hybrids, Doubles, Minors, 4+1 · 6.7 "AI," "Data Science," "Cybersecurity," "Software Engineering" and Other Specialized Majors · 6.8 Co-op Programs · 6.9 Special Considerations (incl. under-represented students) · 6.10 Myths · 6.11 Bottom Line
+
+**7. The Four-Year Roadmap: Summer 2027 → May 2031**
+7.1 The Master Calendar · 7.2 Summer 2027 · 7.3 Year 1 · 7.4 Year 2 (incl. campus jobs as credentials) · 7.5 Year 3 · 7.6 Year 4 and failure-mode plans · 7.7 Two Sample Paths · 7.8 Roadmap Principles
+
+**8. The Durable Skill Stack, Projects, Competitions, Certifications, Interviews, Grad School, and Networking**
+8.1 The Durable Skill Stack · 8.2 The Two-Pass Rule · 8.3 The Portfolio · 8.4 Open Source · 8.5 Competitions · 8.6 Certifications · 8.7 Interview Preparation · 8.8 The Grad-School Decision · 8.9 Scholarships and Funded Programs · 8.10 Networking, Conferences, and Referrals · 8.11 Summary
+
+**9. Geography, Compensation, Employer Types, Clearances, Immigration, and Paying for the Degree**
+9.1 Geography · 9.2 Compensation (the three modes) · 9.3 Employer Types · 9.4 Security Clearances (incl. interim, Continuous Vetting, reinstatement) · 9.5 International Students (incl. the wage-weighted H-1B lottery, cap-exempt employers) · 9.6 Remote and Hybrid · 9.7 Paying for the Degree: Cost, Debt, and Return · 9.8 Summary
+
+**10. Master Comparison Tables and Decision Matrix**
+10.1 Master Scorecard · 10.2 Personality → Career Decision Matrix · 10.3 Compensation Summary · 10.4 Major → Career Map · 10.5 Scenario Stress Test · 10.6 One-Page Summary
+
+**11. FAQs, Myths, Risks, and Hedges**
+11.1 FAQ (26 questions, incl. transfer, AP credit, EE vs CE, specialized majors, hours/week, double majors, working abroad, and a parents' guide) · 11.2 Myths · 11.3 Risks and Hedges · 11.4 A Note on Uncertainty
+
+**12. Sources, Methodology, and How to Keep This Guide Current**
+12.1 Methodology and Version 2.0 changes · 12.2 Primary Sources · 12.3 Secondary Sources · 12.4 Programs and Institutions · 12.5 Indicators to Re-check Each Year
+
+**Appendices**
+A. Glossary (~105 terms) · B. Checklists: semester-by-semester, before each recruiting season, offer evaluation

@@ -214,7 +214,48 @@ These are dramatically under-applied-to relative to their value. Several effecti
 
 ---
 
-## 8.10 Section Summary
+## 8.10 Networking, Conferences, and Referrals: The Cheapest Odds Multiplier
+
+Section 7 mentioned in passing that a warm referral roughly triples your interview odds. That single fact deserves its own section, because networking is the highest-return, lowest-cost activity in this guide and the one engineering students most reliably neglect. In a market where new grads are ~10% of hires and companies prefer people they already know, *being known* is not a soft skill; it is the funnel.
+
+### Referrals: how they actually work
+
+- At most large employers, a referred application is routed to a recruiter for human review instead of (or before) the automated screen. That is the whole advantage — and it is enormous when the screen rejects 90%+ of applicants.
+- **Who can refer you:** any current employee, including a 23-year-old who interned there last summer. Alumni from your school one to three years ahead of you are the richest, most responsive source. Upperclassmen returning from internships are the second.
+- **How to ask:** a short, specific message — who you are, the exact posting ID, one sentence on why you fit, résumé attached, and an explicit "would you be comfortable referring me?" Most engineers say yes to a polite, prepared request; referral bonuses give them a reason. Never ask a stranger for "a chat about their journey" when what you want is a referral; ask for the referral.
+- **Reciprocity:** once you have interned somewhere, refer the people behind you. This is how a school's pipeline into a company gets built, and it compounds.
+
+### Conferences: go as a student volunteer
+
+Major technical conferences run **student volunteer programs** that waive registration (often $1,000+) and sometimes cover travel, in exchange for ~15–20 hours of badge-scanning and room-monitoring. In return you spend three days in the same building as every senior engineer and hiring manager in your target field. Apply four to six months ahead.
+
+| Field | Conferences worth volunteering at | Why |
+|---|---|---|
+| Security | DEF CON, Black Hat (student programs), BSides (free/cheap, everywhere), CSAW finals, ShmooCon | The security community hires from its own; a CTF finals appearance plus a DEF CON badge is a résumé line |
+| AI/ML | NeurIPS, ICML, ICLR (volunteer programs; also workshops accept undergrad posters), CVPR for vision | Lab recruiters attend; a workshop poster gets you 20 conversations with people who hire |
+| Semiconductors / architecture | DAC, ISCA, MICRO, Hot Chips (student rate), ISSCC (circuits) | Small, senior, industry-dense; students are rare and remembered |
+| Infrastructure / cloud | KubeCon + CloudNativeCon (Linux Foundation scholarships), SREcon, Strange Loop successors, USENIX ATC/OSDI/NSDI | CNCF and USENIX student grants are generous and under-applied |
+| Robotics | ICRA, IROS, RSS, ROSCon | Every autonomy company sends recruiters to ICRA |
+| Quantum | APS March Meeting, QIP, IEEE Quantum Week | Tiny field — everyone meets everyone |
+| Broad recruiting fairs | Grace Hopper Celebration, Tapia, NSBE, SHPE, SWE, oSTEM, AfroTech | Tier 1 employers interview on site; student travel scholarships are common |
+| Defense / gov | AFCEA events, SANS summits, agency-specific career fairs, university defense-industry days | Clearance-sponsoring employers concentrate here |
+
+At a conference, the goal is not to collect business cards. It is to have three real technical conversations a day and follow each one up within 48 hours with a two-line email and a link to something you built.
+
+### The low-effort habits that compound
+
+- **LinkedIn hygiene by year 2:** a real photo, a headline that names your target field ("CE student — RTL/verification, RISC-V, Tiny Tapeout"), pinned projects, and a one-paragraph About. Recruiters search LinkedIn by keyword; make sure yours contain the words in Sections 3–4.
+- **Alumni outreach cadence:** two messages a week to alumni in your target field from year 2 onward. Expect ~30% response; each response is a future referral.
+- **Office hours and faculty:** professors write the letters, know the lab managers, and get emails from former students who now hire. The professor whose office hours you attended every week is worth more than any online course.
+- **Local meetups and user groups** (Rust, Kubernetes, ML, hardware hacking, OWASP chapters): free, small, and full of the mid-career engineers who will refer you. Especially valuable outside the major hubs.
+- **Write publicly.** A short technical post that gets shared in your field's community is a networking event that runs while you sleep. Section 8.3 covers what to write.
+- **Be findable:** GitHub, a personal site or blog, a consistent handle. When someone hears your name after a conversation, they will search it.
+
+None of this substitutes for skill. All of it determines whether your skill gets a human's attention in a market that has automated away most of the other paths to one.
+
+---
+
+## 8.11 Section Summary
 
 - **Invest in long-half-life skills first:** math, systems, one low-level language, Python, SQL, Linux/Git, cloud, and engineering practice. Learn frameworks just in time.
 - **Two-pass rule:** learn every fundamental without AI, then use AI to go faster and bigger. Employers are now testing for exactly this distinction.
@@ -224,4 +265,5 @@ These are dramatically under-applied-to relative to their value. Several effecti
 - **Skip most certifications;** exceptions are OSCP, Security+ (as a DoD checkbox), CKA, and professional-level cloud/cloud-security certs for infra roles.
 - **Prepare for redesigned interviews:** proctored no-AI rounds, AI-allowed rounds judged on direction and verification, heavier systems and debugging emphasis.
 - **Grad school:** BS-to-industry by default; MS for semis, quant, robotics research, ML research engineering, and international students; PhD only for research careers — and the master's enrollment slump may make a funded MS a contrarian bargain by 2031.
+- **Network deliberately:** referrals roughly triple interview odds; volunteer at your field's conferences; two alumni messages a week from year 2; keep LinkedIn and GitHub findable.
 - **US citizens: SMART and SFS are the most under-used advantages in American CS/CE education.** Apply.

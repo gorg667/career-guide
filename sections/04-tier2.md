@@ -180,7 +180,34 @@ Tier 2 careers score well on most dimensions but carry one notable weakness — 
 
 ---
 
-## 4.11 Tier 2 Summary
+## 4.11 General Software Engineering (Backend / Product / Full-Stack) at Top-Tier Employers — The Honest Baseline
+
+**What it is.** The job most CS graduates have historically taken and most still will: a software engineer on a product or backend team at a Big Tech company, a well-funded scaleup, or a strong mid-size tech company — owning services, data models, APIs, and the features built on them. It is deliberately profiled *here*, separately from the generalist web/app developer in Section 5.1, because the two share a language stack and nothing else that matters: this role is defined by **ownership of a system at a Mode 2–3 employer**; that one is defined by *implementing specified features* at any employer.
+
+**Why it is still strong.**
+- **It is the largest market in this guide by a wide margin** — BLS counts ~1.9M software developers, projected +10% (2025–35), ~106,000 openings a year including replacement. Even a squeezed entry ramp into a market this size produces more new-grad jobs than semiconductors, robotics, and quantum combined.
+- **Pay at the top is Tier 1 pay.** Levels.fyi entry-level SWE median TC is ~$143k across all employers; Big Tech new grads $140–200k; senior $350–500k. The comp is a function of the *employer mode*, not the title.
+- **It is the best hub of all.** Two or three years as a strong generalist at a top employer is the most common on-ramp to infrastructure, ML engineering, security, FDE, PM, and founding. Most Tier 1 engineers over 30 started here.
+- **Demand is recovering, but for a different job.** Indeed's data (Section 1) shows postings up ~15% from the 2025 trough; 71% of the net gain is senior and 37% AI-titled. The 2031 version of this job is: specify, review, integrate, debug, and own systems while agents write most of the code.
+
+**Why it is Tier 2, not Tier 1.**
+- **Weakest moat of any recommended career (D3 = 2).** Nothing in the job requires hardware, clearance, regulation, deep math, or expensive tooling. Your competition is every CS graduate in the world plus increasingly capable agents. What protects you is *seniority and system ownership*, which you do not have at 22.
+- **Entry ramp is the most damaged in the market.** New grads fell from ~30% to ~10% of engineering hires at large tech companies 2023–2025; the Stanford Canaries effect is concentrated exactly here. The job is fine once you are in; getting in as a generalist is the hard part.
+- **Scenario B (Agentic Leap) hits this role hardest** of any Tier 1–2 career, because its median task set is the most substitutable.
+
+**How to make it work.** Treat it as a *Tier 1 career in disguise*: enter through a specialized team (infra, security, ML platform, payments, data) rather than a generic "SWE" pool; bring a depth artifact and an AI-native workflow; and give yourself a two-year deadline to acquire one of the moats in Sections 3–4 from inside the company. A generalist SWE at Google who becomes the team's Kubernetes or auth expert by 25 has quietly become a Tier 1 engineer. A generalist who is still a generalist at 28 is the person Scenario B is worst for.
+
+**Entry path.** Standard strong-CS preparation (Section 8.1), two internships, ~150–250 practiced algorithm problems, systems-design fluency, one shipped project with users. Target the specialized teams above in your applications, and prefer employers whose new-grad programs *rotate* (Google, Microsoft, Amazon, Stripe, Databricks, Capital One) so you can find a moat.
+
+**CS or CE?** Either. CS is the standard route; CE graduates are hired into these roles constantly and often gravitate toward the performance/infra side.
+
+| D1 | D2 | D3 | D4 | D5 | D6 |
+|---|---|---|---|---|---|
+| 4 | 3 | 2 | 5 | 5 | 4 |
+
+---
+
+## 4.12 Tier 2 Summary
 
 | Career | Best for | Watch out for |
 |---|---|---|
@@ -194,3 +221,4 @@ Tier 2 careers score well on most dimensions but carry one notable weakness — 
 | Enterprise cloud/DevOps | Flexibility, balance, non-coastal life | Lower ceiling |
 | Graphics / Simulation | Math + visual builders | Avoid the game-studio treadmill |
 | Dev tools / DevRel | Tool builders; communicators | DevRel volatility |
+| General SWE at top employers | The largest market; the best hub — if you enter through a specialized team | Weakest moat; hardest entry ramp; acquire a Tier 1 moat within two years |

@@ -6,42 +6,48 @@ This section consolidates the analysis of Sections 3–9 into reference tables y
 
 ## 10.1 Master Scorecard — All Careers
 
-**Dimensions:** D1 Demand growth 2027–35 · D2 AI-resistance · D3 Moat / barrier to entry · D4 Compensation · D5 Optionality · D6 BS-accessibility. **Total** is the simple sum (max 30); ties are broken by D2 then D1, because AI-resistance and demand are the two dimensions most likely to be decisive for a 2031 graduate.
+**Dimensions:** D1 Demand durability 2031–45 · D2 AI-resistance · D3 Moat / barrier to entry · D4 Compensation · D5 Optionality · D6 BS-accessibility. **Total** is the simple sum (max 30; half-points where a profile gave a range). Rows are sorted by Total *within each tier*; ties are broken by D2 then D1 then D3, because AI-resistance and demand are the two dimensions most likely to be decisive for a 2031 graduate. Scores are identical to those in the profiles of Sections 3–5.
+
+**Why the order here differs from the TL;DR.** The TL;DR in the front matter ranks by *expected value for a strong student who can stand out* (which rewards AI/ML's comp ceiling and job count). This table sums the *robustness* dimensions (which rewards infrastructure's accessibility and semiconductors' moat). Both are shown deliberately; see Section 2.2.
 
 | # | Career | Tier | D1 | D2 | D3 | D4 | D5 | D6 | Total | Best degree | 2031 scenario sensitivity |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Semiconductor / chip design, verification, architecture** | 1 | 5 | 5 | 5 | 5 | 3 | 3–4 | **26–27** | CE | Low: strong in A, B, C |
-| 2 | **Infrastructure / distributed systems / AI infra / SRE** | 1 | 5 | 5 | 4 | 4 | 5 | 5 | **28** | CS or CE | Low: grows in A and B; holds in C |
-| 3 | **Security engineer** (cloud, AppSec, AI security, detection) | 1 | 5 | 5 | 4 | 4 | 4 | 5 | **27** | CS (CE for hardware sec) | Very low: counter-cyclical |
-| 4 | **Robotics / embedded / autonomy** | 1 | 5 | 5 | 5 | 4 | 4 | 4 | **27** | CE (CS for perception/ML) | Medium: capital-intensive sector |
-| 5 | **AI / ML engineer (applied)** | 1 | 5 | 5 | 3 | 5 | 5 | 3–4 | **26–27** | CS | Medium: highest upside in B, compresses in C |
-| 6 | **Data engineer / engineering-heavy data scientist** | 1 | 5 | 3 | 3 | 3–4 | 4 | 5 | **23–24** | CS | Medium: analyst layer erodes; platform layer grows |
-| 7 | **Defense / aerospace / national-security engineering** (cleared) | 2 | 5 | 5 | 5 | 3–4 | 3 | 5 | **26–27** | CS or CE | Very low: budget-driven, counter-cyclical; **citizens only** |
-| 8 | **Energy / climate / grid computing** | 2 | 5 | 5 | 4 | 3 | 3 | 5 | **25** | CE or CS | Low: data-center power demand is structural |
-| 9 | **Fintech / quant development / trading tech** | 2 | 4 | 5 | 4 | 5 | 3 | 4 | **25** | CS | Medium: quant is elite-only; fintech cyclical |
-| 10 | **Forward-deployed / AI solutions engineer** | 2 | 4 | 5 | 3 | 5 | 5 | 3 | **25** | CS | High: a bet on enterprise AI adoption (A/B) |
-| 11 | **Healthcare / biotech / life-sciences computing** | 2 | 5 | 4 | 4 | 3 | 3 | 4 | **23** | CS | Low: demographics-driven |
-| 12 | **Quantum computing engineer** | 2 | 4 | 5 | 5 | 4 | 3 | 2 | **23** | CE/physics or CS | High: long-dated; MS/PhD usually required |
-| 13 | **Graphics / game engines / simulation / spatial** | 2 | 3 | 4 | 4 | 4 | 4 | 3 | **22** | CS | Medium |
-| 14 | **Technical product management** (after eng years) | 2 | 3 | 5 | 3 | 4 | 5 | 2 | **22** | CS | Low, but not a first job |
-| 15 | **Cloud / DevOps / platform at non-tech enterprises** | 2 | 4 | 4 | 2 | 3 | 4 | 5 | **22** | CS | Low: steady, unglamorous |
-| 16 | **Developer tools** (engineering track) | 2 | 4 | 4 | 3 | 4 | 4 | 3 | **22** | CS | Medium |
-| 17 | Developer relations / technical education | 2 | 2 | 3 | 3 | 3 | 4 | 3 | 18 | CS | High: cyclical marketing budgets |
-| 18 | Research scientist / academia (PhD) | 3 | 3 | 4 | 5 | 3 | 3 | 1 | 19 | CS/CE + PhD | Medium; depends on funding climate |
-| 19 | Founding a startup | 3 | — | — | — | — | 5 | 5 | n/a | Either | Extreme variance; better as second act |
-| 20 | Contrarian niches (COBOL/mainframe, embedded legacy, EDA tools, HPC, controls) | 3 | 4 | 5 | 5 | 3–4 | 2 | 4 | 23–24 | CE | Low; small markets |
-| 21 | Native mobile development | 3 | 2 | 2 | 2 | 3 | 3 | 5 | 17 | CS | High: cross-platform + AI compress it |
-| 22 | Computing + law / policy / government | 3 | 3 | 4 | 4 | 3 | 3 | 2 | 19 | CS | Low |
-| 23 | Computing + medicine (MD path) | 3 | 4 | 5 | 5 | 4 | 2 | 1 | 21 | CS | Low; 8+ years training |
-| 24 | Game development (studios) | 3 | 2 | 3 | 3 | 2 | 3 | 4 | 17 | CS | High: layoffs, low pay |
-| 25 | Generalist web / full-stack developer | 3 | 2 | 2 | 1 | 2–3 | 3 | 5 | **15–16** | CS | Very high: the most AI-exposed engineering role |
-| 26 | Data analyst / BI analyst | 3 | 2 | 1 | 1 | 2 | 3 | 5 | 14 | CS | Very high |
-| 27 | Teaching CS (K-12 / community college) | 3 | 3 | 4 | 3 | 1 | 2 | 4 | 17 | CS | Low but poorly paid |
-| 28 | QA / test engineering, IT support, sysadmin | 3 | 1 | 1 | 1 | 1 | 2 | 5 | 11 | — | Very high |
+| 1 | **Infrastructure / distributed systems / AI infra / SRE** (3.4) | 1 | 5 | 5 | 4 | 4 | 5 | 5 | **28** | CS or CE | Low: grows in A and B; holds in C |
+| 2 | **Security engineer** (cloud, AppSec, AI security, detection) (3.2) | 1 | 5 | 5 | 4 | 4 | 4 | 5 | **27** | CS (CE for hardware sec) | Very low: counter-cyclical |
+| 3 | **Robotics / embedded / autonomy** (3.5) | 1 | 5 | 5 | 5 | 4 | 4 | 4 | **27** | CE (CS for perception/ML) | Medium: capital-intensive sector |
+| 4 | **Semiconductor / chip design, verification, architecture** (3.3) | 1 | 5 | 5 | 5 | 5 | 3 | 3.5 | **26.5** | CE | Low: strong in A, B, C |
+| 5 | **AI / ML engineer (applied)** (3.1) | 1 | 5 | 5 | 3 | 5 | 5 | 3.5 | **26.5** | CS | Medium: highest upside in B, compresses in C |
+| 6 | **Data engineer / engineering-heavy data scientist** (3.6) | 1 | 5 | 3 | 3 | 3.5 | 4 | 5 | **23.5** | CS | Medium: analyst layer erodes; platform layer grows |
+| 7 | **Defense / aerospace / national-security engineering** (cleared) (4.2) | 2 | 5 | 5 | 5 | 3.5 | 3 | 5 | **26.5** | CS or CE | Very low: budget-driven, counter-cyclical; **Tier 1 for US citizens** |
+| 8 | **Energy / climate / grid computing** (4.6) | 2 | 5 | 5 | 4 | 3 | 3 | 5 | **25** | CE or CS | Low: data-center power demand is structural |
+| 9 | **Fintech / quant development / trading tech** (4.5) | 2 | 4 | 5 | 4 | 5 | 3 | 4 | **25** | CS | Medium: quant is elite-only; fintech cyclical |
+| 10 | **Forward-deployed / AI solutions engineer** (4.1) | 2 | 4 | 5 | 3 | 5 | 5 | 3 | **25** | CS | High: a bet on enterprise AI adoption (A/B) |
+| 11 | **Quantum computing engineer** (4.3) | 2 | 4 | 5 | 5 | 4 | 3 | 2 | **23** | CE/physics or CS | High: long-dated; MS/PhD usually required |
+| 12 | **Healthcare / biotech / life-sciences computing** (4.4) | 2 | 5 | 4 | 4 | 3 | 3 | 4 | **23** | CS | Low: demographics-driven |
+| 13 | **General software engineering at top-tier employers** (4.11) | 2 | 4 | 3 | 2 | 5 | 5 | 4 | **23** | CS or CE | High: Scenario B hits generalists hardest; largest market by far |
+| 14 | **Technical product management** (after eng years) (4.7) | 2 | 3 | 5 | 3 | 4 | 5 | 2 | **22** | CS | Low, but not a first job |
+| 15 | **Graphics / game engines / simulation / spatial** (4.9) | 2 | 3 | 4 | 4 | 4 | 4 | 3 | **22** | CS | Medium |
+| 16 | **Developer tools** (engineering track) (4.10) | 2 | 4 | 4 | 3 | 4 | 4 | 3 | **22** | CS | Medium |
+| 17 | **Cloud / DevOps / platform at non-tech enterprises** (4.8) | 2 | 4 | 4 | 2 | 3 | 4 | 5 | **22** | CS | Low: steady, unglamorous |
+| 18 | Developer relations / technical education (4.10) | 2 | 2 | 3 | 3 | 3 | 4 | 3 | 18 | CS | High: cyclical marketing budgets |
+| 19 | Contrarian niches (COBOL/mainframe, analog/RF, OT/PLC, medical firmware, formal methods, PQC, EDA tools, HPC) (5.11) | 3 | 4 | 5 | 5 | 3.5 | 2 | 4 | 23.5 | CE (CS for EDA/HPC/PQC) | Low; small markets — Tier 3 only because each niche is small |
+| 20 | Research scientist / academia (PhD) (5.6) | 3 | 3 | 5 | 5 | 3 | 4 | 1 | 21 | CS/CE + PhD | Medium; depends on funding climate |
+| 21 | Computing + medicine (MD path) (5.9) | 3 | 4 | 5 | 5 | 4 | 2 | 1 | 21 | CS | Low; 11+ years training |
+| 22 | Computing + law / policy / government (5.8) | 3 | 3 | 4 | 4 | 3 | 3 | 2 | 19 | CS | Low |
+| 23 | Generalist web / full-stack developer (5.1) | 3 | 2 | 2 | 1 | 3 | 4 | 5 | 17 | CS | Very high: the most AI-exposed engineering role |
+| 24 | Teaching CS (K-12 / community college) (5.10) | 3 | 3 | 4 | 3 | 1 | 2 | 4 | 17 | CS | Low but poorly paid |
+| 25 | Native mobile development (5.2) | 3 | 2 | 2 | 2 | 3 | 3 | 4 | 16 | CS | High: cross-platform + AI compress it |
+| 26 | Game development (studios) (5.5) | 3 | 2 | 2 | 2 | 2 | 3 | 3 | 14 | CS | High: layoffs, low pay |
+| 27 | Data analyst / BI analyst (5.4) | 3 | 2 | 1 | 1 | 2 | 3 | 5 | 14 | CS | Very high |
+| 28 | QA / test engineering, IT support, sysadmin (5.3) | 3 | 1 | 1 | 1 | 1 | 3 | 5 | 12 | — | Very high |
+| — | Founding a startup (5.7) | 3 | — | — | — | — | 5 | 5 | n/a | Either | Extreme variance; better as second act |
 
-**Reading the table.** The top of the table is dominated by careers where *software meets something hard* — physics (semis, robotics, energy), adversaries (security, defense), scale (infrastructure), or frontier models (AI/ML). The bottom is dominated by careers where the work is *pure software glue* that agents now generate. That is the central pattern of this guide and it will not reverse by 2031.
+**Reading the table.** The top of the table is dominated by careers where *software meets something hard* — physics (semis, robotics, energy), adversaries (security, defense), scale (infrastructure), or frontier models (AI/ML). The bottom is dominated by careers where the work is *pure software glue* that agents now generate. That is the central pattern of this guide and it is very unlikely to reverse by 2031.
 
-Note the specific ranking nuance: **infrastructure scores highest on total** because it is the only Tier 1 field that is simultaneously BS-accessible (5), high-optionality (5), and AI-resistant (5) — it is the safest *single* bet. **Semiconductors and robotics score highest on moat**, which makes them the best bets for students who want low competition and stability. **AI/ML scores highest on comp and upside** but lowest on moat among Tier 1 — the best bet for students who can stand out.
+Three ranking nuances worth noticing:
+- **Infrastructure scores highest on total** because it is the only Tier 1 field that is simultaneously BS-accessible (5), high-optionality (5), and AI-resistant (5) — it is the safest *single* bet.
+- **Semiconductors and robotics score highest on moat**, which makes them the best bets for students who want low competition and stability. **AI/ML scores highest on comp and upside** but lowest on moat among Tier 1 — the best bet for students who can stand out.
+- **Defense (26.5) out-scores three Tier 1 careers** and is Tier 2 only because of the citizenship gate. If you are a US citizen open to the sector, read it as Tier 1. Likewise the **contrarian niches (23.5)** out-score most of Tier 2 on the dimensions and are Tier 3 only because each niche's absolute job count is small.
 
 ---
 
@@ -77,9 +83,9 @@ US total compensation, 2026 dollars, typical ranges. New-grad = 0–1 year; Mid 
 
 | Career | New-grad TC | Mid-career TC | Senior TC | BLS median (all levels) | Comp trend 2026→31 |
 |---|---|---|---|---|---|
-| AI/ML engineer | $150–220k | $250–400k | $400–700k+ | — (MLE Levels.fyi median $279k) | ↑ premium widening |
+| AI/ML engineer | $130–220k | $250–400k | $400–700k+ | — (MLE Levels.fyi median $279k) | ↑ premium widening |
 | Quant dev / researcher | $200–350k | $400–700k | $600k–$1.5M+ | — | → elite, stable |
-| Software engineer (Big Tech) | $140–200k | $220–350k | $350–500k | $135,980 (developers) | → flat real |
+| General SWE at top-tier employers (4.11) | $140–200k | $220–350k | $350–500k | $135,980 (developers, all employers) | → flat real; entry ramp narrow |
 | Infrastructure / SRE / distributed | $130–190k | $220–350k | $350–500k | — | ↑ AI-infra demand |
 | Security engineer | $100–160k | $180–280k | $280–450k | $124,910 (infosec analysts) | ↑ steady |
 | Semiconductor design / verification | $110–150k (BS); $130–175k (MS) | $180–260k | $260–400k+ (NVIDIA/Apple/AMD higher) | $155,020 (hardware eng) | ↑ CHIPS + AI silicon |
@@ -113,6 +119,7 @@ Recommended major for each career, with the minor or elective cluster that most 
 | Infrastructure / distributed | Either | — | OS, distributed systems, networks; Rust/Go; cloud + Kubernetes |
 | Robotics / embedded / autonomy | CE | CS (perception/planning) or ME | Controls, signals, embedded systems, ROS 2; robotics team |
 | Data engineer / DS | CS | Statistics | Databases, statistics; SQL depth; one warehouse; orchestration |
+| General SWE at top-tier employers | Either | — | Systems depth; two internships; enter via a specialized team (infra, security, ML platform, payments) |
 | Forward-deployed engineer | CS | Either | Communication courses; a business or domain minor; hackathons |
 | Defense / aerospace | Either | EE / aero | US citizenship; clearance-track internships; SMART/SFS; embedded or infra depth |
 | Quantum | CE or physics double | CS (algorithms/compilers) | Quantum mechanics, linear algebra, information theory; plan PhD/MS |
@@ -149,6 +156,7 @@ How each Tier 1–2 career fares under the three 2031 scenarios from Section 1 (
 | Enterprise cloud | ✔ | ~ | ✔ | Medium-high |
 | Graphics / simulation | ~ | ✔ | ~ | Medium |
 | Technical PM | ✔ | ✔ | ~ | Medium |
+| General SWE at top employers | ✔ | ~ (generalists squeezed; system owners fine) | ✔ | Medium |
 | Web / mobile generalist | ✘ | ✘✘ | ~ | **Lowest** |
 
 **Portfolio logic:** a student who cannot decide between two Tier 1 fields should note that **security + infrastructure**, **semis + AI infra**, and **robotics + embedded security** are natural pairs that hedge across scenarios and are also the intersections where the highest-paid, least-crowded jobs sit.
@@ -166,6 +174,6 @@ If you print one page, print this.
 5. **Learn fundamentals without AI, then use AI for everything.** Employers are now testing for exactly this.
 6. **US citizens: get a clearance** via SMART, SFS, or a defense-track internship. It is the largest under-used advantage available.
 7. **International students: target sponsoring, high-wage Tier 1 employers; plan for an MS; build an O-1 record.**
-8. **Do not build a career on generalist web/mobile/BI/QA.** Learn them as skills; do not make them your identity.
+8. **Do not build a career on generalist web/mobile/BI/QA.** Learn them as skills; do not make them your identity. General SWE at a top employer is fine as a *first* job — if you use it to acquire a Tier 1 moat within two years (Section 4.11).
 9. **First job: learning rate and brand over comp or mission.**
 10. **Plan the failure modes** (Section 7.6) so a bad cycle costs months, not years.

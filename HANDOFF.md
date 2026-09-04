@@ -86,4 +86,50 @@ CE = scarcer degree, unlocks semis/robotics/embedded/defense/energy, and every C
 - 2026-09-03 (resume #3): Section 09 write was interrupted and lost (file never landed). 00–08 committed/pushed (HEAD e1b8c96). Rewriting 09 in two chunks (09a market/comp/employers; 09b clearances/international/remote) to reduce loss risk. Then 10, 11, 12, build, PR.
 
 - 2026-09-03 (resume #3, cont.): Sections 09 (2 chunks), 10, 11, 12 written and pushed. Full build: 36,608 words / 2,232 lines. README updated. Next: squash + PR genspark_ai_developer → main. STATUS: CONTENT COMPLETE.
+- 2026-09-03/04: INTERRUPTION #4 (credit exhaustion) hit during E6; sandbox was recreated on a new account with the repo re-cloned at b734e17. E6 edits had not landed and were redone. Lesson: keep each step to ONE file + immediate push.
 - 2026-09-03: PR #1 created: https://github.com/gorg667/career-guide/pull/1 (genspark_ai_developer → main). TASK COMPLETE. Any further work: edit sections/*.md, run build.sh, commit, push — PR auto-updates.
+
+---
+
+# PHASE 2 — COMPREHENSIVE REVIEW & IMPROVEMENT (started 2026-09-03)
+
+## New user instruction (verbatim)
+> Now I want you to fully and comprehensively review the guide you made and improve it as much as possible, make it the best. [...] document everything about your reasoning and constantly push work to github incrementally so nothing is lost and next instance of you with compacted context can continue with minimal degradation.
+
+## Phase 2 method
+1. Read every section in `sections/` end-to-end; write a critique file `REVIEW.md` (per-section weaknesses, factual risks, gaps, inconsistencies). Commit + push the critique BEFORE editing anything, so the plan survives interruption.
+2. Fix issues section by section, smallest-risk-first. One commit + push per section edited. Record each fix in the Phase 2 progress table below.
+3. Add net-new content where the critique finds gaps (see REVIEW.md "Gaps" list).
+4. Re-run `bash build.sh`, commit, push. PR #1 auto-updates.
+5. Update README word count.
+
+## Phase 2 progress
+| Step | Status | Notes |
+|---|---|---|
+| Log phase 2 in HANDOFF | DONE | |
+| Full read-through + REVIEW.md critique | DONE | REVIEW.md has IDs A1–A12 (inconsistencies), B1–B9 (factual risks), C1–C15 (gaps), D1–D4 (style), and execution order E1–E15. Follow E-order. |
+| E2: edit 01, 02 (A3,A4,A7,B1,B3,B5,B9,C14,C15) | DONE | 01: modes not tiers for comp; S174 precise; AI-lab rounds confirmed; 5 falsifiable predictions table added to 1.4. 02: tiering rule rewritten (2.2) so AI/ML & Data caveats + Defense/Energy Tier-2 reasons are explicit; tier≠rank note; 2.6 worked example (AR/VR). |
+| E3: edit 05 (A5 canonical scores, A8 add EDA/HPC niches, B4) | DONE | Canonical Tier-3 scores now: Web 2,2,1,3,4,5; Mobile 2,2,2,3,3,4; QA/IT 1,1,1,1,3,5; Games 2,2,2,2,3,3; Research 3,5,5,3,4,1. §10.1 must match these. Added pointer to new §4.11 (general SWE at top employers). |
+| E4: edit 04 (C1) | DONE | New §4.11 General SWE at top-tier employers, Tier 2, scores 4,3,2,5,5,4=23. Summary renumbered 4.12. Must add row to §10.1/10.3/10.5, §6.2. |
+| E5: edit 10 | DONE | §10.1 fully rewritten: sorted by total within tier, half-points, section refs per row, scores match §3–5, SWE row added, Defense/contrarian nuance. §10.3/10.4/10.5/10.6 harmonized. |
+| E6: edit 06 | DONE | New §6.7 specialized majors table (AI/DS/Cyber/SE/IT/EE/CSE verdicts); new §6.8 co-op programs; §6.9 Special Considerations (+ under-represented students para); Myths→6.10, Bottom line→6.11. NOTE: first attempt was lost to interruption; re-applied in new sandbox. |
+| E7: edit 07 | DONE | Program-name volatility hedge in 7.3; 'campus jobs as credentials' para (TA/RA/IT/tutoring) in 7.4. |
+| E8: edit 08 (C5 new §8.10 Networking/conferences/referrals; summary→8.11) | DONE | referrals mechanics, conference-volunteer table by field, compounding habits; summary bullet added |
+| E9: edit 09 (A9 AI/ML band, A11 intl share, B2 H-1B final rule tense, B7 lottery odds hedge, C4 new §9.7 Paying for the degree, C12 clearance detail, C13 cap-exempt/Day-1 CPT; summary→9.8) | DONE | §9.4 'Mechanics worth knowing' (interim, CV, 24-mo currency, reciprocity); §9.5 weighted-selection final rule w/ OEWS entries, cap-exempt item 3, Day-1 CPT item 9, strategy list renumbered 1–9; new §9.7 (8 rules of thumb); summary 9.8 w/ 2 new bullets. §10.3 already $130–220k. |
+| E10: fix 03a §3.1 'Section 8.6' → '8.8' | DONE | all other Section X.Y cross-refs validated against headings |
+| E11: edit 11 (C10 FAQ additions) | DONE | 8 new Qs inserted after 'Which school' Q: CC transfer, AP credit, EE vs CE, BS in AI/DS/Cyber (→6.7), hours/week, double major, work abroad, parent help |
+| E12: edit 12 (A2/A12 soften; secondary-sources list) | DONE | §12.1 over-claim softened + 'Version 2.0 changes' paragraph; new §12.3 Secondary Sources (analytics, studies, gov docs incl. Fed Reg H-1B rule, financial press); old 12.3→12.4, 12.4→12.5 |
+| E13: create sections/13-appendices.md (C7 glossary, C8 checklists) | DONE | Appendix A glossary ~105 terms in 9 groups; Appendix B: B.1 semester checklist Su2027→Sp2031, B.2 recruiting-season, B.3 offer evaluation; '*End of guide.*' moved here from §12 |
+| E14: edit 00 front matter (A1 v2.0/word count/date, A2 soften, A6 rank≠tier note, C9 reading paths, D3 TOC incl. 4.11/6.7/6.8/8.10/9.7/appendices) | DONE | v2.0, ~48,000 words; sourcing claim softened; two reading-path tables (by time, by reader); rank-vs-tier note; full subsection-level TOC incl. appendices |
+| E15: build.sh, README update, HANDOFF final status, PR #1 description, share URL | DONE | Final build 48,774 words / 2,803 lines. README v2.0. All REVIEW.md items A1–A12, B1–B9, C1–C15, D1–D4 verified addressed (B6 = leave as-is; D2 = leave). Markdown QA: all tables column-consistent, no unbalanced bold, all Section X.Y cross-refs resolve. PR #1 description updated. |
+
+## Phase 2 status: COMPLETE (v2.0)
+**PR #1 (v1.0) was merged to main. v2.0 lives in PR #2: https://github.com/gorg667/career-guide/pull/2** — branch `genspark_ai_developer`, squashed to one commit on top of main. Any further work: commit on this branch and push; PR #2 auto-updates.
+
+Guide is at v2.0. If a successor instance is asked to improve further, suggested Phase 3 candidates (not started, in rough priority order):
+1. Per-profile "a week in the life" vignettes for the six Tier 1 careers (§3) — humanizes the choice.
+2. A short §10.7 "If you can only remember one table" — one-row-per-career with a single sentence each.
+3. Re-verify time-sensitive figures (Levels.fyi medians, Indeed postings index, NY Fed table) against the latest releases and bump dates.
+4. Add a "regional public flagships by specialty" table to §6 or §7 (fab-adjacent, defense-adjacent, robotics-adjacent schools) — currently scattered across §9.1 and FAQ.
+5. Convert Appendix B checklists into a standalone printable one-pager file (`CHECKLISTS.md`).
+Method for any Phase 3: open a REVIEW-3 block in this file first, then one file per commit, push after each.

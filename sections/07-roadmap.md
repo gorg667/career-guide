@@ -54,7 +54,7 @@ You have ~12 weeks. Use them to arrive *ahead*, because year one is when clubs a
 
 **Reach out to professors in the spring.** A concise email (what you've built, which paper/course of theirs interested you, that you can commit 10 hrs/week) to 5–8 faculty. Expect a 20–30% response rate. Undergraduate research is the *single most reliable* differentiator for AI/ML, robotics, security, and chip roles, and it must start early to bear fruit by year 3.
 
-**Apply to freshman-targeted programs** (Aug–Oct 2027): Google STEP, Microsoft Explore, Meta University, Amazon Propel/Future Engineer, Jane Street INSIGHT/FOCUS, Palantir Path, Two Sigma, Citadel Discover, NVIDIA Ignite, Intel/AMD early-talent events, MITRE and national-lab summer programs (many take rising sophomores), and REUs (NSF-funded research; deadlines Jan–Feb 2028).
+**Apply to freshman-targeted programs** (Aug–Oct 2027): Google STEP, Microsoft Explore, Meta University, Amazon Propel/Future Engineer, Jane Street INSIGHT/FOCUS, Palantir Path, Two Sigma, Citadel Discover, NVIDIA Ignite, Intel/AMD early-talent events, MITRE and national-lab summer programs (many take rising sophomores), and REUs (NSF-funded research; deadlines Jan–Feb 2028). *Program names, eligibility, and even existence change from year to year — several on this list were renamed or paused between 2023 and 2026. Each August, search "[company] freshman/sophomore program" and check the community-maintained internship lists on GitHub (e.g., the Simplify/PittCSC list) rather than relying on this paragraph.*
 
 **Summer 2028 goal:** research, REU, national lab, a local/small-company internship, or a substantial project. A brand-name internship after freshman year is rare and unnecessary. What matters is *something real on the résumé* for the fall 2028 applications.
 
@@ -74,6 +74,8 @@ You have ~12 weeks. Use them to arrive *ahead*, because year one is when clubs a
 - **Widen the funnel:** defense primes, national labs, semis, medical-device companies, insurers, banks, utilities, and mid-size regional employers hire sophomores and are far less contested than Big Tech. A relevant internship anywhere beats no internship.
 
 **Narrow to two tracks** by winter 2028–29 based on what you have enjoyed. Commit your spring electives and summer plans accordingly.
+
+**Campus jobs that double as credentials.** From year 2, prefer paid campus work that recruiters recognize over unrelated jobs: **undergraduate teaching assistant** for data structures, architecture, or systems (proves mastery and communication — quant firms and Big Tech notice it); **paid research assistant** (RA positions are how many labs onboard undergrads before offering authorship); **IT / helpdesk / sysadmin** for a department (a legitimate, under-rated way to learn Linux administration and networking); **tutoring** through the engineering school. Ten hours a week in one of these beats twenty in retail, and it appears on the résumé under "experience," not "other."
 
 **Summer 2029: Internship #1.** Perform like a full-time hire: ship, document, ask for feedback at week 4 and week 8, present at the end, get your manager's agreement to be a reference. Convert to a return offer if the company is a plausible long-term fit — a return offer in hand is the strongest possible negotiating position for the fall 2029 cycle even if you intend to go elsewhere.
 
