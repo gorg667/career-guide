@@ -3,7 +3,21 @@
 A comprehensive, data-driven guide to the best careers for a student enrolling in a
 Computer Science or Computer Engineering major in the United States in September 2027.
 
-**Final deliverable:** [`CS_CE_Career_Guide_2027.md`](CS_CE_Career_Guide_2027.md) — **Version 2.0**, ~48,700 words, 12 sections + 2 appendices.
+**Read it as a website:** https://gorg667.github.io/career-guide/ — one page per section, site-wide search (`/`), dark mode, and six interactive tools built from the guide's own data.
+
+**Read it as one file:** [`CS_CE_Career_Guide_2027.md`](CS_CE_Career_Guide_2027.md) — **Version 2.0**, ~50,000 words, 12 sections + 2 appendices.
+
+## The website
+| Page | What it does |
+|---|---|
+| [Career explorer](https://gorg667.github.io/career-guide/explorer.html) | All 29 careers, sortable and filterable; re-weight the six scoring dimensions with sliders or presets and watch the ranking change |
+| [Compare careers](https://gorg667.github.io/career-guide/compare.html) | Two or three careers side by side — scores, comp bands, degree, grad school, citizenship, scenario grades; shareable URL |
+| [Which career fits me?](https://gorg667.github.io/career-guide/quiz.html) | Ten questions → ranked shortlist with the reasoning shown; hard constraints (citizenship, grad school) filter rather than penalize |
+| [Interactive timeline](https://gorg667.github.io/career-guide/roadmap.html) | The Summer 2027 → May 2031 master calendar with a "today" marker, open recruiting windows, and a Gantt view |
+| [Checklists](https://gorg667.github.io/career-guide/checklists.html) | Appendix B as tickable boxes, saved in your browser, with progress bars |
+| [Glossary](https://gorg667.github.io/career-guide/glossary.html) | Appendix A with instant filtering |
+
+Every literal "Section X.Y" / "Appendix B" mention in the prose is auto-linked. No framework, no tracking, no build step beyond Python; the whole site is static files in `docs/`.
 
 ## What's inside
 1. The landscape 2022–2026 and three scenarios for 2031
@@ -15,7 +29,7 @@ Computer Science or Computer Engineering major in the United States in September
 7. Year-by-year roadmap, Summer 2027 → May 2031, keyed to the recruiting calendar
 8. Skills, portfolio, open source, competitions, certifications, interviews, grad school, scholarships, networking/referrals
 9. Geography, compensation, employer types, clearances (incl. interim/Continuous Vetting), immigration (incl. the 2026 wage-weighted H-1B rule), paying for the degree
-10. Master scorecard (28 careers), decision matrix, comp table, major map, scenario stress test
+10. Master scorecard (29 careers), decision matrix, comp table, major map, scenario stress test, one-line-per-career summary
 11. FAQ (26 questions), myths, risks and hedges
 12. Sources (26 primary + secondary sources with URLs), methodology, v2.0 change log, and how to keep the guide current
 
@@ -25,11 +39,17 @@ Computer Science or Computer Engineering major in the United States in September
 - `sections/` — the guide, written section by section
 - `research/` — research notes and sources
 - `build.sh` — concatenates `sections/*.md` into the final MD
+- `site/` — website generator: `build_site.py`, `templates/base.html`, `static/` (CSS/JS), `pages/` (tool shells), `data/careers.json` (structured copy of §10 used by the tools)
+- `docs/` — generated site (committed; served by GitHub Pages from `main` → `/docs`)
 - `HANDOFF.md` — progress log (for continuation if the writing process is interrupted)
 - `REVIEW.md` — the v1.0 → v2.0 self-review: itemized critique (A/B/C/D items) and execution order
 - `OUTLINE.md` — master outline
 
 ## Build
 ```bash
-bash build.sh
+bash build.sh                              # -> CS_CE_Career_Guide_2027.md
+pip install markdown pymdown-extensions    # once
+python3 site/build_site.py                 # -> docs/
+cd docs && python3 -m http.server 8080     # local preview
 ```
+Editing rule: the Markdown in `sections/` is the canonical source. The site never forks the prose — change the MD, rebuild. The exceptions are `site/data/careers.json` (mirror of §10.1/10.3/10.4/10.5; keep in sync by hand) and the §7.1 calendar transcribed in `site/static/roadmap.js`.

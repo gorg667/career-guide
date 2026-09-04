@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}} — {{site_title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="static/style.css">
+<script>
+// Apply saved theme before first paint to avoid a flash.
+(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
+</script>
+{{extra_head}}
+</head>
+<body class="{{body_class}}">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <button class="iconbtn" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+  <a class="brand" href="index.html"><span class="brand-mark">CS/CE</span> <span class="brand-text">2027 Career Guide</span></a>
+  <button class="searchbtn" id="searchOpen" aria-label="Search the guide"><span>Search</span><kbd>/</kbd></button>
+  <button class="iconbtn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Site">
+    {{nav}}
+  </nav>
+
+  <main id="main" class="content" tabindex="-1">
+    <div class="meta-line" id="top">{{reading}}</div>
+    <article class="prose">
+      {{body}}
+    </article>
+    <div class="prevnext">{{prevnext}}</div>
+    <footer class="foot">
+      <p><em>Choosing Your Future</em>, v2.0 (September 2026). Written for students entering CS/CE in Fall 2027. All figures are cited in <a href="12-sources.html">Section 12</a>; projections are judgments, labelled as such. <a href="CS_CE_Career_Guide_2027.md" download>Download the full Markdown</a>.</p>
+    </footer>
+  </main>
+
+  <aside class="toc" aria-label="On this page">
+    <div class="toc-title">On this page</div>
+    {{toc}}
+  </aside>
+</div>
+
+<div class="search-modal" id="searchModal" hidden>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="Search">
+    <input type="search" id="searchInput" placeholder="Search the whole guide… (Esc to close)" autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+    <div class="search-hint">Type at least 2 characters. ↑↓ to move, Enter to open.</div>
+  </div>
+</div>
+
+<script src="static/site.js" defer></script>
+{{extra_scripts}}
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Section 1 — The Landscape: What Happened 2022–2026, and What 2031 Will Look Like — The 2027 CS/CE Career Guide</title>
+<meta name="description" content="Choosing Your Future — careers for students entering CS or CE in Fall 2027">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="static/style.css">
+<script>
+// Apply saved theme before first paint to avoid a flash.
+(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
+</script>
+
+</head>
+<body class="page-01-landscape">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <button class="iconbtn" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+  <a class="brand" href="index.html"><span class="brand-mark">CS/CE</span> <span class="brand-text">2027 Career Guide</span></a>
+  <button class="searchbtn" id="searchOpen" aria-label="Search the guide"><span>Search</span><kbd>/</kbd></button>
+  <button class="iconbtn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Site">
+    <div class="nav-group">Guide</div>
+<a href="index.html">Start here</a>
+<a href="01-landscape.html" class="active">1 · The landscape</a>
+<a href="02-framework.html">2 · The framework</a>
+<a href="03-tier1.html">3 · Tier 1 careers</a>
+<a href="04-tier2.html">4 · Tier 2 careers</a>
+<a href="05-tier3.html">5 · Tier 3 &amp; contrarian</a>
+<a href="06-cs-vs-ce.html">6 · CS vs. CE</a>
+<a href="07-roadmap.html">7 · Four-year roadmap</a>
+<a href="08-skills.html">8 · Skills &amp; proof</a>
+<a href="09-market.html">9 · Market, comp, visas</a>
+<a href="10-tables.html">10 · Master tables</a>
+<a href="11-faq.html">11 · FAQ, myths, risks</a>
+<a href="12-sources.html">12 · Sources</a>
+<a href="glossary.html">A · Glossary</a>
+<a href="checklists.html">B · Checklists</a>
+<div class="nav-group">Tools</div>
+<a href="explorer.html">Career explorer</a>
+<a href="compare.html">Compare careers</a>
+<a href="quiz.html">Which career fits me?</a>
+<a href="roadmap.html">Interactive timeline</a>
+<div class="nav-group">Download</div>
+<a href="CS_CE_Career_Guide_2027.md" download>Full guide (Markdown)</a>
+<a href="https://github.com/gorg667/career-guide" target="_blank" rel="noopener">Source on GitHub</a>
+  </nav>
+
+  <main id="main" class="content" tabindex="-1">
+    <div class="meta-line" id="top">11 min read · 2,482 words</div>
+    <article class="prose">
+      <h1 id="sec-1">Section 1 — The Landscape: What Happened 2022–2026, and What 2031 Will Look Like</h1>
+<blockquote>
+<p><em>"The best time to enter a field is when everyone else is leaving it."</em> — the cobweb theorem, restated.</p>
+</blockquote>
+<p>If you are reading this in 2026 or 2027, you have almost certainly heard some version of: <em>"Don't major in CS, AI is taking all the coding jobs."</em> Your parents' friends will say it. Reddit will scream it. Some of it is true. Most of it is a misreading of what is actually happening. This section separates the structural from the cyclical, and then projects forward to the years that actually matter for you: <strong>2029 (first serious internship), 2031 (first job), and 2035–2045 (the career you are actually building toward).</strong></p>
+<hr>
+<h2 id="sec-1-1">1.1 The Shock: 2022–2026 in Numbers</h2>
+<p>The five years before your enrollment were the most turbulent in the software labor market since the dot-com crash. Here is what happened, in order.</p>
+<h3 id="sec-1-1-the-2021-2022-peak">The 2021–2022 peak</h3>
+<p>Zero interest rates and pandemic-era digital demand drove the greatest hiring spree in tech history. Meta, Amazon, Google, Microsoft, and Salesforce each added tens of thousands of employees. Indeed's software-development job-postings index peaked in <strong>May 2022</strong> at roughly double its pre-pandemic level. New grads with mediocre résumés were fielding multiple $150k+ offers. CS enrollment surged in response — a classic supply lag.</p>
+<h3 id="sec-1-1-the-2023-correction">The 2023 correction</h3>
+<p>Interest rates rose from 0% to 5.5% in 18 months. The 2017 Tax Cuts and Jobs Act's change to <strong>Section 174</strong> (forcing companies to amortize software R&amp;D salaries over 5 years instead of deducting them immediately) kicked in for tax year 2022, making every US software engineer materially more expensive on paper. Layoffs followed: ~260,000 tech employees in 2023 (Layoffs.fyi). Workforce.ai data shows <strong>2023 was the only year in two decades in which the total US software-engineer population shrank</strong> — more engineers left the profession than entered it.</p>
+<h3 id="sec-1-1-the-2024-2025-jobless-recovery-for-juniors">The 2024–2025 "jobless recovery" for juniors</h3>
+<p>Company profits recovered. Stock prices hit records. But hiring stayed flat and — crucially — <strong>tilted toward seniors</strong>. Live Data Technologies' analysis of 28 large US tech companies found that new grads were <strong>~30% of engineering hires in 2023 but only ~10% in 2025</strong>. Intern intake fell even as overall engineering hiring rose — the first time in the data series those two lines moved in opposite directions.</p>
+<h3 id="sec-1-1-the-ai-factor-arrives-2025-2026">The AI factor arrives (2025–2026)</h3>
+<p>Agentic coding tools (Claude Code, Cursor, Codex, GitHub Copilot's agent mode) went from novelty to default workflow in roughly 12 months starting February 2025. Two things happened simultaneously:</p>
+<ol>
+<li>
+<p><strong>The Stanford "Canaries" finding.</strong> Brynjolfsson, Chandar &amp; Chen (Stanford Digital Economy Lab), using ADP payroll data covering millions of workers, documented that employment of <strong>22–25-year-olds in AI-exposed occupations is now 19% below</strong> where it would be had it tracked less-exposed peers (up from 13% when first measured in August 2025). Experienced workers show <em>no</em> comparable gap. The mechanism is <strong>reduced hiring of young workers, not layoffs</strong>. Declines concentrate where AI <em>substitutes</em> for tasks; where AI <em>complements</em> workers, employment is flat or rising.</p>
+</li>
+<li>
+<p><strong>The Indeed rebound.</strong> Counterintuitively, US software-development postings have risen <strong>~15% since Claude Code launched</strong> (Feb 2025 → Jun 2026), while total postings fell 7%. Indeed Hiring Lab's July 2026 analysis found the relationship between AI-exposure and posting growth has <em>flipped</em>: from 2022–2025, the most AI-exposed occupations fell hardest; from 2025–2026, they rebounded hardest. But the rebound is concentrated: <strong>71% of the net increase is senior roles; 37% mention AI in the title.</strong></p>
+</li>
+</ol>
+<h3 id="sec-1-1-where-things-stand-in-september-2026">Where things stand in September 2026</h3>
+<ul>
+<li>Software-dev postings are ~27.5% below Feb 2020 levels but trending up for 18 months.</li>
+<li>"Top" tech companies (TrueUp's set of Big Tech + well-funded startups) are hiring ~20% more engineers than a year ago.</li>
+<li>AI-engineering openings at those companies are up <strong>~60% YoY</strong>; general SWE openings up ~7%.</li>
+<li>New-grad unemployment for CS majors: <strong>~6.1–7.0%</strong> (NY Fed), roughly double the rate for nursing or civil engineering — but CS <em>underemployment</em> (working a job that doesn't need a degree) is only <strong>~19%</strong>, versus ~42% for all recent grads. Translation: <strong>the CS problem is getting the first job, not being stuck in a bad one.</strong> CE shows a similar pattern (~7.5% unemployment, ~16% underemployment).</li>
+<li>Early-career CS median wage: ~$80–87k (NY Fed). Levels.fyi median entry-level SWE total comp at companies that report: <strong>$143.5k</strong> (25th pct $100k; 75th pct $188k).</li>
+</ul>
+<hr>
+<h2 id="sec-1-2">1.2 Structural vs. Cyclical: What Will Still Be True in 2031?</h2>
+<p>Not every headwind is permanent. Here is our assessment.</p>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>Factor</th>
+<th>Type</th>
+<th>Status by 2031 (our judgment)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021–22 overhiring hangover</td>
+<td><strong>Cyclical</strong></td>
+<td>Fully absorbed by 2027–28. Attrition and growth have already re-balanced most large companies.</td>
+</tr>
+<tr>
+<td>High interest rates</td>
+<td><strong>Cyclical</strong></td>
+<td>Rates fell through 2025–26; capital is flowing again (Anthropic's $65B round at a $965B valuation in May 2026; OpenAI's $122B round in March 2026; both filed confidentially for IPOs in June 2026).</td>
+</tr>
+<tr>
+<td>Section 174 R&amp;D amortization</td>
+<td><strong>Policy</strong></td>
+<td>Immediate expensing of <em>domestic</em> R&amp;D was restored by the July 2025 tax law (the "One Big Beautiful Bill Act"); no longer a drag on US hiring. Foreign R&amp;D still amortized — a mild tailwind for US-based engineers.</td>
+</tr>
+<tr>
+<td>Record CS graduate supply</td>
+<td><strong>Cyclical (cobweb)</strong></td>
+<td><strong>Reversing.</strong> New CS majors −13% in 2025; total enrollment −4%; NSC reports −8.1% undergrad CS enrollment, the steepest single-year decline of any major. Degree production will peak ~2028 and decline into your graduation year.</td>
+</tr>
+<tr>
+<td>International-student competition for entry roles</td>
+<td><strong>Policy</strong></td>
+<td>Reduced. $100k H-1B fee for overseas hires (Sep 2025), master's enrollment −26% (CRA), proposals to fee OPT. Cuts both ways — see <a href="09-market.html#sec-9">Section 9</a> if you are not a US citizen.</td>
+</tr>
+<tr>
+<td>AI substituting for junior coding tasks</td>
+<td><strong>Structural</strong></td>
+<td><strong>Very unlikely to reverse before 2031, and intensifying.</strong> The tasks a 2019 junior did (CRUD endpoints, boilerplate, test scaffolding, simple bug fixes, UI from mockups) are now largely done by agents under senior supervision.</td>
+</tr>
+<tr>
+<td>AI complementing senior/specialist work</td>
+<td><strong>Structural</strong></td>
+<td><strong>Permanent and intensifying.</strong> Experienced engineers using agents are dramatically more productive; demand for them is rising, and they are increasingly paid a premium.</td>
+</tr>
+<tr>
+<td>Seniority-biased hiring</td>
+<td><strong>Structural, but self-limiting</strong></td>
+<td>Companies cannot run a 20-year pipeline with no juniors. Expect a partial correction by 2029–2031 as firms realize they have a "missing generation" problem — but the <em>bar</em> for juniors will stay far higher than 2019.</td>
+</tr>
+<tr>
+<td>Demand for compute, chips, power, data centers</td>
+<td><strong>Structural</strong></td>
+<td>Enormous and multi-decade. BNEF projects US data-center power demand of 106 GW by 2035. CHIPS Act fabs come online 2027–2030.</td>
+</tr>
+<tr>
+<td>Cyber threats</td>
+<td><strong>Structural</strong></td>
+<td>Growing with AI on both offense and defense. BLS: information security analysts +29% (2024–34).</td>
+</tr>
+<tr>
+<td>Physical AI / robotics</td>
+<td><strong>Structural, early</strong></td>
+<td>Humanoid and autonomous systems moving from labs to factories; the hardware+software+ML skill combination is rare.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Bottom line:</strong> roughly half the 2023–2026 pain was cyclical and will be gone by the time you graduate. The other half — AI restructuring what "entry-level" means — is permanent, and you must plan around it rather than hope it reverses.</p>
+<hr>
+<h2 id="sec-1-3">1.3 The Cobweb Cycle: Why Timing Favors the 2027 Entrant</h2>
+<p>Economists call it the <em>cobweb theorem</em>: when training takes years, people choose careers based on <em>today's</em> market, so supply overshoots and undershoots in waves.</p>
+<p>It has happened before in computing, almost exactly:</p>
+<ul>
+<li><strong>1999–2001:</strong> dot-com boom → CS enrollment surges to record (~+40% in 3 years).</li>
+<li><strong>2001–2003:</strong> crash. "Offshoring will kill programming" is the consensus. Enrollment collapses <strong>~50% from 2002 to 2007</strong> (CRA Taulbee).</li>
+<li><strong>2007–2012:</strong> the students who <em>entered</em> CS in 2003–2006 — the smallest cohorts in a generation — graduated into the iPhone/cloud/social boom and enjoyed the best seller's market for engineers in history.</li>
+</ul>
+<p>Now:</p>
+<ul>
+<li><strong>2019–2023:</strong> cloud/pandemic boom → CS enrollment hits all-time record.</li>
+<li><strong>2023–2026:</strong> correction + AI fear. New CS majors −13% (2025), and the decline is expected to continue through 2027–2028.</li>
+<li><strong>2027 entrants</strong> → graduate 2031 into a market with (a) fewer competing grads, (b) demand rebuilt around AI-native roles, (c) a "missing junior generation" that companies need to backfill, and (d) structural shortages in hardware-adjacent fields.</li>
+</ul>
+<p>This is not a guarantee — nothing in labor markets is — but the <em>timing</em> of a 2027 entry is closer to 2004 (excellent) than to 2020 (terrible).</p>
+<hr>
+<h2 id="sec-1-4">1.4 What the 2031 Job Market Will Probably Look Like</h2>
+<p>Here is our best forecast, stated as specific, falsifiable expectations.</p>
+<h3 id="sec-1-4-the-job-title-software-engineer-survives-but-the-job-changes">The job title "Software Engineer" survives, but the job changes</h3>
+<ul>
+<li>The BLS still projects software developer employment to grow <strong>+10% from 2025 to 2035</strong> (~185,000 net new jobs, ~106,000 openings/yr including replacement). Slower than the +17–25% it projected in the late 2010s, but still "much faster than average" (all occupations: +3%).</li>
+<li>The 2031 software engineer spends most of their time <strong>specifying, reviewing, integrating, debugging, and owning</strong> systems, and a minority of it typing code. Fluency in orchestrating multiple AI agents is table stakes, like knowing Git was in 2015.</li>
+<li>"AI Engineer" will have stopped being a separate title at many companies because it will be assumed — just as "Cloud Engineer" faded into "Engineer" as everyone moved to cloud. But <em>depth</em> in ML systems will still command a premium.</li>
+</ul>
+<h3 id="sec-1-4-the-entry-ramp-is-different">The entry ramp is different</h3>
+<ul>
+<li>Fewer "junior" roles as traditionally defined. More <strong>apprenticeship-style, high-bar</strong> early-career programs that expect you to arrive with real project or internship experience.</li>
+<li>Internships become <em>more</em> important, not less, as the primary conversion funnel (companies hire fewer strangers as new grads and more former interns).</li>
+<li>Pedigree effects (elite schools, brand-name internships) are stronger than in 2019 — but <em>demonstrable</em> depth (open-source contributions, published research, competition results, a shipped product with users, a tape-out) is the great equalizer, and it is more visible than ever.</li>
+</ul>
+<h3 id="sec-1-4-growth-is-concentrated-in-the-hard-layer-of-the-stack">Growth is concentrated in the "hard" layer of the stack</h3>
+<ul>
+<li><strong>Silicon and systems</strong>: AI accelerators, memory, networking, photonics, power delivery.</li>
+<li><strong>Infrastructure</strong>: training/inference clusters, orchestration, observability, cost optimization.</li>
+<li><strong>Security</strong>: everything above is a target.</li>
+<li><strong>Physical AI</strong>: robots, vehicles, drones, factories, defense.</li>
+<li><strong>Regulated domains</strong>: health, finance, energy, government — where AI adoption is gated by compliance and mistakes are expensive, so humans with accountability stay in the loop.</li>
+</ul>
+<h3 id="sec-1-4-what-gets-squeezed">What gets squeezed</h3>
+<ul>
+<li>Generic application development where the product is a UI over a database.</li>
+<li>Frontend-only and native-mobile-only roles (SignalFire data shows frontend titles disappearing fastest of any engineering title 2022–2026).</li>
+<li>Manual QA, tier-1 support, low-complexity IT administration.</li>
+<li>"Computer programmer" as a distinct occupation (BLS projects negative growth).</li>
+<li>Junior data analyst roles that are mostly SQL-and-dashboards.</li>
+</ul>
+<h3 id="sec-1-4-compensation">Compensation</h3>
+<ul>
+<li>The <strong>trimodal distribution</strong> (Gergely Orosz's framing) persists and widens. To avoid confusion with this guide's <em>career</em> tiers, we call the three pay bands <strong>modes</strong>: Mode 1 = local/non-tech companies (~$70–110k new grad); Mode 2 = national tech companies and well-funded startups (~$110–160k); Mode 3 = Big Tech, AI labs, HFT (~$160–250k+ new-grad total comp, with AI labs and quant firms at the top). Which <em>mode</em> of employer you can reach matters more to your pay than which <em>field</em> you pick — and the reason Tier 1 fields matter is that they are the doors into Mode 3.</li>
+<li>AI-specialist premium of roughly 20–40% over general SWE at the same level persists at least through 2031.</li>
+<li>Hardware/semiconductor compensation, historically below software, has been closing the gap since 2023 (BLS median for computer hardware engineers, $155k, now exceeds software developers, $136k).</li>
+</ul>
+<h3 id="sec-1-4-five-falsifiable-predictions-check-these-in-2029-and-2031">Five falsifiable predictions (check these in 2029 and 2031)</h3>
+<p>We said these expectations are falsifiable. Here they are as numbers, so a reader in 2029 or 2031 can grade us — and re-tier the careers if we were wrong.</p>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>#</th>
+<th>Prediction</th>
+<th>Number to check</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1</td>
+<td>Recent-grad CS unemployment falls back toward the all-majors average by the 2031 cycle</td>
+<td>NY Fed CS recent-grad unemployment <strong>&lt; 5%</strong> (vs ~6–7% in 2026)</td>
+<td>NY Fed college labor market (Feb each year)</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>The 2031 graduating CS cohort is smaller than the 2028 one</td>
+<td>CRA Taulbee bachelor's degrees granted, 2031 <strong>below</strong> the 2028 peak</td>
+<td>CRA Taulbee (June)</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>US software postings recover but stay senior-tilted</td>
+<td>Indeed software index <strong>≥ 85%</strong> of Feb-2020 level; senior share of postings still <strong>&gt; 50%</strong></td>
+<td>Indeed Hiring Lab / FRED IHLIDXUSTPSOFTDEVE</td>
+</tr>
+<tr>
+<td>P4</td>
+<td>Hardware pay premium persists</td>
+<td>BLS median for computer hardware engineers <strong>still ≥</strong> software developers</td>
+<td>BLS OOH (May wage data)</td>
+</tr>
+<tr>
+<td>P5</td>
+<td>Security and data-science growth stay in the top three of the BLS computer group</td>
+<td>Both <strong>≥ +20%</strong> in the 2026–36 projection cycle</td>
+<td>BLS OOH projections (biennial)</td>
+</tr>
+</tbody>
+</table></div>
+<p>If three of the five fail, the <em>cyclical-recovery</em> half of this guide's argument was wrong and you should lean harder on the moated, counter-cyclical careers (semis, defense, security, energy). If P1–P3 hold, the cobweb argument was right and you can afford to be more ambitious.</p>
+<hr>
+<h2 id="sec-1-5">1.5 Three Scenarios for 2031 (and How to Be Robust to All of Them)</h2>
+<p>Because nobody can predict AI capability trajectories with confidence, we sketch three scenarios and note which career choices are robust across them.</p>
+<h3 id="sec-1-5-scenario-a-steady-complement-our-base-case-55">Scenario A — "Steady Complement" (our base case, ~55%)</h3>
+<p>AI tools keep improving incrementally. Engineers become 3–10× more productive; total software output explodes (Jevons paradox); total engineering employment grows modestly while the <em>composition</em> shifts toward senior, specialist, and hardware-adjacent roles. Entry-level recovers partially by 2029–2031 as firms confront the missing-generation problem.
+<strong>Winners:</strong> everything in Tier 1 and Tier 2 of this guide.</p>
+<h3 id="sec-1-5-scenario-b-agentic-leap-30">Scenario B — "Agentic Leap" (~30%)</h3>
+<p>Agents become capable of end-to-end ownership of mid-complexity software projects with minimal supervision by ~2029. Demand for people who <em>only</em> write application code falls sharply. Demand explodes for (1) people who build, evaluate, secure, and deploy the agents, (2) people who own the physical layer the agents run on, and (3) people accountable for outcomes in regulated or safety-critical domains.
+<strong>Winners:</strong> AI/ML engineering, AI security, semiconductors, infrastructure, robotics, regulated-domain computing, FDE/solutions roles.
+<strong>Losers:</strong> generic app dev, web dev, most pure-software roles without a domain or hardware moat.</p>
+<h3 id="sec-1-5-scenario-c-ai-winter-lite-15">Scenario C — "AI Winter Lite" (~15%)</h3>
+<p>Scaling hits diminishing returns; agent reliability plateaus; the AI capex boom slows in 2027–2028 and some AI-labeled roles contract. Traditional software demand re-normalizes; the 2019-style engineering ladder partially returns.
+<strong>Winners:</strong> traditional strong software engineering, security, infrastructure, embedded.
+<strong>Losers:</strong> narrow "prompt engineering" or AI-only skill sets without fundamentals; some over-built data-center adjacent roles.</p>
+<p><strong>Robust across all three:</strong> security, infrastructure/distributed systems, semiconductors &amp; embedded, robotics, and <em>fundamentals-first</em> AI/ML engineering. These are the Tier 1 careers in <a href="03-tier1.html#sec-3">Section 3</a>, and the reason they are Tier 1 is precisely this robustness.</p>
+<hr>
+<h2 id="sec-1-6">1.6 Key Takeaways from Section 1</h2>
+<ol>
+<li><strong>The 2023–2026 new-grad crisis was real, but roughly half of it was cyclical</strong> (overhiring, rates, tax policy, record supply) and will have cleared by 2031.</li>
+<li><strong>The structural half — AI restructuring entry-level work — is permanent.</strong> Plan for a world where employers pay for judgment, ownership, and specialist depth, not for typing code.</li>
+<li><strong>Your timing is good.</strong> Enrolling during the trough of a cobweb cycle (new majors −13%) means graduating into a smaller cohort, historically the best position to be in.</li>
+<li><strong>Demand is migrating down the stack and into domains with moats:</strong> silicon, infrastructure, security, physical systems, regulated industries, and the AI systems themselves.</li>
+<li><strong>Be robust, not clever.</strong> Pick a career that wins in at least two of the three scenarios above. The Tier 1 list wins in all three.</li>
+</ol>
+    </article>
+    <div class="prevnext"><a class="pn prev" href="index.html"><span>← Previous</span><strong>Start here</strong></a><a class="pn next" href="02-framework.html"><span>Next →</span><strong>2 · The framework</strong></a></div>
+    <footer class="foot">
+      <p><em>Choosing Your Future</em>, v2.0 (September 2026). Written for students entering CS/CE in Fall 2027. All figures are cited in <a href="12-sources.html">Section 12</a>; projections are judgments, labelled as such. <a href="CS_CE_Career_Guide_2027.md" download>Download the full Markdown</a>.</p>
+    </footer>
+  </main>
+
+  <aside class="toc" aria-label="On this page">
+    <div class="toc-title">On this page</div>
+    <ul><li class="toc-l2"><a href="#sec-1-1">1.1 The Shock: 2022–2026 in Numbers</a></li>
+<li class="toc-l3"><a href="#sec-1-1-the-2021-2022-peak">The 2021–2022 peak</a></li>
+<li class="toc-l3"><a href="#sec-1-1-the-2023-correction">The 2023 correction</a></li>
+<li class="toc-l3"><a href="#sec-1-1-the-2024-2025-jobless-recovery-for-juniors">The 2024–2025 &quot;jobless recovery&quot; for juniors</a></li>
+<li class="toc-l3"><a href="#sec-1-1-the-ai-factor-arrives-2025-2026">The AI factor arrives (2025–2026)</a></li>
+<li class="toc-l3"><a href="#sec-1-1-where-things-stand-in-september-2026">Where things stand in September 2026</a></li>
+<li class="toc-l2"><a href="#sec-1-2">1.2 Structural vs. Cyclical: What Will Still Be True in 2031?</a></li>
+<li class="toc-l2"><a href="#sec-1-3">1.3 The Cobweb Cycle: Why Timing Favors the 2027 Entrant</a></li>
+<li class="toc-l2"><a href="#sec-1-4">1.4 What the 2031 Job Market Will Probably Look Like</a></li>
+<li class="toc-l3"><a href="#sec-1-4-the-job-title-software-engineer-survives-but-the-job-changes">The job title &quot;Software Engineer&quot; survives, but the job changes</a></li>
+<li class="toc-l3"><a href="#sec-1-4-the-entry-ramp-is-different">The entry ramp is different</a></li>
+<li class="toc-l3"><a href="#sec-1-4-growth-is-concentrated-in-the-hard-layer-of-the-stack">Growth is concentrated in the &quot;hard&quot; layer of the stack</a></li>
+<li class="toc-l3"><a href="#sec-1-4-what-gets-squeezed">What gets squeezed</a></li>
+<li class="toc-l3"><a href="#sec-1-4-compensation">Compensation</a></li>
+<li class="toc-l3"><a href="#sec-1-4-five-falsifiable-predictions-check-these-in-2029-and-2031">Five falsifiable predictions (check these in 2029 and 2031)</a></li>
+<li class="toc-l2"><a href="#sec-1-5">1.5 Three Scenarios for 2031 (and How to Be Robust to All of Them)</a></li>
+<li class="toc-l3"><a href="#sec-1-5-scenario-a-steady-complement-our-base-case-55">Scenario A — &quot;Steady Complement&quot; (our base case, ~55%)</a></li>
+<li class="toc-l3"><a href="#sec-1-5-scenario-b-agentic-leap-30">Scenario B — &quot;Agentic Leap&quot; (~30%)</a></li>
+<li class="toc-l3"><a href="#sec-1-5-scenario-c-ai-winter-lite-15">Scenario C — &quot;AI Winter Lite&quot; (~15%)</a></li>
+<li class="toc-l2"><a href="#sec-1-6">1.6 Key Takeaways from Section 1</a></li></ul>
+  </aside>
+</div>
+
+<div class="search-modal" id="searchModal" hidden>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="Search">
+    <input type="search" id="searchInput" placeholder="Search the whole guide… (Esc to close)" autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+    <div class="search-hint">Type at least 2 characters. ↑↓ to move, Enter to open.</div>
+  </div>
+</div>
+
+<script src="static/site.js" defer></script>
+
+</body>
+</html>

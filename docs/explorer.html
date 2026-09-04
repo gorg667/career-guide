@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Career explorer — The 2027 CS/CE Career Guide</title>
+<meta name="description" content="Choosing Your Future — careers for students entering CS or CE in Fall 2027">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="static/style.css">
+<script>
+// Apply saved theme before first paint to avoid a flash.
+(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
+</script>
+
+</head>
+<body class="page-tool page-explorer">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <button class="iconbtn" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+  <a class="brand" href="index.html"><span class="brand-mark">CS/CE</span> <span class="brand-text">2027 Career Guide</span></a>
+  <button class="searchbtn" id="searchOpen" aria-label="Search the guide"><span>Search</span><kbd>/</kbd></button>
+  <button class="iconbtn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Site">
+    <div class="nav-group">Guide</div>
+<a href="index.html">Start here</a>
+<a href="01-landscape.html">1 · The landscape</a>
+<a href="02-framework.html">2 · The framework</a>
+<a href="03-tier1.html">3 · Tier 1 careers</a>
+<a href="04-tier2.html">4 · Tier 2 careers</a>
+<a href="05-tier3.html">5 · Tier 3 &amp; contrarian</a>
+<a href="06-cs-vs-ce.html">6 · CS vs. CE</a>
+<a href="07-roadmap.html">7 · Four-year roadmap</a>
+<a href="08-skills.html">8 · Skills &amp; proof</a>
+<a href="09-market.html">9 · Market, comp, visas</a>
+<a href="10-tables.html">10 · Master tables</a>
+<a href="11-faq.html">11 · FAQ, myths, risks</a>
+<a href="12-sources.html">12 · Sources</a>
+<a href="glossary.html">A · Glossary</a>
+<a href="checklists.html">B · Checklists</a>
+<div class="nav-group">Tools</div>
+<a href="explorer.html" class="active">Career explorer</a>
+<a href="compare.html">Compare careers</a>
+<a href="quiz.html">Which career fits me?</a>
+<a href="roadmap.html">Interactive timeline</a>
+<div class="nav-group">Download</div>
+<a href="CS_CE_Career_Guide_2027.md" download>Full guide (Markdown)</a>
+<a href="https://github.com/gorg667/career-guide" target="_blank" rel="noopener">Source on GitHub</a>
+  </nav>
+
+  <main id="main" class="content" tabindex="-1">
+    <div class="meta-line" id="top">Interactive tool</div>
+    <article class="prose">
+      <!-- title: Career explorer -->
+<!-- scripts: <script src="static/careers-common.js" defer></script><script src="static/explorer.js" defer></script> -->
+<h1>Career explorer</h1>
+<p class="tool-intro">Every career profiled in the guide, scored on the six dimensions from <a href="02-framework.html#sec-2-1">Section 2.1</a>. The default total is the plain sum used in <a href="10-tables.html#sec-10-1">Section 10.1</a>. <strong>Drag the weight sliders to re-rank by what matters to you</strong> — turn compensation down and moat up if you want a low-competition, stable path; turn optionality up if you are undecided. Click a column header to sort; click a career name to open its profile.</p>
+
+<div class="panel" id="weightsPanel">
+  <div class="row" style="justify-content:space-between;margin-bottom:6px">
+    <strong>Dimension weights</strong>
+    <div class="row">
+      <button class="btn sm" data-preset="equal">Equal (guide default)</button>
+      <button class="btn sm" data-preset="safe">Safety first</button>
+      <button class="btn sm" data-preset="money">Maximize pay</button>
+      <button class="btn sm" data-preset="undecided">Keep options open</button>
+      <button class="btn sm" data-preset="bsonly">Job straight from a BS</button>
+    </div>
+  </div>
+  <div class="weights" id="weights"></div>
+</div>
+
+<div class="panel">
+  <div class="row" style="gap:18px">
+    <label class="inline"><input type="checkbox" class="tierf" value="1" checked> <span class="badge t1">Tier 1</span></label>
+    <label class="inline"><input type="checkbox" class="tierf" value="2" checked> <span class="badge t2">Tier 2</span></label>
+    <label class="inline"><input type="checkbox" class="tierf" value="3" checked> <span class="badge t3">Tier 3</span></label>
+    <label class="inline">Degree <select id="degreeF"><option value="">any</option><option value="CS">CS-leaning</option><option value="CE">CE-leaning</option></select></label>
+    <label class="inline"><input type="checkbox" id="intlF"> Hide citizen-only (international students)</label>
+    <label class="inline"><input type="checkbox" id="bsF"> BS-accessible only (D6 ≥ 4)</label>
+    <span class="muted small" id="countLine"></span>
+  </div>
+</div>
+
+<div class="table-wrap explorer-wrap">
+  <table class="explorer" id="explorerTable">
+    <thead><tr>
+      <th data-k="rank">#</th>
+      <th data-k="name">Career</th>
+      <th data-k="tier">Tier</th>
+      <th data-k="D1" title="Demand durability 2031–45">D1 Demand</th>
+      <th data-k="D2" title="AI resistance">D2 AI-resist</th>
+      <th data-k="D3" title="Moat / barrier to entry">D3 Moat</th>
+      <th data-k="D4" title="Compensation">D4 Comp</th>
+      <th data-k="D5" title="Optionality">D5 Options</th>
+      <th data-k="D6" title="Accessible with a BS">D6 BS-ok</th>
+      <th data-k="total">Weighted total</th>
+      <th data-k="degree">Best degree</th>
+      <th data-k="newgrad">New-grad TC</th>
+      <th data-k="robust">Scenario robustness</th>
+      <th data-k="cmp">Compare</th>
+    </tr></thead>
+    <tbody id="explorerBody"></tbody>
+  </table>
+</div>
+
+<div class="row" style="margin:10px 0 18px"><a class="btn primary" id="compareLink" href="compare.html">Compare selected →</a><span class="muted small" id="compareHint">Tick up to 3 careers in the last column.</span></div>
+
+<div class="callout small">
+  <strong>How the weighted total works.</strong> Each 1–5 score is multiplied by its weight and the result is rescaled so the maximum is still 30, keeping numbers comparable to the guide's table. "Founding a startup" is unscored on D1–D4 in the guide and is listed without a total. Weights and selections are saved in this browser only. Scores are exactly those in <a href="10-tables.html#sec-10-1">§10.1</a>; the profile sections (<a href="03-tier1.html">3</a>, <a href="04-tier2.html">4</a>, <a href="05-tier3.html">5</a>) explain every number.
+</div>
+
+<h2 id="cards">Card view</h2>
+<p class="muted small">Same ranking as the table, with the one-line verdict for each career.</p>
+<div class="cards" id="cardGrid"></div>
+
+    </article>
+    <div class="prevnext"></div>
+    <footer class="foot">
+      <p><em>Choosing Your Future</em>, v2.0 (September 2026). Written for students entering CS/CE in Fall 2027. All figures are cited in <a href="12-sources.html">Section 12</a>; projections are judgments, labelled as such. <a href="CS_CE_Career_Guide_2027.md" download>Download the full Markdown</a>.</p>
+    </footer>
+  </main>
+
+  <aside class="toc" aria-label="On this page">
+    <div class="toc-title">On this page</div>
+    
+  </aside>
+</div>
+
+<div class="search-modal" id="searchModal" hidden>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="Search">
+    <input type="search" id="searchInput" placeholder="Search the whole guide… (Esc to close)" autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+    <div class="search-hint">Type at least 2 characters. ↑↓ to move, Enter to open.</div>
+  </div>
+</div>
+
+<script src="static/site.js" defer></script>
+<script src="static/careers-common.js" defer></script><script src="static/explorer.js" defer></script>
+</body>
+</html>

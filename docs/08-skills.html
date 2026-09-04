@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Section 8 — Skills, Projects, Internships, and the Grad-School Question — The 2027 CS/CE Career Guide</title>
+<meta name="description" content="Choosing Your Future — careers for students entering CS or CE in Fall 2027">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="static/style.css">
+<script>
+// Apply saved theme before first paint to avoid a flash.
+(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
+</script>
+
+</head>
+<body class="page-08-skills">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <button class="iconbtn" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+  <a class="brand" href="index.html"><span class="brand-mark">CS/CE</span> <span class="brand-text">2027 Career Guide</span></a>
+  <button class="searchbtn" id="searchOpen" aria-label="Search the guide"><span>Search</span><kbd>/</kbd></button>
+  <button class="iconbtn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Site">
+    <div class="nav-group">Guide</div>
+<a href="index.html">Start here</a>
+<a href="01-landscape.html">1 · The landscape</a>
+<a href="02-framework.html">2 · The framework</a>
+<a href="03-tier1.html">3 · Tier 1 careers</a>
+<a href="04-tier2.html">4 · Tier 2 careers</a>
+<a href="05-tier3.html">5 · Tier 3 &amp; contrarian</a>
+<a href="06-cs-vs-ce.html">6 · CS vs. CE</a>
+<a href="07-roadmap.html">7 · Four-year roadmap</a>
+<a href="08-skills.html" class="active">8 · Skills &amp; proof</a>
+<a href="09-market.html">9 · Market, comp, visas</a>
+<a href="10-tables.html">10 · Master tables</a>
+<a href="11-faq.html">11 · FAQ, myths, risks</a>
+<a href="12-sources.html">12 · Sources</a>
+<a href="glossary.html">A · Glossary</a>
+<a href="checklists.html">B · Checklists</a>
+<div class="nav-group">Tools</div>
+<a href="explorer.html">Career explorer</a>
+<a href="compare.html">Compare careers</a>
+<a href="quiz.html">Which career fits me?</a>
+<a href="roadmap.html">Interactive timeline</a>
+<div class="nav-group">Download</div>
+<a href="CS_CE_Career_Guide_2027.md" download>Full guide (Markdown)</a>
+<a href="https://github.com/gorg667/career-guide" target="_blank" rel="noopener">Source on GitHub</a>
+  </nav>
+
+  <main id="main" class="content" tabindex="-1">
+    <div class="meta-line" id="top">21 min read · 4,897 words</div>
+    <article class="prose">
+      <h1 id="sec-8">Section 8 — Skills, Projects, Internships, and the Grad-School Question</h1>
+<p><a href="07-roadmap.html#sec-7">Section 7</a> told you <em>when</em>. This section tells you <em>what</em>: which skills survive the 2027–2035 window, how to learn them in an era where an AI agent can write most of your homework, what a portfolio has to look like to be believed in 2030, which competitions and certifications actually move the needle, how to prepare for interviews that are being redesigned around AI, and how to decide on a master's or PhD.</p>
+<hr>
+<h2 id="sec-8-1">8.1 The Durable Skill Stack</h2>
+<p>The most important idea in this section: <strong>skills have half-lives, and they are not equal.</strong> Frameworks have a half-life of two to four years. Languages, ten to twenty. Mathematics and systems fundamentals, effectively unlimited. Every hour you invest in the short-half-life layer is an hour you will have to re-invest; every hour in the long-half-life layer compounds. A student in 2027 who optimizes for the layer that AI tools are <em>worst</em> at replacing — judgment about systems, correctness, and tradeoffs — is making the right bet in every one of the three scenarios from <a href="01-landscape.html#sec-1">Section 1</a>.</p>
+<h3 id="sec-8-1-the-stack-bottom-to-top">The stack, bottom to top</h3>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>Layer</th>
+<th>What it is</th>
+<th>Half-life</th>
+<th>Why it survives AI</th>
+<th>Where you get it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mathematics</strong></td>
+<td>Linear algebra, probability/statistics, discrete math, calculus through multivariable; for CE, differential equations and signals</td>
+<td>Permanent</td>
+<td>Every AI-era specialization (ML, security/crypto, graphics, robotics, quant, chip design) is math at the bottom. LLMs can <em>do</em> math problems; they cannot supply your intuition for which model to use.</td>
+<td>Required courses. Take the honors/proof-based versions if offered.</td>
+</tr>
+<tr>
+<td><strong>Computer systems</strong></td>
+<td>How a CPU executes, memory hierarchy, OS (processes, virtual memory, concurrency), networking (TCP/IP, DNS, TLS), compilers basics</td>
+<td>20+ years</td>
+<td>The debugging, performance, and security problems that AI-generated code creates are <em>systems</em> problems. This is the single layer with the highest ratio of career value to how few students master it.</td>
+<td>Architecture, OS, networks, compilers courses. Do the labs <em>without</em> AI the first time.</td>
+</tr>
+<tr>
+<td><strong>One low-level language</strong></td>
+<td>C, plus C++ or Rust</td>
+<td>15–20 years</td>
+<td>Everything in Tier 1 that isn't pure ML — security, semis, infra, robotics — reads and writes C/C++/Rust. Rust is the fastest-rising language in infra and security hiring.</td>
+<td>Systems courses; personal projects (write an allocator, a shell, a small OS kernel, a ray tracer).</td>
+</tr>
+<tr>
+<td><strong>Python</strong></td>
+<td>Fluent, idiomatic, including the scientific stack (NumPy, pandas, PyTorch)</td>
+<td>15+ years</td>
+<td>Lingua franca of ML, data, security tooling, automation. Every Tier 1 field uses it.</td>
+<td>You will pick it up; deliberately learn the <em>idiomatic</em> version and the performance model.</td>
+</tr>
+<tr>
+<td><strong>SQL and data modeling</strong></td>
+<td>Real SQL (joins, windows, query plans), schema design, one warehouse (BigQuery/Snowflake/DuckDB)</td>
+<td>30+ years</td>
+<td>The most under-taught, most-used skill in industry. AI writes SQL well; you need to know when it is wrong and why the query is slow.</td>
+<td>Databases course; personal data projects.</td>
+</tr>
+<tr>
+<td><strong>Linux, Git, shell</strong></td>
+<td>Living in a terminal; Git beyond add/commit/push (rebase, bisect, reflog); bash/awk/sed basics; ssh</td>
+<td>25+ years</td>
+<td>The environment in which all real engineering happens. Employers notice instantly who is uncomfortable here.</td>
+<td>Daily use. Make Linux your primary OS or WSL at minimum from day one.</td>
+</tr>
+<tr>
+<td><strong>Cloud and containers</strong></td>
+<td>One major cloud (AWS or GCP) at working depth; Docker; Kubernetes basics; Terraform or equivalent</td>
+<td>5–10 years</td>
+<td>Almost all software is deployed this way; infra roles require depth, every other role requires literacy.</td>
+<td>Free tiers; a personal project deployed with IaC.</td>
+</tr>
+<tr>
+<td><strong>Software engineering practice</strong></td>
+<td>Testing, code review, CI/CD, observability, writing design docs, reading other people's code</td>
+<td>20+ years</td>
+<td>This is the layer that separates "wrote a thing" from "shipped a thing." AI accelerates writing; it does not supply the discipline.</td>
+<td>Team projects, open source, internships.</td>
+</tr>
+<tr>
+<td><strong>Domain layer</strong></td>
+<td>Your Tier 1/2 specialization from Section 3–4: ML systems, security, RTL/verification, distributed systems, controls/ROS, data pipelines</td>
+<td>3–8 years for tools; permanent for concepts</td>
+<td>This is where you get paid. It only works when the layers beneath it are solid.</td>
+<td>Upper-division electives, research, internships, focused projects (<a href="#sec-8-3">Section 8.3</a>).</td>
+</tr>
+<tr>
+<td><strong>Frameworks and tools</strong></td>
+<td>Whatever is current: specific web frameworks, agent frameworks, vector DBs, specific chip EDA tools</td>
+<td>2–4 years</td>
+<td>Learn them <em>just in time</em>. Never let them displace the layers below.</td>
+<td>Projects, on the job.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="sec-8-1-skills-that-are-specifically-rising-in-value-2027-2031">Skills that are specifically rising in value 2027–2031</h3>
+<ul>
+<li><strong>Evaluation and verification.</strong> When AI writes the code, the scarce human skill is deciding whether it is correct: writing tests, property-based testing, formal methods basics, benchmark design, red-teaming. Every "AI engineer" job posting in 2026 lists evaluation ("evals") as a core skill. Verification engineering in semis is the same instinct in a different domain.</li>
+<li><strong>Reading code and systems you did not write.</strong> Agents generate more code than any team can review linearly. Skimming a 3,000-line diff and knowing where the bugs hide is a trainable skill and few students train it.</li>
+<li><strong>Performance engineering.</strong> GPU utilization, memory bandwidth, tail latency, cost-per-token. As the inference economy grows, people who make things run 30% cheaper are worth exactly 30% of an enormous number.</li>
+<li><strong>Security thinking as a default.</strong> Threat modeling, secure defaults, understanding authentication and authorization, supply-chain awareness. This is required in security careers and a differentiator in every other one.</li>
+<li><strong>Writing.</strong> Design docs, incident reports, RFCs, research writing. Engineers who write clearly get promoted faster in every scenario; in the agentic scenario, precise written specification <em>is</em> the primary programming interface.</li>
+<li><strong>Hardware literacy for software people, software fluency for hardware people.</strong> The boundaries (ML compilers, embedded ML, hardware security, chip-level performance) are where the highest-paid and least-crowded jobs sit.</li>
+</ul>
+<h3 id="sec-8-1-skills-that-are-falling-in-value-learn-them-but-do-not-build">Skills that are falling in value (learn them, but do not build an identity on them)</h3>
+<ul>
+<li>Memorized framework APIs, boilerplate generation, CRUD wiring, CSS layout mechanics, routine unit-test authoring, converting designs to markup, writing standard data-transformation scripts, manual QA. These are not "worthless" — you need to understand them to supervise an agent doing them — but the market price of doing them by hand has collapsed and will not recover.</li>
+</ul>
+<hr>
+<h2 id="sec-8-2">8.2 How to Learn in the AI Era (The Two-Pass Rule)</h2>
+<p>The most consequential decision a 2027 freshman makes is <em>how</em> they use AI tools while learning. Two failure modes are already visible in the cohort graduating in 2026:</p>
+<ol>
+<li><strong>The dependent.</strong> Used an agent for every assignment since week one. Graduates with a transcript and no ability to write a linked list on a whiteboard, debug without a chatbot, or reason about why a program is slow. Interviewers detect this in ten minutes; in 2026, several large employers reintroduced in-person or proctored technical screens precisely to filter this group.</li>
+<li><strong>The abstainer.</strong> Refused to use AI tools on principle. Graduates with strong fundamentals and a workflow that is 3–5× slower than peers, and is perceived by employers as a laggard.</li>
+</ol>
+<p>The winning pattern is the <strong>two-pass rule</strong>:</p>
+<ul>
+<li><strong>Pass 1 — no AI.</strong> The first time you learn any <em>fundamental</em> (a data structure, a systems concept, a proof technique, a language feature), do it by hand: read, struggle, write the code, debug it yourself. This is not nostalgia; it is how the mental model gets built, and the mental model is the only thing you will be paid for in 2031. Apply this to: all of years 1–2 core coursework, the first project in any new domain, every interview-prep problem.</li>
+<li><strong>Pass 2 — full AI leverage.</strong> Once you can do a thing by hand, use every tool available to do it ten times faster and ten times bigger. Use agents to scaffold projects, generate tests, explore unfamiliar libraries, draft documentation, review your code. Apply this to: upper-division projects, research code, internships, anything where output volume matters.</li>
+</ul>
+<p>Practical rules that follow:</p>
+<ul>
+<li><strong>Use AI as a tutor, not an author, in years 1–2.</strong> "Explain why my B-tree deletion is wrong" — yes. "Write my B-tree deletion" — no, not until you have written one yourself.</li>
+<li><strong>Build one substantial thing each year with AI switched off</strong>, and one with it fully on. Be able to talk about the difference.</li>
+<li><strong>Learn to review AI output as a discipline.</strong> Read every line it generates for anything that matters. Keep a log of the categories of mistakes it makes in your domain — this is exactly the "evaluation" skill that employers are paying for.</li>
+<li><strong>Learn the agentic toolchain properly by year 2:</strong> an agentic coding tool in your editor and terminal, prompt/spec-writing habits, structured context management (repository conventions files, task decomposition), and how to run agents against a test suite. By 2030 this will be as assumed as knowing Git.</li>
+<li><strong>Never let the tool choose your abstraction level.</strong> Agents default to the most common, most mediocre pattern. Your job is to know when the common pattern is wrong.</li>
+</ul>
+<hr>
+<h2 id="sec-8-3">8.3 The Portfolio: What Employers Believe in 2030</h2>
+<p>A GitHub full of tutorial clones was already worthless in 2024. By 2030, when anyone can generate a plausible full-stack app in an afternoon, a portfolio has to demonstrate the thing AI <em>cannot</em> fake: <strong>sustained engineering judgment on a hard problem with verifiable results.</strong> Recruiters and hiring managers in the fields you care about look for the following, in order of weight.</p>
+<h3 id="sec-8-3-the-credibility-ladder-most-least-persuasive">The credibility ladder (most → least persuasive)</h3>
+<ol>
+<li><strong>Shipped work with users or measurable impact.</strong> An open-source contribution merged into a project people use; a tool with real users; a research artifact cited or reproduced; a CTF placement; a taped-out chip. Anything a third party validated.</li>
+<li><strong>Depth artifacts.</strong> One project that goes <em>far</em> into a domain rather than five that go an inch: a working RISC-V core with a verification suite; a Raft implementation with Jepsen-style fault-injection tests and a write-up; a custom CUDA kernel with benchmarked speedups against cuBLAS; a fuzzer that found a real bug; a robot that navigates a real space.</li>
+<li><strong>Written analysis.</strong> A blog post or report that shows how you think: performance investigations, post-mortems of your own bugs, reproductions of papers with honest reporting of what did not replicate. Writing quality is a strong proxy for engineering quality and hiring managers know it.</li>
+<li><strong>Team projects with a clear, documented individual contribution.</strong> Fine, but state exactly what you did.</li>
+<li><strong>Course projects and tutorials.</strong> Assumed. Do not list them unless exceptional.</li>
+</ol>
+<h3 id="sec-8-3-portfolio-specification-by-target-field">Portfolio specification by target field</h3>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>Target</th>
+<th>Two portfolio pieces that would get you an interview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI/ML Engineer</strong></td>
+<td>(a) A serving/inference system: quantized open-weight model served with batching, measured tokens/sec and p99 latency, cost analysis. (b) An eval harness for a real task, with a write-up of failure modes found in two frontier models.</td>
+</tr>
+<tr>
+<td><strong>Security Engineer</strong></td>
+<td>(a) Public CTF record (top placements or well-written solve write-ups). (b) A found-and-responsibly-disclosed vulnerability (CVE or bug-bounty), or a fuzzing campaign against an open-source parser with reported bugs.</td>
+</tr>
+<tr>
+<td><strong>Semiconductor / Chip Design</strong></td>
+<td>(a) A pipelined RISC-V core in SystemVerilog with a UVM or cocotb verification environment and coverage report; bonus: submitted to Tiny Tapeout. (b) An FPGA project with a real interface (PCIe, Ethernet, DDR) and timing-closure discussion.</td>
+</tr>
+<tr>
+<td><strong>Infrastructure / Distributed</strong></td>
+<td>(a) A consensus or replicated-log implementation with fault-injection testing and a write-up of the bugs you found. (b) A Kubernetes operator or an observability tool deployed with IaC and load-tested.</td>
+</tr>
+<tr>
+<td><strong>Robotics / Embedded</strong></td>
+<td>(a) A physical robot (or drone) doing something non-trivial with ROS 2, with video and a controls/perception write-up. (b) Bare-metal firmware on a microcontroller with a custom driver and an RTOS.</td>
+</tr>
+<tr>
+<td><strong>Data Engineering / Science</strong></td>
+<td>(a) An end-to-end pipeline on a messy public dataset with orchestration, tests, data-quality checks, and a dashboard. (b) An analysis with a real causal or statistical question, honestly reported, including what you could not conclude.</td>
+</tr>
+<tr>
+<td><strong>Forward-Deployed / Applied AI</strong></td>
+<td>(a) An agentic system that automates a real workflow for a real organization (a campus club, a small business, a lab) with a case study on what went wrong. (b) A demo you can run live in an interview.</td>
+</tr>
+<tr>
+<td><strong>Quantum</strong></td>
+<td>(a) A reproduction of a paper's error-correction or algorithm result in Qiskit/Cirq/Stim. (b) A classical simulation or compiler-optimization tool with benchmarks.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="sec-8-3-portfolio-rules">Portfolio rules</h3>
+<ul>
+<li><strong>One README that a hiring manager can read in three minutes</strong> per project: problem, approach, results (numbers), what you would do differently. A short demo video or GIF.</li>
+<li><strong>Reproducibility.</strong> If it cannot be run from the README, it does not count.</li>
+<li><strong>Pin what is yours.</strong> Two or three pinned repos; archive the rest.</li>
+<li><strong>Show the process.</strong> Commit history, issues, design notes. Employers in 2030 want evidence you can <em>engineer</em>, not just <em>produce</em>.</li>
+<li><strong>Personal site optional; write-ups mandatory.</strong> A plain blog with three excellent technical posts beats a slick site with none.</li>
+</ul>
+<hr>
+<h2 id="sec-8-4">8.4 Open Source: The Highest-Leverage Undergraduate Activity</h2>
+<p>For every Tier 1 field, the single most credible line on a 2031 new-grad résumé is "maintainer of / regular contributor to <em>[project people have heard of]</em>." It is credible because it is verified by strangers, demonstrates collaboration and code review, and often leads directly to hiring — infrastructure and ML-systems companies in particular hire out of their own contributor pools.</p>
+<p><strong>How to start (year 1–2):</strong></p>
+<ul>
+<li>Pick a project you <em>use</em> in your specialization (a Python library, a ROS package, a Rust CLI, an ML framework component, a security tool).</li>
+<li>Read the contributing guide. Fix documentation, then "good first issue" bugs. Learn the project's review culture.</li>
+<li>Aim for 5–10 merged PRs in the first year. Quality and follow-through beat volume.</li>
+</ul>
+<p><strong>How to level up (year 2–3):</strong></p>
+<ul>
+<li>Own a feature or a subsystem. Triage issues. Review others' PRs.</li>
+<li>Apply to <strong>Google Summer of Code</strong>, <strong>MLH Fellowship</strong>, or a foundation-sponsored program (Linux Foundation, CNCF, Apache, NumFOCUS). These are paid, structured, and recruiters know them.</li>
+<li>In systems/ML: contributions to inference engines (vLLM, llama.cpp, SGLang), compilers (MLIR, LLVM, TVM), or Kubernetes ecosystem projects carry outsized weight because those companies hire aggressively.</li>
+<li>In semis: OpenROAD, Yosys, cocotb, RISC-V software ecosystem, Tiny Tapeout.</li>
+<li>In security: fuzzers, static analyzers, the CTF-tooling ecosystem, disclosed vulnerabilities in widely used open-source software.</li>
+</ul>
+<hr>
+<h2 id="sec-8-5">8.5 Competitions That Employers Actually Recognize</h2>
+<p>Competitions are worth doing when (a) the field's employers use them as a signal, or (b) they force you to build a depth artifact. Ranked by career signal in the relevant field:</p>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>Competition</th>
+<th>Field</th>
+<th>Signal strength</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CTFs</strong> (picoCTF → CSAW → DEF CON quals; CTFtime ranking)</td>
+<td>Security</td>
+<td>Very high</td>
+<td>The de facto credential in security hiring; a top-ranked team placement is worth more than most certifications. Join or found your school's CTF team in year 1.</td>
+</tr>
+<tr>
+<td><strong>ICPC</strong></td>
+<td>Algorithms / general SWE, quant</td>
+<td>High (top-tier), moderate otherwise</td>
+<td>Regional finalist and above is noticed by quant firms, Big Tech, and AI labs. Also the best interview prep there is.</td>
+</tr>
+<tr>
+<td><strong>Kaggle</strong></td>
+<td>Data science / ML</td>
+<td>Moderate–high with medals</td>
+<td>Competition Master/Grandmaster is real signal; a bronze is not. Notebooks and datasets contributions also count.</td>
+</tr>
+<tr>
+<td><strong>Tiny Tapeout / eFabless open MPW</strong></td>
+<td>Semiconductors</td>
+<td>High</td>
+<td>Having <em>actually taped out silicon</em> as an undergrad is rare and memorable.</td>
+</tr>
+<tr>
+<td><strong>RoboSub / RoboBoat / IGVC / FIRST mentoring / F1TENTH / RoboCup</strong></td>
+<td>Robotics</td>
+<td>High</td>
+<td>Team-based; document your subsystem. Autonomy companies recruit from these teams.</td>
+</tr>
+<tr>
+<td><strong>Hackathons</strong> (MLH, company-sponsored)</td>
+<td>Applied AI / FDE / startups</td>
+<td>Moderate</td>
+<td>Winning a serious one helps; attending forty does not. Use them to prototype portfolio pieces.</td>
+</tr>
+<tr>
+<td><strong>Formula SAE Electric / Solar Car / CubeSat programs</strong></td>
+<td>Embedded, aerospace, energy</td>
+<td>High for hardware roles</td>
+<td>The embedded and power-electronics experience is exactly what defense/aerospace/EV employers want.</td>
+</tr>
+<tr>
+<td><strong>Putnam / math olympiads</strong></td>
+<td>Quant, research</td>
+<td>High for quant and PhD admissions</td>
+<td>Only if you are genuinely strong.</td>
+</tr>
+<tr>
+<td><strong>AI red-teaming challenges, model-safety competitions</strong></td>
+<td>AI security</td>
+<td>Rising</td>
+<td>New and uneven, but frontier labs watch them.</td>
+</tr>
+<tr>
+<td><strong>Cyber 9/12, NCL, CCDC</strong></td>
+<td>Security (policy, defense)</td>
+<td>Moderate</td>
+<td>Good for defense/government-oriented security careers.</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="sec-8-6">8.6 Certifications: Mostly Skip, With Exceptions</h2>
+<p>For CS/CE degree-holders aiming at Tier 1–2 careers, <strong>most certifications are a poor use of time</strong> — they certify tool familiarity, not engineering ability, and employers in those fields know it. The exceptions are those that (a) are hard, (b) are hands-on, or (c) unlock a gate.</p>
+<p><strong>Worth it:</strong></p>
+<ul>
+<li><strong>Security:</strong> OSCP (hands-on offensive; genuinely respected), and for the defense/government path, Security+ is a <em>checkbox</em> required by DoD 8140 for many roles — cheap and quick, get it if you go that route. CISSP is for later career (requires experience).</li>
+<li><strong>Infrastructure/cloud:</strong> CKA/CKAD (Kubernetes, hands-on), and one cloud professional-level cert (AWS Solutions Architect Professional / GCP Professional Cloud Architect) <em>if</em> you are targeting cloud/enterprise roles; associate-level certs are noise.</li>
+<li><strong>Cloud security:</strong> AWS/GCP security specialty, or CCSK, for cloud-security roles.</li>
+<li><strong>Semiconductors:</strong> none needed. Vendor tool training (Synopsys/Cadence) is done by employers.</li>
+<li><strong>Networking:</strong> CCNA if you go network/infra at an ISP or enterprise; otherwise skip.</li>
+</ul>
+<p><strong>Skip (for degree-holders):</strong> CompTIA A+/Network+, entry-level cloud practitioner certs, most "AI" or "prompt engineering" certificates, bootcamp certificates, most vendor product certifications. They neither differentiate nor teach.</p>
+<p><strong>Clearances are not certifications, but they are the most valuable "credential" a US-citizen student can acquire</strong> — see <a href="09-market.html#sec-9-4">Section 9.4</a>. Programs like DoD SMART and CyberCorps SFS effectively hand you one.</p>
+<hr>
+<h2 id="sec-8-7">8.7 Interview Preparation for the 2030–2031 Cycle</h2>
+<p>The interview is being redesigned around AI, and you should prepare for the format that will exist in 2030, not the one on YouTube today.</p>
+<p><strong>What is changing (visible by 2026, likely standard by 2030):</strong></p>
+<ul>
+<li><strong>Proctored or in-person technical screens</strong> are back at many large employers, in reaction to AI-assisted cheating on remote screens. Expect at least one round where you code without tools.</li>
+<li><strong>"AI-allowed" rounds</strong> where you are <em>expected</em> to use an agent and are evaluated on how you direct it, verify its output, and catch its mistakes. Companies including major AI labs and several Big Tech teams piloted this in 2025–26.</li>
+<li><strong>Systems design and debugging rounds</strong> weighted more heavily relative to LeetCode-style puzzles, especially for infra, security, and ML roles.</li>
+<li><strong>Work-sample / take-home projects with a follow-up defense</strong> — you must explain and extend what you submitted.</li>
+<li><strong>Domain rounds</strong> for specialized roles: RTL/verification whiteboarding for semis; ML systems and math for MLE; exploitation or threat-modeling for security; controls/perception for robotics.</li>
+</ul>
+<p><strong>How to prepare (start of year 3 through fall of year 4):</strong></p>
+<ol>
+<li><strong>Algorithms and data structures, by hand.</strong> A structured set (~150–250 problems across patterns) is still necessary for most software roles. Do them without AI. Start summer 2029.</li>
+<li><strong>Systems design.</strong> Learn to reason about scale, consistency, failure, cost. Practice explaining a design aloud. Read real post-mortems.</li>
+<li><strong>Debugging drills.</strong> Take a working project, introduce bugs, fix them under time pressure. Practice reading unfamiliar code fast.</li>
+<li><strong>Agent-directed coding drills.</strong> Give yourself a task and an agent; practice decomposition, specification, verification, and <em>catching</em> an intentionally wrong output. Be able to articulate your workflow.</li>
+<li><strong>Domain prep</strong> per your specialization (Section 3–4 profiles list the canonical topics).</li>
+<li><strong>Behavioral/communication.</strong> Stories about ownership, conflict, failure, and impact from internships, research, and projects. Practice with a friend or record yourself.</li>
+<li><strong>Mock interviews</strong> with upperclassmen, alumni, or peer platforms — at least ten before your first real one.</li>
+</ol>
+<hr>
+<h2 id="sec-8-8">8.8 The Grad-School Decision</h2>
+<p><strong>Default position for this guide: for most Tier 1–2 careers, a bachelor's plus strong internships beats a master's in expected value, and a PhD is only worth it for a specific set of careers.</strong> But the exceptions are large and field-specific, and the enrollment collapse in master's programs (CRA Taulbee: −26%) may create a contrarian opportunity by 2031.</p>
+<h3 id="sec-8-8-when-each-path-wins">When each path wins</h3>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>Path</th>
+<th>Choose it when</th>
+<th>Avoid it when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Straight to industry (BS)</strong></td>
+<td>You have a return offer or strong pipeline; your target field hires at BS (SWE, security, infra, data eng, FDE, most robotics, PM, enterprise cloud); you want optionality and income.</td>
+<td>You have no offers <em>and</em> the market is in Scenario C; or your field requires MS (see below).</td>
+</tr>
+<tr>
+<td><strong>MS (1–2 years, or 4+1 / integrated)</strong></td>
+<td>Target field expects it: <strong>semiconductor design and verification</strong> (MS is the norm at major chip companies), <strong>quantitative finance</strong>, <strong>robotics/controls</strong> at research-heavy firms, <strong>ML research engineering</strong> at labs; or you are pivoting fields; or you are an international student who needs the STEM-OPT extension and a second recruiting cycle; or you graduated into a bad cycle and the 4+1 costs one year.</td>
+<td>You would attend a low-value cash-cow program with no research or recruiting pipeline; you are only delaying a job search you fear.</td>
+</tr>
+<tr>
+<td><strong>PhD (5–6 years)</strong></td>
+<td>You want research as your job: <strong>AI research scientist</strong>, <strong>quantum</strong>, <strong>computer architecture research</strong>, <strong>cryptography</strong>, <strong>robotics research</strong>, <strong>academia</strong>, deep-tech founding. You have worked in a lab, enjoyed it, and have faculty support. Funding is available (PhDs in CS/CE are almost always funded).</td>
+<td>Your motivation is avoiding the job market, prestige, or an assumption that PhD = higher pay. In most software careers, six years of industry experience out-earns a PhD.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="sec-8-8-the-2031-twist">The 2031 twist</h3>
+<p>Master's enrollment fell sharply in 2024–26 (international enrollment shock, cost, AI anxiety). If that persists, <strong>MS programs in 2031 will be less competitive to enter and their graduates less numerous</strong> at exactly the moment semis, defense, and robotics need them. A CE student planning a chip-design or robotics career should treat a 4+1 or funded MS as a strong default, not a fallback. Conversely, an "AI/ML" MS from a program with no research or recruiting pipeline is the most oversold degree of the decade — evaluate programs by placement data and faculty, not by title.</p>
+<h3 id="sec-8-8-rules-of-thumb">Rules of thumb</h3>
+<ul>
+<li><strong>Never pay full price for a master's you could get funded or employer-sponsored.</strong> Many Tier 1 employers (semis, defense, Big Tech) fund part-time MS degrees.</li>
+<li><strong>Do research by year 3 regardless of your plan.</strong> It is the only way to know whether you want a PhD, and it is the artifact that makes you look "senior-like" either way.</li>
+<li><strong>PhD admissions in AI are brutal; in architecture, quantum, robotics, and security they are merely hard.</strong> Apply broadly; a strong letter from a faculty member you actually worked with matters more than GPA.</li>
+<li><strong>Terminal MS at a strong program in a <em>specific</em> domain (VLSI, robotics, security, quant) &gt; generic "MS in Computer Science" with no focus.</strong></li>
+</ul>
+<hr>
+<h2 id="sec-8-9">8.9 Scholarships and Funded Programs (Especially for US Citizens)</h2>
+<p>These are dramatically under-applied-to relative to their value. Several effectively hand you a Tier 1 job and a clearance.</p>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>Program</th>
+<th>What it gives</th>
+<th>Obligation</th>
+<th>Who is eligible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DoD SMART Scholarship</strong></td>
+<td>Full tuition, ~$30–46k/yr stipend, paid summer internships at a DoD lab, <strong>guaranteed civilian job</strong> on graduation, sponsored clearance</td>
+<td>1 year of service per year funded</td>
+<td>US citizens in STEM (CS/CE strongly represented); apply as early as freshman year</td>
+</tr>
+<tr>
+<td><strong>CyberCorps Scholarship for Service (SFS)</strong></td>
+<td>Full tuition + fees, ~$27k/yr (undergrad) or ~$37k/yr (grad) stipend, professional allowance, <strong>guaranteed federal/state/tribal cybersecurity job</strong> placement</td>
+<td>Work in government cyber for as many years as funded</td>
+<td>US citizens at participating institutions; junior/senior/grad</td>
+</tr>
+<tr>
+<td><strong>NSF Graduate Research Fellowship (GRFP)</strong></td>
+<td>3 years of funding for a research-based MS/PhD</td>
+<td>None</td>
+<td>US citizens/permanent residents; apply senior year or first year of grad school</td>
+</tr>
+<tr>
+<td><strong>GEM Fellowship</strong></td>
+<td>MS or PhD funding + paid internship with a sponsoring employer (many Tier 1 companies)</td>
+<td>None beyond internship</td>
+<td>Underrepresented groups in STEM</td>
+</tr>
+<tr>
+<td><strong>Hertz, Churchill, Goldwater</strong></td>
+<td>Prestige fellowships for research-oriented students</td>
+<td>None</td>
+<td>Highly competitive; Goldwater is for undergrads years 2–3</td>
+</tr>
+<tr>
+<td><strong>SIA/SEMI, company-sponsored semiconductor scholarships</strong> (Micron, Intel, TI, GlobalFoundries, state CHIPS programs)</td>
+<td>Tuition support + internship pipelines</td>
+<td>Usually none</td>
+<td>Varies; often regional to fab locations</td>
+</tr>
+<tr>
+<td><strong>Air Force/Navy/Army ROTC (STEM)</strong></td>
+<td>Full tuition + stipend, commission as officer, often into cyber/space/signals roles</td>
+<td>4–8 years service</td>
+<td>US citizens; a legitimate path into cyber/space careers with a clearance</td>
+</tr>
+<tr>
+<td><strong>Employer tuition programs</strong></td>
+<td>Part-time MS paid by employer after hire</td>
+<td>Usually 1–2 years retention</td>
+<td>Nearly all major semis, defense, and Big Tech employers</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Action for a citizen enrolling in 2027:</strong> read the SMART and SFS eligibility pages in fall 2027, and put the December (SMART) and winter (SFS) deadlines on your Year 1 and Year 2 calendars from <a href="07-roadmap.html#sec-7">Section 7</a>. Even if you ultimately decline, having a guaranteed cleared job in hand in 2030 is the best hedge in this entire guide.</p>
+<hr>
+<h2 id="sec-8-10">8.10 Networking, Conferences, and Referrals: The Cheapest Odds Multiplier</h2>
+<p><a href="07-roadmap.html#sec-7">Section 7</a> mentioned in passing that a warm referral roughly triples your interview odds. That single fact deserves its own section, because networking is the highest-return, lowest-cost activity in this guide and the one engineering students most reliably neglect. In a market where new grads are ~10% of hires and companies prefer people they already know, <em>being known</em> is not a soft skill; it is the funnel.</p>
+<h3 id="sec-8-10-referrals-how-they-actually-work">Referrals: how they actually work</h3>
+<ul>
+<li>At most large employers, a referred application is routed to a recruiter for human review instead of (or before) the automated screen. That is the whole advantage — and it is enormous when the screen rejects 90%+ of applicants.</li>
+<li><strong>Who can refer you:</strong> any current employee, including a 23-year-old who interned there last summer. Alumni from your school one to three years ahead of you are the richest, most responsive source. Upperclassmen returning from internships are the second.</li>
+<li><strong>How to ask:</strong> a short, specific message — who you are, the exact posting ID, one sentence on why you fit, résumé attached, and an explicit "would you be comfortable referring me?" Most engineers say yes to a polite, prepared request; referral bonuses give them a reason. Never ask a stranger for "a chat about their journey" when what you want is a referral; ask for the referral.</li>
+<li><strong>Reciprocity:</strong> once you have interned somewhere, refer the people behind you. This is how a school's pipeline into a company gets built, and it compounds.</li>
+</ul>
+<h3 id="sec-8-10-conferences-go-as-a-student-volunteer">Conferences: go as a student volunteer</h3>
+<p>Major technical conferences run <strong>student volunteer programs</strong> that waive registration (often $1,000+) and sometimes cover travel, in exchange for ~15–20 hours of badge-scanning and room-monitoring. In return you spend three days in the same building as every senior engineer and hiring manager in your target field. Apply four to six months ahead.</p>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>Field</th>
+<th>Conferences worth volunteering at</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Security</td>
+<td>DEF CON, Black Hat (student programs), BSides (free/cheap, everywhere), CSAW finals, ShmooCon</td>
+<td>The security community hires from its own; a CTF finals appearance plus a DEF CON badge is a résumé line</td>
+</tr>
+<tr>
+<td>AI/ML</td>
+<td>NeurIPS, ICML, ICLR (volunteer programs; also workshops accept undergrad posters), CVPR for vision</td>
+<td>Lab recruiters attend; a workshop poster gets you 20 conversations with people who hire</td>
+</tr>
+<tr>
+<td>Semiconductors / architecture</td>
+<td>DAC, ISCA, MICRO, Hot Chips (student rate), ISSCC (circuits)</td>
+<td>Small, senior, industry-dense; students are rare and remembered</td>
+</tr>
+<tr>
+<td>Infrastructure / cloud</td>
+<td>KubeCon + CloudNativeCon (Linux Foundation scholarships), SREcon, Strange Loop successors, USENIX ATC/OSDI/NSDI</td>
+<td>CNCF and USENIX student grants are generous and under-applied</td>
+</tr>
+<tr>
+<td>Robotics</td>
+<td>ICRA, IROS, RSS, ROSCon</td>
+<td>Every autonomy company sends recruiters to ICRA</td>
+</tr>
+<tr>
+<td>Quantum</td>
+<td>APS March Meeting, QIP, IEEE Quantum Week</td>
+<td>Tiny field — everyone meets everyone</td>
+</tr>
+<tr>
+<td>Broad recruiting fairs</td>
+<td>Grace Hopper Celebration, Tapia, NSBE, SHPE, SWE, oSTEM, AfroTech</td>
+<td>Tier 1 employers interview on site; student travel scholarships are common</td>
+</tr>
+<tr>
+<td>Defense / gov</td>
+<td>AFCEA events, SANS summits, agency-specific career fairs, university defense-industry days</td>
+<td>Clearance-sponsoring employers concentrate here</td>
+</tr>
+</tbody>
+</table></div>
+<p>At a conference, the goal is not to collect business cards. It is to have three real technical conversations a day and follow each one up within 48 hours with a two-line email and a link to something you built.</p>
+<h3 id="sec-8-10-the-low-effort-habits-that-compound">The low-effort habits that compound</h3>
+<ul>
+<li><strong>LinkedIn hygiene by year 2:</strong> a real photo, a headline that names your target field ("CE student — RTL/verification, RISC-V, Tiny Tapeout"), pinned projects, and a one-paragraph About. Recruiters search LinkedIn by keyword; make sure yours contain the words in <a href="03-tier1.html#sec-3">Sections 3–4</a>.</li>
+<li><strong>Alumni outreach cadence:</strong> two messages a week to alumni in your target field from year 2 onward. Expect ~30% response; each response is a future referral.</li>
+<li><strong>Office hours and faculty:</strong> professors write the letters, know the lab managers, and get emails from former students who now hire. The professor whose office hours you attended every week is worth more than any online course.</li>
+<li><strong>Local meetups and user groups</strong> (Rust, Kubernetes, ML, hardware hacking, OWASP chapters): free, small, and full of the mid-career engineers who will refer you. Especially valuable outside the major hubs.</li>
+<li><strong>Write publicly.</strong> A short technical post that gets shared in your field's community is a networking event that runs while you sleep. <a href="#sec-8-3">Section 8.3</a> covers what to write.</li>
+<li><strong>Be findable:</strong> GitHub, a personal site or blog, a consistent handle. When someone hears your name after a conversation, they will search it.</li>
+</ul>
+<p>None of this substitutes for skill. All of it determines whether your skill gets a human's attention in a market that has automated away most of the other paths to one.</p>
+<hr>
+<h2 id="sec-8-11">8.11 Section Summary</h2>
+<ul>
+<li><strong>Invest in long-half-life skills first:</strong> math, systems, one low-level language, Python, SQL, Linux/Git, cloud, and engineering practice. Learn frameworks just in time.</li>
+<li><strong>Two-pass rule:</strong> learn every fundamental without AI, then use AI to go faster and bigger. Employers are now testing for exactly this distinction.</li>
+<li><strong>The 2030 portfolio must show verified depth</strong> — merged open-source work, CTF results, taped-out silicon, benchmarked systems, disclosed bugs, honest write-ups — not volume.</li>
+<li><strong>Open source is the highest-leverage undergraduate activity</strong> for every Tier 1 field; start in year 1.</li>
+<li><strong>Competitions matter where employers use them:</strong> CTFs for security, ICPC for algorithms/quant, Kaggle medals for DS, Tiny Tapeout for semis, robotics leagues for autonomy.</li>
+<li><strong>Skip most certifications;</strong> exceptions are OSCP, Security+ (as a DoD checkbox), CKA, and professional-level cloud/cloud-security certs for infra roles.</li>
+<li><strong>Prepare for redesigned interviews:</strong> proctored no-AI rounds, AI-allowed rounds judged on direction and verification, heavier systems and debugging emphasis.</li>
+<li><strong>Grad school:</strong> BS-to-industry by default; MS for semis, quant, robotics research, ML research engineering, and international students; PhD only for research careers — and the master's enrollment slump may make a funded MS a contrarian bargain by 2031.</li>
+<li><strong>Network deliberately:</strong> referrals roughly triple interview odds; volunteer at your field's conferences; two alumni messages a week from year 2; keep LinkedIn and GitHub findable.</li>
+<li><strong>US citizens: SMART and SFS are the most under-used advantages in American CS/CE education.</strong> Apply.</li>
+</ul>
+    </article>
+    <div class="prevnext"><a class="pn prev" href="07-roadmap.html"><span>← Previous</span><strong>7 · Four-year roadmap</strong></a><a class="pn next" href="09-market.html"><span>Next →</span><strong>9 · Market, comp, visas</strong></a></div>
+    <footer class="foot">
+      <p><em>Choosing Your Future</em>, v2.0 (September 2026). Written for students entering CS/CE in Fall 2027. All figures are cited in <a href="12-sources.html">Section 12</a>; projections are judgments, labelled as such. <a href="CS_CE_Career_Guide_2027.md" download>Download the full Markdown</a>.</p>
+    </footer>
+  </main>
+
+  <aside class="toc" aria-label="On this page">
+    <div class="toc-title">On this page</div>
+    <ul><li class="toc-l2"><a href="#sec-8-1">8.1 The Durable Skill Stack</a></li>
+<li class="toc-l3"><a href="#sec-8-1-the-stack-bottom-to-top">The stack, bottom to top</a></li>
+<li class="toc-l3"><a href="#sec-8-1-skills-that-are-specifically-rising-in-value-2027-2031">Skills that are specifically rising in value 2027–2031</a></li>
+<li class="toc-l3"><a href="#sec-8-1-skills-that-are-falling-in-value-learn-them-but-do-not-build">Skills that are falling in value (learn them, but do not build an identity on them)</a></li>
+<li class="toc-l2"><a href="#sec-8-2">8.2 How to Learn in the AI Era (The Two-Pass Rule)</a></li>
+<li class="toc-l2"><a href="#sec-8-3">8.3 The Portfolio: What Employers Believe in 2030</a></li>
+<li class="toc-l3"><a href="#sec-8-3-the-credibility-ladder-most-least-persuasive">The credibility ladder (most → least persuasive)</a></li>
+<li class="toc-l3"><a href="#sec-8-3-portfolio-specification-by-target-field">Portfolio specification by target field</a></li>
+<li class="toc-l3"><a href="#sec-8-3-portfolio-rules">Portfolio rules</a></li>
+<li class="toc-l2"><a href="#sec-8-4">8.4 Open Source: The Highest-Leverage Undergraduate Activity</a></li>
+<li class="toc-l2"><a href="#sec-8-5">8.5 Competitions That Employers Actually Recognize</a></li>
+<li class="toc-l2"><a href="#sec-8-6">8.6 Certifications: Mostly Skip, With Exceptions</a></li>
+<li class="toc-l2"><a href="#sec-8-7">8.7 Interview Preparation for the 2030–2031 Cycle</a></li>
+<li class="toc-l2"><a href="#sec-8-8">8.8 The Grad-School Decision</a></li>
+<li class="toc-l3"><a href="#sec-8-8-when-each-path-wins">When each path wins</a></li>
+<li class="toc-l3"><a href="#sec-8-8-the-2031-twist">The 2031 twist</a></li>
+<li class="toc-l3"><a href="#sec-8-8-rules-of-thumb">Rules of thumb</a></li>
+<li class="toc-l2"><a href="#sec-8-9">8.9 Scholarships and Funded Programs (Especially for US Citizens)</a></li>
+<li class="toc-l2"><a href="#sec-8-10">8.10 Networking, Conferences, and Referrals: The Cheapest Odds Multiplier</a></li>
+<li class="toc-l3"><a href="#sec-8-10-referrals-how-they-actually-work">Referrals: how they actually work</a></li>
+<li class="toc-l3"><a href="#sec-8-10-conferences-go-as-a-student-volunteer">Conferences: go as a student volunteer</a></li>
+<li class="toc-l3"><a href="#sec-8-10-the-low-effort-habits-that-compound">The low-effort habits that compound</a></li>
+<li class="toc-l2"><a href="#sec-8-11">8.11 Section Summary</a></li></ul>
+  </aside>
+</div>
+
+<div class="search-modal" id="searchModal" hidden>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="Search">
+    <input type="search" id="searchInput" placeholder="Search the whole guide… (Esc to close)" autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+    <div class="search-hint">Type at least 2 characters. ↑↓ to move, Enter to open.</div>
+  </div>
+</div>
+
+<script src="static/site.js" defer></script>
+
+</body>
+</html>

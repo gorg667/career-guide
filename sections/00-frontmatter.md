@@ -4,6 +4,7 @@
 *A data-driven, long-horizon essay and reference guide for the US student who starts a CS or CE degree in September 2027, graduates around May 2031, and will be mid-career in the 2040s.*
 
 **Version:** 2.0 — compiled September 2026; revised after a full self-review (changes summarized in Section 12.1)
+
 **Length:** ~48,000 words. Read the TL;DR first; pick a reading path below; use the table of contents to jump.
 
 ---
@@ -102,7 +103,7 @@ Every major statistical claim is tied to a primary source in Section 12.2; suppo
 9.1 Geography · 9.2 Compensation (the three modes) · 9.3 Employer Types · 9.4 Security Clearances (incl. interim, Continuous Vetting, reinstatement) · 9.5 International Students (incl. the wage-weighted H-1B lottery, cap-exempt employers) · 9.6 Remote and Hybrid · 9.7 Paying for the Degree: Cost, Debt, and Return · 9.8 Summary
 
 **10. Master Comparison Tables and Decision Matrix**
-10.1 Master Scorecard · 10.2 Personality → Career Decision Matrix · 10.3 Compensation Summary · 10.4 Major → Career Map · 10.5 Scenario Stress Test · 10.6 One-Page Summary
+10.1 Master Scorecard · 10.2 Personality → Career Decision Matrix · 10.3 Compensation Summary · 10.4 Major → Career Map · 10.5 Scenario Stress Test · 10.6 One-Page Summary · 10.7 Every Career in One Line
 
 **11. FAQs, Myths, Risks, and Hedges**
 11.1 FAQ (26 questions, incl. transfer, AP credit, EE vs CE, specialized majors, hours/week, double majors, working abroad, and a parents' guide) · 11.2 Myths · 11.3 Risks and Hedges · 11.4 A Note on Uncertainty
