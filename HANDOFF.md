@@ -124,6 +124,8 @@ CE = scarcer degree, unlocks semis/robotics/embedded/defense/energy, and every C
 | E15: build.sh, README update, HANDOFF final status, PR #1 description, share URL | DONE | Final build 48,774 words / 2,803 lines. README v2.0. All REVIEW.md items A1–A12, B1–B9, C1–C15, D1–D4 verified addressed (B6 = leave as-is; D2 = leave). Markdown QA: all tables column-consistent, no unbalanced bold, all Section X.Y cross-refs resolve. PR #1 description updated. |
 
 ## Phase 2 status: COMPLETE (v2.0)
+**PR #1 (v1.0) was merged to main. v2.0 lives in PR #2: https://github.com/gorg667/career-guide/pull/2** — branch `genspark_ai_developer`, squashed to one commit on top of main. Any further work: commit on this branch and push; PR #2 auto-updates.
+
 Guide is at v2.0. If a successor instance is asked to improve further, suggested Phase 3 candidates (not started, in rough priority order):
 1. Per-profile "a week in the life" vignettes for the six Tier 1 careers (§3) — humanizes the choice.
 2. A short §10.7 "If you can only remember one table" — one-row-per-career with a single sentence each.
