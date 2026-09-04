@@ -169,7 +169,7 @@ Method for any Phase 3: open a REVIEW-3 block in this file first, then one file 
 | W4 quiz.html (decision matrix → questionnaire) | DONE | 10 Qs; tag boosts + dimension weight nudges; hard filters (citizen, grad school); URL-hash state; top-3 + ranks 4–10 + removed list; links to compare.html?ids= |
 | W5 roadmap.html timeline + checklists.html (localStorage) + glossary.html | DONE | roadmap: now-box (what to do this term + open windows + opening soon), Gantt of 11 recruiting windows w/ today line, period list w/ hide-past; `?today=YYYY-MM-DD` simulates a date. Data hand-transcribed from §7.1 into roadmap.js (keep in sync). checklists/glossary were done in W1 |
 | W6 search index + search UI + dark mode + print CSS polish | DONE | QA script (/tmp/qa.py, recreate if needed): all 20 pages, 0 broken internal links/anchors, 0 JS errors; dark mode verified; mobile 390px screenshots of home/explorer/compare/quiz clean; search returns results; print view OK. Fixed '28→29 careers' card text; hide `/` kbd hint on touch devices |
-| W7 README/HANDOFF update, GitHub Pages enable, PR update, share URL | DONE | README rewritten with site table + build steps; PR #2 description updated; Pages enable attempted via gh api (see log) |
+| W7 README/HANDOFF update, GitHub Pages enable, PR update, share URL | DONE | README rewritten with site table + build steps; PR #2 was already merged → opened PR #3 (squashed). `gh api …/pages` returns 403 for this token, so Pages must be enabled by the user in repo Settings |
 
 ## Phase 3 log
 - 2026-09-04: Phase 3 started. Repo at 38d6972 (v2.0 guide, PR #2 open). Plan written above before any code.
@@ -179,7 +179,7 @@ Method for any Phase 3: open a REVIEW-3 block in this file first, then one file 
 - 2026-09-04: W7. README updated. §10.7 in guide. All Phase 3 steps complete.
 
 ## Phase 3 — final status / how to continue
-- **Everything is in branch `genspark_ai_developer`, PR #2 → main.** After merge, GitHub Pages must serve `main` → `/docs` (Settings → Pages → Deploy from a branch → main, /docs). Site URL: https://gorg667.github.io/career-guide/
+- **PR #2 was already merged by the user before Phase 3. Phase 3 lives in branch `genspark_ai_developer` as ONE squashed commit, PR #3 → main: https://github.com/gorg667/career-guide/pull/3.** After merge, GitHub Pages must serve `main` → `/docs` (Settings → Pages → Deploy from a branch → main, /docs). Site URL: https://gorg667.github.io/career-guide/
 - Rebuild after any MD edit: `bash build.sh && python3 site/build_site.py` (needs `pip install markdown pymdown-extensions`), then commit `docs/`.
 - Data that is hand-mirrored and must be kept in sync with the MD: `site/data/careers.json` (§10.1/10.3/10.4/10.5 + summaries/tags), `site/static/roadmap.js` PERIODS/WINDOWS (§7.1), `site/static/quiz.js` Q (question bank; tags must exist in careers.json).
 - QA: Playwright script pattern in /tmp/qa.py (not in repo) — loads every docs/*.html, asserts 0 console errors, checks every internal href + #anchor resolves. Last run: 20 pages, 0 broken, 0 errors.
