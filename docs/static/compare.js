@@ -57,6 +57,7 @@
     let ids = q ? q.split(',').filter(id => byId[id]) : getSel().filter(id => byId[id]);
     if (ids.length < 2) ids = ['security', 'infra', ...ids].filter((v, i, a) => a.indexOf(v) === i).slice(0, 3);
     ['#selA', '#selB', '#selC'].forEach(s => $(s).addEventListener('change', render));
+    const pc = $('#printCmp'); if (pc) pc.addEventListener('click', () => CG.printCards(cs, data._meta));
     document.querySelectorAll('[data-pair]').forEach(b => b.addEventListener('click', () => setIds(b.dataset.pair.split(','))));
     setIds(ids);
   });

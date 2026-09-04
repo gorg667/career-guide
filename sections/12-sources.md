@@ -8,6 +8,8 @@ Scores in the scorecards (Sections 3–5, 10) are the author's judgments, calibr
 
 Every major *statistical* claim in the guide — employment levels, growth projections, unemployment rates, workforce gaps, median pay — traces to one of the primary sources in Section 12.2. Supporting figures drawn from secondary reporting (industry surveys, analyst notes, company disclosures, financial press) are listed in Section 12.3 with the caveat that they were cited via primary reporting rather than independently verified from the original dataset. Judgments, scores, scenario probabilities, and forward-looking comp bands are labeled as the author's estimates and should be read as such.
 
+**Version 2.1 changes (September 2026, after the August 27, 2026 BLS release):** re-based every BLS figure on the 2025–35 employment projections and May 2025 wages. The material changes: information security analysts +29% → **+21%** (the guide now explains the downgrade in Section 3.2 and keeps D1 = 5 on the strength of the unfilled-demand data); computer hardware engineers $155,020 → **$161,740** and +7% → **+9%** (the only Tier 1 occupation revised *upward*); data scientists +34% → **+35%** on a larger base (275,600); computer programmers now quantified at **−7%**; web developers +5% / $92,650; the computer-and-mathematical group as a whole trimmed from +10.1% to **+7.3%** — reported honestly in Section 1.4 as consistent with the "seniority-biased complement" thesis. Added the NY Fed August 2026 figures (CS 7.0%, CE 7.8% recent-grad unemployment), the National Student Clearinghouse spring 2026 enrollment decline (−8.4% CIS undergraduate), the Indeed Hiring Lab August 2026 software-postings index (74.4, up ~22% from the May 2025 low of 61.1), the H-1B $100k fee litigation status (vacated July 24, 2026; proclamation expires September 20, 2026 unless extended), and a new block in Section 9.5 on the F-1 duration-of-status final rule effective September 15, 2026. No career crossed a tier boundary. New sources are listed as items 6a, 6b, 12a, 25a, and 26a–26c below.
+
 **Version 2.0 changes (September 2026):** a full self-review (see the repository's REVIEW.md) corrected scorecard inconsistencies between Sections 3–5 and 10, rewrote the tiering rule in Section 2.2 so it matches the actual tier assignments, renamed compensation "tiers" to "modes" to avoid collision with career tiers, updated the H-1B section for the December 2025 weighted-selection final rule, corrected the international-student share of bachelor's graduates, and added roughly ten thousand words of new material (general SWE profile, specialized-major verdicts, co-ops, networking, paying for the degree, clearance mechanics, falsifiable predictions, a worked example, expanded FAQ, glossary, and checklists).
 
 ---
@@ -16,22 +18,26 @@ Every major *statistical* claim in the guide — employment levels, growth proje
 
 ### Government statistics and projections
 
-1. **US Bureau of Labor Statistics — Occupational Outlook Handbook, Computer and Information Technology.** Employment, projected growth 2024–34 / 2025–35, median pay for software developers, information security analysts, computer programmers, web developers, support specialists, network architects, database administrators, systems analysts, and IS managers.
+1. **US Bureau of Labor Statistics — Occupational Outlook Handbook, Computer and Information Technology.** Employment, projected growth 2025–35 (released August 27, 2026; earlier drafts of this guide used the 2024–34 vintage), May 2025 median pay ($109,470 for the group; ~280,000 openings per year) for software developers, information security analysts, computer programmers, web developers, support specialists, network architects, database administrators, systems analysts, and IS managers.
    https://www.bls.gov/ooh/computer-and-information-technology/
 2. **BLS OOH — Software Developers, Quality Assurance Analysts, and Testers.** 1,905,400 employed (2025); +10% 2025–35 (+185,400); ~106,100 annual openings; median $134,040 (developers $135,980; QA $104,300).
    https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm
-3. **BLS OOH — Information Security Analysts.** 182,800 employed (2024); +29% 2024–34 (+52,100); median $124,910.
+3. **BLS OOH — Information Security Analysts.** 192,900 employed (2025); +21% 2025–35 (+40,600); ~14,100 openings/yr; median $129,180 (May 2025). Prior vintage: +29% 2024–34.
    https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm
-4. **BLS OOH — Data Scientists.** 245,900 employed (2024); +34% 2024–34 (+82,500); median $112,590.
+4. **BLS OOH — Data Scientists.** 275,600 employed (2025); +35% 2025–35 (+95,400); ~24,800 openings/yr; median $120,230 (May 2025).
    https://www.bls.gov/ooh/math/data-scientists.htm
-5. **BLS OOH — Computer Hardware Engineers.** 76,800 employed (2024); +7% 2024–34; median $155,020 (semiconductor manufacturing $162,460; R&D $179,190).
+5. **BLS OOH — Computer Hardware Engineers.** 76,100 employed (2025); +9% 2025–35 (+6,900); median $161,740 (May 2025). Prior vintage: +7%, $155,020 (semiconductor manufacturing $162,460; R&D $179,190 in the May 2024 detail).
    https://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm
 6. **BLS Monthly Labor Review — Industry and Occupational Employment Projections Overview (2026).** Total US employment +3.1% 2024–34.
    https://www.bls.gov/opub/mlr/2026/article/industry-and-occupational-employment-projections-overview.htm
+6a. **BLS — Employment Projections 2025–35 news release (August 27, 2026).** Total employment +3.5% (+5.9M); computer & mathematical group +7.3% (5th-fastest group, down from +10.1%); office & administrative support −4.0% (AI/automation cited); utilities +9.8%; "computing infrastructure providers, data processing, web hosting" industry +25.1%; federal government −3.4%. Also: computer programmers −7%; web developers & digital designers +5% ($92,650); computer & information research scientists +21.8%.
+   https://www.bls.gov/news.release/ecopro.nr0.htm
+6b. **BLS — AI Exposure Categories (new data product, 2026).** Every occupation classified Low / Moderate / High / Very high on a blend of three theoretical exposure measures and two observed-usage measures (Anthropic Economic Index, Microsoft Copilot). BLS states explicitly that exposure is not a job-loss forecast. This guide cites the methodology, not individual categories.
+   https://www.bls.gov/emp/publications/ai-exposure-categories.htm
 
 ### Recent-graduate labor market
 
-7. **Federal Reserve Bank of New York — The Labor Market for Recent College Graduates.** Unemployment and underemployment by major; computer science and computer engineering among the highest recent-grad unemployment rates (~6–7%), underemployment ~19% (CS).
+7. **Federal Reserve Bank of New York — The Labor Market for Recent College Graduates.** Unemployment and underemployment by major; computer science and computer engineering among the highest recent-grad unemployment rates, underemployment ~19% (CS). August 6, 2026 release: CS 7.0%, CE 7.8% (all recent grads 5.3–5.8%), reported via Investopedia August 27, 2026.
    https://www.newyorkfed.org/research/college-labor-market
 8. **Forbes (Nietzel, Feb 2026) — Unemployment and Underemployment Rates Among Recent College Graduates.** Summary of the NY Fed data.
    https://www.forbes.com/sites/michaeltnietzel/2026/02/23/unemployment-and-underemployment-rates-among-recent-college-graduates/
@@ -45,6 +51,8 @@ Every major *statistical* claim in the guide — employment levels, growth proje
 11. **World Economic Forum — "Artificial Intelligence and the Future of Entry-Level Work" (2026).**
     https://reports.weforum.org/docs/WEF_Artificial_Intelligence_and_the_Future_of_Entry_Level_Work_2026.pdf
 12. **Indeed Hiring Lab (Jul 2026) — "AI and Job Postings: From Destruction to Creation."** Software postings +15% since Feb 2025 trough; 71% of the increase in senior roles; 37% of the net increase in AI-titled roles; postings still ~27.5% below Feb 2020.
+12a. **Indeed Hiring Lab — US Labor Market Snapshot (August 24, 2026).** Software-development postings index 74.4 (Feb 2020 = 100), up ~22% from the May 2025 low of 61.1; AI-mentioning share of all postings 6.3%.
+    https://hiringlab.indeed.com/2026/08/24/us-labor-market-snapshot-august-2026/
     https://hiringlab.indeed.com/2026/07/08/ai-and-job-postings-from-destruction-to-creation/
 
 ### Practitioner and industry labor-market reporting
@@ -82,13 +90,21 @@ Every major *statistical* claim in the guide — employment levels, growth proje
 
 ### Education pipeline
 
-25. **Computing Research Association — CRA Taulbee Survey Update (Jun 2026).** Record CS degree production alongside a cooling pipeline: new CS majors −13%, master's enrollment −26%.
+25. **Computing Research Association — CRA Taulbee Survey Update (Jun 2026).** Record CS degree production (41,858 bachelor's) alongside a cooling pipeline: new CS majors −13%, total undergraduate CS enrollment −4%, master's enrollment −26%.
     https://cra.org/crn/2026/06/cra-update-new-cra-taulbee-survey-findings-show-record-degree-production-alongside-a-cooling-enrollment-pipeline/
+25a. **National Student Clearinghouse Research Center — "Computer Science Enrollment Is Cooling" (Spring 2026 final data).** Undergraduate computer-and-information-sciences enrollment −8.4% year over year; first-year CIS enrollment −11.2%; broadest-based (all institutions, not just PhD-granting) enrollment measure available.
+    https://www.studentclearinghouse.org/nscblog/computer-science-enrollment-is-cooling/
 
 ### Immigration
 
 26. **Forbes (Anderson, Aug 2026) — New Immigration Plan Considered to Stop Students from Working in US.** Reporting on proposed OPT fees/restrictions; context on the September 2025 $100k H-1B proclamation and November 2025 USCIS change-of-status guidance.
     https://www.forbes.com/sites/stuartanderson/2026/08/03/new-immigration-plan-considered-to-stop-students-from-working-in-us/
+26a. **DHS / ICE — Final rule, "Establishing a Fixed Time Period of Admission and an Extension of Stay Procedure for Nonimmigrant Academic Students, Exchange Visitors, and Representatives of Foreign Information Media"** (published July 17, 2026; effective September 15, 2026). Ends "duration of status"; four-year admission cap; 30-day grace period; first-year restrictions on changing major/level/transfer; extension-of-stay requirement for OPT. Proposed rule: Federal Register 2025-16554 (August 28, 2025).
+    https://www.federalregister.gov/documents/2025/08/28/2025-16554
+26b. **Yale Office of International Students & Scholars — "Elimination of Duration of Status: Summary and FAQs" (July 22, 2026).** Plain-language university summary of the final rule used for the practical implications in Section 9.5.
+    https://oiss.yale.edu/immigration/elimination-of-duration-of-status-summary-faqs
+26c. **Klasko Immigration Law Partners — "$100,000 H-1B Fee Blocked Again" (August 7, 2026).** Litigation timeline: D. Mass. vacatur June 8, 2026; First Circuit denial of stay July 24, 2026; proclamation expiry September 20, 2026; FY2027 cap reached June 30, 2026 under the wage-weighted rule.
+    https://www.klaskolaw.com/august-2026-100000-h-1b-fee-blocked-again/
 
 ---
 
@@ -157,8 +173,8 @@ The reader is enrolling in 2027 and graduating in 2031; this guide will age. Re-
 1. **The NY Fed recent-grad table** (annual, February) — is CS/CE recent-grad unemployment converging back toward the all-majors average? If it falls below ~4.5%, the cobweb correction has arrived.
 2. **Indeed Hiring Lab software postings** (monthly) — is the level recovering toward the Feb 2020 baseline? What share of new postings are AI-titled and senior?
 3. **The Pragmatic Engineer's annual job-market report** (January) — new-grad share of hires is the single best leading indicator for your own graduation cycle.
-4. **CRA Taulbee** (June) — enrollment trends determine your competition in 2031.
-5. **BLS OOH updates** (September, every other year for projections) — structural, slow-moving.
+4. **CRA Taulbee** (June) and the **National Student Clearinghouse spring enrollment report** (May/June) — enrollment trends determine your competition in 2031. Taulbee covers PhD-granting departments; the Clearinghouse covers every institution. Watch for the NSC first-year CIS number turning positive: that is the leading edge of the *next* oversupply.
+5. **BLS OOH updates** (late August, now revised annually) — structural, slow-moving. Compare each new vintage's computer-group growth rate against the previous one (2024–34: +10.1%; 2025–35: +7.3%); a second consecutive cut of three points or more would mean the BLS is pricing in AI substitution faster than this guide assumes. Also check whether any Tier 1 occupation moves into the BLS "Very high" AI-exposure category *and* shows a downgraded projection in the same year — that combination is the signal, exposure alone is not.
 6. **Immigration policy** (continuous) — international students should track OPT/H-1B developments through their university's international office and reputable immigration-law reporting.
 7. **Your target field's specific indicators** — semis: CHIPS fab openings and SIA workforce updates; security: ISC2 annual study; AI: frontier-lab hiring pages and AI-infra capex announcements; defense: NDAA budget and defense-tech funding rounds; robotics: humanoid/autonomy deployments and funding.
 

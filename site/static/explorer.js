@@ -66,12 +66,14 @@
     const n = getSel().length;
     $('#compareLink').href = 'compare.html?ids=' + getSel().join(',');
     $('#compareHint').textContent = n ? n + ' selected (max 3).' : 'Tick up to 3 careers in the last column.';
+    const ps = $('#printSel'); if (ps) { ps.disabled = !n; ps.onclick = () => CG.printCards(getSel().map(id => data.careers.find(c => c.id === id)).filter(Boolean), data._meta); }
     $('#cardGrid').innerHTML = rows.map((r, i) => `
       <a class="card career-card tier-${r.c.tier}" href="${r.c.page}">
         <div class="row" style="justify-content:space-between"><h3 style="margin:0">${i + 1}. ${esc(r.c.short)}</h3>${tierBadge(r.c.tier)}</div>
         <p class="small" style="margin:.4em 0 .5em;color:var(--fg)">${esc(r.c.summary)}</p>
-        <p class="muted small" style="margin:0">Total <strong>${r.total == null ? '—' : r.total}</strong> · ${esc(r.c.degree)} · new-grad ${esc(r.c.comp.new_grad)}</p>
+        <p class="muted small" style="margin:0">Total <strong>${r.total == null ? '—' : r.total}</strong> · ${esc(r.c.degree)} · new-grad ${esc(r.c.comp.new_grad)} · <button type="button" class="linkbtn print-one" data-id="${r.c.id}" title="Print a one-page card for ${esc(r.c.short)}">print card</button></p>
       </a>`).join('');
+    $$('.print-one').forEach(b => b.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); const c = data.careers.find(x => x.id === b.dataset.id); if (c) CG.printCards([c], data._meta); }));
   }
 
   load().then(d => {

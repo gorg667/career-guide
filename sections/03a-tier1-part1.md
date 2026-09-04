@@ -28,7 +28,7 @@ The role sits at the intersection of three skills that rarely co-occur: **softwa
 | Google MLE L3 → L7 | $199k → $743k | Levels.fyi |
 | Meta MLE E3 → E7 | $187k → $1.45M | Levels.fyi |
 | BLS "Computer & information research scientists" median | $140,910 (master's typical) | BLS OOH |
-| BLS "Data scientists" growth 2024–34 | +34% | BLS OOH |
+| BLS "Data scientists" growth 2025–35 | +35% | BLS OOH |
 | Anthropic 2-yr retention | 80% (highest in industry) | SignalFire |
 
 ### Sub-specialties (pick one by junior year)
@@ -41,6 +41,10 @@ The role sits at the intersection of three skills that rarely co-occur: **softwa
 
 ### A day in the life (mid-level, 2026)
 Morning: review overnight eval-suite results for a new model version; a regression in tool-calling accuracy on one customer's workflow. Investigate with an agent's help, trace it to a prompt-template change, write a targeted eval so it cannot recur. Midday: pair with a data engineer on a pipeline that produces training examples from production logs (with privacy filtering). Afternoon: profile inference latency on the serving cluster; try a quantized variant; measure quality delta; write up the tradeoff for the team. Late: read one paper, skim the model release notes from two labs.
+
+### A week in the life (new grad, first year, applied-AI team at a mid-size product company)
+**Monday.** Team planning. Your ticket for the sprint: the customer-support agent is hallucinating refund policies for one product line. You are handed a Notion page of 40 bad transcripts and told to "figure out why and make an eval." **Tuesday.** You cluster the failures (an agent helps; you check its clusters by hand), discover the retrieval step is returning the *old* policy document, and write 25 golden test cases into the eval harness so the regression is caught automatically next time. **Wednesday.** Fix the retrieval filter; the eval goes from 60% to 96%; your PR gets three review comments, two about logging, one about a missing unit test. You learn that "it works in the notebook" is not a merge criterion. **Thursday.** Shadow the on-call engineer; watch how they read the inference-cost dashboard; realize how much of the job is cost-per-request, not model quality. **Friday.** Demo the eval to the team in a 10-minute slot; write the two-paragraph internal post; spend the last hour reading the model-release notes from two labs and updating a shared "what changed this month" doc that a senior engineer started and you have quietly taken over.
+*What is missing from this week:* training a model. Almost no new grad trains models. You measured, fixed a pipeline, wrote tests, and communicated. That is the job.
 
 ### Entry path from a BS (no grad school)
 Realistic — but the bar is high. The 2031 new-grad who lands an MLE role typically has:
@@ -85,7 +89,7 @@ Mathematically comfortable, experimentally minded, happy iterating on metrics, t
 Security engineers make systems hard to attack and fast to recover. Unlike the "SOC analyst watching dashboards" stereotype, the modern *security engineer* is a software/systems engineer who specializes in adversarial thinking: designing authentication and authorization systems, auditing and hardening cloud infrastructure, finding and fixing vulnerabilities in code (yours and your dependencies'), building detection pipelines, running incident response, and — the fastest-growing piece — **securing and red-teaming AI systems** (prompt injection, data exfiltration via tools, model supply chain, agent permissioning).
 
 ### Why it's Tier 1
-- **Demand is structural and accelerating.** BLS projects information security analysts **+29% (2024–34)** — the second-fastest-growing occupation in the entire computer/math group after data scientists, and about *ten times* the all-occupation average. BLS explicitly cites AI adoption as a growth driver.
+- **Demand is structural.** BLS projects information security analysts **+21% (2025–35)** — still "much faster than average" and roughly *five times* the all-occupation rate, with ~14,100 openings a year. Note the honest downgrade: the prior cycle (2024–34) said +29%. The August 2026 re-basing trimmed growth across the whole computer group (from +10.1% to +7.3%) as the BLS folded in AI-productivity assumptions; security was trimmed *less* than software development, and the private-sector gap measures (CyberSeek's ~500k unfilled US roles) did not move. Our D1 score stays at 5 because the tiering rule scores *unfilled demand relative to supply*, not the BLS growth rate alone — but if the 2027 CyberSeek count falls below ~400k, revisit it.
 - **AI is a force multiplier for both sides**, which means more attacks, more surface area (every agent with tool access is a new attack vector), and more demand for defenders who understand both security *and* AI. There is no scenario in Section 1.5 where this demand falls.
 - **Multiple stacked moats:** adversarial expertise is hard to fake; in government, defense, finance, and critical infrastructure a **security clearance (US citizens only)** or regulatory expertise adds a second moat; and the cost of error (breaches averaging $4–5M per IBM's annual study, plus regulatory fines) keeps accountable humans firmly in the loop.
 - **Employer breadth.** Every organization with data is a potential employer: tech, finance (16% of BLS infosec employment), government, healthcare, energy, defense, consultancies, and a large vendor ecosystem (CrowdStrike, Palo Alto, Wiz — whose engineering headcount grew **+84% in two years** before Google acquired it for $32B).
@@ -93,8 +97,9 @@ Security engineers make systems hard to attack and fast to recover. Unlike the "
 ### The data
 | Metric | Value | Source |
 |---|---|---|
-| BLS growth 2024–34 | +29% (182,800 → 234,900) | BLS OOH |
-| BLS median pay (May 2024) | $124,910; 90th pct $186,420 | BLS OOH |
+| BLS growth 2025–35 | +21% (192,900 → 233,500); ~14,100 openings/yr | BLS OOH (Aug 2026) |
+| BLS growth, prior cycle 2024–34 | +29% — downgraded in the Aug 2026 re-basing | BLS OOH (Aug 2025) |
+| BLS median pay (May 2025) | $129,180 (May 2024: $124,910; 90th pct $186,420) | BLS OOH / OEWS |
 | Openings/yr | ~16,000 | BLS OOH |
 | Global workforce gap | ~4.8M (ISC2 2024) | ISC2 |
 | US cyber job postings | ~514k (CyberSeek) | CyberSeek |
@@ -115,6 +120,10 @@ An honest nuance: the "millions of unfilled cyber jobs" headline overstates *ent
 
 ### A day in the life (product security engineer, mid-level)
 Morning: triage three new findings from the automated code-scanning pipeline; two are false positives (annotate and tune the rule), one is a real authorization bypass in a new API — write a proof of concept, file a P1, pair with the owning team on the fix. Midday: threat-model a new feature that lets an internal AI agent call external APIs on behalf of users; identify prompt-injection paths and propose a permission-scoping design. Afternoon: review a vendor's SOC 2 report; update the dependency-policy allowlist. Late: 30 minutes on a CTF challenge to keep sharp.
+
+### A week in the life (new grad, product security, cloud company)
+**Monday.** Vulnerability-management standup: 14 new findings from the code-scanning pipeline over the weekend. You own triage for two services. Nine are noise — you tune the rule and write down why. **Tuesday.** One finding is real: an internal API accepts a user ID from the request body instead of the session. You write a three-line proof of concept, record a 40-second screen capture, file it as a P1, and pair with the owning team's engineer on the fix. They are gracious; you learn to lead with the fix, not the blame. **Wednesday.** Threat-modeling session for a new feature; you are the junior in the room, so your job is the diagram and the notes — but you spot that an AI agent's tool permissions are not scoped per-tenant, and the senior engineer says "good catch" in front of everyone. **Thursday.** Bug-bounty queue: reproduce two external reports, reject one as a duplicate with a polite explanation, escalate the other. Read a vendor's pentest report and summarize it for the compliance team. **Friday.** Run a 45-minute "secure code review" session for a partner team using their own codebase; spend the afternoon on your quarterly project — a linter rule that catches the Tuesday bug class everywhere.
+*What is missing:* hacking. You spent the week reading other people's code, writing small tools, and talking. Offensive skill is the entry ticket; communication is the job.
 
 ### Entry path from a BS
 Very realistic; security is one of the more BS-accessible Tier 1 fields.
@@ -163,7 +172,7 @@ Designing the chips that everything else runs on. The work splits into:
 - **Process/device/yield engineering** — inside the fab; more EE/materials/ChemE, but CE grads work in test and product engineering.
 
 ### Why it's Tier 1
-- **Highest median pay of any computing occupation in the BLS data: $155,020** (computer hardware engineers, May 2024), with the semiconductor-manufacturing industry paying $162k and R&D $179k medians. The 90th percentile is $224k *economy-wide* — and that excludes the equity that has made mid-career NVIDIA, Broadcom, and AMD engineers wealthy.
+- **Highest median pay of any computing occupation in the BLS data: $161,740** (computer hardware engineers, May 2025 — up from $155,020 a year earlier, a 4.3% rise that outpaced software developers), with the semiconductor-manufacturing industry paying $162k and R&D $179k medians in the May 2024 detail. The 90th percentile was $224k *economy-wide* in 2024 — and that excludes the equity that has made mid-career NVIDIA, Broadcom, and AMD engineers wealthy.
 - **Acute, documented talent shortage.** SIA/Oxford Economics project the US semiconductor workforce growing ~115,000 jobs by 2030 with **~67,000 (58%) at risk of going unfilled**, including ~27,000 engineers and computer scientists. IEEE Spectrum, EE Times, and every industry CEO say the same thing: the pipeline is too thin, because a generation of US students chose software.
 - **Geopolitics guarantees the investment.** The CHIPS and Science Act ($39B manufacturing + $11B R&D) plus $400B+ in announced private fab investment (TSMC Arizona, Intel Ohio/Arizona, Samsung Texas, Micron New York/Idaho, GlobalFoundries, TI) come online **2027–2030 — precisely your college years and first job.** Export controls and US–China competition make domestic chip talent a national-security priority that is very unlikely to reverse before 2031 under either party.
 - **The AI boom is a chip boom.** Every hyperscaler is now designing its own silicon (Google TPU, AWS Trainium/Inferentia, Microsoft Maia, Meta MTIA, OpenAI/Broadcom, Tesla Dojo) in addition to NVIDIA, AMD, and a dozen well-funded startups (Cerebras, Groq, SambaNova, Etched, Tenstorrent, d-Matrix). Cadence entered the top-20 companies by *software* openings in 2026; Micron, Qualcomm, and AMD are hiring far more software engineers than a year ago.
@@ -173,15 +182,15 @@ Designing the chips that everything else runs on. The work splits into:
 ### The data
 | Metric | Value | Source |
 |---|---|---|
-| BLS median, computer hardware engineers (2024) | $155,020; 90th pct $223,820 | BLS OOH |
+| BLS median, computer hardware engineers (May 2025) | $161,740 (May 2024: $155,020; 90th pct $223,820) | BLS OOH / OEWS |
 | Median in semiconductor mfg / R&D industries | $162,460 / $179,190 | BLS OOH |
-| BLS growth 2024–34 | +7% (76,800 → 82,400) — but see note | BLS OOH |
+| BLS growth 2025–35 | +9% (76,100 → 83,000; ~4,100 openings/yr) — *raised* from +7% in the prior cycle; see note | BLS OOH (Aug 2026) |
 | Electrical & electronics engineers median | $118,780 | BLS OOH |
 | Projected unfilled US semi technical jobs by 2030 | ~67,000 (~27k engineers) | SIA / Oxford Economics |
 | CHIPS Act direct funding | $39B mfg + $11B R&D | US Dept of Commerce |
 | Largest employers of CHW engineers | Semis mfg 21%, R&D 17%, systems design 16%, federal 7% | BLS OOH |
 
-*Note on the BLS +7%:* that is the occupation "computer hardware engineer" narrowly defined. Much silicon work is classified by BLS as software developer, electrical engineer, or computer research scientist, and the BLS projections were made before the full scale of the AI-silicon capex wave. The *industry* forecasts (SIA, McKinsey's $1T-by-2030 semiconductor market) are the better guide to demand.
+*Note on the BLS +9%:* that is the occupation "computer hardware engineer" narrowly defined. Much silicon work is classified by BLS as software developer, electrical engineer, or computer research scientist. It is worth noticing the direction of revision: in the August 2026 re-basing, the BLS *cut* the growth outlook for almost every software occupation and *raised* it for hardware engineers — the only Tier 1 occupation to be revised upward. The *industry* forecasts (SIA, McKinsey's $1T-by-2030 semiconductor market) are the better guide to demand.
 
 ### Sub-specialties ranked by supply/demand imbalance (best first)
 1. **Design verification (DV)** — the most under-supplied, the most BS-accessible, and a superb foundation for everything else. Start here if unsure.
@@ -195,6 +204,10 @@ Designing the chips that everything else runs on. The work splits into:
 
 ### A day in the life (DV engineer, 2 years in)
 Morning: the nightly regression flagged 3 failures out of 4,000 tests on the memory-controller block. Debug waveforms; one is a testbench bug, two are a real corner-case in the arbitration logic. File the design bug with a minimal reproducer. Midday: extend the UVM sequence library for a new feature; write coverage points so you can *prove* the corner is tested. Afternoon: formal-verify an assertion the designer swears is impossible to violate (it isn't). Late: review a junior's testbench; help them use the AI assistant to generate constrained-random stimulus faster.
+
+### A week in the life (new grad, design verification, GPU/accelerator team)
+**Monday.** The overnight regression on your block — a cache-coherence unit — shows 6 failures in 3,200 tests. Two are the same root cause: your testbench's scoreboard is mis-modeling a corner of the protocol. You fix the model; two failures disappear; the other four are real design bugs, and the designer wants a *minimal* reproducer for each. **Tuesday.** Minimal reproducers. This takes all day; you learn to read waveforms fast and to write a two-sentence bug description a designer can act on in 30 seconds. **Wednesday.** Coverage review with your lead. You are at 78% functional coverage; the gaps are the interesting part — three scenarios nobody has a test for. You write constrained-random sequences to hit them, using the AI assistant to generate the boilerplate and your own brain to decide what "interesting" means. **Thursday.** Tapeout is 11 weeks out, so the weekly triage meeting is tense; you present your block's status in 90 seconds with one slide. Afternoon: help a summer intern set up the simulator. **Friday.** Formal verification: try to prove an assertion the designer says is impossible to violate. The tool finds a 47-cycle counterexample. You have found a bug that no simulation would have hit before silicon. You go home early.
+*What is missing:* designing a chip. Nobody lets a new grad write RTL for a shipping block. But DV engineers know the design better than anyone but its author, and after two years you can move to design, architecture, or silicon software from a position of strength.
 
 ### Entry path from a BS
 Realistic for DV, FPGA, silicon software, physical design, and test/product roles. RTL design and architecture increasingly prefer an MS, but strong BS candidates with tape-out or serious FPGA project experience get in.

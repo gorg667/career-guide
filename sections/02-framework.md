@@ -9,7 +9,7 @@ We score every career on **seven dimensions**, each 1–5, and then apply judgme
 ## 2.1 The Seven Dimensions
 
 ### D1. Demand Durability (2031–2045)
-*Will there be many jobs when you graduate, and will there still be many jobs 15 years out?* (The inputs are BLS 2024–34 / 2025–35 projections and 2026 posting data; the horizon we care about is your career, 2031–2045.)
+*Will there be many jobs when you graduate, and will there still be many jobs 15 years out?* (The inputs are the BLS 2025–35 projections released August 2026 and 2026 posting data; the horizon we care about is your career, 2031–2045.)
 
 We look at: BLS 10-year projections; private posting data (Indeed, TrueUp, LinkedIn/SignalFire); capital flows (where is venture and corporate capex going?); and whether the underlying driver is a multi-decade trend (aging population, energy transition, compute demand, geopolitical competition) or a fad.
 
@@ -131,3 +131,48 @@ We promised you could re-run this analysis yourself. Here is the procedure appli
 5. **Apply the rules.** Fails Tier 1 on D2 and D3. Fails Tier 2 unless you are on the engine/rendering side. **Verdict: Tier 3 as an app developer; Tier 2 if you go down to the engine, rendering, or perception layer** — which is exactly what Section 4.9 says about graphics. The framework and the profile agree, which is the point.
 
 Try the same five steps on any career a recruiter or a relative pitches you. If it fails Q1 and Q2 together, be skeptical no matter how exciting the demo is.
+
+---
+
+## 2.7 Self-Assessment: Will I Actually Like This?
+
+Section 2.5 tells you which field fits which temperament. This section asks the prior question — whether the *degree itself* fits you — because the most expensive mistake in this guide is not choosing the wrong Tier 1 field; it is spending two years and $60,000 discovering that you do not like the work at all. The data says this happens a lot: computer science has the **lowest second-year persistence of any top-ten major (85.0%)**, versus 93.1% for engineering, and the rate fell for the second consecutive year in 2026 (National Student Clearinghouse). Roughly one in seven CS entrants is gone by sophomore year, mostly to other majors. Many of them would have been happier, and richer, starting somewhere else.
+
+Answer the twelve statements below honestly — *as you are today*, not as you plan to be. Nobody is grading this.
+
+### The twelve signals
+
+| # | Statement | What it predicts |
+|---|---|---|
+| 1 | I have built something with code, a circuit, or a script **that nobody asked me to build** — a game, a bot, a spreadsheet macro, a Minecraft mod, a website for a club — and I finished it (or got it working enough to show someone). | The single strongest predictor. Unprompted building is what every profile in Sections 3–4 rewards, and what the roadmap in Section 7 assumes. |
+| 2 | When something I built did not work, I spent **more than an hour** figuring out why, and I remember the moment I found the bug as *satisfying* rather than just relieving. | Debugging tolerance. Every job in this guide is 60–80% figuring out why something does not work. If the hour felt like punishment, that is information. |
+| 3 | I am comfortable with **algebra and functions**, I did not hate precalculus, and I am willing to do (not necessarily love) calculus, linear algebra, and probability. | The math floor for every CS/CE degree. You do not need to be a math prodigy; you need to not be at war with symbols. (Tier 1 fields 3.1 and 3.6 and Tier 2 field 4.5 raise this bar substantially — see below.) |
+| 4 | I have **taken something apart** to see how it works — a device, a program's settings, a game's files, a router's admin page — and enjoyed it more than using the thing. | Systems curiosity. Correlates with fit for CE, embedded, security, and infrastructure (Sections 3.2–3.5). If this is strongly true, read Section 6.3. |
+| 5 | I can sit with an **unsolved problem for days** without it ruining my mood; ambiguity is uncomfortable but not intolerable. | Research and design-stage tolerance. Essential for 3.1, 3.3, 4.3, 5.6; less essential for well-specified work. |
+| 6 | When I use an app, a tool, or a website, I notice **how it was built** or how it could be better, not just whether it does the job. | Engineering mindset. Absence is not disqualifying, but presence is a strong positive signal. |
+| 7 | I am willing to **be bad at something in public** — ask the obvious question, show unfinished work, get code review comments — as the price of getting good. | Predicts survival of the first internship and the first year of work (see the "week in the life" vignettes in Section 3). Students who need to look competent every day struggle in engineering cultures built on review. |
+| 8 | I have **taught myself** something technical from documentation, videos, or a forum — not for a class — and can name it. | Self-directed learning. The half-lives in Section 8.1 mean you will do this for forty years. |
+| 9 | I am comfortable **writing** — explaining what I did and why in a paragraph someone else can follow. | Underrated and increasingly decisive. Every vignette in Section 3 ends with a write-up; the Tier 1 roles are one-third communication. |
+| 10 | I find the idea of **AI writing much of the code** exciting or at least interesting — not threatening or dispiriting. | The 2027 entrant will work alongside agents from day one (Section 8.1 "AI-native workflow"). If the *point* of computing for you is typing the code yourself, that job is shrinking. |
+| 11 | I have a **second interest** — a science, a domain, an art, a sport, a cause — that I could imagine computing being *for*. | Predicts fit for the domain-moat fields (4.2, 4.4, 4.6, 5.8, 5.9) and, more broadly, for staying motivated when the code itself becomes routine. |
+| 12 | I would still be curious about this if the **pay were merely good instead of exceptional**. | The honesty check. Pay-motivated entrants have the highest attrition when the market turns — and Section 1 shows it turns. |
+
+### How to read your answers
+
+- **Nine or more "yes":** You are the person this guide is written for. Skip to Section 2.5 for which field, then Section 6 for which degree.
+- **Six to eight:** A good fit with specific gaps. Look at *which* statements were "no." Gaps on 3 or 5 point away from the math-heavy fields (3.1, 3.6, 4.3, 4.5) toward the systems and hardware fields (3.2, 3.3, 3.4, 3.5), or the reverse. A "no" on 7 or 9 is fixable and worth working on deliberately in year 1. A "no" on 1 and 8 together means you have not yet tested the premise — spend the summer before college (Section 7.2) building one thing, then re-take this.
+- **Five or fewer:** Pause. This does not mean you cannot do it; it means you have no evidence yet that you will *like* it, and the persistence data says that matters. Three honest options: (a) spend Summer 2027 doing the Section 7.2 plan as a test — if you finish a project and want to build another, your score just went up; (b) enroll in a program where switching majors in year 1 is easy and cheap (most public universities; **not** possible for international students under the 2026 duration-of-status rule — see Section 9.5); (c) consider adjacent majors with better fit and still-strong outcomes — electrical engineering, mathematics/statistics, information systems, or a science with a computing minor.
+
+### Signs this is probably not for you — said plainly
+
+None of these is fatal alone. Two or more, taken seriously, should prompt a real conversation with someone who knows you.
+
+- You have never voluntarily written a line of code or wired a circuit, and the idea does not pull at you; the pull is the salary or a parent.
+- Debugging makes you angry rather than curious, consistently, and you have tried enough to know.
+- You strongly prefer tasks with a known procedure and a clear finish line, and open-ended problems make you anxious for days. (Many excellent careers reward this — accounting, nursing, skilled trades, operations — and they are not the ones in this guide.)
+- Math has been a source of dread since middle school, and you have not found a teacher or a context that changed it. (This is the most *fixable* item on the list, but it needs fixing *before* the calculus sequence, not during.)
+- You want to work mostly with people, in person, and mostly *not* with a screen. Technical product management (Section 4.7) and forward-deployed engineering (Section 4.1) are the closest fits inside this guide, and both still require several years of engineering first.
+
+### The one-summer test
+
+If you are unsure, the cheapest possible experiment is the Summer 2027 plan in Section 7.2, run for six weeks: learn one language properly, build one thing you actually want to exist, put it on GitHub, and show it to someone. The result is not the project. It is how you felt in week four, when it did not work and nobody was making you continue. Students who wanted to keep going belong here; students who were relieved to stop have learned something worth far more than six weeks.

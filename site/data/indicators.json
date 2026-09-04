@@ -1,0 +1,210 @@
+{
+  "_meta": {
+    "source": "Hand-transcribed from the guide: §1.4 falsifiable predictions (P1–P5) and §12.5 yearly indicators. Last-known values are as of the guide's compile date. If the guide changes, update this file and rebuild.",
+    "as_of": "2026-09-04",
+    "guide_version": "2.1",
+    "status_key": {
+      "holding": "Latest value is on the guide's side of the threshold, or moving toward it.",
+      "watch": "Latest value is mixed or moving slowly; not yet decisive.",
+      "failing": "Latest value contradicts the guide's expectation.",
+      "pending": "The check cannot be made yet (future data)."
+    }
+  },
+  "predictions": [
+    {
+      "id": "P1",
+      "title": "Recent-grad CS unemployment falls back toward the all-majors average by the 2031 cycle",
+      "metric": "NY Fed recent-grad unemployment, computer science",
+      "threshold": "< 5.0% by the 2031 cycle",
+      "baseline": {"value": "7.0% (CS), 7.8% (CE)", "date": "2026-08", "note": "All recent grads: ~5.3–5.8%."},
+      "history": [
+        {"date": "2025-02", "value": "6.1% (CS), 7.5% (CE)"},
+        {"date": "2026-02", "value": "~6–7% (CS)"},
+        {"date": "2026-08", "value": "7.0% (CS), 7.8% (CE)"}
+      ],
+      "status": "watch",
+      "status_note": "Moving the wrong way in 2026; the guide expects the turn after the smaller 2027–2029 cohorts hit the market. If still > 6% in early 2029, treat P1 as failing.",
+      "cadence": "Quarterly (NY Fed); the February release is the one most reported.",
+      "where": [
+        {"label": "NY Fed — The Labor Market for Recent College Graduates", "url": "https://www.newyorkfed.org/research/college-labor-market"}
+      ],
+      "guide_ref": {"label": "§1.4", "href": "01-landscape.html#sec-1-4"},
+      "if_fails": "The cobweb-recovery half of the argument was wrong; lean harder on the counter-cyclical, moated careers (semis, defense, security, energy)."
+    },
+    {
+      "id": "P2",
+      "title": "The 2031 graduating CS cohort is smaller than the 2028 one",
+      "metric": "CRA Taulbee — CS bachelor's degrees granted (PhD-granting departments); NSC undergraduate CIS enrollment as the leading indicator",
+      "threshold": "Degrees granted in 2031 below the 2028 peak",
+      "baseline": {"value": "41,858 BS degrees (record); new majors −13%; total undergrad enrollment −4%", "date": "2025", "note": "NSC spring 2026: undergraduate CIS enrollment −8.4%, first-year −11.2%."},
+      "history": [
+        {"date": "2024", "value": "Record degree production; enrollment growth slowing"},
+        {"date": "2025", "value": "41,858 BS (record); new majors −13%"},
+        {"date": "2026-spring", "value": "NSC undergrad CIS −8.4%; first-year −11.2%"}
+      ],
+      "status": "holding",
+      "status_note": "Leading indicators (new majors, first-year enrollment) are falling sharply. Degrees granted lag by ~4 years, so the 2028 peak and the 2031 decline are both still ahead.",
+      "cadence": "Taulbee: annually in May/June. NSC spring report: May/June.",
+      "where": [
+        {"label": "CRA Taulbee Survey", "url": "https://cra.org/resources/taulbee-survey/"},
+        {"label": "National Student Clearinghouse Research Center", "url": "https://nscresearchcenter.org/"}
+      ],
+      "guide_ref": {"label": "§1.3", "href": "01-landscape.html#sec-1-3"},
+      "if_fails": "If enrollment turns back up before 2029, the 2031 cohort will not be small and the supply-side relief the guide counts on will not arrive."
+    },
+    {
+      "id": "P3",
+      "title": "US software postings recover but stay senior-tilted",
+      "metric": "Indeed Hiring Lab software-development postings index (Feb 2020 = 100); senior share of new SWE postings",
+      "threshold": "Index ≥ 85 by 2031; senior share of postings still > 50%",
+      "baseline": {"value": "74.4 (index); ~71% of the net increase since the trough is senior; 37% AI-titled", "date": "2026-08", "note": "Low was 61.1 in May 2025; +22% since."},
+      "history": [
+        {"date": "2020-02", "value": "100 (baseline)"},
+        {"date": "2022-05", "value": "~200 (peak)"},
+        {"date": "2025-05", "value": "61.1 (trough)"},
+        {"date": "2026-07", "value": "~72.5 (+15% from trough)"},
+        {"date": "2026-08", "value": "74.4 (+22% from trough)"}
+      ],
+      "status": "holding",
+      "status_note": "Recovering as the guide expects, and still senior-tilted. Watch for the new-grad share of hires to start rising (Pragmatic Engineer, January) as the confirming signal.",
+      "cadence": "Monthly (Indeed); FRED series IHLIDXUSTPSOFTDEVE updates weekly.",
+      "where": [
+        {"label": "Indeed Hiring Lab", "url": "https://hiringlab.indeed.com/"},
+        {"label": "FRED — Software Development Job Postings on Indeed", "url": "https://fred.stlouisfed.org/series/IHLIDXUSTPSOFTDEVE"}
+      ],
+      "guide_ref": {"label": "§1.4", "href": "01-landscape.html#sec-1-4"},
+      "if_fails": "A stalled index (< 75 into 2029) means demand did not recover; a collapse of the senior share means juniors are being hired again — the good kind of failure."
+    },
+    {
+      "id": "P4",
+      "title": "The hardware pay premium persists",
+      "metric": "BLS median annual wage — computer hardware engineers vs software developers",
+      "threshold": "Hardware median still ≥ software median in each May wage release",
+      "baseline": {"value": "$161,740 (hardware) vs $135,980 (software) — a 19% premium", "date": "2025-05", "note": "May 2024: $155,020 vs $133,080 (16.5% premium). Premium widened."},
+      "history": [
+        {"date": "2024-05", "value": "$155,020 vs $133,080"},
+        {"date": "2025-05", "value": "$161,740 vs $135,980"}
+      ],
+      "status": "holding",
+      "status_note": "Premium widened in the latest release, and the BLS raised hardware-engineer growth (+7% → +9%) while trimming most software occupations.",
+      "cadence": "Annually; OEWS May wages published the following spring; OOH pages update in late August.",
+      "where": [
+        {"label": "BLS OOH — Computer Hardware Engineers", "url": "https://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm"},
+        {"label": "BLS OOH — Software Developers", "url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm"}
+      ],
+      "guide_ref": {"label": "§3.3", "href": "03-tier1.html#sec-3-3"},
+      "if_fails": "If software overtakes hardware, the semiconductor D4 score (5) should be revisited — though total comp at NVIDIA/AMD/Apple silicon would still exceed BLS medians."
+    },
+    {
+      "id": "P5",
+      "title": "Security and data-science growth stay near the top of the BLS computer group",
+      "metric": "BLS projected 10-year employment growth — information security analysts; data scientists",
+      "threshold": "Both ≥ +20% in the 2027–37 projection cycle",
+      "baseline": {"value": "Security +21%; data scientists +35% (2025–35)", "date": "2026-08", "note": "Prior cycle (2024–34): +29% and +34%. Security survived one re-basing barely; computer group as a whole cut from +10.1% to +7.3%."},
+      "history": [
+        {"date": "2025-08 (2024–34)", "value": "Security +29%; data sci +34%; computer group +10.1%"},
+        {"date": "2026-08 (2025–35)", "value": "Security +21%; data sci +35%; computer group +7.3%"}
+      ],
+      "status": "watch",
+      "status_note": "Data science is comfortably above threshold. Security is one more cut away from failing P5 — but private gap measures (CyberSeek ~500k unfilled US roles) did not move. Check both next August.",
+      "cadence": "Annually, late August.",
+      "where": [
+        {"label": "BLS Employment Projections news release", "url": "https://www.bls.gov/news.release/ecopro.nr0.htm"},
+        {"label": "BLS OOH — Information Security Analysts", "url": "https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm"},
+        {"label": "BLS OOH — Data Scientists", "url": "https://www.bls.gov/ooh/math/data-scientists.htm"}
+      ],
+      "guide_ref": {"label": "§3.2 / §3.6", "href": "03-tier1.html#sec-3-2"},
+      "if_fails": "If security falls below +20% and CyberSeek's unfilled count also drops below ~400k, lower security D1 from 5 to 4; it would still be Tier 1 on the other dimensions."
+    }
+  ],
+  "indicators": [
+    {
+      "id": "I1", "rank": 1,
+      "title": "NY Fed recent-grad unemployment and underemployment (CS, CE)",
+      "why": "The direct measure of how the last cohort fared. Below ~4.5% for CS means the cobweb correction has arrived.",
+      "last": {"value": "CS 7.0% unemployment / ~19% underemployment; CE 7.8%", "date": "2026-08"},
+      "healthy": "CS unemployment falling toward the all-majors rate (~5.5%); underemployment < 15%.",
+      "cadence": "Quarterly; headline release each February.",
+      "where": [{"label": "NY Fed college labor market", "url": "https://www.newyorkfed.org/research/college-labor-market"}],
+      "guide_ref": {"label": "§12.5 #1", "href": "12-sources.html#sec-12-5"}
+    },
+    {
+      "id": "I2", "rank": 2,
+      "title": "Indeed software postings index; AI-titled and senior share",
+      "why": "The fastest-moving demand signal. Level tells you how many jobs; composition tells you which jobs.",
+      "last": {"value": "74.4 (Feb 2020 = 100); AI-mentioning share of all postings 6.3%; 37% of net new SWE postings AI-titled; 71% senior", "date": "2026-08"},
+      "healthy": "Index rising; AI-titled share rising; senior share drifting down from 70% toward 50% (juniors being hired again).",
+      "cadence": "Monthly.",
+      "where": [
+        {"label": "Indeed Hiring Lab", "url": "https://hiringlab.indeed.com/"},
+        {"label": "FRED IHLIDXUSTPSOFTDEVE", "url": "https://fred.stlouisfed.org/series/IHLIDXUSTPSOFTDEVE"}
+      ],
+      "guide_ref": {"label": "§12.5 #2", "href": "12-sources.html#sec-12-5"}
+    },
+    {
+      "id": "I3", "rank": 3,
+      "title": "New-grad share of engineering hires (The Pragmatic Engineer annual report)",
+      "why": "The single best leading indicator for your own graduation cycle: are large tech companies hiring juniors again?",
+      "last": {"value": "~1 in 10 engineering hires at 28 large US tech companies (down from ~3 in 10 in 2023); intern intake falling", "date": "2026-01"},
+      "healthy": "Share climbing back above 15%; intern intake rising year over year.",
+      "cadence": "Annually, January.",
+      "where": [{"label": "The Pragmatic Engineer — job market series", "url": "https://newsletter.pragmaticengineer.com/p/the-job-market-in-2026-part-2"}],
+      "guide_ref": {"label": "§12.5 #3", "href": "12-sources.html#sec-12-5"}
+    },
+    {
+      "id": "I4", "rank": 4,
+      "title": "CS enrollment and degree production (CRA Taulbee; National Student Clearinghouse)",
+      "why": "Your competition in 2031. Taulbee = PhD-granting departments; NSC = every institution. A positive turn in NSC first-year CIS enrollment is the leading edge of the next oversupply.",
+      "last": {"value": "Taulbee 2025: 41,858 BS (record), new majors −13%, undergrad enrollment −4%, master's −26%. NSC spring 2026: undergrad CIS −8.4%, first-year −11.2%; CS second-year persistence 85.0% (lowest of top-10 majors)", "date": "2026-06"},
+      "healthy": "For a 2027 entrant: continued declines through 2028 (smaller 2031 cohort), then stabilization.",
+      "cadence": "Taulbee May/June; NSC spring report May/June.",
+      "where": [
+        {"label": "CRA Taulbee", "url": "https://cra.org/resources/taulbee-survey/"},
+        {"label": "NSC Research Center", "url": "https://nscresearchcenter.org/"}
+      ],
+      "guide_ref": {"label": "§12.5 #4", "href": "12-sources.html#sec-12-5"}
+    },
+    {
+      "id": "I5", "rank": 5,
+      "title": "BLS projections vintage-over-vintage; AI-exposure categories",
+      "why": "Structural and slow. Compare each August's computer-group growth with the prior vintage; a second consecutive cut ≥ 3 points means the BLS is pricing in AI substitution faster than the guide assumes. Exposure category alone is not a signal — exposure plus a downgrade is.",
+      "last": {"value": "Computer & mathematical group +7.3% (2025–35), down from +10.1% (2024–34). Software devs +10%; security +21%; data sci +35%; hardware +9%; programmers −7%; web devs +5%. AI-exposure categories published as a new data product.", "date": "2026-08"},
+      "healthy": "Computer group growth ≥ +7%; no Tier 1 occupation both 'Very high' exposure and downgraded in the same year.",
+      "cadence": "Annually, late August.",
+      "where": [
+        {"label": "BLS Employment Projections release", "url": "https://www.bls.gov/news.release/ecopro.nr0.htm"},
+        {"label": "BLS AI exposure categories", "url": "https://www.bls.gov/emp/publications/ai-exposure-categories.htm"}
+      ],
+      "guide_ref": {"label": "§12.5 #5", "href": "12-sources.html#sec-12-5"}
+    },
+    {
+      "id": "I6", "rank": 6,
+      "title": "Immigration policy (H-1B, OPT, F-1 duration of status)",
+      "why": "For international students this decides which fields and employers are realistic at all.",
+      "last": {"value": "H-1B wage-weighted lottery in force (first run March 2026). $100k fee vacated by First Circuit Jul 24 2026; proclamation expires Sep 20 2026 unless extended. F-1 duration-of-status final rule effective Sep 15 2026 (4-yr admission cap, 30-day grace, extension of stay needed for OPT). OPT fee/restriction proposals reported Aug 2026.", "date": "2026-09"},
+      "healthy": "No further restriction of OPT/STEM-OPT; fee not reinstated; D/S rule litigation outcome known before Fall 2027 enrollment.",
+      "cadence": "Continuous; check before each recruiting season.",
+      "where": [
+        {"label": "USCIS — H-1B", "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"},
+        {"label": "DHS Study in the States", "url": "https://studyinthestates.dhs.gov/"}
+      ],
+      "guide_ref": {"label": "§9.5", "href": "09-market.html#sec-9-5"}
+    },
+    {
+      "id": "I7", "rank": 7,
+      "title": "Field-specific indicators",
+      "why": "Each Tier 1 field has one or two numbers that matter more than the macro picture.",
+      "last": {"value": "Semis: SIA/Oxford Economics ~67,000 unfilled technical jobs by 2030; TSMC Arizona / Intel Ohio / Samsung Taylor / Micron timelines. Security: CyberSeek ~500k US unfilled roles; ISC2 ~4.8M global gap. AI: AI-eng openings +60% YoY at top companies; MLE median TC ~$279k (Levels.fyi). Infra: 'computing infrastructure providers' industry +25.1% (BLS 2025–35). Energy: utilities +9.8%, fastest major sector (BLS).", "date": "2026-09"},
+      "healthy": "Semis: fabs opening on schedule. Security: CyberSeek > 400k. AI: openings growth still positive. Infra/energy: BLS industry projections holding.",
+      "cadence": "Varies; SIA annually; CyberSeek continuous; ISC2 annually (Oct); Levels.fyi annually (Dec).",
+      "where": [
+        {"label": "SIA workforce", "url": "https://www.semiconductors.org/"},
+        {"label": "CyberSeek", "url": "https://www.cyberseek.org/"},
+        {"label": "ISC2 workforce study", "url": "https://www.isc2.org/research"},
+        {"label": "Levels.fyi end-of-year report", "url": "https://www.levels.fyi/"}
+      ],
+      "guide_ref": {"label": "§12.5 #7", "href": "12-sources.html#sec-12-5"}
+    }
+  ],
+  "decision_rule": "If three of the five predictions fail, the cyclical-recovery half of the guide's argument was wrong: lean harder on the moated, counter-cyclical careers (semiconductors, defense, security, energy). If P1–P3 hold, the cobweb argument was right and you can afford to be more ambitious. If three or more of indicators 1–4 move sharply against the central scenario for two consecutive years, revisit the tiering."
+}

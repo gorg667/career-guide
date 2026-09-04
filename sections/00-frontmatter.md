@@ -3,9 +3,9 @@
 
 *A data-driven, long-horizon essay and reference guide for the US student who starts a CS or CE degree in September 2027, graduates around May 2031, and will be mid-career in the 2040s.*
 
-**Version:** 2.0 — compiled September 2026; revised after a full self-review (changes summarized in Section 12.1)
+**Version:** 2.1 — compiled September 2026; revised after a full self-review and re-based on the BLS 2025–35 employment projections released August 27, 2026 (changes summarized in Section 12.1)
 
-**Length:** ~48,000 words. Read the TL;DR first; pick a reading path below; use the table of contents to jump.
+**Length:** ~57,000 words. Read the TL;DR first; pick a reading path below; use the table of contents to jump.
 
 ---
 
@@ -30,7 +30,7 @@ Every major statistical claim is tied to a primary source in Section 12.2; suppo
 
 | You are… | Start with |
 |---|---|
-| **A high-school student choosing a major** | TL;DR → Section 6 (CS vs. CE) → Section 2.5 (personality and fit) → Section 10.2 (decision matrix) → the "How do I know if I'll like this?" FAQ. |
+| **A high-school student choosing a major** | TL;DR → Section 2.7 (self-assessment: will I like this?) → Section 6 (CS vs. CE) → Section 2.5 (personality and fit) → Section 10.2 (decision matrix) → the "How do I know if I'll like this?" FAQ. |
 | **A parent or counselor** | TL;DR → Section 1 (what happened and why) → Section 9.7 (paying for the degree) → Section 11.3 (risks and hedges) → the "I'm a parent — how can I help?" FAQ. |
 | **An already-admitted student** | Section 7 (the roadmap) → Section 8 (skills and proof) → Appendix B (checklists) → your target career's profile in Sections 3–4. |
 | **An international student** | Section 9.5 first, then the rest — it changes which fields and employers are realistic. |
@@ -42,12 +42,12 @@ Every major statistical claim is tied to a primary source in Section 12.2; suppo
 
 ## TL;DR — The Short Version
 
-**Is CS/CE still worth it?** Yes — but the *default path* (generic CS degree → LeetCode → generic software job) is no longer a safe bet. The degree remains one of the highest-earning undergraduate credentials in the US (BLS median for software developers: **$135,980** in 2025; computer hardware engineers: **$155,020**; the group as a whole earns more than double the national median wage). What changed is that the *entry ramp* narrowed sharply between 2023 and 2026, and the winners are now those with **depth, specialization, and an AI-native workflow**.
+**Is CS/CE still worth it?** Yes — but the *default path* (generic CS degree → LeetCode → generic software job) is no longer a safe bet. The degree remains one of the highest-earning undergraduate credentials in the US (BLS median for software developers: **$135,980** in May 2025; computer hardware engineers: **$161,740**; the computer-and-IT group as a whole, $109,470, more than double the national median of $50,980). What changed is that the *entry ramp* narrowed sharply between 2023 and 2026, and the winners are now those with **depth, specialization, and an AI-native workflow**.
 
 **Why you should be more optimistic than the 2024–2026 graduating classes:**
 
-- You are entering during the trough, not the peak. New CS majors **fell 13%** in 2025 (CRA Taulbee) — the steepest decline of any major. By 2031 you will graduate into a **smaller competing cohort**, the exact opposite of the 2024–2026 grads who faced record supply and collapsing demand.
-- Software job postings bottomed in early 2025 and have risen ~15% since (Indeed Hiring Lab), even as overall postings fell. Demand is recovering — but it is recovering toward **senior and AI-fluent roles** (71% of net new SWE postings are senior; 37% mention AI).
+- You are entering during the trough, not the peak. New CS majors **fell 13%** in 2025 (CRA Taulbee) — the steepest decline of any major — and undergraduate computer-and-information-sciences enrollment fell a further **8.4%** in spring 2026 (National Student Clearinghouse). By 2031 you will graduate into a **smaller competing cohort**, the exact opposite of the 2024–2026 grads who faced record supply and collapsing demand.
+- Software job postings bottomed in May 2025 and have risen ~22% since (Indeed Hiring Lab, August 2026), even as overall postings fell — though they remain about a quarter below their February 2020 level. Demand is recovering — but it is recovering toward **senior and AI-fluent roles** (71% of net new SWE postings are senior; 37% mention AI).
 - The hardware side of computing — semiconductors, data-center infrastructure, robotics, defense — has **structural shortages** (SIA projects ~67,000 unfilled semiconductor technical jobs by 2030; the AI data-center buildout is short tens of thousands of electrical/computer engineers).
 
 **The ten careers we rate highest for a 2031 graduate** (full analysis in Sections 3–5):
@@ -55,17 +55,17 @@ Every major statistical claim is tied to a primary source in Section 12.2; suppo
 | Rank | Career | Why | Best major |
 |---|---|---|---|
 | 1 | **AI / ML Engineer (applied)** | Fastest-growing, highest-paid engineering discipline; AI-eng openings +60% YoY vs +7% for SWE; median MLE comp ~$279k | CS (+ math) |
-| 2 | **Security Engineer** (cloud, AppSec, AI security) | BLS +29% growth (fastest of all IT occupations besides data science); AI both attacks and defends; citizenship moat in gov/defense | CS or CE |
-| 3 | **Semiconductor / Chip Design & Verification Engineer** | Highest median pay of any computing occupation ($155k); acute talent shortage; CHIPS Act fabs coming online 2027–2030; AI accelerator race | CE (or EE) |
+| 2 | **Security Engineer** (cloud, AppSec, AI security) | BLS +21% growth 2025–35 (trimmed from +29% in the prior cycle, still ~5× the all-occupation rate); ~500k unfilled US cyber roles; AI both attacks and defends; citizenship moat in gov/defense | CS or CE |
+| 3 | **Semiconductor / Chip Design & Verification Engineer** | Highest median pay of any computing occupation ($161,740), and the BLS *raised* its growth forecast to +9%; acute talent shortage; CHIPS Act fabs coming online 2027–2030; AI accelerator race | CE (or EE) |
 | 4 | **Infrastructure / Distributed Systems / Platform Engineer** | The "picks and shovels" of AI: GPU clusters, inference serving, observability (Datadog +68% eng headcount); hard to automate | CS or CE |
 | 5 | **Robotics / Embedded / Autonomy Engineer** ("Physical AI") | Humanoids, drones, autonomous vehicles, defense; needs hardware+software+ML — a rare combination | CE (or CS + robotics) |
-| 6 | **Data Engineer / Data Scientist (engineering-heavy)** | BLS +34% growth for data scientists (fastest in the entire IT/math group); every AI system is a data pipeline | CS (+ stats) |
+| 6 | **Data Engineer / Data Scientist (engineering-heavy)** | BLS +35% growth for data scientists 2025–35 (a top-ten fastest-growing occupation nationally); every AI system is a data pipeline | CS (+ stats) |
 | 7 | **Forward Deployed Engineer / AI Solutions Engineer** | Postings +800–1,100% in a year; TC $350–550k at AI labs; combines engineering with customer-facing judgment — AI-resistant | CS |
 | 8 | **Defense, Aerospace & National-Security Software/Firmware** | Clearance = citizen-only moat; Anduril/SpaceX/Palantir hiring 50% more intensely than average software cos; huge budgets | CE or CS (US citizens) |
 | 9 | **Quantum Computing Engineer** (long-dated bet) | Tiny field today (~16.5k globally) but heavy capital inflow; ideal for CE/physics-minded students who plan on grad school | CE + physics, then MS/PhD |
 | 10 | **Healthcare / Biotech Computing** (computational biology, medical devices, health AI) | Aging population + AI drug discovery + regulated (slow to automate) + FDA moat | CS + bio, or CE for devices |
 
-**The three careers we rate lowest relative to their historical reputation:** generic frontend/web development (frontend-only titles are disappearing fastest of any engineering title), native mobile development (declining), and manual QA / IT support (BLS projects computer programmer employment to *shrink*).
+**The three careers we rate lowest relative to their historical reputation:** generic frontend/web development (frontend-only titles are disappearing fastest of any engineering title), native mobile development (declining), and manual QA / IT support (BLS projects computer programmer employment to *shrink 7%* by 2035).
 
 **The single most important strategic insight:** In 2031, employers will not pay you to write code. They will pay you to *own outcomes* in a domain where mistakes are expensive — security, silicon, infrastructure, safety-critical systems, regulated industries, or AI systems themselves. Pick a domain with a **moat** (hardware, physics, regulation, clearance, or deep math), become AI-native from day one, and aim to be "senior-like" by graduation through internships and serious projects.
 
@@ -79,7 +79,7 @@ Every major statistical claim is tied to a primary source in Section 12.2; suppo
 1.1 The Shock: 2022–2026 in Numbers · 1.2 Structural vs. Cyclical · 1.3 The Cobweb Cycle · 1.4 What the 2031 Market Will Probably Look Like (incl. falsifiable predictions) · 1.5 Three Scenarios for 2031 · 1.6 Key Takeaways
 
 **2. A Framework for Evaluating Any Tech Career**
-2.1 The Seven Dimensions · 2.2 How We Combine Them (tiering rule; tier ≠ rank) · 2.3 The Three Questions to Ask About Any Role · 2.4 The CS-vs-CE Lens · 2.5 Personality and Fit · 2.6 Worked Example: Scoring a Career This Guide Does Not Cover
+2.1 The Seven Dimensions · 2.2 How We Combine Them (tiering rule; tier ≠ rank) · 2.3 The Three Questions to Ask About Any Role · 2.4 The CS-vs-CE Lens · 2.5 Personality and Fit · 2.6 Worked Example: Scoring a Career This Guide Does Not Cover · 2.7 Self-Assessment: Will I Actually Like This? (twelve signals)
 
 **3. Tier 1 Careers — Highest Conviction**
 3.1 AI / Machine Learning Engineer · 3.2 Security Engineer · 3.3 Semiconductor / Chip Design, Verification & Architecture · 3.4 Infrastructure / Distributed Systems / Platform (incl. AI Infrastructure) · 3.5 Robotics, Embedded & Autonomy ("Physical AI") · 3.6 Data Engineer / Data Scientist (Engineering-Heavy) · 3.7 How to Choose Among the Tier 1 Six
@@ -91,7 +91,7 @@ Every major statistical claim is tied to a primary source in Section 12.2; suppo
 5.1 Generalist Web / Full-Stack — The Honest Take · 5.2 Native Mobile · 5.3 QA / IT Support / SysAdmin · 5.4 Data / BI Analyst · 5.5 Game Development (Studios) · 5.6 Research Scientist / Academia · 5.7 Founding a Startup · 5.8 Computing + Law / Policy · 5.9 Computing + Medicine · 5.10 Teaching CS · 5.11 Contrarian Bets (COBOL/mainframe, EDA, HPC, and more) · 5.12 Tier 3 Summary
 
 **6. CS vs. CE: Which Degree, Which Careers**
-6.1 What Each Degree Is · 6.2 Which Careers Favor Which Degree · 6.3 The Case for CE · 6.4 The Case for CS · 6.5 A Decision Procedure · 6.6 Hybrids, Doubles, Minors, 4+1 · 6.7 "AI," "Data Science," "Cybersecurity," "Software Engineering" and Other Specialized Majors · 6.8 Co-op Programs · 6.9 Special Considerations (incl. under-represented students) · 6.10 Myths · 6.11 Bottom Line
+6.1 What Each Degree Is · 6.2 Which Careers Favor Which Degree · 6.3 The Case for CE · 6.4 The Case for CS · 6.5 A Decision Procedure · 6.6 Hybrids, Doubles, Minors, 4+1 · 6.7 "AI," "Data Science," "Cybersecurity," "Software Engineering" and Other Specialized Majors · 6.8 Co-op Programs · 6.9 Schools by Specialty (where the pipelines are) · 6.10 Special Considerations (incl. under-represented students) · 6.11 Myths · 6.12 Bottom Line
 
 **7. The Four-Year Roadmap: Summer 2027 → May 2031**
 7.1 The Master Calendar · 7.2 Summer 2027 · 7.3 Year 1 · 7.4 Year 2 (incl. campus jobs as credentials) · 7.5 Year 3 · 7.6 Year 4 and failure-mode plans · 7.7 Two Sample Paths · 7.8 Roadmap Principles
