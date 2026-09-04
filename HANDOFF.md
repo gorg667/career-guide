@@ -133,3 +133,54 @@ Guide is at v2.0. If a successor instance is asked to improve further, suggested
 4. Add a "regional public flagships by specialty" table to §6 or §7 (fab-adjacent, defense-adjacent, robotics-adjacent schools) — currently scattered across §9.1 and FAQ.
 5. Convert Appendix B checklists into a standalone printable one-pager file (`CHECKLISTS.md`).
 Method for any Phase 3: open a REVIEW-3 block in this file first, then one file per commit, push after each.
+
+---
+
+# PHASE 3 — WEBSITE (started 2026-09-04)
+
+## New user instruction (verbatim)
+> Now I want you to create the best possible website for this guide, design should be pragmatic/useful/functional etc. You can also improve guide if you want, make your best effort. [...] document everything about your reasoning and constantly push work to github incrementally so nothing is lost and next instance of you with compacted context can continue with minimal degradation.
+
+## Phase 3 design decisions (reasoning — read before touching site code)
+1. **Static site, zero framework, Python build script.** `site/build_site.py` reads `sections/*.md` + `site/data/*.json` + `site/templates/` and writes a complete static site into `docs/`. Reasons: (a) no npm dependency tree to break across sandbox resets; (b) the build output is committed so the site is deployable from GitHub Pages (`main` branch, `/docs` folder) with zero CI; (c) a successor can regenerate with one command: `python3 site/build_site.py`.
+   - Python deps: `pip install markdown pymdown-extensions` (documented in README).
+2. **Multi-page, one page per guide section** (13 content pages + appendices) rather than one giant page: 48k words in one HTML is slow and un-navigable on mobile. Each page has: left sidebar (site nav, collapsible), right "On this page" TOC (auto from h2/h3), prev/next footer, reading-time estimate.
+3. **Heading IDs are deterministic**: `sec-3-1` for "## 3.1 …", `sec-3-1-what-the-job…` for h3 under it, `appendix-a`, `appendix-b-1`. Every literal "Section X.Y" / "Sections X–Y" / "Appendix B" mention in the prose is auto-linked to the right page+anchor by a regex post-processor in the build script. This is the single most useful "website-ness" feature for a long reference guide.
+4. **Interactive tools (pragmatic, not flashy)** — all driven from `site/data/careers.json`, which is a hand-transcribed structured copy of §10.1 (scores), §10.3 (comp), §10.4 (majors), §10.5 (scenarios) plus a one-line summary and a link to the profile section:
+   - `/explorer.html` — sortable/filterable scorecard table + card view; filter by tier, degree, citizenship-needed, min BS-accessibility; toggle weights per dimension (D1–D6) so a reader can re-rank by *their* priorities. Total recomputes live.
+   - `/compare.html` — pick 2–3 careers side by side (scores, comp bands, majors, scenario, entry path bullets).
+   - `/quiz.html` — the §10.2 decision matrix as an interactive questionnaire: ~10 questions, each maps to weights on dimensions + tags; outputs top-3 careers with links. Pure client-side.
+   - `/roadmap.html` — the §7.1 master calendar as a visual timeline with "today" marker (computed from Date) and recruiting windows highlighted.
+   - `/checklists.html` — Appendix B as tickable checkboxes persisted to localStorage, with progress bars and "export/print".
+   - `/glossary.html` — Appendix A with instant filter box.
+   - Site-wide search: build script emits `docs/search-index.json` (one record per h2/h3 block: page, anchor, title, ~400 chars text). Client-side scoring, keyboard `/` shortcut.
+5. **Design language**: content-first, high-contrast, system font stack (no webfont download), max-width 76ch for prose, tables scroll horizontally on mobile with sticky first column, light/dark via `prefers-color-scheme` + manual toggle (localStorage). Print stylesheet (hide nav; tables break cleanly). No images needed beyond an inline SVG favicon. Accessibility: skip-link, landmarks, focus rings, aria labels on toggles.
+6. **Home page (`index.html`)** = front matter (TL;DR, reading paths, top-10 table) plus a row of tool cards and "start here by reader type" buttons. Keep the MD as the canonical source; the site never forks the prose.
+7. **Guide improvements in Phase 3** (in the MD, then rebuilt): only if cheap and clearly valuable — e.g., add §10.7 "one-line-per-career" table (Phase 2 suggestion #2). Website work is the priority.
+8. **Deploy**: commit `docs/`; enable GitHub Pages on `main` → `/docs` via `gh api` once PR is merged (or instruct user). Also try enabling on the branch for preview if allowed. URL will be https://gorg667.github.io/career-guide/. All asset links are RELATIVE so the site works at any base path and from file://.
+
+## Phase 3 progress (update after every step; one commit + push per step)
+| Step | Status | Notes |
+|---|---|---|
+| W0 Log plan in HANDOFF | DONE | this block |
+| W1 site/build_site.py + templates + CSS: renders all section pages + index; cross-ref autolinks; TOC; prev/next | DONE | commit 4fae92d; 0 broken anchors; 87 checkboxes; 243 search records |
+| W2 site/data/careers.json (28 careers, from §10.1/10.3/10.4/10.5 + profile anchors) | DONE | commit 9569401; totals verified equal to §10.1 |
+| W3 explorer.html + compare.html (JS) | DONE | explorer: presets+sliders, filters, sort, compare ticks; compare: ?ids= URL state, popular pairs |
+| W4 quiz.html (decision matrix → questionnaire) | DONE | 10 Qs; tag boosts + dimension weight nudges; hard filters (citizen, grad school); URL-hash state; top-3 + ranks 4–10 + removed list; links to compare.html?ids= |
+| W5 roadmap.html timeline + checklists.html (localStorage) + glossary.html | DONE | roadmap: now-box (what to do this term + open windows + opening soon), Gantt of 11 recruiting windows w/ today line, period list w/ hide-past; `?today=YYYY-MM-DD` simulates a date. Data hand-transcribed from §7.1 into roadmap.js (keep in sync). checklists/glossary were done in W1 |
+| W6 search index + search UI + dark mode + print CSS polish | DONE | QA script (/tmp/qa.py, recreate if needed): all 20 pages, 0 broken internal links/anchors, 0 JS errors; dark mode verified; mobile 390px screenshots of home/explorer/compare/quiz clean; search returns results; print view OK. Fixed '28→29 careers' card text; hide `/` kbd hint on touch devices |
+| W7 README/HANDOFF update, GitHub Pages enable, PR update, share URL | DONE | README rewritten with site table + build steps; PR #2 was already merged → opened PR #3 (squashed). `gh api …/pages` returns 403 for this token, so Pages must be enabled by the user in repo Settings |
+
+## Phase 3 log
+- 2026-09-04: Phase 3 started. Repo at 38d6972 (v2.0 guide, PR #2 open). Plan written above before any code.
+- 2026-09-04: INTERRUPTION #5 (account switch) after W2 commit 9569401. Sandbox recreated from repo; W1+W2 intact. Lost only the uncommitted site/pages/explorer.html (was being written). Redoing W3 now. Preview server must be restarted: `cd docs && python3 -m http.server 8080 &`. Playwright screenshots: `pip install playwright && python3 -m playwright install chromium && sudo python3 -m playwright install-deps chromium`.
+- 2026-09-04: INTERRUPTION #6 (account switch) after W3. quiz.html survived uncommitted; wrote quiz.js + CSS, Playwright-tested (no errors; hardware/stability/non-citizen answers → semis, energy, contrarian; defense removed). W4 committed.
+- 2026-09-04: INTERRUPTION #7 (account switch) after W6 commit 2b0327a. Lost only uncommitted §10.7 work; regenerated from careers.json by script. §10.7 'Every Career in One Line' added to guide (29 rows); frontmatter TOC updated; build_site.py rewrites SITE_URL-prefixed links to relative.
+- 2026-09-04: W7. README updated. §10.7 in guide. All Phase 3 steps complete.
+
+## Phase 3 — final status / how to continue
+- **PR #2 was already merged by the user before Phase 3. Phase 3 lives in branch `genspark_ai_developer` as ONE squashed commit, PR #3 → main: https://github.com/gorg667/career-guide/pull/3.** After merge, GitHub Pages must serve `main` → `/docs` (Settings → Pages → Deploy from a branch → main, /docs). Site URL: https://gorg667.github.io/career-guide/
+- Rebuild after any MD edit: `bash build.sh && python3 site/build_site.py` (needs `pip install markdown pymdown-extensions`), then commit `docs/`.
+- Data that is hand-mirrored and must be kept in sync with the MD: `site/data/careers.json` (§10.1/10.3/10.4/10.5 + summaries/tags), `site/static/roadmap.js` PERIODS/WINDOWS (§7.1), `site/static/quiz.js` Q (question bank; tags must exist in careers.json).
+- QA: Playwright script pattern in /tmp/qa.py (not in repo) — loads every docs/*.html, asserts 0 console errors, checks every internal href + #anchor resolves. Last run: 20 pages, 0 broken, 0 errors.
+- Possible future improvements (not required): per-career "print card" view; sitemap.xml; OpenGraph meta; a "what changed since v2.0" page fed by 12-sources.md; auto-generate careers.json from the MD tables instead of hand-mirroring.

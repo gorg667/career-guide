@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Section 12 — Sources, Methodology, and How to Keep This Guide Current — The 2027 CS/CE Career Guide</title>
+<meta name="description" content="Choosing Your Future — careers for students entering CS or CE in Fall 2027">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="static/style.css">
+<script>
+// Apply saved theme before first paint to avoid a flash.
+(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
+</script>
+
+</head>
+<body class="page-12-sources">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <button class="iconbtn" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+  <a class="brand" href="index.html"><span class="brand-mark">CS/CE</span> <span class="brand-text">2027 Career Guide</span></a>
+  <button class="searchbtn" id="searchOpen" aria-label="Search the guide"><span>Search</span><kbd>/</kbd></button>
+  <button class="iconbtn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Site">
+    <div class="nav-group">Guide</div>
+<a href="index.html">Start here</a>
+<a href="01-landscape.html">1 · The landscape</a>
+<a href="02-framework.html">2 · The framework</a>
+<a href="03-tier1.html">3 · Tier 1 careers</a>
+<a href="04-tier2.html">4 · Tier 2 careers</a>
+<a href="05-tier3.html">5 · Tier 3 &amp; contrarian</a>
+<a href="06-cs-vs-ce.html">6 · CS vs. CE</a>
+<a href="07-roadmap.html">7 · Four-year roadmap</a>
+<a href="08-skills.html">8 · Skills &amp; proof</a>
+<a href="09-market.html">9 · Market, comp, visas</a>
+<a href="10-tables.html">10 · Master tables</a>
+<a href="11-faq.html">11 · FAQ, myths, risks</a>
+<a href="12-sources.html" class="active">12 · Sources</a>
+<a href="glossary.html">A · Glossary</a>
+<a href="checklists.html">B · Checklists</a>
+<div class="nav-group">Tools</div>
+<a href="explorer.html">Career explorer</a>
+<a href="compare.html">Compare careers</a>
+<a href="quiz.html">Which career fits me?</a>
+<a href="roadmap.html">Interactive timeline</a>
+<div class="nav-group">Download</div>
+<a href="CS_CE_Career_Guide_2027.md" download>Full guide (Markdown)</a>
+<a href="https://github.com/gorg667/career-guide" target="_blank" rel="noopener">Source on GitHub</a>
+  </nav>
+
+  <main id="main" class="content" tabindex="-1">
+    <div class="meta-line" id="top">8 min read · 1,866 words</div>
+    <article class="prose">
+      <h1 id="sec-12">Section 12 — Sources, Methodology, and How to Keep This Guide Current</h1>
+<h2 id="sec-12-1">12.1 Methodology</h2>
+<p>This guide was assembled in September 2026 from primary statistical sources (BLS, NY Fed, CRA), peer-reviewed and working-paper research (Stanford Digital Economy Lab), large-sample labor-market analytics (Indeed Hiring Lab, Levels.fyi), industry workforce studies (SIA/Oxford Economics, ISC2), and practitioner reporting (The Pragmatic Engineer). Where sources conflict — for example, BLS's ten-year occupational projections versus real-time posting data — the guide reports both and states which it weights more heavily and why (generally: real-time data for the 2026–2028 outlook, structural projections for 2031 and beyond).</p>
+<p>Scores in the scorecards (<a href="03-tier1.html#sec-3">Sections 3–5</a>, 10) are the author's judgments, calibrated against the data below and against the three-scenario framework in <a href="01-landscape.html#sec-1">Section 1</a>. They are meant to be <em>comparative</em> across careers, not absolute. Compensation figures combine BLS medians (all experience levels, all employers), Levels.fyi self-reported data (skewed toward large tech employers), and industry reports, and are presented as ranges for that reason.</p>
+<p>Every major <em>statistical</em> claim in the guide — employment levels, growth projections, unemployment rates, workforce gaps, median pay — traces to one of the primary sources in <a href="#sec-12-2">Section 12.2</a>. Supporting figures drawn from secondary reporting (industry surveys, analyst notes, company disclosures, financial press) are listed in <a href="#sec-12-3">Section 12.3</a> with the caveat that they were cited via primary reporting rather than independently verified from the original dataset. Judgments, scores, scenario probabilities, and forward-looking comp bands are labeled as the author's estimates and should be read as such.</p>
+<p><strong>Version 2.0 changes (September 2026):</strong> a full self-review (see the repository's REVIEW.md) corrected scorecard inconsistencies between <a href="03-tier1.html#sec-3">Sections 3–5</a> and 10, rewrote the tiering rule in <a href="02-framework.html#sec-2-2">Section 2.2</a> so it matches the actual tier assignments, renamed compensation "tiers" to "modes" to avoid collision with career tiers, updated the H-1B section for the December 2025 weighted-selection final rule, corrected the international-student share of bachelor's graduates, and added roughly ten thousand words of new material (general SWE profile, specialized-major verdicts, co-ops, networking, paying for the degree, clearance mechanics, falsifiable predictions, a worked example, expanded FAQ, glossary, and checklists).</p>
+<hr>
+<h2 id="sec-12-2">12.2 Primary Sources</h2>
+<h3 id="sec-12-2-government-statistics-and-projections">Government statistics and projections</h3>
+<ol>
+<li><strong>US Bureau of Labor Statistics — Occupational Outlook Handbook, Computer and Information Technology.</strong> Employment, projected growth 2024–34 / 2025–35, median pay for software developers, information security analysts, computer programmers, web developers, support specialists, network architects, database administrators, systems analysts, and IS managers.
+   https://www.bls.gov/ooh/computer-and-information-technology/</li>
+<li><strong>BLS OOH — Software Developers, Quality Assurance Analysts, and Testers.</strong> 1,905,400 employed (2025); +10% 2025–35 (+185,400); ~106,100 annual openings; median $134,040 (developers $135,980; QA $104,300).
+   https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm</li>
+<li><strong>BLS OOH — Information Security Analysts.</strong> 182,800 employed (2024); +29% 2024–34 (+52,100); median $124,910.
+   https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm</li>
+<li><strong>BLS OOH — Data Scientists.</strong> 245,900 employed (2024); +34% 2024–34 (+82,500); median $112,590.
+   https://www.bls.gov/ooh/math/data-scientists.htm</li>
+<li><strong>BLS OOH — Computer Hardware Engineers.</strong> 76,800 employed (2024); +7% 2024–34; median $155,020 (semiconductor manufacturing $162,460; R&amp;D $179,190).
+   https://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm</li>
+<li><strong>BLS Monthly Labor Review — Industry and Occupational Employment Projections Overview (2026).</strong> Total US employment +3.1% 2024–34.
+   https://www.bls.gov/opub/mlr/2026/article/industry-and-occupational-employment-projections-overview.htm</li>
+</ol>
+<h3 id="sec-12-2-recent-graduate-labor-market">Recent-graduate labor market</h3>
+<ol start="7">
+<li><strong>Federal Reserve Bank of New York — The Labor Market for Recent College Graduates.</strong> Unemployment and underemployment by major; computer science and computer engineering among the highest recent-grad unemployment rates (~6–7%), underemployment ~19% (CS).
+   https://www.newyorkfed.org/research/college-labor-market</li>
+<li><strong>Forbes (Nietzel, Feb 2026) — Unemployment and Underemployment Rates Among Recent College Graduates.</strong> Summary of the NY Fed data.
+   https://www.forbes.com/sites/michaeltnietzel/2026/02/23/unemployment-and-underemployment-rates-among-recent-college-graduates/</li>
+</ol>
+<h3 id="sec-12-2-ai-and-entry-level-employment">AI and entry-level employment</h3>
+<ol start="9">
+<li><strong>Brynjolfsson, Chandar &amp; Chen — "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence" (Stanford Digital Economy Lab, 2025, updated 2026).</strong> Employment of 22–25-year-olds in the most AI-exposed occupations ~19% below trend; effect driven by hiring, not layoffs; concentrated where AI <em>automates</em> rather than <em>augments</em>.
+   https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/</li>
+<li><strong>Fortune (Jun 2026) — What is AI's impact on entry-level jobs?</strong> Follow-up reporting on the Canaries dataset; most AI-exposed occupations contracted 0.2% YoY vs +0.1% for least-exposed as of April 2026.
+    https://fortune.com/2026/06/27/what-is-ai-impact-entry-level-jobs-stanford-adp-canaries-brynjolfsson-richardson/</li>
+<li><strong>World Economic Forum — "Artificial Intelligence and the Future of Entry-Level Work" (2026).</strong>
+    https://reports.weforum.org/docs/WEF_Artificial_Intelligence_and_the_Future_of_Entry_Level_Work_2026.pdf</li>
+<li><strong>Indeed Hiring Lab (Jul 2026) — "AI and Job Postings: From Destruction to Creation."</strong> Software postings +15% since Feb 2025 trough; 71% of the increase in senior roles; 37% of the net increase in AI-titled roles; postings still ~27.5% below Feb 2020.
+    https://hiringlab.indeed.com/2026/07/08/ai-and-job-postings-from-destruction-to-creation/</li>
+</ol>
+<h3 id="sec-12-2-practitioner-and-industry-labor-market-reporting">Practitioner and industry labor-market reporting</h3>
+<ol start="13">
+<li><strong>The Pragmatic Engineer — "State of the Software Engineering Job Market in 2026" (Part 1).</strong> AI engineering openings +60% YoY vs SWE +7%; AI-engineer comp premium; frontier-lab retention statistics.
+    https://newsletter.pragmaticengineer.com/p/state-of-the-job-market-2026</li>
+<li><strong>The Pragmatic Engineer — "The Job Market in 2026, Part 2."</strong> New grads 1-in-10 engineering hires at 28 large US tech companies (down from ~3-in-10 in 2023); intern intake falling while overall SWE hiring recovers; frontend-only titles disappearing; forward-deployed-engineer surge.
+    https://newsletter.pragmaticengineer.com/p/the-job-market-in-2026-part-2</li>
+<li><strong>Levels.fyi — Machine Learning Engineer compensation (US).</strong> MLE median TC $279k; SWE median $195k; ML-focused SWE $248k.
+    https://www.levels.fyi/t/software-engineer/title/machine-learning-engineer</li>
+<li><strong>Levels.fyi — Entry-Level Software Engineer, United States.</strong> Median TC $143,572; 25th pct $100k; 75th $188k; 90th $222k.
+    https://www.levels.fyi/t/software-engineer/levels/entry-level/locations/united-states</li>
+<li><strong>The New Stack — Forward Deployed Engineers and AI.</strong> FDE postings +800% Jan–Sep 2025; frontier-lab FDE comp $350–550k mid-senior.
+    https://thenewstack.io/forward-deployed-engineers-ai/</li>
+<li><strong>KORE1 — Hiring Robotics Engineers in 2026.</strong> Robotics comp bands: mid $150–205k, senior $205–300k.
+    https://www.kore1.com/hire-robotics-engineers-2026/</li>
+<li><strong>The Quantum Insider (May 2026) — Quantum Computing Jobs and Salaries in 2026.</strong> Applications roles $120–180k; algorithm research $150–250k; global pure-play workforce ~16,500.
+    https://thequantuminsider.com/2026/05/29/quantum-computing-jobs-and-salaries-in-2026/</li>
+<li><strong>Paraform — Defense-Tech Startup Hiring in the Anduril Era.</strong> Cleared autonomy engineers $185–320k; 5.2 open roles per defense startup vs 3.5 for software companies; clearance eligibility requirements.
+    https://www.paraform.com/blog/defense-tech-startup-hiring-anduril-era-teams</li>
+</ol>
+<h3 id="sec-12-2-semiconductors-and-infrastructure">Semiconductors and infrastructure</h3>
+<ol start="21">
+<li><strong>Semiconductor Industry Association / Oxford Economics — "Chipping Away: Assessing and Addressing the Labor Market Gap Facing the U.S. Semiconductor Industry" (Jul 2023).</strong> Industry workforce 345k → 460k by 2030; ~67,000 new jobs (58%) at risk of going unfilled; ~27,300 of the gap are engineers/computer scientists.
+    https://www.semiconductors.org/chipping-away-assessing-and-addressing-the-labor-market-gap-facing-the-u-s-semiconductor-industry/</li>
+<li><strong>AMTEC — Semiconductor Workforce Report (2026).</strong> US semiconductor manufacturing employment peaked ~401k in early 2023, then softened cyclically.
+    https://www.amtec.co/blog/semiconductor-workforce-report</li>
+<li><strong>IEEE Spectrum (Jan 2026) — AI Data Centers Need Engineers.</strong> US data-center power demand to 106 GW by 2035 (BloombergNEF); acute shortages of electrical, mechanical, and civil engineers; ~340k unfilled data-center positions by end-2026 (Introl estimate).
+    https://spectrum.ieee.org/ai-data-centers-engineers-jobs</li>
+</ol>
+<h3 id="sec-12-2-cybersecurity-workforce">Cybersecurity workforce</h3>
+<ol start="24">
+<li><strong>ISC2 — 2025 Cybersecurity Workforce Study (Dec 2025).</strong> ~5.5M global workforce, ~4.8M gap; 49% of enterprises report hiring freezes — demand exists, budgets are tight, and entry-level is harder than headlines suggest.
+    https://www.isc2.org/Insights/2025/12/2025-ISC2-Cybersecurity-Workforce-Study</li>
+</ol>
+<h3 id="sec-12-2-education-pipeline">Education pipeline</h3>
+<ol start="25">
+<li><strong>Computing Research Association — CRA Taulbee Survey Update (Jun 2026).</strong> Record CS degree production alongside a cooling pipeline: new CS majors −13%, master's enrollment −26%.
+    https://cra.org/crn/2026/06/cra-update-new-cra-taulbee-survey-findings-show-record-degree-production-alongside-a-cooling-enrollment-pipeline/</li>
+</ol>
+<h3 id="sec-12-2-immigration">Immigration</h3>
+<ol start="26">
+<li><strong>Forbes (Anderson, Aug 2026) — New Immigration Plan Considered to Stop Students from Working in US.</strong> Reporting on proposed OPT fees/restrictions; context on the September 2025 $100k H-1B proclamation and November 2025 USCIS change-of-status guidance.
+    https://www.forbes.com/sites/stuartanderson/2026/08/03/new-immigration-plan-considered-to-stop-students-from-working-in-us/</li>
+</ol>
+<hr>
+<h2 id="sec-12-3">12.3 Secondary Sources Cited via Primary Reporting</h2>
+<p>The following are referenced in the text, usually through one of the primary sources above or through mainstream financial and technology press. The reader should treat specific figures from these as indicative and verify against the original if a decision hinges on them.</p>
+<h3 id="sec-12-3-labor-market-analytics-and-trackers">Labor-market analytics and trackers</h3>
+<ul>
+<li><strong>Live Data Technologies</strong> — workforce-flow data on new-grad hiring shares and job-switching; cited via The Pragmatic Engineer and press reporting. https://www.livedatatechnologies.com/</li>
+<li><strong>SignalFire — State of Talent Report (2025).</strong> New-grad share of Big Tech hires ~7%, down ~25% from 2023; startup new-grad hiring down ~11%. https://www.signalfire.com/blog/signalfire-state-of-talent-report-2025</li>
+<li><strong>Layoffs.fyi</strong> — running tally of tech layoffs 2022–26. https://layoffs.fyi/</li>
+<li><strong>TrueUp — Tech job trends</strong> (open roles across tech companies; AI-role share). https://www.trueup.io/job-trend</li>
+<li><strong>Workforce.ai / AI-titled posting share</strong> — cited via Indeed Hiring Lab and The Pragmatic Engineer.</li>
+<li><strong>CyberSeek (NIST NICE / CompTIA / Lightcast)</strong> — US cybersecurity supply/demand heatmap; ~470k openings, ~83 workers per 100 openings. https://www.cyberseek.org/</li>
+<li><strong>Gergely Orosz, The Pragmatic Engineer — "The Trimodal Nature of Software Engineering Salaries"</strong> — origin of the three-mode compensation model used in <a href="09-market.html#sec-9-2">Section 9.2</a>. https://newsletter.pragmaticengineer.com/p/trimodal-nature-of-software-engineering</li>
+</ul>
+<h3 id="sec-12-3-consulting-analyst-and-industry-studies">Consulting, analyst, and industry studies</h3>
+<ul>
+<li><strong>McKinsey Global Institute — generative-AI productivity and work-activity automation estimates (2023–25).</strong> https://www.mckinsey.com/mgi</li>
+<li><strong>BloombergNEF — US data-center power demand projections</strong> (106 GW by 2035); cited via IEEE Spectrum (source 23). https://about.bnef.com/</li>
+<li><strong>Introl — data-center workforce estimate (~340k unfilled positions by end-2026);</strong> cited via IEEE Spectrum (source 23).</li>
+<li><strong>IBM — Cost of a Data Breach Report (2025).</strong> Global average breach cost ~$4.4M; US ~$10M. https://www.ibm.com/reports/data-breach</li>
+<li><strong>Deloitte / SEMI — semiconductor workforce studies</strong> complementing SIA/Oxford (source 21). https://www.semi.org/</li>
+</ul>
+<h3 id="sec-12-3-government-and-regulatory-documents">Government and regulatory documents</h3>
+<ul>
+<li><strong>Department of Homeland Security — "Weighted Selection Process for Registrants and Petitioners Seeking to File Cap-Subject H-1B Petitions," Final Rule, Federal Register, December 29, 2025; effective February 27, 2026.</strong> Registrations entered once per OEWS wage level (I–IV). https://www.federalregister.gov/documents/2025/12/29/2025-23853/</li>
+<li><strong>USCIS — H-1B Electronic Registration Process (FY2027 cap season page, updated July 2026)</strong> confirming weighted selection in use. https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-electronic-registration-process</li>
+<li><strong>Presidential Proclamation — Restriction on Entry of Certain Nonimmigrant Workers ($100,000 H-1B fee), September 19, 2025,</strong> and USCIS implementing guidance (October–November 2025). https://www.whitehouse.gov/presidential-actions/</li>
+<li><strong>Public Law 119-21 (July 2025) — restoration of immediate expensing for domestic R&amp;D (Section 174A).</strong> https://www.congress.gov/</li>
+<li><strong>DCSA — Continuous Vetting and Trusted Workforce 2.0</strong> program pages. https://www.dcsa.mil/Personnel-Security/</li>
+<li><strong>DoD CHIPS / NIST CHIPS for America</strong> award announcements 2024–26. https://www.nist.gov/chips</li>
+</ul>
+<h3 id="sec-12-3-financial-press-ai-lab-funding-ipos-capex">Financial press (AI-lab funding, IPOs, capex)</h3>
+<ul>
+<li><strong>Reuters, TechCrunch, Bloomberg — Anthropic Series (May 2026, ~$65B at ~$965B post-money) and OpenAI round (March 2026, ~$122B); confidential IPO filings by both (June 2026).</strong> Verified across at least two outlets each at time of writing; figures are as reported, not audited.</li>
+<li><strong>Wall Street Journal, Financial Times — Big Tech AI capital-expenditure reporting (2025–26)</strong> underlying the infrastructure-demand claims in <a href="01-landscape.html#sec-1">Sections 1</a> and 3.</li>
+</ul>
+<hr>
+<h2 id="sec-12-4">12.4 Programs and Institutions Referenced (for the reader's follow-up)</h2>
+<p>These are named in <a href="07-roadmap.html#sec-7">Sections 7–9</a> as action items; the reader should verify current terms directly.</p>
+<ul>
+<li><strong>DoD SMART Scholarship-for-Service</strong> — smartscholarship.org</li>
+<li><strong>CyberCorps Scholarship for Service (NSF/OPM)</strong> — sfs.opm.gov</li>
+<li><strong>NSF Graduate Research Fellowship Program</strong> — nsfgrfp.org</li>
+<li><strong>GEM Fellowship</strong> — gemfellowship.org</li>
+<li><strong>Google Summer of Code</strong> — summerofcode.withgoogle.com</li>
+<li><strong>MLH Fellowship</strong> — fellowship.mlh.io</li>
+<li><strong>Tiny Tapeout</strong> — tinytapeout.com</li>
+<li><strong>CTFtime</strong> (CTF calendar and rankings) — ctftime.org</li>
+<li><strong>picoCTF</strong> (beginner CTF) — picoctf.org</li>
+<li><strong>ICPC</strong> — icpc.global</li>
+<li><strong>CHIPS for America (NIST)</strong> — nist.gov/chips</li>
+<li><strong>USCIS — Optional Practical Training</strong> — uscis.gov/opt</li>
+<li><strong>DCSA — Security clearance process</strong> — dcsa.mil</li>
+</ul>
+<hr>
+<h2 id="sec-12-5">12.5 How to Keep This Guide Current</h2>
+<p>The reader is enrolling in 2027 and graduating in 2031; this guide will age. Re-check these indicators each year, in this order of importance:</p>
+<ol>
+<li><strong>The NY Fed recent-grad table</strong> (annual, February) — is CS/CE recent-grad unemployment converging back toward the all-majors average? If it falls below ~4.5%, the cobweb correction has arrived.</li>
+<li><strong>Indeed Hiring Lab software postings</strong> (monthly) — is the level recovering toward the Feb 2020 baseline? What share of new postings are AI-titled and senior?</li>
+<li><strong>The Pragmatic Engineer's annual job-market report</strong> (January) — new-grad share of hires is the single best leading indicator for your own graduation cycle.</li>
+<li><strong>CRA Taulbee</strong> (June) — enrollment trends determine your competition in 2031.</li>
+<li><strong>BLS OOH updates</strong> (September, every other year for projections) — structural, slow-moving.</li>
+<li><strong>Immigration policy</strong> (continuous) — international students should track OPT/H-1B developments through their university's international office and reputable immigration-law reporting.</li>
+<li><strong>Your target field's specific indicators</strong> — semis: CHIPS fab openings and SIA workforce updates; security: ISC2 annual study; AI: frontier-lab hiring pages and AI-infra capex announcements; defense: NDAA budget and defense-tech funding rounds; robotics: humanoid/autonomy deployments and funding.</li>
+</ol>
+<p>If three or more of indicators 1–4 move sharply against the guide's central scenario for two consecutive years, revisit the tiering. Otherwise, the structural argument stands: <strong>choose careers where software meets something hard.</strong></p>
+    </article>
+    <div class="prevnext"><a class="pn prev" href="11-faq.html"><span>← Previous</span><strong>11 · FAQ, myths, risks</strong></a><a class="pn next" href="glossary.html"><span>Next →</span><strong>A · Glossary</strong></a></div>
+    <footer class="foot">
+      <p><em>Choosing Your Future</em>, v2.0 (September 2026). Written for students entering CS/CE in Fall 2027. All figures are cited in <a href="12-sources.html">Section 12</a>; projections are judgments, labelled as such. <a href="CS_CE_Career_Guide_2027.md" download>Download the full Markdown</a>.</p>
+    </footer>
+  </main>
+
+  <aside class="toc" aria-label="On this page">
+    <div class="toc-title">On this page</div>
+    <ul><li class="toc-l2"><a href="#sec-12-1">12.1 Methodology</a></li>
+<li class="toc-l2"><a href="#sec-12-2">12.2 Primary Sources</a></li>
+<li class="toc-l3"><a href="#sec-12-2-government-statistics-and-projections">Government statistics and projections</a></li>
+<li class="toc-l3"><a href="#sec-12-2-recent-graduate-labor-market">Recent-graduate labor market</a></li>
+<li class="toc-l3"><a href="#sec-12-2-ai-and-entry-level-employment">AI and entry-level employment</a></li>
+<li class="toc-l3"><a href="#sec-12-2-practitioner-and-industry-labor-market-reporting">Practitioner and industry labor-market reporting</a></li>
+<li class="toc-l3"><a href="#sec-12-2-semiconductors-and-infrastructure">Semiconductors and infrastructure</a></li>
+<li class="toc-l3"><a href="#sec-12-2-cybersecurity-workforce">Cybersecurity workforce</a></li>
+<li class="toc-l3"><a href="#sec-12-2-education-pipeline">Education pipeline</a></li>
+<li class="toc-l3"><a href="#sec-12-2-immigration">Immigration</a></li>
+<li class="toc-l2"><a href="#sec-12-3">12.3 Secondary Sources Cited via Primary Reporting</a></li>
+<li class="toc-l3"><a href="#sec-12-3-labor-market-analytics-and-trackers">Labor-market analytics and trackers</a></li>
+<li class="toc-l3"><a href="#sec-12-3-consulting-analyst-and-industry-studies">Consulting, analyst, and industry studies</a></li>
+<li class="toc-l3"><a href="#sec-12-3-government-and-regulatory-documents">Government and regulatory documents</a></li>
+<li class="toc-l3"><a href="#sec-12-3-financial-press-ai-lab-funding-ipos-capex">Financial press (AI-lab funding, IPOs, capex)</a></li>
+<li class="toc-l2"><a href="#sec-12-4">12.4 Programs and Institutions Referenced (for the reader&#x27;s follow-up)</a></li>
+<li class="toc-l2"><a href="#sec-12-5">12.5 How to Keep This Guide Current</a></li></ul>
+  </aside>
+</div>
+
+<div class="search-modal" id="searchModal" hidden>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="Search">
+    <input type="search" id="searchInput" placeholder="Search the whole guide… (Esc to close)" autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+    <div class="search-hint">Type at least 2 characters. ↑↓ to move, Enter to open.</div>
+  </div>
+</div>
+
+<script src="static/site.js" defer></script>
+
+</body>
+</html>

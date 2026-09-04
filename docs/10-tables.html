@@ -1,0 +1,1448 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Section 10 — Master Tables and Decision Matrices — The 2027 CS/CE Career Guide</title>
+<meta name="description" content="Choosing Your Future — careers for students entering CS or CE in Fall 2027">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="static/style.css">
+<script>
+// Apply saved theme before first paint to avoid a flash.
+(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
+</script>
+
+</head>
+<body class="page-10-tables">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <button class="iconbtn" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+  <a class="brand" href="index.html"><span class="brand-mark">CS/CE</span> <span class="brand-text">2027 Career Guide</span></a>
+  <button class="searchbtn" id="searchOpen" aria-label="Search the guide"><span>Search</span><kbd>/</kbd></button>
+  <button class="iconbtn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Site">
+    <div class="nav-group">Guide</div>
+<a href="index.html">Start here</a>
+<a href="01-landscape.html">1 · The landscape</a>
+<a href="02-framework.html">2 · The framework</a>
+<a href="03-tier1.html">3 · Tier 1 careers</a>
+<a href="04-tier2.html">4 · Tier 2 careers</a>
+<a href="05-tier3.html">5 · Tier 3 &amp; contrarian</a>
+<a href="06-cs-vs-ce.html">6 · CS vs. CE</a>
+<a href="07-roadmap.html">7 · Four-year roadmap</a>
+<a href="08-skills.html">8 · Skills &amp; proof</a>
+<a href="09-market.html">9 · Market, comp, visas</a>
+<a href="10-tables.html" class="active">10 · Master tables</a>
+<a href="11-faq.html">11 · FAQ, myths, risks</a>
+<a href="12-sources.html">12 · Sources</a>
+<a href="glossary.html">A · Glossary</a>
+<a href="checklists.html">B · Checklists</a>
+<div class="nav-group">Tools</div>
+<a href="explorer.html">Career explorer</a>
+<a href="compare.html">Compare careers</a>
+<a href="quiz.html">Which career fits me?</a>
+<a href="roadmap.html">Interactive timeline</a>
+<div class="nav-group">Download</div>
+<a href="CS_CE_Career_Guide_2027.md" download>Full guide (Markdown)</a>
+<a href="https://github.com/gorg667/career-guide" target="_blank" rel="noopener">Source on GitHub</a>
+  </nav>
+
+  <main id="main" class="content" tabindex="-1">
+    <div class="meta-line" id="top">16 min read · 3,792 words</div>
+    <article class="prose">
+      <h1 id="sec-10">Section 10 — Master Tables and Decision Matrices</h1>
+<p>This section consolidates the analysis of <a href="03-tier1.html#sec-3">Sections 3–9</a> into reference tables you can return to. Scores are on the 1–5 scale defined in <a href="02-framework.html#sec-2">Section 2</a> (5 = best). Where a profile gave a range or a sub-specialty qualifier, the table shows the headline score and notes the variant.</p>
+<hr>
+<h2 id="sec-10-1">10.1 Master Scorecard — All Careers</h2>
+<p><strong>Dimensions:</strong> D1 Demand durability 2031–45 · D2 AI-resistance · D3 Moat / barrier to entry · D4 Compensation · D5 Optionality · D6 BS-accessibility. <strong>Total</strong> is the simple sum (max 30; half-points where a profile gave a range). Rows are sorted by Total <em>within each tier</em>; ties are broken by D2 then D1 then D3, because AI-resistance and demand are the two dimensions most likely to be decisive for a 2031 graduate. Scores are identical to those in the profiles of <a href="03-tier1.html#sec-3">Sections 3–5</a>.</p>
+<p><strong>Why the order here differs from the TL;DR.</strong> The TL;DR in the front matter ranks by <em>expected value for a strong student who can stand out</em> (which rewards AI/ML's comp ceiling and job count). This table sums the <em>robustness</em> dimensions (which rewards infrastructure's accessibility and semiconductors' moat). Both are shown deliberately; see <a href="02-framework.html#sec-2-2">Section 2.2</a>.</p>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>#</th>
+<th>Career</th>
+<th>Tier</th>
+<th>D1</th>
+<th>D2</th>
+<th>D3</th>
+<th>D4</th>
+<th>D5</th>
+<th>D6</th>
+<th>Total</th>
+<th>Best degree</th>
+<th>2031 scenario sensitivity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Infrastructure / distributed systems / AI infra / SRE</strong> (<a href="03-tier1.html#sec-3-4">3.4</a>)</td>
+<td>1</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td><strong>28</strong></td>
+<td>CS or CE</td>
+<td>Low: grows in A and B; holds in C</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Security engineer</strong> (cloud, AppSec, AI security, detection) (<a href="03-tier1.html#sec-3-2">3.2</a>)</td>
+<td>1</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td><strong>27</strong></td>
+<td>CS (CE for hardware sec)</td>
+<td>Very low: counter-cyclical</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Robotics / embedded / autonomy</strong> (<a href="03-tier1.html#sec-3-5">3.5</a>)</td>
+<td>1</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td><strong>27</strong></td>
+<td>CE (CS for perception/ML)</td>
+<td>Medium: capital-intensive sector</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Semiconductor / chip design, verification, architecture</strong> (<a href="03-tier1.html#sec-3-3">3.3</a>)</td>
+<td>1</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>3.5</td>
+<td><strong>26.5</strong></td>
+<td>CE</td>
+<td>Low: strong in A, B, C</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>AI / ML engineer (applied)</strong> (<a href="03-tier1.html#sec-3-1">3.1</a>)</td>
+<td>1</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>3.5</td>
+<td><strong>26.5</strong></td>
+<td>CS</td>
+<td>Medium: highest upside in B, compresses in C</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Data engineer / engineering-heavy data scientist</strong> (<a href="03-tier1.html#sec-3-6">3.6</a>)</td>
+<td>1</td>
+<td>5</td>
+<td>3</td>
+<td>3</td>
+<td>3.5</td>
+<td>4</td>
+<td>5</td>
+<td><strong>23.5</strong></td>
+<td>CS</td>
+<td>Medium: analyst layer erodes; platform layer grows</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Defense / aerospace / national-security engineering</strong> (cleared) (<a href="04-tier2.html#sec-4-2">4.2</a>)</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3.5</td>
+<td>3</td>
+<td>5</td>
+<td><strong>26.5</strong></td>
+<td>CS or CE</td>
+<td>Very low: budget-driven, counter-cyclical; <strong>Tier 1 for US citizens</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Energy / climate / grid computing</strong> (<a href="04-tier2.html#sec-4-6">4.6</a>)</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>5</td>
+<td><strong>25</strong></td>
+<td>CE or CS</td>
+<td>Low: data-center power demand is structural</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Fintech / quant development / trading tech</strong> (<a href="04-tier2.html#sec-4-5">4.5</a>)</td>
+<td>2</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td><strong>25</strong></td>
+<td>CS</td>
+<td>Medium: quant is elite-only; fintech cyclical</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Forward-deployed / AI solutions engineer</strong> (<a href="04-tier2.html#sec-4-1">4.1</a>)</td>
+<td>2</td>
+<td>4</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td><strong>25</strong></td>
+<td>CS</td>
+<td>High: a bet on enterprise AI adoption (A/B)</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>Quantum computing engineer</strong> (<a href="04-tier2.html#sec-4-3">4.3</a>)</td>
+<td>2</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td><strong>23</strong></td>
+<td>CE/physics or CS</td>
+<td>High: long-dated; MS/PhD usually required</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>Healthcare / biotech / life-sciences computing</strong> (<a href="04-tier2.html#sec-4-4">4.4</a>)</td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td><strong>23</strong></td>
+<td>CS</td>
+<td>Low: demographics-driven</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>General software engineering at top-tier employers</strong> (<a href="04-tier2.html#sec-4-11">4.11</a>)</td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td><strong>23</strong></td>
+<td>CS or CE</td>
+<td>High: Scenario B hits generalists hardest; largest market by far</td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>Technical product management</strong> (after eng years) (<a href="04-tier2.html#sec-4-7">4.7</a>)</td>
+<td>2</td>
+<td>3</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>2</td>
+<td><strong>22</strong></td>
+<td>CS</td>
+<td>Low, but not a first job</td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>Graphics / game engines / simulation / spatial</strong> (<a href="04-tier2.html#sec-4-9">4.9</a>)</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td><strong>22</strong></td>
+<td>CS</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>Developer tools</strong> (engineering track) (<a href="04-tier2.html#sec-4-10">4.10</a>)</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td><strong>22</strong></td>
+<td>CS</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>Cloud / DevOps / platform at non-tech enterprises</strong> (<a href="04-tier2.html#sec-4-8">4.8</a>)</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td><strong>22</strong></td>
+<td>CS</td>
+<td>Low: steady, unglamorous</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Developer relations / technical education (<a href="04-tier2.html#sec-4-10">4.10</a>)</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>18</td>
+<td>CS</td>
+<td>High: cyclical marketing budgets</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Contrarian niches (COBOL/mainframe, analog/RF, OT/PLC, medical firmware, formal methods, PQC, EDA tools, HPC) (<a href="05-tier3.html#sec-5-11">5.11</a>)</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>3.5</td>
+<td>2</td>
+<td>4</td>
+<td>23.5</td>
+<td>CE (CS for EDA/HPC/PQC)</td>
+<td>Low; small markets — Tier 3 only because each niche is small</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Research scientist / academia (PhD) (<a href="05-tier3.html#sec-5-6">5.6</a>)</td>
+<td>3</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>21</td>
+<td>CS/CE + PhD</td>
+<td>Medium; depends on funding climate</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Computing + medicine (MD path) (<a href="05-tier3.html#sec-5-9">5.9</a>)</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>21</td>
+<td>CS</td>
+<td>Low; 11+ years training</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Computing + law / policy / government (<a href="05-tier3.html#sec-5-8">5.8</a>)</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>19</td>
+<td>CS</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Generalist web / full-stack developer (<a href="05-tier3.html#sec-5-1">5.1</a>)</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>17</td>
+<td>CS</td>
+<td>Very high: the most AI-exposed engineering role</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Teaching CS (K-12 / community college) (<a href="05-tier3.html#sec-5-10">5.10</a>)</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>17</td>
+<td>CS</td>
+<td>Low but poorly paid</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Native mobile development (<a href="05-tier3.html#sec-5-2">5.2</a>)</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>16</td>
+<td>CS</td>
+<td>High: cross-platform + AI compress it</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Game development (studios) (<a href="05-tier3.html#sec-5-5">5.5</a>)</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>14</td>
+<td>CS</td>
+<td>High: layoffs, low pay</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Data analyst / BI analyst (<a href="05-tier3.html#sec-5-4">5.4</a>)</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>5</td>
+<td>14</td>
+<td>CS</td>
+<td>Very high</td>
+</tr>
+<tr>
+<td>28</td>
+<td>QA / test engineering, IT support, sysadmin (<a href="05-tier3.html#sec-5-3">5.3</a>)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>12</td>
+<td>—</td>
+<td>Very high</td>
+</tr>
+<tr>
+<td>—</td>
+<td>Founding a startup (<a href="05-tier3.html#sec-5-7">5.7</a>)</td>
+<td>3</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>5</td>
+<td>5</td>
+<td>n/a</td>
+<td>Either</td>
+<td>Extreme variance; better as second act</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Reading the table.</strong> The top of the table is dominated by careers where <em>software meets something hard</em> — physics (semis, robotics, energy), adversaries (security, defense), scale (infrastructure), or frontier models (AI/ML). The bottom is dominated by careers where the work is <em>pure software glue</em> that agents now generate. That is the central pattern of this guide and it is very unlikely to reverse by 2031.</p>
+<p>Three ranking nuances worth noticing:</p>
+<ul>
+<li><strong>Infrastructure scores highest on total</strong> because it is the only Tier 1 field that is simultaneously BS-accessible (5), high-optionality (5), and AI-resistant (5) — it is the safest <em>single</em> bet.</li>
+<li><strong>Semiconductors and robotics score highest on moat</strong>, which makes them the best bets for students who want low competition and stability. <strong>AI/ML scores highest on comp and upside</strong> but lowest on moat among Tier 1 — the best bet for students who can stand out.</li>
+<li><strong>Defense (26.5) out-scores three Tier 1 careers</strong> and is Tier 2 only because of the citizenship gate. If you are a US citizen open to the sector, read it as Tier 1. Likewise the <strong>contrarian niches (23.5)</strong> out-score most of Tier 2 on the dimensions and are Tier 3 only because each niche's absolute job count is small.</li>
+</ul>
+<hr>
+<h2 id="sec-10-2">10.2 Decision Matrix — Personality and Preference → Career</h2>
+<p>Find the row that best describes you. The "primary" recommendation is the strongest fit; the "alternates" are close.</p>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>You…</th>
+<th>Primary</th>
+<th>Alternates</th>
+<th>Avoid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Love math and abstraction; enjoy proofs and probability</td>
+<td>AI/ML engineering</td>
+<td>Quant/fintech; cryptography (security); quantum</td>
+<td>Web dev; IT</td>
+</tr>
+<tr>
+<td>Like to break things, think adversarially, enjoy puzzles</td>
+<td>Security engineering</td>
+<td>AI security/red-team; defense; hardware security (CE)</td>
+<td>PM; DevRel</td>
+</tr>
+<tr>
+<td>Want to see your work in physical objects</td>
+<td>Semiconductors (CE)</td>
+<td>Robotics/embedded; energy/grid; aerospace</td>
+<td>Data analyst; web</td>
+</tr>
+<tr>
+<td>Enjoy making large systems reliable and fast; like operations</td>
+<td>Infrastructure / distributed / SRE</td>
+<td>AI infra; enterprise cloud; data engineering</td>
+<td>Mobile; games</td>
+</tr>
+<tr>
+<td>Like working with people, explaining, and traveling</td>
+<td>Forward-deployed engineer</td>
+<td>Technical PM (later); DevRel; consulting (with caution)</td>
+<td>Semis; quant</td>
+</tr>
+<tr>
+<td>Want stability, mission, and predictable hours (US citizen)</td>
+<td>Defense / aerospace (cleared)</td>
+<td>Government security (SFS); energy/grid; national labs</td>
+<td>Startups; games</td>
+</tr>
+<tr>
+<td>Want the highest possible income and accept brutal selection</td>
+<td>Quant / HFT</td>
+<td>AI/ML at frontier labs; FDE at AI labs</td>
+<td>Anything in Tier 3</td>
+</tr>
+<tr>
+<td>Want to be at the frontier of the technology itself</td>
+<td>AI/ML engineering</td>
+<td>Quantum; robotics/humanoid; AI infra; PhD research</td>
+<td>Enterprise cloud; IT</td>
+</tr>
+<tr>
+<td>Like data, statistics, and answering questions with evidence</td>
+<td>Data engineering / engineering-heavy DS</td>
+<td>Product DS at Big Tech; ML engineering; health/biotech computing</td>
+<td>BI analyst (the AI-exposed layer)</td>
+</tr>
+<tr>
+<td>Prefer low-competition niches over prestige</td>
+<td>Semiconductors</td>
+<td>Contrarian niches (EDA, HPC, mainframe, controls); energy; defense</td>
+<td>AI/ML (most crowded)</td>
+</tr>
+<tr>
+<td>Want maximum flexibility to change direction later</td>
+<td>Infrastructure</td>
+<td>AI/ML; data engineering; FDE</td>
+<td>Semis (deep but narrow); quantum</td>
+</tr>
+<tr>
+<td>Want remote work within 3–5 years</td>
+<td>Security</td>
+<td>Data engineering; cloud/infra; general SWE</td>
+<td>Semis; robotics hardware; defense</td>
+</tr>
+<tr>
+<td>Care about healthcare, climate, or a specific mission</td>
+<td>Health/biotech or energy/grid computing</td>
+<td>Defense (national security); education tech (with caution)</td>
+<td>Ad-tech; games</td>
+</tr>
+<tr>
+<td>Want to found a company eventually</td>
+<td>AI/ML or infrastructure first</td>
+<td>FDE (customer exposure); security (B2B startup pipeline)</td>
+<td>Founding straight out of school</td>
+</tr>
+<tr>
+<td>Love visual/creative work</td>
+<td>Graphics / simulation / spatial</td>
+<td>Robotics perception; game engines (not studio dev)</td>
+<td>Studio game development; frontend web</td>
+</tr>
+<tr>
+<td>Dislike math, want to code</td>
+<td>Security (detection/appsec) or enterprise cloud</td>
+<td>Data engineering; embedded firmware (CE)</td>
+<td>AI/ML; quant; semis design</td>
+</tr>
+<tr>
+<td>International student needing sponsorship</td>
+<td>AI/ML engineering</td>
+<td>Infrastructure; semis (Big Tech/large firms); quant</td>
+<td>Defense; government; small companies</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="sec-10-3">10.3 Compensation Summary Table</h2>
+<p>US total compensation, 2026 dollars, typical ranges. New-grad = 0–1 year; Mid = 4–6 years; Senior = 8–12 years. Top-of-market employers (frontier labs, Big Tech, HFT) sit at or above the upper bound.</p>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>Career</th>
+<th>New-grad TC</th>
+<th>Mid-career TC</th>
+<th>Senior TC</th>
+<th>BLS median (all levels)</th>
+<th>Comp trend 2026→31</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI/ML engineer</td>
+<td>$130–220k</td>
+<td>$250–400k</td>
+<td>$400–700k+</td>
+<td>— (MLE Levels.fyi median $279k)</td>
+<td>↑ premium widening</td>
+</tr>
+<tr>
+<td>Quant dev / researcher</td>
+<td>$200–350k</td>
+<td>$400–700k</td>
+<td>$600k–$1.5M+</td>
+<td>—</td>
+<td>→ elite, stable</td>
+</tr>
+<tr>
+<td>General SWE at top-tier employers (<a href="04-tier2.html#sec-4-11">4.11</a>)</td>
+<td>$140–200k</td>
+<td>$220–350k</td>
+<td>$350–500k</td>
+<td>$135,980 (developers, all employers)</td>
+<td>→ flat real; entry ramp narrow</td>
+</tr>
+<tr>
+<td>Infrastructure / SRE / distributed</td>
+<td>$130–190k</td>
+<td>$220–350k</td>
+<td>$350–500k</td>
+<td>—</td>
+<td>↑ AI-infra demand</td>
+</tr>
+<tr>
+<td>Security engineer</td>
+<td>$100–160k</td>
+<td>$180–280k</td>
+<td>$280–450k</td>
+<td>$124,910 (infosec analysts)</td>
+<td>↑ steady</td>
+</tr>
+<tr>
+<td>Semiconductor design / verification</td>
+<td>$110–150k (BS); $130–175k (MS)</td>
+<td>$180–260k</td>
+<td>$260–400k+ (NVIDIA/Apple/AMD higher)</td>
+<td>$155,020 (hardware eng)</td>
+<td>↑ CHIPS + AI silicon</td>
+</tr>
+<tr>
+<td>Robotics / autonomy</td>
+<td>$100–150k</td>
+<td>$150–205k</td>
+<td>$205–300k+</td>
+<td>—</td>
+<td>↑ physical AI</td>
+</tr>
+<tr>
+<td>Forward-deployed engineer</td>
+<td>$130–180k</td>
+<td>$200–350k</td>
+<td>$350–550k</td>
+<td>—</td>
+<td>↑↑ if enterprise AI adoption continues</td>
+</tr>
+<tr>
+<td>Data engineer</td>
+<td>$100–150k</td>
+<td>$160–220k</td>
+<td>$220–320k</td>
+<td>—</td>
+<td>→</td>
+</tr>
+<tr>
+<td>Data scientist</td>
+<td>$85–140k</td>
+<td>$150–220k</td>
+<td>$220–350k</td>
+<td>$112,590</td>
+<td>↔ bifurcating</td>
+</tr>
+<tr>
+<td>Defense / aerospace (cleared)</td>
+<td>$85–130k</td>
+<td>$140–200k (primes) / $185–320k (defense-tech)</td>
+<td>$200–350k</td>
+<td>$134,830 (aerospace eng)</td>
+<td>↑ clearance premium</td>
+</tr>
+<tr>
+<td>Energy / grid computing</td>
+<td>$90–130k</td>
+<td>$140–200k</td>
+<td>$200–280k</td>
+<td>$118,780 (EE)</td>
+<td>↑</td>
+</tr>
+<tr>
+<td>Health / biotech computing</td>
+<td>$90–140k</td>
+<td>$140–210k</td>
+<td>$200–300k</td>
+<td>—</td>
+<td>→</td>
+</tr>
+<tr>
+<td>Quantum</td>
+<td>$120–180k</td>
+<td>$150–250k</td>
+<td>$200k+</td>
+<td>—</td>
+<td>↑ long-dated</td>
+</tr>
+<tr>
+<td>Technical PM</td>
+<td>— (rarely entry)</td>
+<td>$180–280k</td>
+<td>$300–500k</td>
+<td>—</td>
+<td>→</td>
+</tr>
+<tr>
+<td>Enterprise cloud / DevOps</td>
+<td>$90–130k</td>
+<td>$130–180k</td>
+<td>$180–250k</td>
+<td>—</td>
+<td>→</td>
+</tr>
+<tr>
+<td>Graphics / simulation</td>
+<td>$110–160k</td>
+<td>$180–260k</td>
+<td>$260–400k</td>
+<td>—</td>
+<td>→</td>
+</tr>
+<tr>
+<td>Web / full-stack generalist</td>
+<td>$65–110k</td>
+<td>$100–150k</td>
+<td>$140–200k</td>
+<td>$95,380 (web devs)</td>
+<td>↓</td>
+</tr>
+<tr>
+<td>Mobile developer</td>
+<td>$80–130k</td>
+<td>$130–190k</td>
+<td>$190–260k</td>
+<td>—</td>
+<td>↓</td>
+</tr>
+<tr>
+<td>Data / BI analyst</td>
+<td>$60–90k</td>
+<td>$85–120k</td>
+<td>$110–150k</td>
+<td>—</td>
+<td>↓↓</td>
+</tr>
+<tr>
+<td>QA / IT support</td>
+<td>$50–75k</td>
+<td>$65–95k</td>
+<td>$80–120k</td>
+<td>$61,550 (support)</td>
+<td>↓↓</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="sec-10-4">10.4 Major → Career Map</h2>
+<p>Recommended major for each career, with the minor or elective cluster that most improves your odds. "Either" means the choice does not matter much; pick the program that is stronger at your school.</p>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>Career</th>
+<th>Best major</th>
+<th>Second choice</th>
+<th>Add this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI/ML engineer</td>
+<td>CS</td>
+<td>CE (with ML electives)</td>
+<td>Math or statistics minor; ML systems / GPU programming</td>
+</tr>
+<tr>
+<td>Security engineer</td>
+<td>CS</td>
+<td>CE (hardware/embedded security)</td>
+<td>OS, networks, crypto; CTF team; Security+ if defense-bound</td>
+</tr>
+<tr>
+<td>Semiconductor design / verification</td>
+<td>CE</td>
+<td>EE</td>
+<td>VLSI, computer architecture, digital verification; Tiny Tapeout; plan MS</td>
+</tr>
+<tr>
+<td>Infrastructure / distributed</td>
+<td>Either</td>
+<td>—</td>
+<td>OS, distributed systems, networks; Rust/Go; cloud + Kubernetes</td>
+</tr>
+<tr>
+<td>Robotics / embedded / autonomy</td>
+<td>CE</td>
+<td>CS (perception/planning) or ME</td>
+<td>Controls, signals, embedded systems, ROS 2; robotics team</td>
+</tr>
+<tr>
+<td>Data engineer / DS</td>
+<td>CS</td>
+<td>Statistics</td>
+<td>Databases, statistics; SQL depth; one warehouse; orchestration</td>
+</tr>
+<tr>
+<td>General SWE at top-tier employers</td>
+<td>Either</td>
+<td>—</td>
+<td>Systems depth; two internships; enter via a specialized team (infra, security, ML platform, payments)</td>
+</tr>
+<tr>
+<td>Forward-deployed engineer</td>
+<td>CS</td>
+<td>Either</td>
+<td>Communication courses; a business or domain minor; hackathons</td>
+</tr>
+<tr>
+<td>Defense / aerospace</td>
+<td>Either</td>
+<td>EE / aero</td>
+<td>US citizenship; clearance-track internships; SMART/SFS; embedded or infra depth</td>
+</tr>
+<tr>
+<td>Quantum</td>
+<td>CE or physics double</td>
+<td>CS (algorithms/compilers)</td>
+<td>Quantum mechanics, linear algebra, information theory; plan PhD/MS</td>
+</tr>
+<tr>
+<td>Health / biotech computing</td>
+<td>CS</td>
+<td>Bioinformatics</td>
+<td>Biology/statistics minor; HIPAA/FDA literacy; research lab</td>
+</tr>
+<tr>
+<td>Fintech / quant</td>
+<td>CS</td>
+<td>Math double</td>
+<td>Probability, stochastic processes, C++; ICPC/Putnam</td>
+</tr>
+<tr>
+<td>Energy / grid</td>
+<td>CE or EE</td>
+<td>CS</td>
+<td>Power systems, control, embedded; energy economics</td>
+</tr>
+<tr>
+<td>Technical PM</td>
+<td>CS</td>
+<td>Either</td>
+<td>Ship as an engineer first; writing; business minor optional</td>
+</tr>
+<tr>
+<td>Enterprise cloud / DevOps</td>
+<td>CS</td>
+<td>IT-track CS</td>
+<td>Cloud certs (professional level), Terraform, Kubernetes</td>
+</tr>
+<tr>
+<td>Graphics / simulation</td>
+<td>CS</td>
+<td>CE (GPU hardware)</td>
+<td>Linear algebra, computer graphics, GPU programming, physics</td>
+</tr>
+<tr>
+<td>Developer tools</td>
+<td>CS</td>
+<td>—</td>
+<td>Compilers, PL, systems; open-source maintainer track</td>
+</tr>
+<tr>
+<td>Research / PhD</td>
+<td>Either, by subfield</td>
+<td>—</td>
+<td>Undergraduate research from year 2; publications; GRFP</td>
+</tr>
+<tr>
+<td>Contrarian niches</td>
+<td>CE</td>
+<td>CS</td>
+<td>Whatever the niche demands (COBOL, FPGA, controls, HPC/Fortran+MPI)</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="sec-10-5">10.5 Scenario Stress Test</h2>
+<p>How each Tier 1–2 career fares under the three 2031 scenarios from <a href="01-landscape.html#sec-1">Section 1</a> (A Steady Complement 55%, B Agentic Leap 30%, C AI Winter Lite 15%). ✔ = strong; ~ = adequate; ✘ = weak.</p>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>Career</th>
+<th>A: Steady Complement</th>
+<th>B: Agentic Leap</th>
+<th>C: AI Winter Lite</th>
+<th>Robustness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Semiconductors</td>
+<td>✔</td>
+<td>✔ (compute demand)</td>
+<td>✔ (non-AI chips, defense, auto)</td>
+<td><strong>Highest</strong></td>
+</tr>
+<tr>
+<td>Security</td>
+<td>✔</td>
+<td>✔ (AI attack surface)</td>
+<td>✔ (regulation, breaches continue)</td>
+<td><strong>Highest</strong></td>
+</tr>
+<tr>
+<td>Defense / aerospace</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td><strong>Highest</strong> (citizens)</td>
+</tr>
+<tr>
+<td>Infrastructure / distributed</td>
+<td>✔</td>
+<td>✔ (agents run on infra)</td>
+<td>~ (capex slows)</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Energy / grid</td>
+<td>✔</td>
+<td>✔</td>
+<td>~</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Robotics / embedded</td>
+<td>✔</td>
+<td>✔ (physical AI)</td>
+<td>~ (funding slows)</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Data engineering</td>
+<td>✔</td>
+<td>~ (analyst layer automates)</td>
+<td>✔</td>
+<td>Medium-high</td>
+</tr>
+<tr>
+<td>Health / biotech</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>High (but lower comp)</td>
+</tr>
+<tr>
+<td>AI/ML engineer</td>
+<td>✔</td>
+<td>✔✔</td>
+<td>~ (fewer roles, still exist)</td>
+<td>Medium-high</td>
+</tr>
+<tr>
+<td>Forward-deployed engineer</td>
+<td>✔</td>
+<td>✔✔</td>
+<td>✘ (enterprise AI budgets cut)</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Fintech / quant</td>
+<td>✔</td>
+<td>✔</td>
+<td>~</td>
+<td>Medium-high (quant is stable; fintech cyclical)</td>
+</tr>
+<tr>
+<td>Quantum</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>Medium (independent of AI cycle, dependent on physics progress)</td>
+</tr>
+<tr>
+<td>Enterprise cloud</td>
+<td>✔</td>
+<td>~</td>
+<td>✔</td>
+<td>Medium-high</td>
+</tr>
+<tr>
+<td>Graphics / simulation</td>
+<td>~</td>
+<td>✔</td>
+<td>~</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Technical PM</td>
+<td>✔</td>
+<td>✔</td>
+<td>~</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>General SWE at top employers</td>
+<td>✔</td>
+<td>~ (generalists squeezed; system owners fine)</td>
+<td>✔</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Web / mobile generalist</td>
+<td>✘</td>
+<td>✘✘</td>
+<td>~</td>
+<td><strong>Lowest</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Portfolio logic:</strong> a student who cannot decide between two Tier 1 fields should note that <strong>security + infrastructure</strong>, <strong>semis + AI infra</strong>, and <strong>robotics + embedded security</strong> are natural pairs that hedge across scenarios and are also the intersections where the highest-paid, least-crowded jobs sit.</p>
+<hr>
+<h2 id="sec-10-6">10.6 One-Page Summary</h2>
+<p>If you print one page, print this.</p>
+<ol>
+<li><strong>Aim at Tier 1:</strong> AI/ML engineering, security, semiconductors, infrastructure, robotics/embedded, engineering-heavy data. All six have strong demand, resist AI substitution, and are BS-accessible with the right preparation.</li>
+<li><strong>Choose by fit, not ranking:</strong> use <a href="#sec-10-2">Section 10.2</a>. The best career is the Tier 1 field you will actually go deep in.</li>
+<li><strong>CE for hardware-adjacent (semis, robotics, energy, embedded); CS for math/ML-adjacent (AI, quant, security software, data).</strong> Infrastructure and defense are indifferent.</li>
+<li><strong>The recruiting calendar runs a year ahead.</strong> Internship by summer 2029; specialization committed by fall 2029; research or a depth artifact by 2030.</li>
+<li><strong>Learn fundamentals without AI, then use AI for everything.</strong> Employers are now testing for exactly this.</li>
+<li><strong>US citizens: get a clearance</strong> via SMART, SFS, or a defense-track internship. It is the largest under-used advantage available.</li>
+<li><strong>International students: target sponsoring, high-wage Tier 1 employers; plan for an MS; build an O-1 record.</strong></li>
+<li><strong>Do not build a career on generalist web/mobile/BI/QA.</strong> Learn them as skills; do not make them your identity. General SWE at a top employer is fine as a <em>first</em> job — if you use it to acquire a Tier 1 moat within two years (<a href="04-tier2.html#sec-4-11">Section 4.11</a>).</li>
+<li><strong>First job: learning rate and brand over comp or mission.</strong></li>
+<li><strong>Plan the failure modes</strong> (<a href="07-roadmap.html#sec-7-6">Section 7.6</a>) so a bad cycle costs months, not years.</li>
+</ol>
+<hr>
+<h2 id="sec-10-7">10.7 Every Career in One Line</h2>
+<p>The whole guide compressed: one row per career, sorted by tier then §10.1 total. Use it as a lookup after you have read the profiles, not instead of them. The <strong>Verdict</strong> column is the guide's own summary; <strong>Total</strong> is the unweighted §10.1 score (max 30; “—” where a dimension is not scored). Interactive versions: the <a href="explorer.html">career explorer</a>, <a href="compare.html">compare tool</a>, and <a href="quiz.html">fit quiz</a> on the website.</p>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>#</th>
+<th>Career</th>
+<th>Tier</th>
+<th>§</th>
+<th>Total</th>
+<th>Degree</th>
+<th>New-grad TC</th>
+<th>Grad school?</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Infrastructure</strong></td>
+<td>1</td>
+<td>3.4</td>
+<td>28</td>
+<td>CS or CE</td>
+<td>$130–190k</td>
+<td>Not needed</td>
+<td>The picks and shovels of AI: GPU clusters, inference serving, storage, networking, observability. The only Tier 1 field that is simultaneously BS-accessible, high-optionality, and AI-resistant — the safest single bet.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Security</strong></td>
+<td>1</td>
+<td>3.2</td>
+<td>27</td>
+<td>CS (CE for hardware security)</td>
+<td>$100–160k</td>
+<td>Not needed</td>
+<td>BLS +29% growth; AI both attacks and defends; counter-cyclical demand; a citizenship moat in government and defense. The most BS-accessible Tier 1 field.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Robotics &amp; embedded</strong></td>
+<td>1</td>
+<td>3.5</td>
+<td>27</td>
+<td>CE (CS for perception/ML)</td>
+<td>$100–150k</td>
+<td>Helpful for perception/planning</td>
+<td>Humanoids, drones, autonomous vehicles, defense systems. Needs hardware + software + ML at once — a rare combination that AI cannot yet replace because the work touches the physical world.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Semiconductors</strong></td>
+<td>1</td>
+<td>3.3</td>
+<td>26.5</td>
+<td>CE (or EE)</td>
+<td>$110–150k (BS); $130–175k (MS)</td>
+<td>MS recommended for design/architecture</td>
+<td>Highest median pay of any computing occupation ($155k BLS); acute talent shortage (~67k unfilled by 2030); CHIPS Act fabs and the AI accelerator race. The best moat in computing; DV/FPGA/test are BS-accessible.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>AI/ML engineering</strong></td>
+<td>1</td>
+<td>3.1</td>
+<td>26.5</td>
+<td>CS (+ math)</td>
+<td>$130–220k</td>
+<td>MS raises odds at labs</td>
+<td>Fastest-growing, highest-paid engineering discipline (openings +60% YoY; median MLE comp ~$279k). Lowest moat in Tier 1 and the most crowded — the best bet for students who can stand out.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Data engineering</strong></td>
+<td>1</td>
+<td>3.6</td>
+<td>23.5</td>
+<td>CS (+ stats)</td>
+<td>$100–150k</td>
+<td>MS in stats/DS common but not required</td>
+<td>BLS +34% growth for data scientists; every AI system is a data pipeline. Tier 1 with a caveat: the analyst/dashboard layer is automating; the platform and engineering layer is growing.</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Defense &amp; aerospace</strong></td>
+<td>2</td>
+<td>4.2</td>
+<td>26.5</td>
+<td>CS or CE</td>
+<td>$85–130k</td>
+<td>Not needed</td>
+<td>Clearance = citizen-only moat; neo-primes (Anduril, SpaceX, Palantir) hiring intensely; budget-driven and counter-cyclical. Scores 26.5 — Tier 1 for US citizens; Tier 2 only because of the citizenship gate.</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Energy &amp; grid</strong></td>
+<td>2</td>
+<td>4.6</td>
+<td>25</td>
+<td>CE or EE</td>
+<td>$90–130k</td>
+<td>Not needed</td>
+<td>Data-center power demand is structural; grid software, power electronics, and controls are under-supplied and unfashionable. Mission with a tailwind; utility-scale pay is the drawback.</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Fintech &amp; quant</strong></td>
+<td>2</td>
+<td>4.5</td>
+<td>25</td>
+<td>CS</td>
+<td>$200–350k (quant)</td>
+<td>Not needed for quant dev</td>
+<td>The highest new-grad pay in computing ($200–350k at HFT firms) behind brutal selection; fintech more broadly is cyclical but large. For elite algorithmic/math talent.</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Forward-deployed engineer</strong></td>
+<td>2</td>
+<td>4.1</td>
+<td>25</td>
+<td>CS</td>
+<td>$130–180k</td>
+<td>Not needed</td>
+<td>Postings +800–1,100% in a year; TC $350–550k at AI labs; engineering plus customer-facing judgment in messy organizations — structurally AI-resistant. A bet on enterprise AI adoption.</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>Quantum</strong></td>
+<td>2</td>
+<td>4.3</td>
+<td>23</td>
+<td>CE + physics, then MS/PhD</td>
+<td>$120–180k</td>
+<td>Usually required</td>
+<td>Tiny field (~16.5k globally) with heavy capital inflow; long-dated bet independent of the AI cycle. For physics-minded CE students who plan on grad school.</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>Health &amp; biotech</strong></td>
+<td>2</td>
+<td>4.4</td>
+<td>23</td>
+<td>CS (+ bio) or CE for devices</td>
+<td>$90–140k</td>
+<td>MS/PhD common for computational biology</td>
+<td>Aging population + AI drug discovery + regulated (slow to automate) + FDA moat. Demographics-driven and robust in every scenario; slower pay growth.</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>General SWE (top employers)</strong></td>
+<td>2</td>
+<td>4.11</td>
+<td>23</td>
+<td>CS or CE</td>
+<td>$140–200k</td>
+<td>Not needed</td>
+<td>The largest market by far and a fine first job — if you enter through a specialized team (infra, security, ML platform, payments) and acquire a Tier 1 moat within two years. Weakest moat; hardest entry ramp.</td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>Technical PM</strong></td>
+<td>2</td>
+<td>4.7</td>
+<td>22</td>
+<td>CS</td>
+<td>— (rarely entry)</td>
+<td>Not needed</td>
+<td>A year-5 pivot for engineers with judgment, not a new-grad target. AI-resistant because the work is deciding what to build and why.</td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>Graphics &amp; simulation</strong></td>
+<td>2</td>
+<td>4.9</td>
+<td>22</td>
+<td>CS (CE for GPU hardware)</td>
+<td>$110–160k</td>
+<td>Helpful for research-grade rendering/simulation</td>
+<td>Math-heavy visual engineering: rendering, engines, physics simulation, robotics sim, AR/VR. Strong moat; avoid the game-studio treadmill and build engines/tools instead.</td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>Developer tools</strong></td>
+<td>2</td>
+<td>4.10</td>
+<td>22</td>
+<td>CS</td>
+<td>$120–180k</td>
+<td>Not needed</td>
+<td>Compilers, languages, build systems, IDEs, AI coding tools. Tool builders with compilers/PL/systems depth are scarce; the AI-coding-tools boom raised demand.</td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>Enterprise cloud &amp; DevOps</strong></td>
+<td>2</td>
+<td>4.8</td>
+<td>22</td>
+<td>CS</td>
+<td>$90–130k</td>
+<td>Not needed</td>
+<td>Steady, unglamorous, everywhere: banks, retailers, hospitals, insurers all run cloud platforms. Flexibility, balance, and non-coastal living; a lower ceiling.</td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>DevRel</strong></td>
+<td>2</td>
+<td>4.10</td>
+<td>18</td>
+<td>CS</td>
+<td>$90–140k</td>
+<td>Not needed</td>
+<td>For engineers who love teaching and writing. Funded from marketing budgets, so volatile; best as a later move from an engineering role.</td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>Contrarian niches</strong></td>
+<td>3</td>
+<td>5.11</td>
+<td>23.5</td>
+<td>CE (CS for EDA/HPC/PQC)</td>
+<td>$90–140k</td>
+<td>Varies by niche</td>
+<td>Where talent is fleeing and demand is not: mainframe modernization, analog/RF, industrial controls, medical firmware, formal verification, post-quantum crypto, EDA tools, HPC. Out-scores most of Tier 2; Tier 3 only because each niche is small.</td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>Research / PhD</strong></td>
+<td>3</td>
+<td>5.6</td>
+<td>21</td>
+<td>CS/CE + PhD</td>
+<td>PhD stipend $35–50k</td>
+<td>Required</td>
+<td>Five to six more years for a shot at industrial research labs or the professoriate. Enormous moat and optionality, but a long, underpaid road and a funding-climate dependency.</td>
+</tr>
+<tr>
+<td>21</td>
+<td><strong>Computing + medicine</strong></td>
+<td>3</td>
+<td>5.9</td>
+<td>21</td>
+<td>CS + pre-med</td>
+<td>— (medical school)</td>
+<td>MD/DO required</td>
+<td>Physician-engineers are rare and valuable (clinical AI, informatics, medical devices) but the path is 11+ years and the CS degree is a complement, not the career.</td>
+</tr>
+<tr>
+<td>22</td>
+<td><strong>Computing + law/policy</strong></td>
+<td>3</td>
+<td>5.8</td>
+<td>19</td>
+<td>CS</td>
+<td>$60–90k (policy) / — (law school)</td>
+<td>JD or MPP usually</td>
+<td>AI regulation, privacy, IP, and technology policy need people who understand both code and institutions. Usually requires a JD or a policy master's; a niche, not a mass market.</td>
+</tr>
+<tr>
+<td>23</td>
+<td><strong>Web / full-stack generalist</strong></td>
+<td>3</td>
+<td>5.1</td>
+<td>17</td>
+<td>CS</td>
+<td>$65–110k</td>
+<td>Not needed</td>
+<td>The most AI-exposed engineering role; frontend-only titles are disappearing fastest. Learn it as a foundation — it is not a destination.</td>
+</tr>
+<tr>
+<td>24</td>
+<td><strong>Teaching CS</strong></td>
+<td>3</td>
+<td>5.10</td>
+<td>17</td>
+<td>CS</td>
+<td>$45–65k</td>
+<td>Certification</td>
+<td>Chronically under-supplied and meaningful, but poorly paid relative to every other option here. Best as a mission choice with eyes open.</td>
+</tr>
+<tr>
+<td>25</td>
+<td><strong>Native mobile</strong></td>
+<td>3</td>
+<td>5.2</td>
+<td>16</td>
+<td>CS</td>
+<td>$80–130k</td>
+<td>Not needed</td>
+<td>Cross-platform frameworks and AI compress it; a declining specialty. Useful skill, weak career identity.</td>
+</tr>
+<tr>
+<td>26</td>
+<td><strong>Game studios</strong></td>
+<td>3</td>
+<td>5.5</td>
+<td>14</td>
+<td>CS</td>
+<td>$60–95k</td>
+<td>Not needed</td>
+<td>Layoffs, crunch, and low pay for the passion premium. If you love games, build engines, graphics, or simulation (<a href="04-tier2.html#sec-4-9">4.9</a>) instead.</td>
+</tr>
+<tr>
+<td>27</td>
+<td><strong>Data / BI analyst</strong></td>
+<td>3</td>
+<td>5.4</td>
+<td>14</td>
+<td>CS</td>
+<td>$60–90k</td>
+<td>Not needed</td>
+<td>Dashboards and SQL-to-insight are exactly what AI agents now do. The most exposed layer of the data stack; move to data engineering (<a href="03-tier1.html#sec-3-6">3.6</a>) instead.</td>
+</tr>
+<tr>
+<td>28</td>
+<td><strong>QA / IT support</strong></td>
+<td>3</td>
+<td>5.3</td>
+<td>12</td>
+<td>—</td>
+<td>$50–75k</td>
+<td>Not needed</td>
+<td>BLS projects programmer and support employment to shrink; manual QA is the most automated role in software. Do not aim here with a CS/CE degree.</td>
+</tr>
+<tr>
+<td>29</td>
+<td><strong>Founding a startup</strong></td>
+<td>3</td>
+<td>5.7</td>
+<td>—</td>
+<td>Either</td>
+<td>$0–80k (founder salary)</td>
+<td>Not needed</td>
+<td>Extreme variance; better as a second act after a Tier 1 first job that gives you a network, savings, and a real problem to solve.</td>
+</tr>
+</tbody>
+</table></div>
+    </article>
+    <div class="prevnext"><a class="pn prev" href="09-market.html"><span>← Previous</span><strong>9 · Market, comp, visas</strong></a><a class="pn next" href="11-faq.html"><span>Next →</span><strong>11 · FAQ, myths, risks</strong></a></div>
+    <footer class="foot">
+      <p><em>Choosing Your Future</em>, v2.0 (September 2026). Written for students entering CS/CE in Fall 2027. All figures are cited in <a href="12-sources.html">Section 12</a>; projections are judgments, labelled as such. <a href="CS_CE_Career_Guide_2027.md" download>Download the full Markdown</a>.</p>
+    </footer>
+  </main>
+
+  <aside class="toc" aria-label="On this page">
+    <div class="toc-title">On this page</div>
+    <ul><li class="toc-l2"><a href="#sec-10-1">10.1 Master Scorecard — All Careers</a></li>
+<li class="toc-l2"><a href="#sec-10-2">10.2 Decision Matrix — Personality and Preference → Career</a></li>
+<li class="toc-l2"><a href="#sec-10-3">10.3 Compensation Summary Table</a></li>
+<li class="toc-l2"><a href="#sec-10-4">10.4 Major → Career Map</a></li>
+<li class="toc-l2"><a href="#sec-10-5">10.5 Scenario Stress Test</a></li>
+<li class="toc-l2"><a href="#sec-10-6">10.6 One-Page Summary</a></li>
+<li class="toc-l2"><a href="#sec-10-7">10.7 Every Career in One Line</a></li></ul>
+  </aside>
+</div>
+
+<div class="search-modal" id="searchModal" hidden>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="Search">
+    <input type="search" id="searchInput" placeholder="Search the whole guide… (Esc to close)" autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+    <div class="search-hint">Type at least 2 characters. ↑↓ to move, Enter to open.</div>
+  </div>
+</div>
+
+<script src="static/site.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- title: Compare careers -->
+<!-- scripts: <script src="static/careers-common.js" defer></script><script src="static/compare.js" defer></script> -->
+<h1>Compare careers</h1>
+<p class="tool-intro">Pick two or three careers and see them side by side: the six scores, compensation bands by career stage, the recommended degree, how each fares under the three 2031 scenarios from <a href="01-landscape.html#sec-1-5">Section 1.5</a>, and who should avoid it. Data is identical to <a href="10-tables.html">Section 10</a>. Selections are shareable via the page URL.</p>
+
+<div class="panel">
+  <div class="cmp-pick">
+    <label class="inline" style="flex-direction:column;align-items:stretch">Career A <select id="selA"></select></label>
+    <label class="inline" style="flex-direction:column;align-items:stretch">Career B <select id="selB"></select></label>
+    <label class="inline" style="flex-direction:column;align-items:stretch">Career C (optional) <select id="selC"><option value="">—</option></select></label>
+  </div>
+  <div class="row" style="margin-top:10px">
+    <span class="muted small">Popular pairs:</span>
+    <button class="btn sm" data-pair="security,infra">Security vs Infra</button>
+    <button class="btn sm" data-pair="aiml,semis">AI/ML vs Semis</button>
+    <button class="btn sm" data-pair="semis,robotics,energy">CE trio</button>
+    <button class="btn sm" data-pair="aiml,quant,fde">Highest pay</button>
+    <button class="btn sm" data-pair="defense,security,infra">US citizen safe bets</button>
+    <button class="btn sm" data-pair="swe,web,infra">Generalist vs specialist</button>
+  </div>
+</div>
+
+<div id="cmpOut"></div>
+
+<div class="callout small">Scores: 1–5, 5 is best; see <a href="02-framework.html#sec-2-1">Section 2.1</a> for what each dimension means. Compensation is US total compensation in 2026 dollars, typical ranges (top-of-market employers sit at or above the upper bound) — <a href="09-market.html#sec-9-2">Section 9.2</a> explains the three "modes" of pay. Scenario grades: ✔✔ very strong · ✔ strong · ~ adequate · ✘ weak · ✘✘ very weak.</div>

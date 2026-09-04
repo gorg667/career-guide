@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Section 2 — A Framework for Evaluating Any Tech Career — The 2027 CS/CE Career Guide</title>
+<meta name="description" content="Choosing Your Future — careers for students entering CS or CE in Fall 2027">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="static/style.css">
+<script>
+// Apply saved theme before first paint to avoid a flash.
+(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
+</script>
+
+</head>
+<body class="page-02-framework">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <button class="iconbtn" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+  <a class="brand" href="index.html"><span class="brand-mark">CS/CE</span> <span class="brand-text">2027 Career Guide</span></a>
+  <button class="searchbtn" id="searchOpen" aria-label="Search the guide"><span>Search</span><kbd>/</kbd></button>
+  <button class="iconbtn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Site">
+    <div class="nav-group">Guide</div>
+<a href="index.html">Start here</a>
+<a href="01-landscape.html">1 · The landscape</a>
+<a href="02-framework.html" class="active">2 · The framework</a>
+<a href="03-tier1.html">3 · Tier 1 careers</a>
+<a href="04-tier2.html">4 · Tier 2 careers</a>
+<a href="05-tier3.html">5 · Tier 3 &amp; contrarian</a>
+<a href="06-cs-vs-ce.html">6 · CS vs. CE</a>
+<a href="07-roadmap.html">7 · Four-year roadmap</a>
+<a href="08-skills.html">8 · Skills &amp; proof</a>
+<a href="09-market.html">9 · Market, comp, visas</a>
+<a href="10-tables.html">10 · Master tables</a>
+<a href="11-faq.html">11 · FAQ, myths, risks</a>
+<a href="12-sources.html">12 · Sources</a>
+<a href="glossary.html">A · Glossary</a>
+<a href="checklists.html">B · Checklists</a>
+<div class="nav-group">Tools</div>
+<a href="explorer.html">Career explorer</a>
+<a href="compare.html">Compare careers</a>
+<a href="quiz.html">Which career fits me?</a>
+<a href="roadmap.html">Interactive timeline</a>
+<div class="nav-group">Download</div>
+<a href="CS_CE_Career_Guide_2027.md" download>Full guide (Markdown)</a>
+<a href="https://github.com/gorg667/career-guide" target="_blank" rel="noopener">Source on GitHub</a>
+  </nav>
+
+  <main id="main" class="content" tabindex="-1">
+    <div class="meta-line" id="top">8 min read · 1,906 words</div>
+    <article class="prose">
+      <h1 id="sec-2">Section 2 — A Framework for Evaluating Any Tech Career</h1>
+<p>Rankings are only as good as the criteria behind them. Before we tell you <em>what</em> to pursue, this section explains <em>how</em> we judged — so that you can re-run the analysis yourself in 2029 when the facts have changed, and so that you can evaluate a career we did not cover.</p>
+<p>We score every career on <strong>seven dimensions</strong>, each 1–5, and then apply judgment rather than blindly summing. The scores appear in each career's profile in <a href="03-tier1.html#sec-3">Sections 3–5</a> and in the master table in <a href="10-tables.html#sec-10">Section 10</a>.</p>
+<hr>
+<h2 id="sec-2-1">2.1 The Seven Dimensions</h2>
+<h3 id="sec-2-1-d1-demand-durability-2031-2045">D1. Demand Durability (2031–2045)</h3>
+<p><em>Will there be many jobs when you graduate, and will there still be many jobs 15 years out?</em> (The inputs are BLS 2024–34 / 2025–35 projections and 2026 posting data; the horizon we care about is your career, 2031–2045.)</p>
+<p>We look at: BLS 10-year projections; private posting data (Indeed, TrueUp, LinkedIn/SignalFire); capital flows (where is venture and corporate capex going?); and whether the underlying driver is a multi-decade trend (aging population, energy transition, compute demand, geopolitical competition) or a fad.</p>
+<ul>
+<li><strong>5</strong> = BLS ≥ +25% or clear multi-decade structural driver with capital behind it (e.g., security, data science, AI infra).</li>
+<li><strong>3</strong> = roughly tracks the computing average (+9–10%).</li>
+<li><strong>1</strong> = BLS negative growth or clear technological obsolescence (e.g., "computer programmer" as a distinct role, manual QA).</li>
+</ul>
+<h3 id="sec-2-1-d2-ai-resistance-complement-vs-substitute">D2. AI Resistance (Complement vs. Substitute)</h3>
+<p><em>Does AI make people in this role more valuable, or replace them?</em></p>
+<p>Following the Stanford Canaries framework: occupations where AI <em>substitutes</em> for core tasks saw young-worker employment fall; where AI <em>complements</em>, employment is flat or rising. We ask: is the core of the job (a) generating well-specified artifacts (substitutable), or (b) exercising judgment under uncertainty, owning outcomes, dealing with physical reality, or bearing regulatory/legal accountability (complementary)?</p>
+<ul>
+<li><strong>5</strong> = AI is a force multiplier; the role's scarcity <em>increases</em> with AI (e.g., AI security, chip design, robotics, accountable roles in regulated domains).</li>
+<li><strong>3</strong> = mixed; junior tasks automated but senior judgment still needed (e.g., general backend engineering).</li>
+<li><strong>1</strong> = core deliverable is directly generated by AI from a spec (e.g., template-driven web pages, boilerplate CRUD, manual test scripts).</li>
+</ul>
+<h3 id="sec-2-1-d3-moat-barrier-to-entry">D3. Moat / Barrier to Entry</h3>
+<p><em>How hard is it for the median CS grad — or a bootcamp grad, or an offshore team, or an AI agent — to compete with you?</em></p>
+<p>Moats include: hardware and physics knowledge (years to acquire, not learnable from a tutorial); deep mathematics; security clearances (citizenship required); regulatory expertise (FDA, HIPAA, SOX, DO-178C); expensive-to-access tooling (EDA licenses, fabs, robots, GPU clusters); and accumulated domain context.</p>
+<ul>
+<li><strong>5</strong> = multiple stacked moats (e.g., cleared embedded engineer on defense autonomy; verification engineer at a GPU company).</li>
+<li><strong>3</strong> = requires a strong CS degree and 1–2 years of specialization.</li>
+<li><strong>1</strong> = learnable in months from free resources; heavy global competition.</li>
+</ul>
+<h3 id="sec-2-1-d4-compensation-trajectory">D4. Compensation Trajectory</h3>
+<p><em>New-grad pay, mid-career pay, and ceiling.</em></p>
+<p>We use BLS medians (economy-wide, including non-tech employers), Levels.fyi (tech-company-skewed), and role-specific surveys. We weight the <em>mid-career</em> (5–10 years out) number most heavily since that is where you will spend most of your working life.</p>
+<ul>
+<li><strong>5</strong> = new-grad TC routinely $150k+ at top employers; mid-career $300k+ common; ceiling $1M+ (AI research/eng at labs, quant dev, senior chip architects at NVIDIA-class companies).</li>
+<li><strong>3</strong> = BLS median $100–135k; mid-career $150–250k at good employers.</li>
+<li><strong>1</strong> = BLS median &lt; $80k.</li>
+</ul>
+<h3 id="sec-2-1-d5-optionality">D5. Optionality</h3>
+<p><em>How many doors does this career open, and how easy is it to pivot?</em></p>
+<p>Some careers are hubs (systems/infra → almost anything), some are spokes (game dev → mostly game dev). We also consider whether the skill set transfers across industries and whether it feeds naturally into management, founding, research, or adjacent specialties.</p>
+<h3 id="sec-2-1-d6-accessibility-from-a-bs-vs-requiring-ms-phd">D6. Accessibility from a BS (vs. requiring MS/PhD)</h3>
+<p><em>Can a strong bachelor's graduate get in, or is graduate school effectively required?</em></p>
+<ul>
+<li><strong>5</strong> = BS is the standard entry credential.</li>
+<li><strong>3</strong> = BS possible with exceptional projects/internships; MS common and helpful.</li>
+<li><strong>1</strong> = PhD effectively required (e.g., frontier AI research scientist, quantum algorithms research).</li>
+</ul>
+<h3 id="sec-2-1-d7-quality-of-life-fit-factors">D7. Quality of Life &amp; Fit Factors</h3>
+<p>Work-life balance norms, on-call burden, location constraints (must you live in Silicon Valley? in a fab town? near DC?), remote-work availability, stress profile, and the personality types that thrive. This dimension is <em>descriptive</em>, not scored — it is there to help you match, not rank.</p>
+<hr>
+<h2 id="sec-2-2">2.2 How We Combine the Dimensions</h2>
+<p>We do <strong>not</strong> simply add the seven numbers. We use a <em>robustness-first</em> approach:</p>
+<ol>
+<li><strong>Eliminate</strong> careers scoring 1 on D1 or D2 from the "recommended" tiers regardless of pay. A high-paying job that will not exist in 2040 is not a career; it is a trade.</li>
+<li><strong>Tier 1</strong> requires: D1 ≥ 4 (durable demand); D2 ≥ 4 for the <em>engineering-heavy majority</em> of the field; at least one large sub-specialty with D3 ≥ 4 (a real moat is reachable inside the field, even if the field's median role is not moated); D4 ≥ 3 and D6 ≥ 3 (good pay and a bachelor's can get you in); <strong>and</strong> no hard gate that excludes most readers (citizenship, PhD) or a small absolute job count. These are careers that win in all three scenarios of <a href="01-landscape.html#sec-1-5">Section 1.5</a>. Two Tier 1 careers carry explicit caveats under this rule: <strong>AI/ML engineering</strong> (median role D3 = 3; the moat is in the infra/eval/domain sub-specialties) and <strong>data engineering</strong> (the analyst layer scores D2 = 1 and is excluded; only the engineering-heavy version is Tier 1).</li>
+<li><strong>Tier 2</strong> are careers that would otherwise qualify but carry one notable structural limitation: a citizenship gate (defense — which would be Tier 1 for a US citizen), a graduate degree effectively required (quantum), a comp band well below Tier 1 (energy, health), a narrow or elite-only employer base (quant, game engines), a heavy dependence on one adoption trend (FDE), or not being a realistic <em>first</em> job (PM).</li>
+<li><strong>Tier 3</strong> are careers that either have a weak D2 (AI-substitutable) or weak D3 (no moat), or which we include for completeness and candor because students frequently ask about them.</li>
+</ol>
+<p>A consequence worth stating plainly: <strong>the tier is not the same as the rank.</strong> The TL;DR ranks careers by expected value <em>for a strong student who can stand out</em> (which rewards AI/ML's comp ceiling and job count); the master scorecard in <a href="10-tables.html#sec-10">Section 10</a> sums the robustness dimensions (which rewards infrastructure and semiconductors). Both orderings are shown, both are defensible, and the disagreement between them is itself informative: it tells you where the upside is (AI/ML) versus where the floor is highest (infra, semis, security).</p>
+<hr>
+<h2 id="sec-2-3">2.3 The Three Questions to Ask About Any Role, Forever</h2>
+<p>Technology will change; these questions will not.</p>
+<p><strong>Q1. "What breaks, and how badly, if this job is done wrong?"</strong>
+The higher the cost of error — a chip respin ($10M+ and 6 months), a data breach, a robot injuring someone, a trading loss, a medical-device recall — the more organizations insist on accountable, expert humans in the loop, and the more they pay them. This is the single best predictor of AI-resistance.</p>
+<p><strong>Q2. "What does someone need that they cannot download?"</strong>
+Access to a fab, a robot, a GPU cluster, a classified network, patient data, or a decade of domain scar tissue. These are the moats. Skills that can be fully acquired from public tutorials and practiced on a laptop are, by definition, skills that an agent trained on the same public material can also acquire.</p>
+<p><strong>Q3. "Is the underlying demand driver bigger than the technology cycle?"</strong>
+Aging demographics, energy transition, national-security competition with China, the physics of compute and power — these outlast any single AI model generation. A career riding one of them is a career riding a tide, not a wave.</p>
+<hr>
+<h2 id="sec-2-4">2.4 The CS-vs-CE Lens Applied to Each Career</h2>
+<p>For every career profile we mark:</p>
+<ul>
+<li><strong>CS-native</strong> — the standard CS curriculum (algorithms, systems, PL, AI/ML, theory) is the direct preparation.</li>
+<li><strong>CE-native</strong> — requires digital logic, computer architecture, embedded systems, signals, circuits, and/or VLSI, which are core to CE and optional/absent in most CS programs.</li>
+<li><strong>Either</strong> — both degrees prepare you; electives and projects decide.</li>
+</ul>
+<p>We also mark <strong>Add-ons</strong> — the minor, double-major, or elective cluster that most raises your odds (e.g., math/statistics for ML; physics for quantum; biology for comp-bio; EE for chip design; a security concentration for security).</p>
+<hr>
+<h2 id="sec-2-5">2.5 A Note on Personality and Fit</h2>
+<p>The highest-expected-value career on paper is worth little if you burn out in it. Throughout the profiles we note the temperaments each field rewards. Some broad patterns, offered as heuristics rather than rules:</p>
+<div class="table-wrap"><table class="sortable">
+<thead>
+<tr>
+<th>If you are…</th>
+<th>You tend to thrive in…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fascinated by <em>why</em> things work, patient with slow feedback loops, comfortable with math and physics</td>
+<td>Semiconductors, quantum, embedded, research</td>
+</tr>
+<tr>
+<td>Adversarial-minded, love puzzles, enjoy breaking things, tolerate ambiguity</td>
+<td>Security, red-teaming, AI safety evaluation</td>
+</tr>
+<tr>
+<td>Systems thinker, like large-scale order, calm under pressure, don't mind on-call</td>
+<td>Infrastructure/SRE/distributed systems, platform engineering</td>
+</tr>
+<tr>
+<td>Mathematically fluent, experimental, enjoy iterating on metrics</td>
+<td>ML/AI engineering, data science, quant</td>
+</tr>
+<tr>
+<td>Like building tangible things, mechanical intuition, hands-on</td>
+<td>Robotics, embedded, hardware</td>
+</tr>
+<tr>
+<td>Strong communicator, enjoy customers and variety, hate doing the same thing twice</td>
+<td>Forward-deployed engineering, solutions engineering, technical PM, founding</td>
+</tr>
+<tr>
+<td>Mission-driven, want to see impact in the physical world</td>
+<td>Defense/aerospace, health tech, climate/energy computing</td>
+</tr>
+<tr>
+<td>Creative, aesthetic sense, care about how things feel to use</td>
+<td>Graphics, game engines, product engineering, HCI (with caveats in <a href="05-tier3.html#sec-5">Section 5</a>)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Fit is not destiny — many people discover they love something they had never tried — but the four-year roadmap in <a href="07-roadmap.html#sec-7">Section 7</a> is designed to let you <em>test</em> fit cheaply in years 1–2 before you commit in years 3–4.</p>
+<hr>
+<h2 id="sec-2-6">2.6 Worked Example: Scoring a Career This Guide Does Not Cover</h2>
+<p>We promised you could re-run this analysis yourself. Here is the procedure applied to a career students ask about that is <em>not</em> profiled later: <strong>AR/VR ("spatial computing") application developer</strong>.</p>
+<ol>
+<li><strong>Q1 — what breaks if it is done wrong?</strong> A consumer app crashes or feels bad. Low cost of error → low pressure to keep expensive humans accountable. (Contrast: a surgical-robot control loop.)</li>
+<li><strong>Q2 — what can't be downloaded?</strong> Not much at the app layer; Unity/Unreal/visionOS tutorials are public, and agents are trained on them. The <em>engine and rendering</em> layer is different (deep math, GPU programming) — that is why <a href="04-tier2.html#sec-4-9">Section 4.9</a> rates graphics/engine work Tier 2 and app-layer work lower.</li>
+<li><strong>Q3 — is the demand driver bigger than the tech cycle?</strong> Uncertain. Headset adoption has repeatedly under-shot forecasts (Meta Reality Labs has lost &gt;$60B cumulatively; Apple cut Vision Pro production in 2024–25). The driver is real but not yet a tide.</li>
+<li><strong>Score it.</strong> D1 = 2–3 (BLS lumps it into software developers; private postings small and volatile). D2 = 2 (app layer is well-specified artifact generation). D3 = 2 (app layer) / 4 (engine layer). D4 = 3–4 (Apple/Meta pay Mode 3; studios pay Mode 1–2). D5 = 3 (skills transfer to games, simulation, robotics perception). D6 = 4.</li>
+<li><strong>Apply the rules.</strong> Fails Tier 1 on D2 and D3. Fails Tier 2 unless you are on the engine/rendering side. <strong>Verdict: Tier 3 as an app developer; Tier 2 if you go down to the engine, rendering, or perception layer</strong> — which is exactly what <a href="04-tier2.html#sec-4-9">Section 4.9</a> says about graphics. The framework and the profile agree, which is the point.</li>
+</ol>
+<p>Try the same five steps on any career a recruiter or a relative pitches you. If it fails Q1 and Q2 together, be skeptical no matter how exciting the demo is.</p>
+    </article>
+    <div class="prevnext"><a class="pn prev" href="01-landscape.html"><span>← Previous</span><strong>1 · The landscape</strong></a><a class="pn next" href="03-tier1.html"><span>Next →</span><strong>3 · Tier 1 careers</strong></a></div>
+    <footer class="foot">
+      <p><em>Choosing Your Future</em>, v2.0 (September 2026). Written for students entering CS/CE in Fall 2027. All figures are cited in <a href="12-sources.html">Section 12</a>; projections are judgments, labelled as such. <a href="CS_CE_Career_Guide_2027.md" download>Download the full Markdown</a>.</p>
+    </footer>
+  </main>
+
+  <aside class="toc" aria-label="On this page">
+    <div class="toc-title">On this page</div>
+    <ul><li class="toc-l2"><a href="#sec-2-1">2.1 The Seven Dimensions</a></li>
+<li class="toc-l3"><a href="#sec-2-1-d1-demand-durability-2031-2045">D1. Demand Durability (2031–2045)</a></li>
+<li class="toc-l3"><a href="#sec-2-1-d2-ai-resistance-complement-vs-substitute">D2. AI Resistance (Complement vs. Substitute)</a></li>
+<li class="toc-l3"><a href="#sec-2-1-d3-moat-barrier-to-entry">D3. Moat / Barrier to Entry</a></li>
+<li class="toc-l3"><a href="#sec-2-1-d4-compensation-trajectory">D4. Compensation Trajectory</a></li>
+<li class="toc-l3"><a href="#sec-2-1-d5-optionality">D5. Optionality</a></li>
+<li class="toc-l3"><a href="#sec-2-1-d6-accessibility-from-a-bs-vs-requiring-ms-phd">D6. Accessibility from a BS (vs. requiring MS/PhD)</a></li>
+<li class="toc-l3"><a href="#sec-2-1-d7-quality-of-life-fit-factors">D7. Quality of Life &amp; Fit Factors</a></li>
+<li class="toc-l2"><a href="#sec-2-2">2.2 How We Combine the Dimensions</a></li>
+<li class="toc-l2"><a href="#sec-2-3">2.3 The Three Questions to Ask About Any Role, Forever</a></li>
+<li class="toc-l2"><a href="#sec-2-4">2.4 The CS-vs-CE Lens Applied to Each Career</a></li>
+<li class="toc-l2"><a href="#sec-2-5">2.5 A Note on Personality and Fit</a></li>
+<li class="toc-l2"><a href="#sec-2-6">2.6 Worked Example: Scoring a Career This Guide Does Not Cover</a></li></ul>
+  </aside>
+</div>
+
+<div class="search-modal" id="searchModal" hidden>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="Search">
+    <input type="search" id="searchInput" placeholder="Search the whole guide… (Esc to close)" autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+    <div class="search-hint">Type at least 2 characters. ↑↓ to move, Enter to open.</div>
+  </div>
+</div>
+
+<script src="static/site.js" defer></script>
+
+</body>
+</html>

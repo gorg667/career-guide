@@ -1,0 +1,62 @@
+<!-- title: Career explorer -->
+<!-- scripts: <script src="static/careers-common.js" defer></script><script src="static/explorer.js" defer></script> -->
+<h1>Career explorer</h1>
+<p class="tool-intro">Every career profiled in the guide, scored on the six dimensions from <a href="02-framework.html#sec-2-1">Section 2.1</a>. The default total is the plain sum used in <a href="10-tables.html#sec-10-1">Section 10.1</a>. <strong>Drag the weight sliders to re-rank by what matters to you</strong> — turn compensation down and moat up if you want a low-competition, stable path; turn optionality up if you are undecided. Click a column header to sort; click a career name to open its profile.</p>
+
+<div class="panel" id="weightsPanel">
+  <div class="row" style="justify-content:space-between;margin-bottom:6px">
+    <strong>Dimension weights</strong>
+    <div class="row">
+      <button class="btn sm" data-preset="equal">Equal (guide default)</button>
+      <button class="btn sm" data-preset="safe">Safety first</button>
+      <button class="btn sm" data-preset="money">Maximize pay</button>
+      <button class="btn sm" data-preset="undecided">Keep options open</button>
+      <button class="btn sm" data-preset="bsonly">Job straight from a BS</button>
+    </div>
+  </div>
+  <div class="weights" id="weights"></div>
+</div>
+
+<div class="panel">
+  <div class="row" style="gap:18px">
+    <label class="inline"><input type="checkbox" class="tierf" value="1" checked> <span class="badge t1">Tier 1</span></label>
+    <label class="inline"><input type="checkbox" class="tierf" value="2" checked> <span class="badge t2">Tier 2</span></label>
+    <label class="inline"><input type="checkbox" class="tierf" value="3" checked> <span class="badge t3">Tier 3</span></label>
+    <label class="inline">Degree <select id="degreeF"><option value="">any</option><option value="CS">CS-leaning</option><option value="CE">CE-leaning</option></select></label>
+    <label class="inline"><input type="checkbox" id="intlF"> Hide citizen-only (international students)</label>
+    <label class="inline"><input type="checkbox" id="bsF"> BS-accessible only (D6 ≥ 4)</label>
+    <span class="muted small" id="countLine"></span>
+  </div>
+</div>
+
+<div class="table-wrap explorer-wrap">
+  <table class="explorer" id="explorerTable">
+    <thead><tr>
+      <th data-k="rank">#</th>
+      <th data-k="name">Career</th>
+      <th data-k="tier">Tier</th>
+      <th data-k="D1" title="Demand durability 2031–45">D1 Demand</th>
+      <th data-k="D2" title="AI resistance">D2 AI-resist</th>
+      <th data-k="D3" title="Moat / barrier to entry">D3 Moat</th>
+      <th data-k="D4" title="Compensation">D4 Comp</th>
+      <th data-k="D5" title="Optionality">D5 Options</th>
+      <th data-k="D6" title="Accessible with a BS">D6 BS-ok</th>
+      <th data-k="total">Weighted total</th>
+      <th data-k="degree">Best degree</th>
+      <th data-k="newgrad">New-grad TC</th>
+      <th data-k="robust">Scenario robustness</th>
+      <th data-k="cmp">Compare</th>
+    </tr></thead>
+    <tbody id="explorerBody"></tbody>
+  </table>
+</div>
+
+<div class="row" style="margin:10px 0 18px"><a class="btn primary" id="compareLink" href="compare.html">Compare selected →</a><span class="muted small" id="compareHint">Tick up to 3 careers in the last column.</span></div>
+
+<div class="callout small">
+  <strong>How the weighted total works.</strong> Each 1–5 score is multiplied by its weight and the result is rescaled so the maximum is still 30, keeping numbers comparable to the guide's table. "Founding a startup" is unscored on D1–D4 in the guide and is listed without a total. Weights and selections are saved in this browser only. Scores are exactly those in <a href="10-tables.html#sec-10-1">§10.1</a>; the profile sections (<a href="03-tier1.html">3</a>, <a href="04-tier2.html">4</a>, <a href="05-tier3.html">5</a>) explain every number.
+</div>
+
+<h2 id="cards">Card view</h2>
+<p class="muted small">Same ranking as the table, with the one-line verdict for each career.</p>
+<div class="cards" id="cardGrid"></div>
