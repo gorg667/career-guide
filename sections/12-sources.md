@@ -6,7 +6,9 @@ This guide was assembled in September 2026 from primary statistical sources (BLS
 
 Scores in the scorecards (Sections 3–5, 10) are the author's judgments, calibrated against the data below and against the three-scenario framework in Section 1. They are meant to be *comparative* across careers, not absolute. Compensation figures combine BLS medians (all experience levels, all employers), Levels.fyi self-reported data (skewed toward large tech employers), and industry reports, and are presented as ranges for that reason.
 
-Any figure with a specific number in the guide traces to one of the sources below or to an explicit "author's estimate" label.
+Every major *statistical* claim in the guide — employment levels, growth projections, unemployment rates, workforce gaps, median pay — traces to one of the primary sources in Section 12.2. Supporting figures drawn from secondary reporting (industry surveys, analyst notes, company disclosures, financial press) are listed in Section 12.3 with the caveat that they were cited via primary reporting rather than independently verified from the original dataset. Judgments, scores, scenario probabilities, and forward-looking comp bands are labeled as the author's estimates and should be read as such.
+
+**Version 2.0 changes (September 2026):** a full self-review (see the repository's REVIEW.md) corrected scorecard inconsistencies between Sections 3–5 and 10, rewrote the tiering rule in Section 2.2 so it matches the actual tier assignments, renamed compensation "tiers" to "modes" to avoid collision with career tiers, updated the H-1B section for the December 2025 weighted-selection final rule, corrected the international-student share of bachelor's graduates, and added roughly ten thousand words of new material (general SWE profile, specialized-major verdicts, co-ops, networking, paying for the degree, clearance mechanics, falsifiable predictions, a worked example, expanded FAQ, glossary, and checklists).
 
 ---
 
@@ -90,7 +92,45 @@ Any figure with a specific number in the guide traces to one of the sources belo
 
 ---
 
-## 12.3 Programs and Institutions Referenced (for the reader's follow-up)
+## 12.3 Secondary Sources Cited via Primary Reporting
+
+The following are referenced in the text, usually through one of the primary sources above or through mainstream financial and technology press. The reader should treat specific figures from these as indicative and verify against the original if a decision hinges on them.
+
+### Labor-market analytics and trackers
+
+- **Live Data Technologies** — workforce-flow data on new-grad hiring shares and job-switching; cited via The Pragmatic Engineer and press reporting. https://www.livedatatechnologies.com/
+- **SignalFire — State of Talent Report (2025).** New-grad share of Big Tech hires ~7%, down ~25% from 2023; startup new-grad hiring down ~11%. https://www.signalfire.com/blog/signalfire-state-of-talent-report-2025
+- **Layoffs.fyi** — running tally of tech layoffs 2022–26. https://layoffs.fyi/
+- **TrueUp — Tech job trends** (open roles across tech companies; AI-role share). https://www.trueup.io/job-trend
+- **Workforce.ai / AI-titled posting share** — cited via Indeed Hiring Lab and The Pragmatic Engineer.
+- **CyberSeek (NIST NICE / CompTIA / Lightcast)** — US cybersecurity supply/demand heatmap; ~470k openings, ~83 workers per 100 openings. https://www.cyberseek.org/
+- **Gergely Orosz, The Pragmatic Engineer — "The Trimodal Nature of Software Engineering Salaries"** — origin of the three-mode compensation model used in Section 9.2. https://newsletter.pragmaticengineer.com/p/trimodal-nature-of-software-engineering
+
+### Consulting, analyst, and industry studies
+
+- **McKinsey Global Institute — generative-AI productivity and work-activity automation estimates (2023–25).** https://www.mckinsey.com/mgi
+- **BloombergNEF — US data-center power demand projections** (106 GW by 2035); cited via IEEE Spectrum (source 23). https://about.bnef.com/
+- **Introl — data-center workforce estimate (~340k unfilled positions by end-2026);** cited via IEEE Spectrum (source 23).
+- **IBM — Cost of a Data Breach Report (2025).** Global average breach cost ~$4.4M; US ~$10M. https://www.ibm.com/reports/data-breach
+- **Deloitte / SEMI — semiconductor workforce studies** complementing SIA/Oxford (source 21). https://www.semi.org/
+
+### Government and regulatory documents
+
+- **Department of Homeland Security — "Weighted Selection Process for Registrants and Petitioners Seeking to File Cap-Subject H-1B Petitions," Final Rule, Federal Register, December 29, 2025; effective February 27, 2026.** Registrations entered once per OEWS wage level (I–IV). https://www.federalregister.gov/documents/2025/12/29/2025-23853/
+- **USCIS — H-1B Electronic Registration Process (FY2027 cap season page, updated July 2026)** confirming weighted selection in use. https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-electronic-registration-process
+- **Presidential Proclamation — Restriction on Entry of Certain Nonimmigrant Workers ($100,000 H-1B fee), September 19, 2025,** and USCIS implementing guidance (October–November 2025). https://www.whitehouse.gov/presidential-actions/
+- **Public Law 119-21 (July 2025) — restoration of immediate expensing for domestic R&D (Section 174A).** https://www.congress.gov/
+- **DCSA — Continuous Vetting and Trusted Workforce 2.0** program pages. https://www.dcsa.mil/Personnel-Security/
+- **DoD CHIPS / NIST CHIPS for America** award announcements 2024–26. https://www.nist.gov/chips
+
+### Financial press (AI-lab funding, IPOs, capex)
+
+- **Reuters, TechCrunch, Bloomberg — Anthropic Series (May 2026, ~$65B at ~$965B post-money) and OpenAI round (March 2026, ~$122B); confidential IPO filings by both (June 2026).** Verified across at least two outlets each at time of writing; figures are as reported, not audited.
+- **Wall Street Journal, Financial Times — Big Tech AI capital-expenditure reporting (2025–26)** underlying the infrastructure-demand claims in Sections 1 and 3.
+
+---
+
+## 12.4 Programs and Institutions Referenced (for the reader's follow-up)
 
 These are named in Sections 7–9 as action items; the reader should verify current terms directly.
 
@@ -110,7 +150,7 @@ These are named in Sections 7–9 as action items; the reader should verify curr
 
 ---
 
-## 12.4 How to Keep This Guide Current
+## 12.5 How to Keep This Guide Current
 
 The reader is enrolling in 2027 and graduating in 2031; this guide will age. Re-check these indicators each year, in this order of importance:
 
@@ -124,6 +164,3 @@ The reader is enrolling in 2027 and graduating in 2031; this guide will age. Re-
 
 If three or more of indicators 1–4 move sharply against the guide's central scenario for two consecutive years, revisit the tiering. Otherwise, the structural argument stands: **choose careers where software meets something hard.**
 
----
-
-*End of guide.*

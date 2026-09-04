@@ -3,8 +3,8 @@
 
 *A data-driven, long-horizon essay and reference guide for the US student who starts a CS or CE degree in September 2027, graduates around May 2031, and will be mid-career in the 2040s.*
 
-**Version:** 1.0 — compiled September 2026
-**Length:** ~30,000 words. Read the TL;DR first; use the table of contents to jump.
+**Version:** 2.0 — compiled September 2026; revised after a full self-review (changes summarized in Section 12.1)
+**Length:** ~48,000 words. Read the TL;DR first; pick a reading path below; use the table of contents to jump.
 
 ---
 
@@ -16,7 +16,26 @@ This document is written for three readers:
 2. **The parent or counselor** who wants a candid, numbers-first answer to "Is this still a good bet?"
 3. **The already-admitted student** who wants a concrete four-year plan (2027–2031) that maximizes their odds of landing in the right career.
 
-Every major claim is tied to a source in Section 12. Where the data is contested, we say so. Where we are making a judgment call, we label it as a judgment. Our projections are for the **2029–2035 hiring window** — the years you will be looking for internships, your first job, and your first promotion — not for today.
+Every major statistical claim is tied to a primary source in Section 12.2; supporting figures from secondary reporting are listed in Section 12.3. Where the data is contested, we say so. Where we are making a judgment call, we label it as a judgment. Our projections are for the **2029–2035 hiring window** — the years you will be looking for internships, your first job, and your first promotion — not for today.
+
+### Reading paths
+
+| You have… | Read |
+|---|---|
+| **5 minutes** | The TL;DR below, then the One-Page Summary (Section 10.6). |
+| **30 minutes** | TL;DR → Section 1.5 (three scenarios) → Section 2.2–2.3 (how we score, the three questions) → Section 3.7 (choosing among the Tier 1 six) → Section 10.1 (master scorecard) → Section 7.1 (the master calendar). |
+| **Two hours** | Sections 1, 2, 3, 6, 7, and 10 in order, then the FAQ (Section 11.1). |
+| **The whole thing** | Front to back; it is written to be read that way. Then keep Appendix B pinned to a wall. |
+
+| You are… | Start with |
+|---|---|
+| **A high-school student choosing a major** | TL;DR → Section 6 (CS vs. CE) → Section 2.5 (personality and fit) → Section 10.2 (decision matrix) → the "How do I know if I'll like this?" FAQ. |
+| **A parent or counselor** | TL;DR → Section 1 (what happened and why) → Section 9.7 (paying for the degree) → Section 11.3 (risks and hedges) → the "I'm a parent — how can I help?" FAQ. |
+| **An already-admitted student** | Section 7 (the roadmap) → Section 8 (skills and proof) → Appendix B (checklists) → your target career's profile in Sections 3–4. |
+| **An international student** | Section 9.5 first, then the rest — it changes which fields and employers are realistic. |
+| **A US citizen open to defense or government** | Section 9.4 (clearances) and Section 8.9 (funded programs) early; they are your largest structural advantage. |
+
+**A note on "rank" versus "tier."** The TL;DR table below ranks careers by *expected value for a strong student who can stand out*, which rewards AI/ML's compensation ceiling and job count. The master scorecard in Section 10.1 sums *robustness* dimensions, which rewards infrastructure's accessibility and semiconductors' moat, and orders them differently. Both orderings are correct for their purpose; Section 2.2 explains the rule, and the honest answer is that any Tier 1 field pursued with depth beats any Tier 2 field pursued generically.
 
 ---
 
@@ -55,18 +74,44 @@ Every major claim is tied to a source in Section 12. Where the data is contested
 
 ## Table of Contents
 
-1. **The Landscape: What Happened 2022–2026 and What 2031 Will Look Like**
-2. **A Framework for Evaluating Any Tech Career**
-3. **Tier 1 Careers — Highest Conviction**
-4. **Tier 2 Careers — Strong Options**
-5. **Tier 3, Niche, and Contrarian Paths (and the Honest Take on Web Dev)**
-6. **CS vs. CE: Which Degree, Which Careers**
-7. **The Four-Year Roadmap: Summer 2027 → May 2031**
-8. **The Durable Skill Stack, Projects, Internships, Certifications, and Grad School**
-9. **Geography, Compensation, Employer Types, Clearances, and Immigration**
-10. **Master Comparison Tables and Decision Matrix**
-11. **FAQs, Myths, Risks, and Hedges**
-12. **Sources**
+**1. The Landscape: What Happened 2022–2026 and What 2031 Will Look Like**
+1.1 The Shock: 2022–2026 in Numbers · 1.2 Structural vs. Cyclical · 1.3 The Cobweb Cycle · 1.4 What the 2031 Market Will Probably Look Like (incl. falsifiable predictions) · 1.5 Three Scenarios for 2031 · 1.6 Key Takeaways
+
+**2. A Framework for Evaluating Any Tech Career**
+2.1 The Seven Dimensions · 2.2 How We Combine Them (tiering rule; tier ≠ rank) · 2.3 The Three Questions to Ask About Any Role · 2.4 The CS-vs-CE Lens · 2.5 Personality and Fit · 2.6 Worked Example: Scoring a Career This Guide Does Not Cover
+
+**3. Tier 1 Careers — Highest Conviction**
+3.1 AI / Machine Learning Engineer · 3.2 Security Engineer · 3.3 Semiconductor / Chip Design, Verification & Architecture · 3.4 Infrastructure / Distributed Systems / Platform (incl. AI Infrastructure) · 3.5 Robotics, Embedded & Autonomy ("Physical AI") · 3.6 Data Engineer / Data Scientist (Engineering-Heavy) · 3.7 How to Choose Among the Tier 1 Six
+
+**4. Tier 2 Careers — Strong Options**
+4.1 Forward Deployed Engineer · 4.2 Defense, Aerospace & National Security · 4.3 Quantum Computing · 4.4 Healthcare, Biotech & Life-Sciences Computing · 4.5 Fintech & Quantitative Development · 4.6 Energy, Climate & Grid · 4.7 Technical Product Management · 4.8 Cloud / DevOps at Non-Tech Enterprises · 4.9 Graphics, Game Engines & Spatial Computing · 4.10 Developer Tools & DevRel · 4.11 General Software Engineering at Top-Tier Employers · 4.12 Tier 2 Summary
+
+**5. Tier 3, Niche, and Contrarian Paths**
+5.1 Generalist Web / Full-Stack — The Honest Take · 5.2 Native Mobile · 5.3 QA / IT Support / SysAdmin · 5.4 Data / BI Analyst · 5.5 Game Development (Studios) · 5.6 Research Scientist / Academia · 5.7 Founding a Startup · 5.8 Computing + Law / Policy · 5.9 Computing + Medicine · 5.10 Teaching CS · 5.11 Contrarian Bets (COBOL/mainframe, EDA, HPC, and more) · 5.12 Tier 3 Summary
+
+**6. CS vs. CE: Which Degree, Which Careers**
+6.1 What Each Degree Is · 6.2 Which Careers Favor Which Degree · 6.3 The Case for CE · 6.4 The Case for CS · 6.5 A Decision Procedure · 6.6 Hybrids, Doubles, Minors, 4+1 · 6.7 "AI," "Data Science," "Cybersecurity," "Software Engineering" and Other Specialized Majors · 6.8 Co-op Programs · 6.9 Special Considerations (incl. under-represented students) · 6.10 Myths · 6.11 Bottom Line
+
+**7. The Four-Year Roadmap: Summer 2027 → May 2031**
+7.1 The Master Calendar · 7.2 Summer 2027 · 7.3 Year 1 · 7.4 Year 2 (incl. campus jobs as credentials) · 7.5 Year 3 · 7.6 Year 4 and failure-mode plans · 7.7 Two Sample Paths · 7.8 Roadmap Principles
+
+**8. The Durable Skill Stack, Projects, Competitions, Certifications, Interviews, Grad School, and Networking**
+8.1 The Durable Skill Stack · 8.2 The Two-Pass Rule · 8.3 The Portfolio · 8.4 Open Source · 8.5 Competitions · 8.6 Certifications · 8.7 Interview Preparation · 8.8 The Grad-School Decision · 8.9 Scholarships and Funded Programs · 8.10 Networking, Conferences, and Referrals · 8.11 Summary
+
+**9. Geography, Compensation, Employer Types, Clearances, Immigration, and Paying for the Degree**
+9.1 Geography · 9.2 Compensation (the three modes) · 9.3 Employer Types · 9.4 Security Clearances (incl. interim, Continuous Vetting, reinstatement) · 9.5 International Students (incl. the wage-weighted H-1B lottery, cap-exempt employers) · 9.6 Remote and Hybrid · 9.7 Paying for the Degree: Cost, Debt, and Return · 9.8 Summary
+
+**10. Master Comparison Tables and Decision Matrix**
+10.1 Master Scorecard · 10.2 Personality → Career Decision Matrix · 10.3 Compensation Summary · 10.4 Major → Career Map · 10.5 Scenario Stress Test · 10.6 One-Page Summary
+
+**11. FAQs, Myths, Risks, and Hedges**
+11.1 FAQ (26 questions, incl. transfer, AP credit, EE vs CE, specialized majors, hours/week, double majors, working abroad, and a parents' guide) · 11.2 Myths · 11.3 Risks and Hedges · 11.4 A Note on Uncertainty
+
+**12. Sources, Methodology, and How to Keep This Guide Current**
+12.1 Methodology and Version 2.0 changes · 12.2 Primary Sources · 12.3 Secondary Sources · 12.4 Programs and Institutions · 12.5 Indicators to Re-check Each Year
+
+**Appendices**
+A. Glossary (~105 terms) · B. Checklists: semester-by-semester, before each recruiting season, offer evaluation
 
 
 ---
@@ -84,7 +129,7 @@ If you are reading this in 2026 or 2027, you have almost certainly heard some ve
 The five years before your enrollment were the most turbulent in the software labor market since the dot-com crash. Here is what happened, in order.
 
 ### The 2021–2022 peak
-Zero interest rates and pandemic-era digital demand drove the greatest hiring spree in tech history. Meta, Amazon, Google, Microsoft, and Salesforce each added tens of thousands of employees. Indeed's software-development job-postings index peaked in **May 2022** at roughly 2.2× its pre-pandemic level. New grads with mediocre résumés were fielding multiple $150k+ offers. CS enrollment surged in response — a classic supply lag.
+Zero interest rates and pandemic-era digital demand drove the greatest hiring spree in tech history. Meta, Amazon, Google, Microsoft, and Salesforce each added tens of thousands of employees. Indeed's software-development job-postings index peaked in **May 2022** at roughly double its pre-pandemic level. New grads with mediocre résumés were fielding multiple $150k+ offers. CS enrollment surged in response — a classic supply lag.
 
 ### The 2023 correction
 Interest rates rose from 0% to 5.5% in 18 months. The 2017 Tax Cuts and Jobs Act's change to **Section 174** (forcing companies to amortize software R&D salaries over 5 years instead of deducting them immediately) kicked in for tax year 2022, making every US software engineer materially more expensive on paper. Layoffs followed: ~260,000 tech employees in 2023 (Layoffs.fyi). Workforce.ai data shows **2023 was the only year in two decades in which the total US software-engineer population shrank** — more engineers left the profession than entered it.
@@ -115,11 +160,11 @@ Not every headwind is permanent. Here is our assessment.
 | Factor | Type | Status by 2031 (our judgment) |
 |---|---|---|
 | 2021–22 overhiring hangover | **Cyclical** | Fully absorbed by 2027–28. Attrition and growth have already re-balanced most large companies. |
-| High interest rates | **Cyclical** | Rates fell through 2025–26; capital for startups is flowing again (Anthropic $65B round at $965B valuation; Anthropic and OpenAI both filed for IPOs in June 2026). |
-| Section 174 R&D amortization | **Policy** | Partially restored for domestic R&D in 2025 legislation; no longer a major drag. |
+| High interest rates | **Cyclical** | Rates fell through 2025–26; capital is flowing again (Anthropic's $65B round at a $965B valuation in May 2026; OpenAI's $122B round in March 2026; both filed confidentially for IPOs in June 2026). |
+| Section 174 R&D amortization | **Policy** | Immediate expensing of *domestic* R&D was restored by the July 2025 tax law (the "One Big Beautiful Bill Act"); no longer a drag on US hiring. Foreign R&D still amortized — a mild tailwind for US-based engineers. |
 | Record CS graduate supply | **Cyclical (cobweb)** | **Reversing.** New CS majors −13% in 2025; total enrollment −4%; NSC reports −8.1% undergrad CS enrollment, the steepest single-year decline of any major. Degree production will peak ~2028 and decline into your graduation year. |
 | International-student competition for entry roles | **Policy** | Reduced. $100k H-1B fee for overseas hires (Sep 2025), master's enrollment −26% (CRA), proposals to fee OPT. Cuts both ways — see Section 9 if you are not a US citizen. |
-| AI substituting for junior coding tasks | **Structural** | **Permanent and intensifying.** The tasks a 2019 junior did (CRUD endpoints, boilerplate, test scaffolding, simple bug fixes, UI from mockups) are now largely done by agents under senior supervision. |
+| AI substituting for junior coding tasks | **Structural** | **Very unlikely to reverse before 2031, and intensifying.** The tasks a 2019 junior did (CRUD endpoints, boilerplate, test scaffolding, simple bug fixes, UI from mockups) are now largely done by agents under senior supervision. |
 | AI complementing senior/specialist work | **Structural** | **Permanent and intensifying.** Experienced engineers using agents are dramatically more productive; demand for them is rising, and they are increasingly paid a premium. |
 | Seniority-biased hiring | **Structural, but self-limiting** | Companies cannot run a 20-year pipeline with no juniors. Expect a partial correction by 2029–2031 as firms realize they have a "missing generation" problem — but the *bar* for juniors will stay far higher than 2019. |
 | Demand for compute, chips, power, data centers | **Structural** | Enormous and multi-decade. BNEF projects US data-center power demand of 106 GW by 2035. CHIPS Act fabs come online 2027–2030. |
@@ -179,9 +224,23 @@ Here is our best forecast, stated as specific, falsifiable expectations.
 - Junior data analyst roles that are mostly SQL-and-dashboards.
 
 ### Compensation
-- The **trimodal distribution** (Gergely Orosz's framing) persists and widens: Tier 1 = local/non-tech companies (~$70–110k new grad); Tier 2 = national tech companies and well-funded startups (~$110–160k); Tier 3 = Big Tech, AI labs, HFT (~$160–250k+ new grad total comp, with AI labs and quant firms at the top).
+- The **trimodal distribution** (Gergely Orosz's framing) persists and widens. To avoid confusion with this guide's *career* tiers, we call the three pay bands **modes**: Mode 1 = local/non-tech companies (~$70–110k new grad); Mode 2 = national tech companies and well-funded startups (~$110–160k); Mode 3 = Big Tech, AI labs, HFT (~$160–250k+ new-grad total comp, with AI labs and quant firms at the top). Which *mode* of employer you can reach matters more to your pay than which *field* you pick — and the reason Tier 1 fields matter is that they are the doors into Mode 3.
 - AI-specialist premium of roughly 20–40% over general SWE at the same level persists at least through 2031.
 - Hardware/semiconductor compensation, historically below software, has been closing the gap since 2023 (BLS median for computer hardware engineers, $155k, now exceeds software developers, $136k).
+
+### Five falsifiable predictions (check these in 2029 and 2031)
+
+We said these expectations are falsifiable. Here they are as numbers, so a reader in 2029 or 2031 can grade us — and re-tier the careers if we were wrong.
+
+| # | Prediction | Number to check | Where |
+|---|---|---|---|
+| P1 | Recent-grad CS unemployment falls back toward the all-majors average by the 2031 cycle | NY Fed CS recent-grad unemployment **< 5%** (vs ~6–7% in 2026) | NY Fed college labor market (Feb each year) |
+| P2 | The 2031 graduating CS cohort is smaller than the 2028 one | CRA Taulbee bachelor's degrees granted, 2031 **below** the 2028 peak | CRA Taulbee (June) |
+| P3 | US software postings recover but stay senior-tilted | Indeed software index **≥ 85%** of Feb-2020 level; senior share of postings still **> 50%** | Indeed Hiring Lab / FRED IHLIDXUSTPSOFTDEVE |
+| P4 | Hardware pay premium persists | BLS median for computer hardware engineers **still ≥** software developers | BLS OOH (May wage data) |
+| P5 | Security and data-science growth stay in the top three of the BLS computer group | Both **≥ +20%** in the 2026–36 projection cycle | BLS OOH projections (biennial) |
+
+If three of the five fail, the *cyclical-recovery* half of this guide's argument was wrong and you should lean harder on the moated, counter-cyclical careers (semis, defense, security, energy). If P1–P3 hold, the cobweb argument was right and you can afford to be more ambitious.
 
 ---
 
@@ -229,7 +288,7 @@ We score every career on **seven dimensions**, each 1–5, and then apply judgme
 ## 2.1 The Seven Dimensions
 
 ### D1. Demand Durability (2031–2045)
-*Will there be many jobs, and will there still be many jobs 15 years out?*
+*Will there be many jobs when you graduate, and will there still be many jobs 15 years out?* (The inputs are BLS 2024–34 / 2025–35 projections and 2026 posting data; the horizon we care about is your career, 2031–2045.)
 
 We look at: BLS 10-year projections; private posting data (Indeed, TrueUp, LinkedIn/SignalFire); capital flows (where is venture and corporate capex going?); and whether the underlying driver is a multi-decade trend (aging population, energy transition, compute demand, geopolitical competition) or a fad.
 
@@ -286,9 +345,11 @@ Work-life balance norms, on-call burden, location constraints (must you live in 
 We do **not** simply add the seven numbers. We use a *robustness-first* approach:
 
 1. **Eliminate** careers scoring 1 on D1 or D2 from the "recommended" tiers regardless of pay. A high-paying job that will not exist in 2040 is not a career; it is a trade.
-2. **Tier 1** requires ≥4 on D1, D2, and D3 (durable demand, AI-complementary, real moat) and ≥3 on D4 and D6. These are careers that win in all three scenarios of Section 1.5.
-3. **Tier 2** are careers with high scores on most dimensions but a notable weakness — e.g., grad school effectively required (quantum), narrow employer base (game engines), or cyclical exposure (fintech).
+2. **Tier 1** requires: D1 ≥ 4 (durable demand); D2 ≥ 4 for the *engineering-heavy majority* of the field; at least one large sub-specialty with D3 ≥ 4 (a real moat is reachable inside the field, even if the field's median role is not moated); D4 ≥ 3 and D6 ≥ 3 (good pay and a bachelor's can get you in); **and** no hard gate that excludes most readers (citizenship, PhD) or a small absolute job count. These are careers that win in all three scenarios of Section 1.5. Two Tier 1 careers carry explicit caveats under this rule: **AI/ML engineering** (median role D3 = 3; the moat is in the infra/eval/domain sub-specialties) and **data engineering** (the analyst layer scores D2 = 1 and is excluded; only the engineering-heavy version is Tier 1).
+3. **Tier 2** are careers that would otherwise qualify but carry one notable structural limitation: a citizenship gate (defense — which would be Tier 1 for a US citizen), a graduate degree effectively required (quantum), a comp band well below Tier 1 (energy, health), a narrow or elite-only employer base (quant, game engines), a heavy dependence on one adoption trend (FDE), or not being a realistic *first* job (PM).
 4. **Tier 3** are careers that either have a weak D2 (AI-substitutable) or weak D3 (no moat), or which we include for completeness and candor because students frequently ask about them.
+
+A consequence worth stating plainly: **the tier is not the same as the rank.** The TL;DR ranks careers by expected value *for a strong student who can stand out* (which rewards AI/ML's comp ceiling and job count); the master scorecard in Section 10 sums the robustness dimensions (which rewards infrastructure and semiconductors). Both orderings are shown, both are defensible, and the disagreement between them is itself informative: it tells you where the upside is (AI/ML) versus where the floor is highest (infra, semis, security).
 
 ---
 
@@ -335,6 +396,20 @@ The highest-expected-value career on paper is worth little if you burn out in it
 | Creative, aesthetic sense, care about how things feel to use | Graphics, game engines, product engineering, HCI (with caveats in Section 5) |
 
 Fit is not destiny — many people discover they love something they had never tried — but the four-year roadmap in Section 7 is designed to let you *test* fit cheaply in years 1–2 before you commit in years 3–4.
+
+---
+
+## 2.6 Worked Example: Scoring a Career This Guide Does Not Cover
+
+We promised you could re-run this analysis yourself. Here is the procedure applied to a career students ask about that is *not* profiled later: **AR/VR ("spatial computing") application developer**.
+
+1. **Q1 — what breaks if it is done wrong?** A consumer app crashes or feels bad. Low cost of error → low pressure to keep expensive humans accountable. (Contrast: a surgical-robot control loop.)
+2. **Q2 — what can't be downloaded?** Not much at the app layer; Unity/Unreal/visionOS tutorials are public, and agents are trained on them. The *engine and rendering* layer is different (deep math, GPU programming) — that is why Section 4.9 rates graphics/engine work Tier 2 and app-layer work lower.
+3. **Q3 — is the demand driver bigger than the tech cycle?** Uncertain. Headset adoption has repeatedly under-shot forecasts (Meta Reality Labs has lost >$60B cumulatively; Apple cut Vision Pro production in 2024–25). The driver is real but not yet a tide.
+4. **Score it.** D1 = 2–3 (BLS lumps it into software developers; private postings small and volatile). D2 = 2 (app layer is well-specified artifact generation). D3 = 2 (app layer) / 4 (engine layer). D4 = 3–4 (Apple/Meta pay Mode 3; studios pay Mode 1–2). D5 = 3 (skills transfer to games, simulation, robotics perception). D6 = 4.
+5. **Apply the rules.** Fails Tier 1 on D2 and D3. Fails Tier 2 unless you are on the engine/rendering side. **Verdict: Tier 3 as an app developer; Tier 2 if you go down to the engine, rendering, or perception layer** — which is exactly what Section 4.9 says about graphics. The framework and the profile agree, which is the point.
+
+Try the same five steps on any career a recruiter or a relative pitches you. If it fails Q1 and Q2 together, be skeptical no matter how exciting the demo is.
 
 
 ---
@@ -393,7 +468,7 @@ Realistic — but the bar is high. The 2031 new-grad who lands an MLE role typic
 - A portfolio that demonstrates *end-to-end* competence: not "I fine-tuned a model on Kaggle" but "I built, evaluated, deployed, and iterated on a system real people used."
 - Fluency in PyTorch, one inference stack (vLLM/TensorRT-LLM/etc.), one orchestration framework, cloud GPU infrastructure, and evaluation methodology.
 
-An MS (especially a thesis MS or a top program) materially raises your odds at labs and Big Tech research-adjacent teams. It is *not* required for most applied MLE roles at product companies. See Section 8.6 for the grad-school decision.
+An MS (especially a thesis MS or a top program) materially raises your odds at labs and Big Tech research-adjacent teams. It is *not* required for most applied MLE roles at product companies. See Section 8.8 for the grad-school decision.
 
 ### Compensation trajectory (US, 2026 dollars, tech-company employers)
 - New grad: $140–220k TC at Big Tech/AI labs; $110–150k at other tech companies; $90–120k at non-tech companies.
@@ -506,7 +581,7 @@ Designing the chips that everything else runs on. The work splits into:
 ### Why it's Tier 1
 - **Highest median pay of any computing occupation in the BLS data: $155,020** (computer hardware engineers, May 2024), with the semiconductor-manufacturing industry paying $162k and R&D $179k medians. The 90th percentile is $224k *economy-wide* — and that excludes the equity that has made mid-career NVIDIA, Broadcom, and AMD engineers wealthy.
 - **Acute, documented talent shortage.** SIA/Oxford Economics project the US semiconductor workforce growing ~115,000 jobs by 2030 with **~67,000 (58%) at risk of going unfilled**, including ~27,000 engineers and computer scientists. IEEE Spectrum, EE Times, and every industry CEO say the same thing: the pipeline is too thin, because a generation of US students chose software.
-- **Geopolitics guarantees the investment.** The CHIPS and Science Act ($39B manufacturing + $11B R&D) plus $400B+ in announced private fab investment (TSMC Arizona, Intel Ohio/Arizona, Samsung Texas, Micron New York/Idaho, GlobalFoundries, TI) come online **2027–2030 — precisely your college years and first job.** Export controls and US–China competition make domestic chip talent a national-security priority that will not reverse.
+- **Geopolitics guarantees the investment.** The CHIPS and Science Act ($39B manufacturing + $11B R&D) plus $400B+ in announced private fab investment (TSMC Arizona, Intel Ohio/Arizona, Samsung Texas, Micron New York/Idaho, GlobalFoundries, TI) come online **2027–2030 — precisely your college years and first job.** Export controls and US–China competition make domestic chip talent a national-security priority that is very unlikely to reverse before 2031 under either party.
 - **The AI boom is a chip boom.** Every hyperscaler is now designing its own silicon (Google TPU, AWS Trainium/Inferentia, Microsoft Maia, Meta MTIA, OpenAI/Broadcom, Tesla Dojo) in addition to NVIDIA, AMD, and a dozen well-funded startups (Cerebras, Groq, SambaNova, Etched, Tenstorrent, d-Matrix). Cadence entered the top-20 companies by *software* openings in 2026; Micron, Qualcomm, and AMD are hiring far more software engineers than a year ago.
 - **Extremely AI-resistant.** AI is beginning to help with verification, layout, and code generation for RTL — but a mistake costs a respin, and the tools amplify experts rather than replace them. Progress is gated by physics, tooling access (EDA licenses cost six figures per seat), and tacit knowledge accumulated over years.
 - **Low competition.** CE graduates are a fraction of CS graduates, and only a fraction of *those* go into silicon. You are competing with hundreds, not tens of thousands.
@@ -963,7 +1038,34 @@ Tier 2 careers score well on most dimensions but carry one notable weakness — 
 
 ---
 
-## 4.11 Tier 2 Summary
+## 4.11 General Software Engineering (Backend / Product / Full-Stack) at Top-Tier Employers — The Honest Baseline
+
+**What it is.** The job most CS graduates have historically taken and most still will: a software engineer on a product or backend team at a Big Tech company, a well-funded scaleup, or a strong mid-size tech company — owning services, data models, APIs, and the features built on them. It is deliberately profiled *here*, separately from the generalist web/app developer in Section 5.1, because the two share a language stack and nothing else that matters: this role is defined by **ownership of a system at a Mode 2–3 employer**; that one is defined by *implementing specified features* at any employer.
+
+**Why it is still strong.**
+- **It is the largest market in this guide by a wide margin** — BLS counts ~1.9M software developers, projected +10% (2025–35), ~106,000 openings a year including replacement. Even a squeezed entry ramp into a market this size produces more new-grad jobs than semiconductors, robotics, and quantum combined.
+- **Pay at the top is Tier 1 pay.** Levels.fyi entry-level SWE median TC is ~$143k across all employers; Big Tech new grads $140–200k; senior $350–500k. The comp is a function of the *employer mode*, not the title.
+- **It is the best hub of all.** Two or three years as a strong generalist at a top employer is the most common on-ramp to infrastructure, ML engineering, security, FDE, PM, and founding. Most Tier 1 engineers over 30 started here.
+- **Demand is recovering, but for a different job.** Indeed's data (Section 1) shows postings up ~15% from the 2025 trough; 71% of the net gain is senior and 37% AI-titled. The 2031 version of this job is: specify, review, integrate, debug, and own systems while agents write most of the code.
+
+**Why it is Tier 2, not Tier 1.**
+- **Weakest moat of any recommended career (D3 = 2).** Nothing in the job requires hardware, clearance, regulation, deep math, or expensive tooling. Your competition is every CS graduate in the world plus increasingly capable agents. What protects you is *seniority and system ownership*, which you do not have at 22.
+- **Entry ramp is the most damaged in the market.** New grads fell from ~30% to ~10% of engineering hires at large tech companies 2023–2025; the Stanford Canaries effect is concentrated exactly here. The job is fine once you are in; getting in as a generalist is the hard part.
+- **Scenario B (Agentic Leap) hits this role hardest** of any Tier 1–2 career, because its median task set is the most substitutable.
+
+**How to make it work.** Treat it as a *Tier 1 career in disguise*: enter through a specialized team (infra, security, ML platform, payments, data) rather than a generic "SWE" pool; bring a depth artifact and an AI-native workflow; and give yourself a two-year deadline to acquire one of the moats in Sections 3–4 from inside the company. A generalist SWE at Google who becomes the team's Kubernetes or auth expert by 25 has quietly become a Tier 1 engineer. A generalist who is still a generalist at 28 is the person Scenario B is worst for.
+
+**Entry path.** Standard strong-CS preparation (Section 8.1), two internships, ~150–250 practiced algorithm problems, systems-design fluency, one shipped project with users. Target the specialized teams above in your applications, and prefer employers whose new-grad programs *rotate* (Google, Microsoft, Amazon, Stripe, Databricks, Capital One) so you can find a moat.
+
+**CS or CE?** Either. CS is the standard route; CE graduates are hired into these roles constantly and often gravitate toward the performance/infra side.
+
+| D1 | D2 | D3 | D4 | D5 | D6 |
+|---|---|---|---|---|---|
+| 4 | 3 | 2 | 5 | 5 | 4 |
+
+---
+
+## 4.12 Tier 2 Summary
 
 | Career | Best for | Watch out for |
 |---|---|---|
@@ -977,6 +1079,7 @@ Tier 2 careers score well on most dimensions but carry one notable weakness — 
 | Enterprise cloud/DevOps | Flexibility, balance, non-coastal life | Lower ceiling |
 | Graphics / Simulation | Math + visual builders | Avoid the game-studio treadmill |
 | Dev tools / DevRel | Tool builders; communicators | DevRel volatility |
+| General SWE at top employers | The largest market; the best hub — if you enter through a specialized team | Weakest moat; hardest entry ramp; acquire a Tier 1 moat within two years |
 
 
 ---
@@ -997,9 +1100,11 @@ This section covers careers students ask about constantly and that deserve a can
 
 **Where generalist app development still works well:** early-stage startups (where you are a founding engineer owning everything), small companies in non-tech industries, agencies serving regulated clients, and as a *first* job before specializing.
 
+**Important distinction.** This verdict is about the *generalist web/app developer* whose value is implementing specified features. It is **not** a verdict on general software engineering at strong employers — the backend/product engineer at a Big Tech company or top startup who owns a system end-to-end. That career is profiled separately in Section 4.11 and rated Tier 2. The difference between the two is ownership and employer mode, not the programming language.
+
 | D1 | D2 | D3 | D4 | D5 | D6 |
 |---|---|---|---|---|---|
-| 3 | 2 | 1 | 3 | 4 | 5 |
+| 2 | 2 | 1 | 3 | 4 | 5 |
 
 ---
 
@@ -1025,7 +1130,7 @@ Similar story with a twist. Cross-platform frameworks (React Native, Flutter, Ko
 
 | D1 | D2 | D3 | D4 | D5 | D6 |
 |---|---|---|---|---|---|
-| 1–2 | 1 | 1 | 1–2 | 3 | 5 |
+| 1 | 1 | 1 | 1 | 3 | 5 |
 
 ---
 
@@ -1053,13 +1158,13 @@ Covered partly in 4.9. The game *industry* combines high passion supply with cyc
 
 ## 5.6 Research Scientist / Academia (PhD path)
 
-**The situation.** CS PhD production hit a record (1,909 in 2025, +51% in five years, CRA Taulbee) while new PhD enrollment fell 15%; 61% of new PhDs go to industry. Frontier AI labs pay research scientists $500k–$2M+ and have absorbed a large share of top talent. Tenure-track positions are scarce and pay a fraction of industry — but offer freedom and stability — and federal research funding is under pressure in the 2025–2027 budget cycles.
+**The situation.** CS PhD production hit a record (~1,900 in 2025 per CRA Taulbee, up roughly half in five years) while new PhD enrollment fell 15%; 61% of new PhDs go to industry. Frontier AI labs pay research scientists $500k–$2M+ and have absorbed a large share of top talent. Tenure-track positions are scarce and pay a fraction of industry — but offer freedom and stability — and federal research funding is under pressure in the 2025–2027 budget cycles.
 
 **Verdict.** A PhD is a **superb investment for a specific student**: one who has done serious undergraduate research, loves open-ended problems, and targets AI/ML, systems, security, architecture, robotics, or quantum — fields where a PhD unlocks the very top of industry pay. It is a poor choice as a way to "wait out" a bad job market or delay deciding. Do it for the research, with an industry exit in mind, and never pay for a CS PhD (they are funded).
 
 | D1 | D2 | D3 | D4 | D5 | D6 |
 |---|---|---|---|---|---|
-| 3 | 5 | 5 | 2 (academia) / 5 (lab research) | 4 | 1 |
+| 3 | 5 | 5 | 3 (2 academia / 5 industry labs) | 4 | 1 |
 
 ---
 
@@ -1103,6 +1208,8 @@ Areas we think are *under*-supplied in 2031 precisely because they are unfashion
 6. **Formal verification and high-assurance software** — seL4, Rust-for-Linux, Lean/Coq/Isabelle, DO-178C. As AI writes more code, *proving* it correct becomes more valuable. Tiny field, extraordinary moat.
 7. **Cryptography and post-quantum migration** — a decade-long, mandated (NIST / CNSA 2.0 timelines to 2030–2035), industry-wide project.
 8. **Accessibility and internationalization engineering** — regulation-driven (ADA, European Accessibility Act), under-staffed, unglamorous.
+9. **EDA (electronic design automation) software engineering** — building the tools chip designers use (Synopsys, Cadence, Siemens EDA, plus AI-for-EDA startups). A *software* job with a *hardware* moat: it needs algorithms (graph theory, optimization, SAT/SMT solvers), C++, and enough circuit knowledge to be dangerous. Cadence entered the top-20 US employers by software openings in 2026. Very few CS students know this career exists.
+10. **HPC and scientific computing** — national labs, weather/climate modeling, computational physics and chemistry, supercomputer systems software (MPI, Fortran/C++, GPU kernels). Aging workforce, strong government funding, deep overlap with AI infrastructure (the same GPU clusters), and a natural fit for CE or CS students who liked physics. Citizenship helps at DOE labs but is not universal.
 
 ---
 
@@ -1120,7 +1227,7 @@ Areas we think are *under*-supplied in 2031 precisely because they are unfashion
 | Law / policy | Strong contrarian opportunity |
 | Medicine | Long, expensive, extraordinarily durable |
 | Teaching | Meaningful; consider later-career |
-| Contrarian niches | Legacy, analog, OT, formal methods, PQC, medical firmware — under-supplied and durable |
+| Contrarian niches | Legacy, analog, OT, formal methods, PQC, medical firmware, EDA tools, HPC — under-supplied and durable |
 
 
 ---
@@ -1143,7 +1250,7 @@ This is the decision you must make first, and it matters more in 2027 than it di
 | **Typical credit load** | 120; many free electives | 128–134; few free electives |
 | **Accreditation** | Often none (CS programs frequently skip ABET) | Almost always **ABET-EAC accredited** — matters for PE licensure (rarely needed) and some government/defense roles |
 | **Lab hours** | Few | Many (hands-on with oscilloscopes, FPGAs, microcontrollers, PCB) |
-| **Graduating class size (US, 2025)** | ~110,000+ CS bachelor's (all institutions); 41,858 at PhD-granting depts (record) | ~12,000–15,000 CE bachelor's — roughly **one-eighth** of CS |
+| **Graduating class size (US, approx.)** | ~110,000+ CS bachelor's per year across all institutions (NCES/IPEDS); 41,858 at PhD-granting departments in 2025 (CRA Taulbee, a record) | ~12,000–15,000 CE bachelor's per year (ASEE) — roughly **one-eighth** of CS |
 
 The last row is the strategic point. CE graduates are scarce. Their competition pool for hardware-adjacent roles is small, and they are eligible for essentially every software role too.
 
@@ -1167,7 +1274,8 @@ The last row is the strategic point. CE graduates are scarce. Their competition 
 | Energy / grid (4.6) | ● | ●●● | Power electronics, controls |
 | Graphics / simulation (4.9) | ●●● | ●● | |
 | Dev tools (4.10) | ●●● | ● | |
-| Generalist software (5.1) | ●●● | ●●● | Any CE can do this |
+| General SWE at top employers (4.11) | ●●● | ●●● | Either; CE grads often drift toward the infra/performance side |
+| Generalist web/app dev (5.1) | ●●● | ●●● | Any CE can do this |
 
 **Reading the table:** CS is the direct path to about 60% of the careers; CE is the direct path to about 50%; but CE's exclusive territory (silicon, embedded, RF, power, controls) is where the *shortages and moats* are, while CS's exclusive territory (theory, PL, pure ML research) is over-supplied at the entry level.
 
@@ -1205,7 +1313,7 @@ Answer honestly:
 4. **Are you attracted to: AI research, algorithms, theory, data, finance/quant, product-building?**
    - Yes → CS (+ math).
 5. **Are you a US citizen willing to work in defense/government at some point?**
-   - Yes → CE's moat gets even stronger. Not a citizen → see 6.7.
+   - Yes → CE's moat gets even stronger. Not a citizen → see 6.9.
 6. **Are you unsure?**
    - Start in **CE** (or in an ECE department that offers both): it is far easier to switch CE → CS after year one (you have taken a superset of the shared core) than CS → CE (you will be behind on circuits, signals, and physics). Many schools house both in ECE and let you defer the choice until sophomore year.
 
@@ -1230,7 +1338,37 @@ Answer honestly:
 
 ---
 
-## 6.7 Special Considerations
+## 6.7 What About "AI," "Data Science," "Cybersecurity," "Software Engineering," and IT Majors?
+
+Universities responded to the 2023–26 market by launching specialized bachelor's degrees, and CRA reports students shifting toward them. The names sound like the Tier 1 careers in this guide. Be careful: **the career and the major are not the same thing.** Our verdict, major by major:
+
+| Major | Verdict | Why |
+|---|---|---|
+| **BS in Artificial Intelligence** | Usually **prefer CS + math + ML electives** | Most AI-titled bachelor's programs are a CS core with the theory/systems courses swapped for survey ML courses. Employers hiring MLEs screen on math and systems depth (Section 3.1), which the AI major often weakens. Exception: a handful of programs housed in strong CS departments (e.g., CMU's) that keep the full CS core — check the required course list against the CS degree at the same school; if it drops OS, architecture, or algorithms, do not take it. |
+| **BS in Data Science** | **Prefer CS + statistics minor** (or Statistics + CS minor) | Data-science bachelor's programs typically sit between CS, statistics, and business and are shallow in all three. The engineering-heavy data roles this guide rates Tier 1 (Section 3.6) want database, distributed-systems, and real statistics depth; the analyst roles the DS major prepares you for are the ones being automated. |
+| **BS in Cybersecurity** | **Prefer CS/CE + security concentration**, unless the program is in a CS/ECE department and requires the systems core | Many cybersecurity bachelor's programs are IT-derived: policy, compliance, tools, and certifications, with little programming or systems. That prepares you for the crowded analyst tier, not the engineering tier (Section 3.2). A program is acceptable if it requires OS, networking, systems programming, and cryptography and has a CTF culture. NSA CAE-Cyber Operations designation (not the more common CAE-Cyber Defense) is a useful marker of rigor. |
+| **BS in Software Engineering** | **Acceptable** where it is ABET-accredited and in an engineering college; otherwise prefer CS | Often a CS degree with more team projects and process and slightly less theory. Fine for infra/product/enterprise paths; weaker for ML, quant, and research. Check that algorithms, OS, and architecture are required. |
+| **BS in Information Technology / Information Systems** | **Not a substitute** for CS/CE for any Tier 1 or Tier 2 career | These prepare for support, administration, and business-analyst roles (Sections 5.3–5.4), which are the most AI-exposed. Good programs exist, but a student who can get into CS or CE should. |
+| **BS in Electrical Engineering** (instead of CE) | **Excellent** for analog/RF/power/photonics; take a CS minor | EE with a CS minor is the best route to the analog and power niches (Sections 3.3, 4.6, 5.11). It is weaker than CE for embedded software and computer architecture unless you choose those electives deliberately. If your target is digital chip design or robotics software, CE is the better default. |
+| **"Computer Science and Engineering" (CSE)** | **Read the curriculum** | The label means different things at different schools — anywhere from CS with extra hardware to CE with extra software. Compare its required courses to both CS and CE at the same school. |
+
+**The general rule:** choose the *broad, rigorous* degree (CS or CE, occasionally EE) and specialize through electives, research, and internships. Broad degrees survive market shifts; a specialized bachelor's is a bet that the 2027 job title will still exist in 2035, and this guide has spent several sections showing how fast those titles change. The exceptions are programs whose required courses are a strict superset of the school's CS or CE core — those are just CS/CE with a marketing name, and are fine.
+
+---
+
+## 6.8 Co-op Programs: The Structural Advantage Most Applicants Ignore
+
+This guide's central operational claim is that **internships are the conversion funnel** into 2031 jobs. Some universities build that funnel into the degree: **cooperative-education (co-op) programs** alternate semesters of full-time paid work with semesters of study, typically yielding 12–18 months of engineering experience across two or three employers before graduation (versus the ~6 months two summer internships provide).
+
+Schools with large, well-run engineering co-op programs include Northeastern, Drexel, Cincinnati (which invented it), Georgia Tech, Purdue, RIT, Kettering, Cal Poly, Stevens, Wentworth, Toledo, and — across the border and heavily recruited by US firms — Waterloo. Many state flagships offer optional co-op tracks in engineering.
+
+**Why this matters more in 2027 than in 2017.** The Live Data Technologies and Pragmatic Engineer data in Section 1 show companies converting interns rather than hiring strangers. A co-op student arrives at the 2030–31 full-time cycle with three employers who already know them, often including a semiconductor, defense, or robotics firm that rarely hires unknown new grads. Co-op students at Cincinnati, Drexel, and Northeastern report placement rates and starting salaries at or above those of higher-ranked non-co-op schools, in part because the *experience* substitutes for the *pedigree* effect described in Section 6.9.
+
+**Costs.** Graduation usually takes five years (you pay tuition for four and earn during co-op terms); the social rhythm is different; and some co-op placements are mediocre. For a student choosing between a higher-ranked school without co-op and a solid engineering school with it, in a market that hires on experience, **the co-op school is frequently the better expected-value choice** — particularly for CE students targeting semis, defense, or robotics, where employers value hands-on time most.
+
+---
+
+## 6.9 Special Considerations
 
 **International students.** The defense/clearance moat is closed to you, and 2025–2026 immigration policy ($100k fee on new overseas H-1B petitions; a proposed fee on OPT) has made US post-graduation employment less certain. CE and hardware fields *outside* defense — semiconductors (many roles do not require clearance; export-control rules apply but are navigable), robotics, AI infrastructure — are excellent and less crowded than software. Employers with strong immigration sponsorship track records (Big Tech, large semis, quant firms) are safer bets. Have a Plan B (Canada, home country, EU) and see Section 9.5.
 
@@ -1240,11 +1378,13 @@ Answer honestly:
 
 **Students who dislike hardware labs.** CS. But take computer architecture seriously anyway; it is the foundation of infrastructure and performance work.
 
+**Women and students from groups under-represented in computing.** The pipeline problem is real (women earn roughly a fifth of US CS bachelor's degrees and a smaller share of CE) and so is the retention problem, which peaks in the first two years. Practical, not motivational, advice: (1) the targeted early-career programs listed in Section 7 — Google STEP, Microsoft Explore, Meta University, Jane Street INSIGHT, Two Sigma, Citadel Discover, NVIDIA Ignite — exist largely to broaden the pipeline and are *materially* less competitive than general internships; apply in year 1. (2) The Grace Hopper Celebration, Tapia, NSBE, SHPE, SWE, and oSTEM conferences run large recruiting halls where Tier 1 employers interview on site; student scholarships cover travel. (3) GEM, Generation Google, Palantir WiT, and similar fellowships fund MS study and come with internships. (4) Find or found a peer community (WiCS, an NSBE chapter, a study group) in the first semester — the retention data are unambiguous that first-year isolation, not coursework, is what pushes people out. None of this lowers the bar you will have to clear; it does widen the funnel into the rooms where the bar is applied.
+
 **Transfer students and community-college starters.** CE's rigid sequence (circuits → electronics → signals → architecture → VLSI) makes transferring late costly; ensure your first two years cover physics E&M, calculus through III, differential equations, and an intro circuits course if CE is the goal. CS transfers are easier.
 
 ---
 
-## 6.8 Myths About the Choice
+## 6.10 Myths About the Choice
 
 - **"CS pays more."** Not by BLS medians anymore ($155k hardware vs $136k software); at the very top, AI labs and quant (CS-heavy) pay the most, but semiconductor equity has minted more mid-career millionaires than most software companies. Call it a draw that depends on the sub-field.
 - **"CE is harder."** CE has *more* required credits, labs, and physics; CS has *harder* theory and proofs. Different, not strictly harder.
@@ -1255,10 +1395,11 @@ Answer honestly:
 
 ---
 
-## 6.9 Bottom Line
+## 6.11 Bottom Line
 
 - If you are drawn to the physical layer — chips, robots, power, defense, devices — or if you are unsure and want maximum employability with a moat: **CE**, ideally in a 5-year BS/MS.
 - If you are drawn to AI, algorithms, data, finance, or product-building and can commit to serious math: **CS**, with a math/statistics minor or double and a deliberate specialization by year 3.
+- Prefer the broad, rigorous degree (CS or CE) over specialized "AI," "data science," or "cybersecurity" bachelor's programs unless the program is a strict superset of the CS/CE core (Section 6.7). Give serious weight to schools with strong co-op programs (Section 6.8).
 - Either way, the *degree* is a license to learn; the *careers* in Sections 3–4 are chosen through electives, projects, research, and internships — which is what Sections 7 and 8 are about.
 
 
@@ -1320,7 +1461,7 @@ You have ~12 weeks. Use them to arrive *ahead*, because year one is when clubs a
 
 **Reach out to professors in the spring.** A concise email (what you've built, which paper/course of theirs interested you, that you can commit 10 hrs/week) to 5–8 faculty. Expect a 20–30% response rate. Undergraduate research is the *single most reliable* differentiator for AI/ML, robotics, security, and chip roles, and it must start early to bear fruit by year 3.
 
-**Apply to freshman-targeted programs** (Aug–Oct 2027): Google STEP, Microsoft Explore, Meta University, Amazon Propel/Future Engineer, Jane Street INSIGHT/FOCUS, Palantir Path, Two Sigma, Citadel Discover, NVIDIA Ignite, Intel/AMD early-talent events, MITRE and national-lab summer programs (many take rising sophomores), and REUs (NSF-funded research; deadlines Jan–Feb 2028).
+**Apply to freshman-targeted programs** (Aug–Oct 2027): Google STEP, Microsoft Explore, Meta University, Amazon Propel/Future Engineer, Jane Street INSIGHT/FOCUS, Palantir Path, Two Sigma, Citadel Discover, NVIDIA Ignite, Intel/AMD early-talent events, MITRE and national-lab summer programs (many take rising sophomores), and REUs (NSF-funded research; deadlines Jan–Feb 2028). *Program names, eligibility, and even existence change from year to year — several on this list were renamed or paused between 2023 and 2026. Each August, search "[company] freshman/sophomore program" and check the community-maintained internship lists on GitHub (e.g., the Simplify/PittCSC list) rather than relying on this paragraph.*
 
 **Summer 2028 goal:** research, REU, national lab, a local/small-company internship, or a substantial project. A brand-name internship after freshman year is rare and unnecessary. What matters is *something real on the résumé* for the fall 2028 applications.
 
@@ -1340,6 +1481,8 @@ You have ~12 weeks. Use them to arrive *ahead*, because year one is when clubs a
 - **Widen the funnel:** defense primes, national labs, semis, medical-device companies, insurers, banks, utilities, and mid-size regional employers hire sophomores and are far less contested than Big Tech. A relevant internship anywhere beats no internship.
 
 **Narrow to two tracks** by winter 2028–29 based on what you have enjoyed. Commit your spring electives and summer plans accordingly.
+
+**Campus jobs that double as credentials.** From year 2, prefer paid campus work that recruiters recognize over unrelated jobs: **undergraduate teaching assistant** for data structures, architecture, or systems (proves mastery and communication — quant firms and Big Tech notice it); **paid research assistant** (RA positions are how many labs onboard undergrads before offering authorship); **IT / helpdesk / sysadmin** for a department (a legitimate, under-rated way to learn Linux administration and networking); **tutoring** through the engineering school. Ten hours a week in one of these beats twenty in retail, and it appears on the résumé under "experience," not "other."
 
 **Summer 2029: Internship #1.** Perform like a full-time hire: ship, document, ask for feedback at week 4 and week 8, present at the end, get your manager's agreement to be a reference. Convert to a return offer if the company is a plausible long-term fit — a return offer in hand is the strongest possible negotiating position for the fall 2029 cycle even if you intend to go elsewhere.
 
@@ -1635,7 +1778,48 @@ These are dramatically under-applied-to relative to their value. Several effecti
 
 ---
 
-## 8.10 Section Summary
+## 8.10 Networking, Conferences, and Referrals: The Cheapest Odds Multiplier
+
+Section 7 mentioned in passing that a warm referral roughly triples your interview odds. That single fact deserves its own section, because networking is the highest-return, lowest-cost activity in this guide and the one engineering students most reliably neglect. In a market where new grads are ~10% of hires and companies prefer people they already know, *being known* is not a soft skill; it is the funnel.
+
+### Referrals: how they actually work
+
+- At most large employers, a referred application is routed to a recruiter for human review instead of (or before) the automated screen. That is the whole advantage — and it is enormous when the screen rejects 90%+ of applicants.
+- **Who can refer you:** any current employee, including a 23-year-old who interned there last summer. Alumni from your school one to three years ahead of you are the richest, most responsive source. Upperclassmen returning from internships are the second.
+- **How to ask:** a short, specific message — who you are, the exact posting ID, one sentence on why you fit, résumé attached, and an explicit "would you be comfortable referring me?" Most engineers say yes to a polite, prepared request; referral bonuses give them a reason. Never ask a stranger for "a chat about their journey" when what you want is a referral; ask for the referral.
+- **Reciprocity:** once you have interned somewhere, refer the people behind you. This is how a school's pipeline into a company gets built, and it compounds.
+
+### Conferences: go as a student volunteer
+
+Major technical conferences run **student volunteer programs** that waive registration (often $1,000+) and sometimes cover travel, in exchange for ~15–20 hours of badge-scanning and room-monitoring. In return you spend three days in the same building as every senior engineer and hiring manager in your target field. Apply four to six months ahead.
+
+| Field | Conferences worth volunteering at | Why |
+|---|---|---|
+| Security | DEF CON, Black Hat (student programs), BSides (free/cheap, everywhere), CSAW finals, ShmooCon | The security community hires from its own; a CTF finals appearance plus a DEF CON badge is a résumé line |
+| AI/ML | NeurIPS, ICML, ICLR (volunteer programs; also workshops accept undergrad posters), CVPR for vision | Lab recruiters attend; a workshop poster gets you 20 conversations with people who hire |
+| Semiconductors / architecture | DAC, ISCA, MICRO, Hot Chips (student rate), ISSCC (circuits) | Small, senior, industry-dense; students are rare and remembered |
+| Infrastructure / cloud | KubeCon + CloudNativeCon (Linux Foundation scholarships), SREcon, Strange Loop successors, USENIX ATC/OSDI/NSDI | CNCF and USENIX student grants are generous and under-applied |
+| Robotics | ICRA, IROS, RSS, ROSCon | Every autonomy company sends recruiters to ICRA |
+| Quantum | APS March Meeting, QIP, IEEE Quantum Week | Tiny field — everyone meets everyone |
+| Broad recruiting fairs | Grace Hopper Celebration, Tapia, NSBE, SHPE, SWE, oSTEM, AfroTech | Tier 1 employers interview on site; student travel scholarships are common |
+| Defense / gov | AFCEA events, SANS summits, agency-specific career fairs, university defense-industry days | Clearance-sponsoring employers concentrate here |
+
+At a conference, the goal is not to collect business cards. It is to have three real technical conversations a day and follow each one up within 48 hours with a two-line email and a link to something you built.
+
+### The low-effort habits that compound
+
+- **LinkedIn hygiene by year 2:** a real photo, a headline that names your target field ("CE student — RTL/verification, RISC-V, Tiny Tapeout"), pinned projects, and a one-paragraph About. Recruiters search LinkedIn by keyword; make sure yours contain the words in Sections 3–4.
+- **Alumni outreach cadence:** two messages a week to alumni in your target field from year 2 onward. Expect ~30% response; each response is a future referral.
+- **Office hours and faculty:** professors write the letters, know the lab managers, and get emails from former students who now hire. The professor whose office hours you attended every week is worth more than any online course.
+- **Local meetups and user groups** (Rust, Kubernetes, ML, hardware hacking, OWASP chapters): free, small, and full of the mid-career engineers who will refer you. Especially valuable outside the major hubs.
+- **Write publicly.** A short technical post that gets shared in your field's community is a networking event that runs while you sleep. Section 8.3 covers what to write.
+- **Be findable:** GitHub, a personal site or blog, a consistent handle. When someone hears your name after a conversation, they will search it.
+
+None of this substitutes for skill. All of it determines whether your skill gets a human's attention in a market that has automated away most of the other paths to one.
+
+---
+
+## 8.11 Section Summary
 
 - **Invest in long-half-life skills first:** math, systems, one low-level language, Python, SQL, Linux/Git, cloud, and engineering practice. Learn frameworks just in time.
 - **Two-pass rule:** learn every fundamental without AI, then use AI to go faster and bigger. Employers are now testing for exactly this distinction.
@@ -1645,12 +1829,13 @@ These are dramatically under-applied-to relative to their value. Several effecti
 - **Skip most certifications;** exceptions are OSCP, Security+ (as a DoD checkbox), CKA, and professional-level cloud/cloud-security certs for infra roles.
 - **Prepare for redesigned interviews:** proctored no-AI rounds, AI-allowed rounds judged on direction and verification, heavier systems and debugging emphasis.
 - **Grad school:** BS-to-industry by default; MS for semis, quant, robotics research, ML research engineering, and international students; PhD only for research careers — and the master's enrollment slump may make a funded MS a contrarian bargain by 2031.
+- **Network deliberately:** referrals roughly triple interview odds; volunteer at your field's conferences; two alumni messages a week from year 2; keep LinkedIn and GitHub findable.
 - **US citizens: SMART and SFS are the most under-used advantages in American CS/CE education.** Apply.
 
 
 ---
 
-# Section 9 — Where the Jobs Are: Geography, Compensation, Employer Types, Clearances, and Immigration
+# Section 9 — Where the Jobs Are: Geography, Compensation, Employer Types, Clearances, Immigration, and Paying for the Degree
 
 Career choice is only half the decision. *Where* you work, *what kind of employer* you work for, and *whether you can legally do the work* (clearances, visas) change lifetime earnings and risk as much as the field itself. This section maps the US market as it will look for a 2031 graduate.
 
@@ -1688,7 +1873,7 @@ All figures are US total compensation (base + bonus + equity where applicable) i
 
 | Career | Typical range (BS) | Top-of-market | Notes |
 |---|---|---|---|
-| **AI/ML Engineer** | $150–220k | $250–350k+ (frontier labs, top Big Tech ML teams, HFT) | Highest new-grad premium of any field; MS/PhD often required for the very top. Levels.fyi MLE median (all levels) $279k. |
+| **AI/ML Engineer** | $130–220k | $250–350k+ (frontier labs, top Big Tech ML teams, HFT) | Highest new-grad premium of any field; the low end is applied-ML at mid-tier employers, the high end is Big Tech ML teams. MS/PhD often required for the very top. Levels.fyi MLE median (all levels) $279k. |
 | **Software Engineer, Big Tech / top startups** | $140–200k | $220–260k | Levels.fyi entry SWE median $143.6k across all employers; 90th pct $222k. |
 | **Software Engineer, non-tech F500 / mid-market** | $75–115k | $130k | The bottom mode. Most SWE jobs are here. |
 | **Security Engineer** | $100–160k (industry) / $70–110k (government) | $180–220k (Big Tech, AI labs, top vendors) | BLS infosec analyst median $124.9k all levels; government pays less in cash but offers clearance + pension + SFS. |
@@ -1742,7 +1927,7 @@ All figures are US total compensation (base + bonus + equity where applicable) i
 
 A US security clearance is the most valuable credential available to a US-citizen CS/CE graduate, for four reasons:
 
-1. **It is a legal moat.** Clearances require US citizenship. Roughly a quarter to a third of US CS graduates (international students) cannot compete for these roles at all; the cleared labor pool is structurally short.
+1. **It is a legal moat.** Clearances require US citizenship. Roughly 15–20% of CS bachelor's graduates at US research universities, and a majority of CS master's graduates, are international students who cannot compete for these roles at all; add the domestic graduates who cannot or will not pass adjudication, and the cleared labor pool is structurally short.
 2. **The sector is growing.** Defense budgets, space, cyber operations, and intelligence-community AI adoption are all expanding, and the defense-tech startup boom (Anduril, Palantir, SpaceX, Shield AI, and dozens more) created a private-sector market for cleared engineers that pays Big Tech-competitive comp ($185–320k mid-career for cleared autonomy engineers; defense startups carry ~5.2 open roles per company vs 3.5 for software companies).
 3. **It is counter-cyclical.** Defense hiring held or grew through the 2022–25 tech downturn.
 4. **It is portable and lasts.** A clearance follows you between employers (within a window) and is renewed, not re-earned.
@@ -1757,29 +1942,37 @@ A US security clearance is the most valuable credential available to a US-citize
 
 **What disqualifies or delays:** recent drug use (policies vary and have loosened for cannabis at some agencies, not all), unreported foreign contacts, serious debt problems, and above all dishonesty on the SF-86. Be honest and be boring for a few years before you apply. Dual citizenship and extensive foreign travel complicate but rarely block.
 
-**Career note:** you do not have to stay in defense. Many engineers spend 3–5 years cleared, then move to Big Tech or startups, and can return to the cleared world at any time.
+**Mechanics worth knowing:**
+- **Interim clearances.** For Secret and often for TS, a sponsor can grant an *interim* clearance within weeks based on the initial SF-86 review, letting you start work (on a subset of programs) while the full investigation proceeds. This is how interns and new grads usually begin. An interim can be denied without the final being denied, so do not assume a slow interim means rejection.
+- **Continuous Vetting (CV).** Since 2021–23, the periodic 5- or 10-year reinvestigation has been largely replaced by automated continuous monitoring of financial, criminal, and travel records for everyone enrolled in the DoD system. Practically: a clearance no longer "expires" on a schedule, but new problems (debt, arrests, unreported foreign contacts) surface faster. Report what you are required to report — self-reporting is treated far more leniently than discovery.
+- **Currency and reinstatement.** A clearance stays "current" for roughly **24 months** after you leave a cleared position. Return to a cleared role within that window and it is typically *reinstated* without a new investigation; wait longer and you start over (Secret: months; TS/SCI: often 1–2 years). Plan any private-sector detour with that clock in mind.
+- **Reciprocity is imperfect.** Agencies are supposed to honor each other's clearances at the same level; in practice IC agencies (NSA, CIA) often require their own polygraph and adjudication, and crossing from DoD to IC can add months.
+
+**Career note:** you do not have to stay in defense. Many engineers spend 3–5 years cleared, then move to Big Tech or startups, and — if they return within the ~24-month currency window — re-enter the cleared world without a new investigation.
 
 ---
 
 ## 9.5 International Students: Realistic Planning
 
-Roughly a third of US CS/CE undergrads and a majority of master's students are international. The environment became materially harder from 2025 on, and a student enrolling in 2027 must plan for it explicitly.
+Roughly 15–20% of CS bachelor's students at US research universities, and a majority of CS master's students, are international. The environment became materially harder from 2025 on, and a student enrolling in 2027 must plan for it explicitly.
 
 **What changed (as of 2026):**
 - **H-1B $100k fee** (September 2025 proclamation) applies to new petitions for beneficiaries outside the US; USCIS guidance (Nov 2025) exempted most F-1 → H-1B change-of-status filings, which is the path most students use — but the policy is litigated and could move either way.
 - **OPT under threat.** In August 2026 the administration was reported to be considering fees or restrictions on Optional Practical Training, the 12-month (plus 24-month STEM extension) post-graduation work authorization that nearly every international student depends on. A 2027 enrollee must assume OPT *may* be curtailed by 2031 and plan alternatives.
-- **H-1B lottery** odds for bachelor's holders remained roughly 20–30%; master's holders get a second draw. Wage-weighted selection would favor higher-paid roles (AI/ML, quant).
+- **H-1B selection is now wage-weighted.** DHS finalized the *Weighted Selection Process* rule in December 2025 (effective February 27, 2026), and it governed the FY2027 lottery in March 2026. Each registration is entered once per OEWS wage level of the offered job — Level I once, Level II twice, Level III three times, Level IV four times. Historically the overall selection rate has been roughly one-in-three to one-in-four of eligible registrations, lower for bachelor's-only holders (master's holders get a second draw). Under weighting, **a typical new-grad offer at Level I–II has materially worse odds than before, while a Level III–IV offer — AI/ML at a Big Tech or lab, quant, senior-track infra — is strongly favored.** The rule is being litigated and a future administration could rescind it, but plan as if it holds.
 - **Visa scrutiny** (social-media review, interview delays, revocations) increased in 2025–26.
 - **Clearance-required sectors** (defense, aerospace, much of government) remain closed regardless.
 
 **Strategy for an international student:**
 1. **Choose fields where employers sponsor.** Big Tech, semis, AI labs, quant, data-infra, and large fintechs sponsor routinely; small companies, defense, government, and many non-tech F500s do not. Tier 1 fields are the sponsoring fields — another reason to aim for them.
-2. **Aim for high-wage roles.** Wage-weighted or fee-based systems favor the top of the comp distribution: AI/ML engineering, quant, senior-track infra.
-3. **Plan for an MS.** A US master's gives the STEM-OPT extension, the advanced-degree H-1B draw, and a second recruiting cycle. Choose a 4+1 or a strong terminal MS in a specific domain (Section 8.8). Master's enrollment fell 26% in 2024–26, so admission and funding may be easier by 2031.
-4. **Build an O-1 record.** Research publications, competition wins, open-source prominence, and press all count toward an O-1 "extraordinary ability" visa, which has no lottery. Frontier labs and startups increasingly use it. Start in year 2.
-5. **Keep a parallel plan.** Canada, the UK (Global Talent visa), Germany, Singapore, and the UAE actively recruit US-trained CS grads, and many US employers will hire you into a foreign office and transfer you later (L-1). Know your options before you need them.
-6. **Use campus resources early.** International office, OPT timelines, and CPT rules for internships (you need CPT authorization to intern; plan it a semester ahead).
-7. **Do not pay for a low-value master's as a visa strategy.** If the program has no placement pipeline, you are buying a delay, not a job.
+2. **Aim for high-wage roles.** The wage-weighted lottery and the $100k fee both favor the top of the comp distribution: AI/ML engineering, quant, senior-track infra. A $160k offer at OEWS Level III has roughly three times the lottery entries of a $95k Level I offer. This is now a concrete, quantifiable reason for an international student to prefer a Tier 1 field.
+3. **Know the cap-exempt path.** Universities, university-affiliated research labs and hospitals, and certain nonprofit research organizations can file H-1B petitions *outside the annual cap* — no lottery, any time of year. Research-engineer and staff-scientist roles at academic labs, national-lab-affiliated university centers, and teaching hospitals are a legitimate bridge: two or three years in a cap-exempt role builds the record and the time-in-status while you enter the lottery from a position of stability, and some cap-exempt employers pay competitively in AI, HPC, and systems. Concurrent employment rules also allow a cap-exempt primary job alongside limited cap-subject work — consult an immigration attorney, not a forum.
+4. **Plan for an MS.** A US master's gives the STEM-OPT extension, the advanced-degree H-1B draw, and a second recruiting cycle. Choose a 4+1 or a strong terminal MS in a specific domain (Section 8.8). Master's enrollment fell 26% in 2024–26, so admission and funding may be easier by 2031.
+5. **Build an O-1 record.** Research publications, competition wins, open-source prominence, and press all count toward an O-1 "extraordinary ability" visa, which has no lottery. Frontier labs and startups increasingly use it. Start in year 2.
+6. **Keep a parallel plan.** Canada, the UK (Global Talent visa), Germany, Singapore, and the UAE actively recruit US-trained CS grads, and many US employers will hire you into a foreign office and transfer you later (L-1). Know your options before you need them.
+7. **Use campus resources early.** International office, OPT timelines, and CPT rules for internships (you need CPT authorization to intern; plan it a semester ahead).
+8. **Do not pay for a low-value master's as a visa strategy.** If the program has no placement pipeline, you are buying a delay, not a job.
+9. **Avoid "Day-1 CPT" programs.** Some universities market master's programs that authorize full-time Curricular Practical Training from the first semester, effectively selling work authorization. These programs are a known enforcement target: students have had subsequent H-1B and green-card petitions denied or received requests for evidence questioning whether they maintained status, and several such schools have lost SEVP certification. If a program's main selling point is immediate work authorization rather than its curriculum or placement record, treat it as a red flag.
 
 ---
 
@@ -1793,13 +1986,38 @@ Roughly a third of US CS/CE undergrads and a majority of master's students are i
 
 ---
 
-## 9.7 Section Summary
+## 9.7 Paying for the Degree: Cost, Debt, and Return
+
+For most families this is the first question, not the last. The answer is that a CS/CE degree remains one of the highest-return investments available to an 18-year-old *if* the cost is controlled and the student follows a plan like the one in Section 7 — and one of the more dangerous if it is financed with heavy private debt and drifts into the generalist path in Section 5.
+
+**What it costs (2026 sticker, before aid):** in-state public flagship ~$25–35k/year all-in (tuition, fees, housing, food); out-of-state public ~$45–60k; private ~$70–90k. Net prices after grants are typically 30–60% lower at privates and 10–30% lower at publics. Four years at in-state sticker is $100–140k; at a private without aid, $280k+. For CE, budget an extra $1–3k over the degree for a laptop capable of running EDA tools and simulators, dev boards, and components.
+
+**What it returns:** the median CS/CE graduate who lands a mode-2 or mode-3 job (Section 9.2) earns $120–200k in year one and $250k+ by year five — a payback period of one to three years even on the private-school sticker. The median graduate who lands in mode 1 ($70–100k) still recovers an in-state cost inside four years. The failure case is not "CS doesn't pay"; it is the graduate who borrowed $150k+ and spent 18 months unemployed or underemployed after graduation — the 2024–26 cohort's story for a meaningful minority.
+
+**Rules of thumb that survive every scenario:**
+
+1. **Total borrowing across four years should not exceed your realistic first-year salary** — for a CS/CE grad with a Section 7 plan, that is roughly $80–100k as a hard ceiling, and less is better. Federal loans first (fixed rate, income-driven repayment, forgiveness options); private loans only with a specific reason.
+2. **The program matters more than the brand for the first job, except at the very top.** A strong in-state flagship with a co-op or a real semiconductor/security/robotics track (Sections 6.7–6.8, 7.3) beats a mid-ranked private at three times the price. The exceptions are the ~15 schools whose names alone open frontier-lab and quant doors; if you are admitted to one with aid, take it.
+3. **Community college + transfer** into a strong public CS program cuts total cost by 30–40% with little penalty if you transfer by year 3 with the math and systems core complete (see FAQ, Section 11).
+4. **Internships pay for school.** Two or three paid internships at Big Tech, semis, or a national lab gross $25–50k each over a summer; co-op students often graduate with $60–100k earned. This is a direct offset, not a nice-to-have.
+5. **Funded pathways exist for citizens.** SMART (full tuition + stipend for a DoD service commitment), CyberCorps SFS (same for cyber), ROTC, national-lab and NSF programs, and employer tuition reimbursement can make the degree free or nearly free in exchange for a few years of work you likely want anyway (Section 8.9).
+6. **The 4+1 master's is worth it when it is cheap and specific.** A one-year MS at your own school in a Tier 1 specialty (Section 8.8) for $15–40k that raises entry comp by $15–30k and unlocks a second recruiting cycle pays back in one to two years. A $90k two-year MS at a program without a placement pipeline does not.
+7. **Treat equity in offers as zero when computing repayment.** Plan debt service on base salary only.
+8. **For international students, add the visa premium to the cost.** If your realistic path requires a US master's to stay, price the BS+MS as a single six-year investment against the probability-weighted outcomes in Section 9.5, and against the alternative of a strong home-country or third-country program.
+
+**Bottom line:** minimize sticker price, maximize program fit, earn during school, and keep debt under first-year salary. Under those constraints the degree pays back in Scenario A, B, or C.
+
+---
+
+## 9.8 Section Summary
 
 - **Live in your field's hub for the first 3–5 years.** Bay Area for AI and infra; DC/NoVA for security and defense; Silicon Valley/Austin/Phoenix/Portland for semis; Pittsburgh/Boston/Bay Area for robotics.
 - **Comp is trimodal;** Tier 1 fields matter because they give access to the top mode ($150–250k+ new-grad, $350k+ senior). The AI premium is real and widening.
 - **First job: optimize for learning rate and brand,** not mission or equity. Frontier labs, Big Tech, semis leaders, top security vendors, and neo-primes are the strongest launchpads.
 - **US citizens: a clearance is the most valuable credential you can get,** and SMART/SFS/defense internships hand it to you.
-- **International students: aim at sponsoring, high-wage Tier 1 employers; plan for an MS; build an O-1 record; keep a parallel non-US plan.** Assume OPT rules may tighten by 2031.
+- **International students: the H-1B lottery is now wage-weighted (final rule, Feb 2026), which quantifiably favors Tier 1 roles.** Aim at sponsoring, high-wage employers; know the cap-exempt path; plan for an MS; build an O-1 record; avoid Day-1 CPT programs; keep a parallel non-US plan. Assume OPT rules may tighten by 2031.
+- **Clearances: interim lets you start in weeks; Continuous Vetting replaced periodic reinvestigation; a clearance stays reinstatable for ~24 months after you leave.**
+- **Paying for it: keep total debt under first-year salary, prefer in-state or funded programs, earn $60–100k through internships/co-ops, and treat the 4+1 MS as worth it only when cheap and specific.**
 - **Do not plan on remote work as a new grad;** it becomes realistic in software/data/security/cloud around year 3–5.
 
 
@@ -1813,42 +2031,48 @@ This section consolidates the analysis of Sections 3–9 into reference tables y
 
 ## 10.1 Master Scorecard — All Careers
 
-**Dimensions:** D1 Demand growth 2027–35 · D2 AI-resistance · D3 Moat / barrier to entry · D4 Compensation · D5 Optionality · D6 BS-accessibility. **Total** is the simple sum (max 30); ties are broken by D2 then D1, because AI-resistance and demand are the two dimensions most likely to be decisive for a 2031 graduate.
+**Dimensions:** D1 Demand durability 2031–45 · D2 AI-resistance · D3 Moat / barrier to entry · D4 Compensation · D5 Optionality · D6 BS-accessibility. **Total** is the simple sum (max 30; half-points where a profile gave a range). Rows are sorted by Total *within each tier*; ties are broken by D2 then D1 then D3, because AI-resistance and demand are the two dimensions most likely to be decisive for a 2031 graduate. Scores are identical to those in the profiles of Sections 3–5.
+
+**Why the order here differs from the TL;DR.** The TL;DR in the front matter ranks by *expected value for a strong student who can stand out* (which rewards AI/ML's comp ceiling and job count). This table sums the *robustness* dimensions (which rewards infrastructure's accessibility and semiconductors' moat). Both are shown deliberately; see Section 2.2.
 
 | # | Career | Tier | D1 | D2 | D3 | D4 | D5 | D6 | Total | Best degree | 2031 scenario sensitivity |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Semiconductor / chip design, verification, architecture** | 1 | 5 | 5 | 5 | 5 | 3 | 3–4 | **26–27** | CE | Low: strong in A, B, C |
-| 2 | **Infrastructure / distributed systems / AI infra / SRE** | 1 | 5 | 5 | 4 | 4 | 5 | 5 | **28** | CS or CE | Low: grows in A and B; holds in C |
-| 3 | **Security engineer** (cloud, AppSec, AI security, detection) | 1 | 5 | 5 | 4 | 4 | 4 | 5 | **27** | CS (CE for hardware sec) | Very low: counter-cyclical |
-| 4 | **Robotics / embedded / autonomy** | 1 | 5 | 5 | 5 | 4 | 4 | 4 | **27** | CE (CS for perception/ML) | Medium: capital-intensive sector |
-| 5 | **AI / ML engineer (applied)** | 1 | 5 | 5 | 3 | 5 | 5 | 3–4 | **26–27** | CS | Medium: highest upside in B, compresses in C |
-| 6 | **Data engineer / engineering-heavy data scientist** | 1 | 5 | 3 | 3 | 3–4 | 4 | 5 | **23–24** | CS | Medium: analyst layer erodes; platform layer grows |
-| 7 | **Defense / aerospace / national-security engineering** (cleared) | 2 | 5 | 5 | 5 | 3–4 | 3 | 5 | **26–27** | CS or CE | Very low: budget-driven, counter-cyclical; **citizens only** |
-| 8 | **Energy / climate / grid computing** | 2 | 5 | 5 | 4 | 3 | 3 | 5 | **25** | CE or CS | Low: data-center power demand is structural |
-| 9 | **Fintech / quant development / trading tech** | 2 | 4 | 5 | 4 | 5 | 3 | 4 | **25** | CS | Medium: quant is elite-only; fintech cyclical |
-| 10 | **Forward-deployed / AI solutions engineer** | 2 | 4 | 5 | 3 | 5 | 5 | 3 | **25** | CS | High: a bet on enterprise AI adoption (A/B) |
-| 11 | **Healthcare / biotech / life-sciences computing** | 2 | 5 | 4 | 4 | 3 | 3 | 4 | **23** | CS | Low: demographics-driven |
-| 12 | **Quantum computing engineer** | 2 | 4 | 5 | 5 | 4 | 3 | 2 | **23** | CE/physics or CS | High: long-dated; MS/PhD usually required |
-| 13 | **Graphics / game engines / simulation / spatial** | 2 | 3 | 4 | 4 | 4 | 4 | 3 | **22** | CS | Medium |
-| 14 | **Technical product management** (after eng years) | 2 | 3 | 5 | 3 | 4 | 5 | 2 | **22** | CS | Low, but not a first job |
-| 15 | **Cloud / DevOps / platform at non-tech enterprises** | 2 | 4 | 4 | 2 | 3 | 4 | 5 | **22** | CS | Low: steady, unglamorous |
-| 16 | **Developer tools** (engineering track) | 2 | 4 | 4 | 3 | 4 | 4 | 3 | **22** | CS | Medium |
-| 17 | Developer relations / technical education | 2 | 2 | 3 | 3 | 3 | 4 | 3 | 18 | CS | High: cyclical marketing budgets |
-| 18 | Research scientist / academia (PhD) | 3 | 3 | 4 | 5 | 3 | 3 | 1 | 19 | CS/CE + PhD | Medium; depends on funding climate |
-| 19 | Founding a startup | 3 | — | — | — | — | 5 | 5 | n/a | Either | Extreme variance; better as second act |
-| 20 | Contrarian niches (COBOL/mainframe, embedded legacy, EDA tools, HPC, controls) | 3 | 4 | 5 | 5 | 3–4 | 2 | 4 | 23–24 | CE | Low; small markets |
-| 21 | Native mobile development | 3 | 2 | 2 | 2 | 3 | 3 | 5 | 17 | CS | High: cross-platform + AI compress it |
-| 22 | Computing + law / policy / government | 3 | 3 | 4 | 4 | 3 | 3 | 2 | 19 | CS | Low |
-| 23 | Computing + medicine (MD path) | 3 | 4 | 5 | 5 | 4 | 2 | 1 | 21 | CS | Low; 8+ years training |
-| 24 | Game development (studios) | 3 | 2 | 3 | 3 | 2 | 3 | 4 | 17 | CS | High: layoffs, low pay |
-| 25 | Generalist web / full-stack developer | 3 | 2 | 2 | 1 | 2–3 | 3 | 5 | **15–16** | CS | Very high: the most AI-exposed engineering role |
-| 26 | Data analyst / BI analyst | 3 | 2 | 1 | 1 | 2 | 3 | 5 | 14 | CS | Very high |
-| 27 | Teaching CS (K-12 / community college) | 3 | 3 | 4 | 3 | 1 | 2 | 4 | 17 | CS | Low but poorly paid |
-| 28 | QA / test engineering, IT support, sysadmin | 3 | 1 | 1 | 1 | 1 | 2 | 5 | 11 | — | Very high |
+| 1 | **Infrastructure / distributed systems / AI infra / SRE** (3.4) | 1 | 5 | 5 | 4 | 4 | 5 | 5 | **28** | CS or CE | Low: grows in A and B; holds in C |
+| 2 | **Security engineer** (cloud, AppSec, AI security, detection) (3.2) | 1 | 5 | 5 | 4 | 4 | 4 | 5 | **27** | CS (CE for hardware sec) | Very low: counter-cyclical |
+| 3 | **Robotics / embedded / autonomy** (3.5) | 1 | 5 | 5 | 5 | 4 | 4 | 4 | **27** | CE (CS for perception/ML) | Medium: capital-intensive sector |
+| 4 | **Semiconductor / chip design, verification, architecture** (3.3) | 1 | 5 | 5 | 5 | 5 | 3 | 3.5 | **26.5** | CE | Low: strong in A, B, C |
+| 5 | **AI / ML engineer (applied)** (3.1) | 1 | 5 | 5 | 3 | 5 | 5 | 3.5 | **26.5** | CS | Medium: highest upside in B, compresses in C |
+| 6 | **Data engineer / engineering-heavy data scientist** (3.6) | 1 | 5 | 3 | 3 | 3.5 | 4 | 5 | **23.5** | CS | Medium: analyst layer erodes; platform layer grows |
+| 7 | **Defense / aerospace / national-security engineering** (cleared) (4.2) | 2 | 5 | 5 | 5 | 3.5 | 3 | 5 | **26.5** | CS or CE | Very low: budget-driven, counter-cyclical; **Tier 1 for US citizens** |
+| 8 | **Energy / climate / grid computing** (4.6) | 2 | 5 | 5 | 4 | 3 | 3 | 5 | **25** | CE or CS | Low: data-center power demand is structural |
+| 9 | **Fintech / quant development / trading tech** (4.5) | 2 | 4 | 5 | 4 | 5 | 3 | 4 | **25** | CS | Medium: quant is elite-only; fintech cyclical |
+| 10 | **Forward-deployed / AI solutions engineer** (4.1) | 2 | 4 | 5 | 3 | 5 | 5 | 3 | **25** | CS | High: a bet on enterprise AI adoption (A/B) |
+| 11 | **Quantum computing engineer** (4.3) | 2 | 4 | 5 | 5 | 4 | 3 | 2 | **23** | CE/physics or CS | High: long-dated; MS/PhD usually required |
+| 12 | **Healthcare / biotech / life-sciences computing** (4.4) | 2 | 5 | 4 | 4 | 3 | 3 | 4 | **23** | CS | Low: demographics-driven |
+| 13 | **General software engineering at top-tier employers** (4.11) | 2 | 4 | 3 | 2 | 5 | 5 | 4 | **23** | CS or CE | High: Scenario B hits generalists hardest; largest market by far |
+| 14 | **Technical product management** (after eng years) (4.7) | 2 | 3 | 5 | 3 | 4 | 5 | 2 | **22** | CS | Low, but not a first job |
+| 15 | **Graphics / game engines / simulation / spatial** (4.9) | 2 | 3 | 4 | 4 | 4 | 4 | 3 | **22** | CS | Medium |
+| 16 | **Developer tools** (engineering track) (4.10) | 2 | 4 | 4 | 3 | 4 | 4 | 3 | **22** | CS | Medium |
+| 17 | **Cloud / DevOps / platform at non-tech enterprises** (4.8) | 2 | 4 | 4 | 2 | 3 | 4 | 5 | **22** | CS | Low: steady, unglamorous |
+| 18 | Developer relations / technical education (4.10) | 2 | 2 | 3 | 3 | 3 | 4 | 3 | 18 | CS | High: cyclical marketing budgets |
+| 19 | Contrarian niches (COBOL/mainframe, analog/RF, OT/PLC, medical firmware, formal methods, PQC, EDA tools, HPC) (5.11) | 3 | 4 | 5 | 5 | 3.5 | 2 | 4 | 23.5 | CE (CS for EDA/HPC/PQC) | Low; small markets — Tier 3 only because each niche is small |
+| 20 | Research scientist / academia (PhD) (5.6) | 3 | 3 | 5 | 5 | 3 | 4 | 1 | 21 | CS/CE + PhD | Medium; depends on funding climate |
+| 21 | Computing + medicine (MD path) (5.9) | 3 | 4 | 5 | 5 | 4 | 2 | 1 | 21 | CS | Low; 11+ years training |
+| 22 | Computing + law / policy / government (5.8) | 3 | 3 | 4 | 4 | 3 | 3 | 2 | 19 | CS | Low |
+| 23 | Generalist web / full-stack developer (5.1) | 3 | 2 | 2 | 1 | 3 | 4 | 5 | 17 | CS | Very high: the most AI-exposed engineering role |
+| 24 | Teaching CS (K-12 / community college) (5.10) | 3 | 3 | 4 | 3 | 1 | 2 | 4 | 17 | CS | Low but poorly paid |
+| 25 | Native mobile development (5.2) | 3 | 2 | 2 | 2 | 3 | 3 | 4 | 16 | CS | High: cross-platform + AI compress it |
+| 26 | Game development (studios) (5.5) | 3 | 2 | 2 | 2 | 2 | 3 | 3 | 14 | CS | High: layoffs, low pay |
+| 27 | Data analyst / BI analyst (5.4) | 3 | 2 | 1 | 1 | 2 | 3 | 5 | 14 | CS | Very high |
+| 28 | QA / test engineering, IT support, sysadmin (5.3) | 3 | 1 | 1 | 1 | 1 | 3 | 5 | 12 | — | Very high |
+| — | Founding a startup (5.7) | 3 | — | — | — | — | 5 | 5 | n/a | Either | Extreme variance; better as second act |
 
-**Reading the table.** The top of the table is dominated by careers where *software meets something hard* — physics (semis, robotics, energy), adversaries (security, defense), scale (infrastructure), or frontier models (AI/ML). The bottom is dominated by careers where the work is *pure software glue* that agents now generate. That is the central pattern of this guide and it will not reverse by 2031.
+**Reading the table.** The top of the table is dominated by careers where *software meets something hard* — physics (semis, robotics, energy), adversaries (security, defense), scale (infrastructure), or frontier models (AI/ML). The bottom is dominated by careers where the work is *pure software glue* that agents now generate. That is the central pattern of this guide and it is very unlikely to reverse by 2031.
 
-Note the specific ranking nuance: **infrastructure scores highest on total** because it is the only Tier 1 field that is simultaneously BS-accessible (5), high-optionality (5), and AI-resistant (5) — it is the safest *single* bet. **Semiconductors and robotics score highest on moat**, which makes them the best bets for students who want low competition and stability. **AI/ML scores highest on comp and upside** but lowest on moat among Tier 1 — the best bet for students who can stand out.
+Three ranking nuances worth noticing:
+- **Infrastructure scores highest on total** because it is the only Tier 1 field that is simultaneously BS-accessible (5), high-optionality (5), and AI-resistant (5) — it is the safest *single* bet.
+- **Semiconductors and robotics score highest on moat**, which makes them the best bets for students who want low competition and stability. **AI/ML scores highest on comp and upside** but lowest on moat among Tier 1 — the best bet for students who can stand out.
+- **Defense (26.5) out-scores three Tier 1 careers** and is Tier 2 only because of the citizenship gate. If you are a US citizen open to the sector, read it as Tier 1. Likewise the **contrarian niches (23.5)** out-score most of Tier 2 on the dimensions and are Tier 3 only because each niche's absolute job count is small.
 
 ---
 
@@ -1884,9 +2108,9 @@ US total compensation, 2026 dollars, typical ranges. New-grad = 0–1 year; Mid 
 
 | Career | New-grad TC | Mid-career TC | Senior TC | BLS median (all levels) | Comp trend 2026→31 |
 |---|---|---|---|---|---|
-| AI/ML engineer | $150–220k | $250–400k | $400–700k+ | — (MLE Levels.fyi median $279k) | ↑ premium widening |
+| AI/ML engineer | $130–220k | $250–400k | $400–700k+ | — (MLE Levels.fyi median $279k) | ↑ premium widening |
 | Quant dev / researcher | $200–350k | $400–700k | $600k–$1.5M+ | — | → elite, stable |
-| Software engineer (Big Tech) | $140–200k | $220–350k | $350–500k | $135,980 (developers) | → flat real |
+| General SWE at top-tier employers (4.11) | $140–200k | $220–350k | $350–500k | $135,980 (developers, all employers) | → flat real; entry ramp narrow |
 | Infrastructure / SRE / distributed | $130–190k | $220–350k | $350–500k | — | ↑ AI-infra demand |
 | Security engineer | $100–160k | $180–280k | $280–450k | $124,910 (infosec analysts) | ↑ steady |
 | Semiconductor design / verification | $110–150k (BS); $130–175k (MS) | $180–260k | $260–400k+ (NVIDIA/Apple/AMD higher) | $155,020 (hardware eng) | ↑ CHIPS + AI silicon |
@@ -1920,6 +2144,7 @@ Recommended major for each career, with the minor or elective cluster that most 
 | Infrastructure / distributed | Either | — | OS, distributed systems, networks; Rust/Go; cloud + Kubernetes |
 | Robotics / embedded / autonomy | CE | CS (perception/planning) or ME | Controls, signals, embedded systems, ROS 2; robotics team |
 | Data engineer / DS | CS | Statistics | Databases, statistics; SQL depth; one warehouse; orchestration |
+| General SWE at top-tier employers | Either | — | Systems depth; two internships; enter via a specialized team (infra, security, ML platform, payments) |
 | Forward-deployed engineer | CS | Either | Communication courses; a business or domain minor; hackathons |
 | Defense / aerospace | Either | EE / aero | US citizenship; clearance-track internships; SMART/SFS; embedded or infra depth |
 | Quantum | CE or physics double | CS (algorithms/compilers) | Quantum mechanics, linear algebra, information theory; plan PhD/MS |
@@ -1956,6 +2181,7 @@ How each Tier 1–2 career fares under the three 2031 scenarios from Section 1 (
 | Enterprise cloud | ✔ | ~ | ✔ | Medium-high |
 | Graphics / simulation | ~ | ✔ | ~ | Medium |
 | Technical PM | ✔ | ✔ | ~ | Medium |
+| General SWE at top employers | ✔ | ~ (generalists squeezed; system owners fine) | ✔ | Medium |
 | Web / mobile generalist | ✘ | ✘✘ | ~ | **Lowest** |
 
 **Portfolio logic:** a student who cannot decide between two Tier 1 fields should note that **security + infrastructure**, **semis + AI infra**, and **robotics + embedded security** are natural pairs that hedge across scenarios and are also the intersections where the highest-paid, least-crowded jobs sit.
@@ -1973,7 +2199,7 @@ If you print one page, print this.
 5. **Learn fundamentals without AI, then use AI for everything.** Employers are now testing for exactly this.
 6. **US citizens: get a clearance** via SMART, SFS, or a defense-track internship. It is the largest under-used advantage available.
 7. **International students: target sponsoring, high-wage Tier 1 employers; plan for an MS; build an O-1 record.**
-8. **Do not build a career on generalist web/mobile/BI/QA.** Learn them as skills; do not make them your identity.
+8. **Do not build a career on generalist web/mobile/BI/QA.** Learn them as skills; do not make them your identity. General SWE at a top employer is fine as a *first* job — if you use it to acquire a Tier 1 moat within two years (Section 4.11).
 9. **First job: learning rate and brand over comp or mission.**
 10. **Plan the failure modes** (Section 7.6) so a bad cycle costs months, not years.
 
@@ -2002,6 +2228,30 @@ No — and this is a reversal from 2018. Bootcamp placement rates collapsed in 2
 
 **Q: Which school should I go to?**
 The school matters most for (1) access to on-campus recruiting from top employers, (2) research opportunities, and (3) the peer group. It matters less than students think for actual skill. Rough guidance: a top-20 CS/CE program opens every door including frontier labs and quant; a strong state flagship or engineering school (there are ~60 of these) opens almost every door with slightly more effort; a lower-ranked program requires you to compensate with open source, competitions, research, and cold outreach — which is entirely doable and is exactly what Sections 7–8 describe. **Do not take on ruinous debt for prestige.** A debt-free state-school CE degree beats a $250k private CS degree in expected value for nearly every career in this guide. Public schools near semiconductor fabs (Arizona State, UT Austin, Purdue, Portland State, Ohio State, RIT, University at Albany) and defense hubs have specific pipeline advantages.
+
+**Q: Can I start at a community college and transfer?**
+Yes, and for cost-constrained families it is often the best move (Section 9.7). Two conditions make it work. First, transfer into a strong public program with an articulation agreement so credits actually count — California's CCC→UC pipeline, Virginia's guaranteed-admission agreements, Texas, Washington, and Arizona are especially well built. Second, arrive with the *math and core* done, not just general education: Calculus I–III, linear algebra, discrete math, physics, and the first two programming courses. The cost is that you lose year-1 and year-2 access to on-campus recruiting, clubs, and research labs at the four-year school, so compress Section 7's year-1 sampling into your first semester after transfer and apply to summer internships immediately. Semiconductor, defense, and infrastructure employers recruit transfer students without prejudice; the frontier labs and elite quant firms are the segment where a non-traditional path costs you, and those were long shots regardless.
+
+**Q: How should I use AP and dual-enrollment credit?**
+Use it to buy *room*, not to skip fundamentals. Take credit for humanities, general-education, and introductory science requirements freely. Take credit for Calculus I–II and intro programming only if you scored at the top of the scale and are confident — a shaky calculus foundation undermines every later course, and the university's own CS 1/CS 2 is where you meet your cohort and your first professors. The freed semesters are worth more spent on a second specialization course, a research assistantship, a co-op term, or a 4+1 master's than on graduating a semester early into a market that rewards internships over speed.
+
+**Q: Should I do Electrical Engineering instead of Computer Engineering?**
+If your target is analog/RF/mixed-signal circuits, power electronics, photonics, or device physics, EE is the correct degree and CE is not. If your target is digital design, verification, computer architecture, embedded systems, or robotics software, CE is more efficient — it drops the analog and electromagnetics depth in favor of software, systems, and architecture. Several of the highest-moat semiconductor roles (analog design, mixed-signal verification, RF) are EE territory and are *even less crowded* than digital CE. Look at the actual course plans at your school: at many universities EE and CE share 70% of the curriculum and the choice can be deferred to year 2.
+
+**Q: My school offers a BS in Artificial Intelligence / Data Science / Cybersecurity. Should I take it instead of CS?**
+Usually not. Section 6.7 gives verdicts by program: these degrees typically trade core systems and theory for survey courses, and employers in Tier 1 fields read "BS in CS with an AI concentration" as stronger than "BS in AI." The exceptions are programs housed in the CS or engineering department that require the full CS core plus the specialization (Carnegie Mellon's AI major is the canonical example) and ABET-accredited cybersecurity programs paired with a serious systems sequence. When in doubt, major in CS or CE and take the specialization as a concentration, minor, or cluster of electives.
+
+**Q: How many hours a week does this plan actually take?**
+A realistic engineering degree is 45–55 hours a week during the semester — classes, labs, homework, and study. The extras this guide recommends (one club, one project, applications in season) add 5–10 hours, and the plan is a *menu*: two or three sustained commitments beat ten shallow ones. Summers are the multiplier — a full-time internship or research position is 40 hours a week of the most valuable learning you will do. Students who burn out are usually those who added everything at once in year 1; students who stall are those who added nothing until year 3. Section 7 is paced to avoid both.
+
+**Q: Is a double major (CS + math, CS + EE, CS + economics) worth it?**
+CS + mathematics is worth it for AI/ML research, quant, cryptography, and quantum, where the extra analysis, probability, and abstract algebra are load-bearing — and a math double major is the single strongest signal to quant recruiters short of an ICPC result. CS + EE is usually redundant with CE; pick CE. CS + physics is excellent for quantum, robotics, and semiconductor device roles. CS + business/economics is weak as a signal for engineering roles and adds little for technical PM, where the engineering-first path matters more. In every case, a double major that pushes graduation past four years or crowds out internships is a net loss; a minor plus two internships beats a double major plus none.
+
+**Q: I want to work outside the US eventually. Does this guide still apply?**
+The field rankings largely transfer; the employer geography does not. Semiconductors are strong in Taiwan, South Korea, Japan, the Netherlands, Germany, and Israel; AI/ML in London, Paris, Zurich, Toronto, and Singapore; security in Israel, the UK, and Australia; robotics in Germany, Japan, Switzerland, and South Korea; quant in London, Amsterdam, Hong Kong, and Singapore. A US degree plus two or three years at a US Big Tech, semis leader, or lab is one of the most portable credentials in the world, and internal transfers (L-1 in reverse) are the smoothest route. Defense and cleared work is the exception — it does not travel. If you know you want to leave, pick a field with a global industry (semis, AI/ML, infra, security) over one concentrated in the US (defense, most of quant).
+
+**Q: I'm a parent. How can I actually help?**
+Five things, in order. (1) *Keep the debt down* — Section 9.7's rule that total borrowing should not exceed first-year salary is the single biggest lever you control, and in-state or funded options dominate prestige at the margin. (2) *Fund the summers, not the semesters* — if you can support an unpaid or low-paid research position in summer 2028, that is where the return is highest; from summer 2029 on, internships pay for themselves. (3) *Buy the hardware once* — a capable laptop and, for CE students, an FPGA dev board and components, are tools, not toys. (4) *Do not push a field*; push depth. A student who goes deep in any Tier 1 field will do well, and a student pushed into AI/ML because it is in the news will not. (5) *Ask about internship applications in September of year 2 and year 3*, not about grades. The timeline in Section 7 is the thing most students miss, and a calendar reminder from a parent has saved more careers than any tutoring.
 
 **Q: Is it too late if I'm not at a top-20 school?**
 No. It changes your tactics, not your ceiling. Non-top-20 students who reach Tier 1 jobs almost always did one of: a strong open-source record, a CTF/ICPC/Kaggle/robotics team result, undergraduate research with a publication, or a first internship at a less-glamorous company that they leveraged into a brand-name second internship. Recruiters at semis, defense, and security companies in particular recruit heavily from regional engineering schools. The Bay Area AI labs are the one segment where school prestige remains a strong filter; everywhere else, artifacts beat pedigree.
@@ -2105,7 +2355,9 @@ This guide was assembled in September 2026 from primary statistical sources (BLS
 
 Scores in the scorecards (Sections 3–5, 10) are the author's judgments, calibrated against the data below and against the three-scenario framework in Section 1. They are meant to be *comparative* across careers, not absolute. Compensation figures combine BLS medians (all experience levels, all employers), Levels.fyi self-reported data (skewed toward large tech employers), and industry reports, and are presented as ranges for that reason.
 
-Any figure with a specific number in the guide traces to one of the sources below or to an explicit "author's estimate" label.
+Every major *statistical* claim in the guide — employment levels, growth projections, unemployment rates, workforce gaps, median pay — traces to one of the primary sources in Section 12.2. Supporting figures drawn from secondary reporting (industry surveys, analyst notes, company disclosures, financial press) are listed in Section 12.3 with the caveat that they were cited via primary reporting rather than independently verified from the original dataset. Judgments, scores, scenario probabilities, and forward-looking comp bands are labeled as the author's estimates and should be read as such.
+
+**Version 2.0 changes (September 2026):** a full self-review (see the repository's REVIEW.md) corrected scorecard inconsistencies between Sections 3–5 and 10, rewrote the tiering rule in Section 2.2 so it matches the actual tier assignments, renamed compensation "tiers" to "modes" to avoid collision with career tiers, updated the H-1B section for the December 2025 weighted-selection final rule, corrected the international-student share of bachelor's graduates, and added roughly ten thousand words of new material (general SWE profile, specialized-major verdicts, co-ops, networking, paying for the degree, clearance mechanics, falsifiable predictions, a worked example, expanded FAQ, glossary, and checklists).
 
 ---
 
@@ -2189,7 +2441,45 @@ Any figure with a specific number in the guide traces to one of the sources belo
 
 ---
 
-## 12.3 Programs and Institutions Referenced (for the reader's follow-up)
+## 12.3 Secondary Sources Cited via Primary Reporting
+
+The following are referenced in the text, usually through one of the primary sources above or through mainstream financial and technology press. The reader should treat specific figures from these as indicative and verify against the original if a decision hinges on them.
+
+### Labor-market analytics and trackers
+
+- **Live Data Technologies** — workforce-flow data on new-grad hiring shares and job-switching; cited via The Pragmatic Engineer and press reporting. https://www.livedatatechnologies.com/
+- **SignalFire — State of Talent Report (2025).** New-grad share of Big Tech hires ~7%, down ~25% from 2023; startup new-grad hiring down ~11%. https://www.signalfire.com/blog/signalfire-state-of-talent-report-2025
+- **Layoffs.fyi** — running tally of tech layoffs 2022–26. https://layoffs.fyi/
+- **TrueUp — Tech job trends** (open roles across tech companies; AI-role share). https://www.trueup.io/job-trend
+- **Workforce.ai / AI-titled posting share** — cited via Indeed Hiring Lab and The Pragmatic Engineer.
+- **CyberSeek (NIST NICE / CompTIA / Lightcast)** — US cybersecurity supply/demand heatmap; ~470k openings, ~83 workers per 100 openings. https://www.cyberseek.org/
+- **Gergely Orosz, The Pragmatic Engineer — "The Trimodal Nature of Software Engineering Salaries"** — origin of the three-mode compensation model used in Section 9.2. https://newsletter.pragmaticengineer.com/p/trimodal-nature-of-software-engineering
+
+### Consulting, analyst, and industry studies
+
+- **McKinsey Global Institute — generative-AI productivity and work-activity automation estimates (2023–25).** https://www.mckinsey.com/mgi
+- **BloombergNEF — US data-center power demand projections** (106 GW by 2035); cited via IEEE Spectrum (source 23). https://about.bnef.com/
+- **Introl — data-center workforce estimate (~340k unfilled positions by end-2026);** cited via IEEE Spectrum (source 23).
+- **IBM — Cost of a Data Breach Report (2025).** Global average breach cost ~$4.4M; US ~$10M. https://www.ibm.com/reports/data-breach
+- **Deloitte / SEMI — semiconductor workforce studies** complementing SIA/Oxford (source 21). https://www.semi.org/
+
+### Government and regulatory documents
+
+- **Department of Homeland Security — "Weighted Selection Process for Registrants and Petitioners Seeking to File Cap-Subject H-1B Petitions," Final Rule, Federal Register, December 29, 2025; effective February 27, 2026.** Registrations entered once per OEWS wage level (I–IV). https://www.federalregister.gov/documents/2025/12/29/2025-23853/
+- **USCIS — H-1B Electronic Registration Process (FY2027 cap season page, updated July 2026)** confirming weighted selection in use. https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-electronic-registration-process
+- **Presidential Proclamation — Restriction on Entry of Certain Nonimmigrant Workers ($100,000 H-1B fee), September 19, 2025,** and USCIS implementing guidance (October–November 2025). https://www.whitehouse.gov/presidential-actions/
+- **Public Law 119-21 (July 2025) — restoration of immediate expensing for domestic R&D (Section 174A).** https://www.congress.gov/
+- **DCSA — Continuous Vetting and Trusted Workforce 2.0** program pages. https://www.dcsa.mil/Personnel-Security/
+- **DoD CHIPS / NIST CHIPS for America** award announcements 2024–26. https://www.nist.gov/chips
+
+### Financial press (AI-lab funding, IPOs, capex)
+
+- **Reuters, TechCrunch, Bloomberg — Anthropic Series (May 2026, ~$65B at ~$965B post-money) and OpenAI round (March 2026, ~$122B); confidential IPO filings by both (June 2026).** Verified across at least two outlets each at time of writing; figures are as reported, not audited.
+- **Wall Street Journal, Financial Times — Big Tech AI capital-expenditure reporting (2025–26)** underlying the infrastructure-demand claims in Sections 1 and 3.
+
+---
+
+## 12.4 Programs and Institutions Referenced (for the reader's follow-up)
 
 These are named in Sections 7–9 as action items; the reader should verify current terms directly.
 
@@ -2209,7 +2499,7 @@ These are named in Sections 7–9 as action items; the reader should verify curr
 
 ---
 
-## 12.4 How to Keep This Guide Current
+## 12.5 How to Keep This Guide Current
 
 The reader is enrolling in 2027 and graduating in 2031; this guide will age. Re-check these indicators each year, in this order of importance:
 
@@ -2222,6 +2512,287 @@ The reader is enrolling in 2027 and graduating in 2031; this guide will age. Re-
 7. **Your target field's specific indicators** — semis: CHIPS fab openings and SIA workforce updates; security: ISC2 annual study; AI: frontier-lab hiring pages and AI-infra capex announcements; defense: NDAA budget and defense-tech funding rounds; robotics: humanoid/autonomy deployments and funding.
 
 If three or more of indicators 1–4 move sharply against the guide's central scenario for two consecutive years, revisit the tiering. Otherwise, the structural argument stands: **choose careers where software meets something hard.**
+
+
+
+---
+
+# Appendices
+
+## Appendix A — Glossary
+
+Terms used in this guide that a high-school senior or parent may not know. Grouped by domain; within each group, roughly in the order you will encounter them.
+
+### Labor-market and economics terms
+
+- **Cobweb cycle** — the lag between a market signal (e.g., "CS grads can't find jobs") and the supply response (fewer students enroll), which means enrollment peaks when the market is worst and troughs when it recovers. The 2027 entrant benefits from the 2025–26 enrollment decline.
+- **Cyclical vs. structural** — a *cyclical* downturn reverses with the business cycle (interest rates, capex); a *structural* one reflects a permanent change (AI automating junior tasks). The guide argues the current new-grad crisis is roughly half of each.
+- **Underemployment** — working in a job that does not require your degree. The NY Fed measure for CS recent grads is ~19%.
+- **Trimodal compensation (Modes 1/2/3)** — the observation (Orosz) that US software pay clusters into three separate distributions: local/non-tech employers, mid-tier tech, and Big Tech/AI labs/HFT. See Section 9.2.
+- **Total compensation (TC)** — base salary + bonus + equity (RSUs or options), usually annualized. Levels.fyi figures are TC.
+- **RSU** — restricted stock unit; shares granted on a vesting schedule (usually four years). Near-cash at public companies, speculative at private ones.
+- **Capex** — capital expenditure; here, the hundreds of billions Big Tech spends annually on AI data centers, which drives infrastructure and semiconductor demand.
+- **Section 174 / 174A** — US tax-code provision governing R&D expensing; the 2022 change to five-year amortization suppressed software hiring, and the July 2025 restoration of immediate domestic expensing partially reversed it.
+- **BLS OOH** — Bureau of Labor Statistics *Occupational Outlook Handbook*, the standard US source for employment levels, ten-year growth projections, and median pay by occupation.
+- **CRA Taulbee Survey** — annual Computing Research Association survey of PhD-granting CS departments; the best source on CS enrollment and degree production.
+- **Neo-prime** — a venture-backed defense-technology company (Anduril, Palantir, Shield AI, etc.) competing with traditional defense primes (Lockheed, RTX, Northrop).
+- **FFRDC** — Federally Funded Research and Development Center: nonprofit labs operated for the government (MITRE, MIT Lincoln Laboratory, JPL, APL, RAND). Excellent cleared employers.
+- **National labs** — DOE-funded research laboratories (Sandia, Lawrence Livermore, Los Alamos, Oak Ridge, Argonne, PNNL, NREL, etc.).
+
+### Degrees, programs, and academic terms
+
+- **CS / CE / EE** — Computer Science / Computer Engineering / Electrical Engineering. See Section 6.
+- **ABET** — the accreditation body for US engineering (and some computing) programs. Matters for CE and for certain government and licensure paths; matters little for CS hiring at tech companies.
+- **4+1 (or BS/MS)** — a combined program where the master's takes one additional year, often with shared credits and reduced tuition. See Section 8.8.
+- **Thesis MS vs. course-based MS** — a thesis master's includes a research project supervised by a professor; more valuable for research-track and PhD-bound students.
+- **Co-op** — a cooperative-education program in which students alternate full-time paid work terms with academic terms, usually extending the degree to five years. See Section 6.8.
+- **REU** — NSF Research Experiences for Undergraduates: funded summer research programs, often at other universities. A strong year-1/year-2 summer option.
+- **Articulation agreement** — a formal contract between a community college and a university specifying which credits transfer.
+- **Concentration / track / cluster** — a defined set of electives within a major (e.g., "CS with a systems concentration"). Preferable to a standalone specialized degree in most cases (Section 6.7).
+- **SMART Scholarship** — DoD Science, Mathematics, and Research for Transformation: full tuition + stipend + guaranteed job in exchange for a year of DoD civilian service per year funded. Requires US citizenship.
+- **CyberCorps SFS** — NSF/OPM Scholarship for Service: the cybersecurity equivalent of SMART, with a government-service commitment.
+- **ROTC** — Reserve Officers' Training Corps; scholarship in exchange for a military service commitment; commissions come with clearances.
+- **GRFP** — NSF Graduate Research Fellowship Program: the premier US PhD funding award for citizens/permanent residents.
+
+### Software and systems terms
+
+- **Systems programming** — writing software that manages hardware and resources directly: operating systems, compilers, databases, networking, embedded firmware. Usually in C, C++, or Rust.
+- **Distributed systems** — software running across many machines that must coordinate despite failures and delays. The core of cloud infrastructure.
+- **SRE** — Site Reliability Engineer: an engineer responsible for the availability, latency, and performance of production systems; Google's term, now industry-wide.
+- **DevOps / platform engineering** — the practice and tooling for deploying, running, and observing software; platform engineering builds the internal tooling that other engineers use.
+- **Kubernetes (K8s)** — the dominant open-source system for orchestrating containers across clusters of machines.
+- **CRUD** — Create, Read, Update, Delete: the basic operations of database-backed applications; shorthand for routine, easily automated application work.
+- **Full-stack** — working across frontend (user interface), backend (server logic), and database layers of a web application.
+- **API** — Application Programming Interface: the contract by which software components communicate.
+- **Compiler** — software that translates source code into machine code; compiler engineering is a durable, math-heavy systems specialty, now central to ML frameworks (MLIR, XLA, Triton).
+- **Formal verification / formal methods** — mathematically proving that software or hardware satisfies a specification. Growing in importance as AI-generated code needs guarantees.
+- **Open source** — software with publicly available source code that anyone can inspect and contribute to. Contributions are a credible public record of skill (Section 8.4).
+- **Proctored / no-AI screen** — a technical interview conducted without AI assistance, often monitored; increasingly standard alongside AI-allowed rounds.
+
+### AI and machine learning terms
+
+- **ML / MLE** — Machine Learning / Machine Learning Engineer: builds and deploys models in production, as opposed to a researcher who develops new methods.
+- **LLM** — Large Language Model (GPT, Claude, Gemini, Llama). The model class behind current AI coding tools.
+- **Frontier lab** — a company training the most capable models (OpenAI, Anthropic, Google DeepMind, Meta, xAI).
+- **Agent / agentic** — an AI system that takes multi-step actions with tools (running code, browsing, calling APIs) rather than producing a single response. "Agentic coding" is the mode that threatens junior generalist work.
+- **Inference** — running a trained model to produce outputs, as opposed to *training* it. Inference optimization (making models faster and cheaper to run) is a hot, hardware-adjacent specialty.
+- **MLOps** — the tooling and practice for deploying, monitoring, and retraining ML models in production.
+- **RAG** — Retrieval-Augmented Generation: giving an LLM access to a document store so it answers from your data; the most common enterprise AI pattern.
+- **Fine-tuning / RLHF** — adapting a pre-trained model to a task or to human preferences.
+- **Evals / evaluation engineering** — systematically measuring model behavior, correctness, and safety. An uncrowded and increasingly critical role.
+- **VLA (Vision-Language-Action) model** — a model that maps camera input and instructions to robot actions; the basis of current "physical AI."
+- **FDE** — Forward-Deployed Engineer: an engineer embedded with a customer to make a product (usually AI) work in their environment. See Section 3.
+- **Kaggle** — a platform for ML competitions with public leaderboards.
+- **CUDA** — NVIDIA's programming platform for GPUs; the lingua franca of ML systems work.
+
+### Hardware and semiconductor terms
+
+- **Semiconductor / chip / IC** — an integrated circuit; the physical substrate of all computing.
+- **RTL** — Register-Transfer Level: the abstraction at which digital hardware is designed, written in SystemVerilog or VHDL. "RTL design" is the core chip-design job.
+- **DV** — Design Verification: proving that RTL does what the specification says, usually by simulation with a methodology such as **UVM** (Universal Verification Methodology). The largest single job category in chip design, and one of the least crowded.
+- **STA** — Static Timing Analysis: checking that signals arrive on time across a chip.
+- **Physical design / place-and-route** — mapping logical design onto actual silicon geometry.
+- **EDA** — Electronic Design Automation: the software tools (Synopsys, Cadence, Siemens) used to design chips. EDA software engineering is a contrarian niche (Section 5).
+- **FPGA** — Field-Programmable Gate Array: reconfigurable hardware used for prototyping, networking, defense, and finance. A dev board is a standard student tool.
+- **ASIC** — Application-Specific Integrated Circuit: a chip designed for one purpose (e.g., an AI accelerator).
+- **SoC** — System on Chip: a chip integrating CPU, GPU, memory controllers, and peripherals (every phone chip is an SoC).
+- **Computer architecture** — the design of processors and memory systems; the bridge between CE hardware and software.
+- **Tape-out** — sending a finished chip design to the fab for manufacturing. Tiny Tapeout lets students do this cheaply.
+- **Fab / foundry** — a semiconductor fabrication plant (TSMC, Intel, Samsung). CHIPS Act fabs in Arizona, Ohio, Texas, and New York are new hiring hubs.
+- **CHIPS Act** — the 2022 US law funding domestic semiconductor manufacturing and R&D (~$52B).
+- **Analog / mixed-signal / RF** — circuits handling continuous signals (amplifiers, converters, radios); EE territory with very high moat.
+- **Embedded systems** — computers inside other products (cars, medical devices, drones). Firmware is the software that runs on them.
+- **RTOS** — Real-Time Operating System: an OS that guarantees response within fixed time bounds; used in embedded and safety-critical systems.
+- **PCB** — Printed Circuit Board.
+- **Power electronics / grid** — the hardware and control systems for converting and distributing electrical power; central to energy and data-center roles.
+- **HPC** — High-Performance Computing: supercomputers and the software to program them; overlaps with AI infrastructure and national labs.
+
+### Security terms
+
+- **AppSec** — Application Security: finding and fixing vulnerabilities in software.
+- **Detection engineering** — building the rules and systems that identify attacks in progress.
+- **SOC** — Security Operations Center: the monitoring team; the crowded, partially automatable *analyst* layer.
+- **Red team / blue team / purple team** — offensive simulation / defense / combined.
+- **CTF** — Capture The Flag: a security competition; results are a recognized credential (Section 8.5).
+- **Bug bounty / responsible disclosure** — reporting vulnerabilities to vendors, sometimes for payment; a public record of skill.
+- **OT / ICS** — Operational Technology / Industrial Control Systems: the computers running factories, utilities, and infrastructure. A high-moat security specialty.
+- **PQC** — Post-Quantum Cryptography: encryption designed to resist quantum computers; a multi-year migration creating demand.
+- **Zero trust** — a security architecture that verifies every request regardless of network location.
+- **OSCP / CKA / Security+** — certifications: Offensive Security Certified Professional (respected in offensive security), Certified Kubernetes Administrator, CompTIA Security+ (a DoD baseline checkbox).
+- **SF-86** — the standard federal security-clearance questionnaire.
+- **Secret / TS / TS/SCI / poly** — clearance levels: Secret; Top Secret; Top Secret with Sensitive Compartmented Information access; with polygraph (Counterintelligence or Full-Scope). See Section 9.4.
+- **Continuous Vetting (CV)** — automated ongoing monitoring that replaced periodic clearance reinvestigations.
+- **Interim clearance** — a provisional clearance granted before the full investigation completes.
+
+### Robotics and physical-AI terms
+
+- **Perception / planning / controls** — the three classic robotics software layers: sensing the world, deciding what to do, executing motion.
+- **SLAM** — Simultaneous Localization and Mapping.
+- **ROS** — Robot Operating System: the dominant open-source robotics middleware.
+- **Sim-to-real** — training in simulation and transferring to physical robots.
+- **Autonomy stack** — the full software system of a self-driving vehicle or autonomous drone.
+- **Humanoid** — general-purpose bipedal robots (Figure, Tesla Optimus, Agility Digit, Boston Dynamics Atlas).
+- **Functional safety standards** — ISO 26262 (automotive), DO-178C (avionics software), IEC 62304 (medical device software), IEC 61508 (industrial). Regulated fields where expertise is a moat.
+
+### Immigration terms (for international students)
+
+- **F-1** — the standard US student visa.
+- **CPT** — Curricular Practical Training: work authorization for internships that are part of the curriculum; must be arranged in advance. "Day-1 CPT" programs are a red flag (Section 9.5).
+- **OPT / STEM OPT** — Optional Practical Training: 12 months of post-graduation work authorization, extendable by 24 months for STEM degrees. Under policy pressure as of 2026.
+- **H-1B** — the main US skilled-worker visa; capped at 85,000/year and allocated by lottery, now wage-weighted (Section 9.5).
+- **Cap-exempt** — employers (universities, affiliated nonprofits, research organizations) that can file H-1B petitions outside the annual lottery.
+- **OEWS wage levels I–IV** — Department of Labor prevailing-wage tiers; the number of lottery entries under the 2026 rule.
+- **O-1** — visa for individuals of "extraordinary ability"; no lottery; requires a documented record (publications, awards, press).
+- **L-1** — intra-company transfer visa; the route by which a foreign-office hire moves to a US office.
+- **Green card / PERM** — permanent residency and the employer-sponsored labor-certification process that usually precedes it.
+
+### Recruiting terms
+
+- **Return offer** — a full-time offer extended to an intern at the end of the summer; the primary path to a first job.
+- **Referral** — an employee submitting your application internally; roughly triples interview odds (Section 8.10).
+- **Hiring freeze / headcount** — a pause on new hiring / the number of approved positions.
+- **Leveling (L3/L4, E3/E4, IC1/IC2)** — company-specific job-grade schemes; new grads enter at the bottom level.
+- **Exploding offer** — an offer with a short acceptance deadline; can usually be extended by asking.
+- **Competing offer** — the main lever in negotiation (Section 9.2).
+- **APM** — Associate Product Manager program; the formal entry path into product management at a few large companies.
+
+---
+
+## Appendix B — Checklists
+
+Print these. They compress Sections 7–9 into things you can tick off. Items in **bold** are the ones that most determine outcomes; everything else is a multiplier. The roadmap is a menu — two or three sustained commitments beat ten shallow ones.
+
+### B.1 Semester-by-semester checklist (Summer 2027 → Spring 2031)
+
+**Summer 2027 — before you arrive**
+- [ ] Comfortable in Python; started C (or C++/Rust); can use a Linux terminal and Git
+- [ ] Built one real thing end-to-end and put it on GitHub
+- [ ] Read Sections 3–4; wrote down three candidate tracks and why
+- [ ] Reviewed your school's CS/CE curriculum and the specialty electives available (Section 7.3)
+- [ ] International: confirmed CPT/OPT rules with the international office; know the timeline
+- [ ] Citizen: read Section 9.4; noted SMART/SFS deadlines (typically Dec–Feb)
+
+**Fall 2027 — Year 1**
+- [ ] **Joined one hardware/competition club and one software club** (robotics, CTF, ICPC, FPGA, Kaggle, solar car, rocketry)
+- [ ] Attended the career fair to observe, collected 5 recruiters' names
+- [ ] Applied to Year-1 programs that opened Aug–Oct (STEP, Explore, Meta University, Propel, INSIGHT, Path) — even if a long shot
+- [ ] Started a weekly practice habit (CTF, Advent of Code, Kaggle, or LeetCode-lite)
+- [ ] Learned every fundamental in your courses *without* AI first (two-pass rule, Section 8.2)
+- [ ] Set up LinkedIn with a photo, school, and one project; GitHub profile README
+
+**Spring 2028 — Year 1**
+- [ ] **Emailed at least 5 professors about summer research** (with a specific reference to their work)
+- [ ] Applied to REUs (deadlines Jan–Feb) and to any Year-1 internship still open
+- [ ] Shipped project #2 in a candidate track (dev board, CTF write-ups, a small model, a distributed toy)
+- [ ] First open-source contribution (documentation counts)
+- [ ] Narrowed to two leading tracks; dropped one
+
+**Summer 2028**
+- [ ] **Research, REU, or a small/local internship** — or, failing all three, a serious self-directed project with real users or an open-source streak
+- [ ] Kept a log of what you built and learned (this becomes résumé bullets)
+- [ ] Citizen: SMART/SFS applications drafted if pursuing; defense-prime intern portals bookmarked
+- [ ] Résumé at one page, reviewed by someone who has hired engineers
+
+**Fall 2028 — Year 2**
+- [ ] **Applied to 100+ summer-2029 internships between August and November** — Big Tech, semis, defense primes, national labs, security vendors, data-infra, quant if relevant
+- [ ] Career fair in earnest: 15+ conversations, follow-up emails within 48 hours
+- [ ] Asked 3–5 alumni or seniors for referrals (Section 8.10)
+- [ ] Taking architecture/OS and algorithms; first specialty elective
+- [ ] Decided CS vs CE (Section 6.5) — or confirmed the choice
+- [ ] Practicing for both proctored no-AI screens and AI-allowed rounds
+- [ ] Citizen interested in cleared work: applied to defense/FFRDC/lab internships by October (processing takes months)
+
+**Spring 2029 — Year 2**
+- [ ] Interviewed; kept applying to late-cycle roles through April
+- [ ] Started a flagship project in your leading track (the one you will talk about in every interview for two years)
+- [ ] Continued research or club with visible output (poster, release, competition entry)
+- [ ] Attended one conference or meetup in your field as a student volunteer (Section 8.10)
+- [ ] International: began building an O-1-relevant record (publication, competition, open-source) and met with the international office about OPT timelines
+
+**Summer 2029 — Internship #1**
+- [ ] **Performed: shipped something, asked for feedback at week 4 and week 8, documented impact**
+- [ ] Secured a return offer or an explicit glowing reference
+- [ ] Networked inside the company: 5+ coffee chats, including one with a hiring manager in your target team
+- [ ] Updated résumé within a week of finishing
+
+**Fall 2029 — Year 3**
+- [ ] **Applied for summer-2030 internships August–October** — targeted at brand names and deep relevance; used referrals
+- [ ] **Decided MS/PhD vs industry by December** (Section 8.8); if grad school, identified 2 recommenders and told them
+- [ ] Specialty courses #3–4; research credits if research-track
+- [ ] Applied for SMART/SFS/GEM/NSF fellowships if eligible and relevant (deadlines Oct–Dec)
+- [ ] Mock interviews: at least 4, including 1 proctored no-AI
+
+**Spring 2030 — Year 3**
+- [ ] **Published or shipped something visible** — paper, tape-out, competition result, open-source release, disclosed CVE
+- [ ] Capstone chosen in your specialty with an industry or research partner if possible
+- [ ] Grad-school track: research statement drafted; GRE only if required
+- [ ] Reviewed Sections 9.1–9.3 and listed 15 target employers by type and hub
+
+**Summer 2030 — Internship #2 (the one that converts)**
+- [ ] **Treated the 12 weeks as an interview; asked for the return-offer timeline in week 6**
+- [ ] Return offer in hand by September — or a clear reason and a backup plan
+- [ ] Kept the relationship with internship #1's manager warm (a second return offer is negotiation leverage)
+
+**Fall 2030 — Year 4**
+- [ ] **Full-time recruiting August–November**; return offer used as an anchor, not a ceiling
+- [ ] Negotiated every offer with a competing offer (Section 9.2) — the highest-hourly-rate activity of your senior year
+- [ ] Grad-school applications submitted (PhD Dec 1–15; MS Dec–Mar)
+- [ ] Defense track: clearance paperwork (SF-86) started; honest and complete
+- [ ] International: employer's H-1B/OPT plan confirmed in writing; OEWS wage level of the offer understood (Section 9.5)
+
+**Spring 2031 — Year 4**
+- [ ] Accepted by March–April (industry) or April 15 (grad school)
+- [ ] Failure-mode plan executed if needed (Section 7.6): funded MS, defense/government, adjacent field, contract-to-hire
+- [ ] Moved to your field's hub (Section 9.1); budgeted debt service on base salary only (Section 9.7)
+- [ ] Thanked every professor, mentor, and referrer who helped — you will need them again
+
+### B.2 Before each recruiting season (run every August and January)
+
+- [ ] Résumé: one page; every bullet has a verb, a technology, and a measurable result; no AI-generated filler
+- [ ] GitHub: pinned repos are your best 4–6; each has a README with a screenshot or a diagram and a one-paragraph "why"
+- [ ] LinkedIn: current title, school, graduation date, one-line headline naming your specialty, open-to-work set to recruiters-only
+- [ ] Target list: 30–50 companies by type and hub (Section 9.3), with the application-open date for each
+- [ ] Referral list: 10 people who can refer you, with the date you last spoke; message each before applying
+- [ ] Interview readiness: can solve medium algorithm problems in 25 minutes without AI; can explain every project on your résumé for 10 minutes; have 3 behavioral stories (conflict, failure, impact)
+- [ ] Specialty readiness: the field-specific screen you will face (RTL/DV questions; system design; security fundamentals; ML systems; controls) — reviewed in the last 30 days
+- [ ] Logistics: interview-quality webcam, microphone, quiet room; calendar blocked for the season; job-tracker spreadsheet started
+- [ ] International: CPT/OPT timing confirmed for the internship or start date in question
+- [ ] Citizen: clearance-eligibility questions answered honestly in your own notes (drug use, foreign contacts, debt) so nothing surprises you on the SF-86
+
+### B.3 Offer evaluation checklist
+
+Score each offer before comparing. Do not decide on comp alone; do not decide on mission alone.
+
+**Comp (Section 9.2)**
+- [ ] Base, sign-on, annual bonus target, equity grant value and vesting schedule written down
+- [ ] Equity valued at zero for debt planning if private; at current price with a 25% haircut if public
+- [ ] Cost-of-living adjusted (a $150k Austin/Phoenix/Pittsburgh offer ≈ $200k+ Bay Area)
+- [ ] Which comp mode (1/2/3) does this employer sit in, and does it give access to mode-3 employers later?
+
+**Learning rate and brand (Section 9.3)**
+- [ ] Will I have a senior engineer as a direct mentor? (Ask who; ask how many juniors per senior on the team)
+- [ ] Is this a name that opens doors in 3 years — Big Tech, semis leader, frontier lab, top security/infra vendor, neo-prime, national lab?
+- [ ] Is the team's work in my Tier 1 specialty, or is it generalist work at a Tier 1 company?
+
+**Moat and optionality (Section 2)**
+- [ ] Does this role build a moat (clearance, hardware depth, regulated-domain expertise, deep systems) or only tool familiarity?
+- [ ] Will I be able to move to another company, city, or field from here in 3 years?
+
+**Risk**
+- [ ] Employer's layoff history 2022–26 and current headcount trend
+- [ ] For startups: runway, last round date, and whether the offer has a return-offer alternative
+- [ ] For defense: is the offer contingent on clearance, and what happens if adjudication is slow?
+- [ ] For international students: sponsorship confirmed in writing; OEWS wage level; cap-exempt or not; green-card policy
+
+**Fit (Section 10.2)**
+- [ ] I met the team, not just the recruiter
+- [ ] The daily work matches how I actually like to spend a day (Section 2.5)
+- [ ] I would take this offer even if the comp were 10% lower — if not, comp is doing too much of the work
+
+**Negotiation**
+- [ ] I have at least one competing offer or a credible pending process
+- [ ] I asked for an extension before the deadline if I needed one
+- [ ] I negotiated once, specifically, and in writing
 
 ---
 

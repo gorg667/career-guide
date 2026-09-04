@@ -9,7 +9,7 @@ We score every career on **seven dimensions**, each 1–5, and then apply judgme
 ## 2.1 The Seven Dimensions
 
 ### D1. Demand Durability (2031–2045)
-*Will there be many jobs, and will there still be many jobs 15 years out?*
+*Will there be many jobs when you graduate, and will there still be many jobs 15 years out?* (The inputs are BLS 2024–34 / 2025–35 projections and 2026 posting data; the horizon we care about is your career, 2031–2045.)
 
 We look at: BLS 10-year projections; private posting data (Indeed, TrueUp, LinkedIn/SignalFire); capital flows (where is venture and corporate capex going?); and whether the underlying driver is a multi-decade trend (aging population, energy transition, compute demand, geopolitical competition) or a fad.
 
@@ -66,9 +66,11 @@ Work-life balance norms, on-call burden, location constraints (must you live in 
 We do **not** simply add the seven numbers. We use a *robustness-first* approach:
 
 1. **Eliminate** careers scoring 1 on D1 or D2 from the "recommended" tiers regardless of pay. A high-paying job that will not exist in 2040 is not a career; it is a trade.
-2. **Tier 1** requires ≥4 on D1, D2, and D3 (durable demand, AI-complementary, real moat) and ≥3 on D4 and D6. These are careers that win in all three scenarios of Section 1.5.
-3. **Tier 2** are careers with high scores on most dimensions but a notable weakness — e.g., grad school effectively required (quantum), narrow employer base (game engines), or cyclical exposure (fintech).
+2. **Tier 1** requires: D1 ≥ 4 (durable demand); D2 ≥ 4 for the *engineering-heavy majority* of the field; at least one large sub-specialty with D3 ≥ 4 (a real moat is reachable inside the field, even if the field's median role is not moated); D4 ≥ 3 and D6 ≥ 3 (good pay and a bachelor's can get you in); **and** no hard gate that excludes most readers (citizenship, PhD) or a small absolute job count. These are careers that win in all three scenarios of Section 1.5. Two Tier 1 careers carry explicit caveats under this rule: **AI/ML engineering** (median role D3 = 3; the moat is in the infra/eval/domain sub-specialties) and **data engineering** (the analyst layer scores D2 = 1 and is excluded; only the engineering-heavy version is Tier 1).
+3. **Tier 2** are careers that would otherwise qualify but carry one notable structural limitation: a citizenship gate (defense — which would be Tier 1 for a US citizen), a graduate degree effectively required (quantum), a comp band well below Tier 1 (energy, health), a narrow or elite-only employer base (quant, game engines), a heavy dependence on one adoption trend (FDE), or not being a realistic *first* job (PM).
 4. **Tier 3** are careers that either have a weak D2 (AI-substitutable) or weak D3 (no moat), or which we include for completeness and candor because students frequently ask about them.
+
+A consequence worth stating plainly: **the tier is not the same as the rank.** The TL;DR ranks careers by expected value *for a strong student who can stand out* (which rewards AI/ML's comp ceiling and job count); the master scorecard in Section 10 sums the robustness dimensions (which rewards infrastructure and semiconductors). Both orderings are shown, both are defensible, and the disagreement between them is itself informative: it tells you where the upside is (AI/ML) versus where the floor is highest (infra, semis, security).
 
 ---
 
@@ -115,3 +117,17 @@ The highest-expected-value career on paper is worth little if you burn out in it
 | Creative, aesthetic sense, care about how things feel to use | Graphics, game engines, product engineering, HCI (with caveats in Section 5) |
 
 Fit is not destiny — many people discover they love something they had never tried — but the four-year roadmap in Section 7 is designed to let you *test* fit cheaply in years 1–2 before you commit in years 3–4.
+
+---
+
+## 2.6 Worked Example: Scoring a Career This Guide Does Not Cover
+
+We promised you could re-run this analysis yourself. Here is the procedure applied to a career students ask about that is *not* profiled later: **AR/VR ("spatial computing") application developer**.
+
+1. **Q1 — what breaks if it is done wrong?** A consumer app crashes or feels bad. Low cost of error → low pressure to keep expensive humans accountable. (Contrast: a surgical-robot control loop.)
+2. **Q2 — what can't be downloaded?** Not much at the app layer; Unity/Unreal/visionOS tutorials are public, and agents are trained on them. The *engine and rendering* layer is different (deep math, GPU programming) — that is why Section 4.9 rates graphics/engine work Tier 2 and app-layer work lower.
+3. **Q3 — is the demand driver bigger than the tech cycle?** Uncertain. Headset adoption has repeatedly under-shot forecasts (Meta Reality Labs has lost >$60B cumulatively; Apple cut Vision Pro production in 2024–25). The driver is real but not yet a tide.
+4. **Score it.** D1 = 2–3 (BLS lumps it into software developers; private postings small and volatile). D2 = 2 (app layer is well-specified artifact generation). D3 = 2 (app layer) / 4 (engine layer). D4 = 3–4 (Apple/Meta pay Mode 3; studios pay Mode 1–2). D5 = 3 (skills transfer to games, simulation, robotics perception). D6 = 4.
+5. **Apply the rules.** Fails Tier 1 on D2 and D3. Fails Tier 2 unless you are on the engine/rendering side. **Verdict: Tier 3 as an app developer; Tier 2 if you go down to the engine, rendering, or perception layer** — which is exactly what Section 4.9 says about graphics. The framework and the profile agree, which is the point.
+
+Try the same five steps on any career a recruiter or a relative pitches you. If it fails Q1 and Q2 together, be skeptical no matter how exciting the demo is.

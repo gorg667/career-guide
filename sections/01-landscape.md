@@ -11,7 +11,7 @@ If you are reading this in 2026 or 2027, you have almost certainly heard some ve
 The five years before your enrollment were the most turbulent in the software labor market since the dot-com crash. Here is what happened, in order.
 
 ### The 2021–2022 peak
-Zero interest rates and pandemic-era digital demand drove the greatest hiring spree in tech history. Meta, Amazon, Google, Microsoft, and Salesforce each added tens of thousands of employees. Indeed's software-development job-postings index peaked in **May 2022** at roughly 2.2× its pre-pandemic level. New grads with mediocre résumés were fielding multiple $150k+ offers. CS enrollment surged in response — a classic supply lag.
+Zero interest rates and pandemic-era digital demand drove the greatest hiring spree in tech history. Meta, Amazon, Google, Microsoft, and Salesforce each added tens of thousands of employees. Indeed's software-development job-postings index peaked in **May 2022** at roughly double its pre-pandemic level. New grads with mediocre résumés were fielding multiple $150k+ offers. CS enrollment surged in response — a classic supply lag.
 
 ### The 2023 correction
 Interest rates rose from 0% to 5.5% in 18 months. The 2017 Tax Cuts and Jobs Act's change to **Section 174** (forcing companies to amortize software R&D salaries over 5 years instead of deducting them immediately) kicked in for tax year 2022, making every US software engineer materially more expensive on paper. Layoffs followed: ~260,000 tech employees in 2023 (Layoffs.fyi). Workforce.ai data shows **2023 was the only year in two decades in which the total US software-engineer population shrank** — more engineers left the profession than entered it.
@@ -42,11 +42,11 @@ Not every headwind is permanent. Here is our assessment.
 | Factor | Type | Status by 2031 (our judgment) |
 |---|---|---|
 | 2021–22 overhiring hangover | **Cyclical** | Fully absorbed by 2027–28. Attrition and growth have already re-balanced most large companies. |
-| High interest rates | **Cyclical** | Rates fell through 2025–26; capital for startups is flowing again (Anthropic $65B round at $965B valuation; Anthropic and OpenAI both filed for IPOs in June 2026). |
-| Section 174 R&D amortization | **Policy** | Partially restored for domestic R&D in 2025 legislation; no longer a major drag. |
+| High interest rates | **Cyclical** | Rates fell through 2025–26; capital is flowing again (Anthropic's $65B round at a $965B valuation in May 2026; OpenAI's $122B round in March 2026; both filed confidentially for IPOs in June 2026). |
+| Section 174 R&D amortization | **Policy** | Immediate expensing of *domestic* R&D was restored by the July 2025 tax law (the "One Big Beautiful Bill Act"); no longer a drag on US hiring. Foreign R&D still amortized — a mild tailwind for US-based engineers. |
 | Record CS graduate supply | **Cyclical (cobweb)** | **Reversing.** New CS majors −13% in 2025; total enrollment −4%; NSC reports −8.1% undergrad CS enrollment, the steepest single-year decline of any major. Degree production will peak ~2028 and decline into your graduation year. |
 | International-student competition for entry roles | **Policy** | Reduced. $100k H-1B fee for overseas hires (Sep 2025), master's enrollment −26% (CRA), proposals to fee OPT. Cuts both ways — see Section 9 if you are not a US citizen. |
-| AI substituting for junior coding tasks | **Structural** | **Permanent and intensifying.** The tasks a 2019 junior did (CRUD endpoints, boilerplate, test scaffolding, simple bug fixes, UI from mockups) are now largely done by agents under senior supervision. |
+| AI substituting for junior coding tasks | **Structural** | **Very unlikely to reverse before 2031, and intensifying.** The tasks a 2019 junior did (CRUD endpoints, boilerplate, test scaffolding, simple bug fixes, UI from mockups) are now largely done by agents under senior supervision. |
 | AI complementing senior/specialist work | **Structural** | **Permanent and intensifying.** Experienced engineers using agents are dramatically more productive; demand for them is rising, and they are increasingly paid a premium. |
 | Seniority-biased hiring | **Structural, but self-limiting** | Companies cannot run a 20-year pipeline with no juniors. Expect a partial correction by 2029–2031 as firms realize they have a "missing generation" problem — but the *bar* for juniors will stay far higher than 2019. |
 | Demand for compute, chips, power, data centers | **Structural** | Enormous and multi-decade. BNEF projects US data-center power demand of 106 GW by 2035. CHIPS Act fabs come online 2027–2030. |
@@ -106,9 +106,23 @@ Here is our best forecast, stated as specific, falsifiable expectations.
 - Junior data analyst roles that are mostly SQL-and-dashboards.
 
 ### Compensation
-- The **trimodal distribution** (Gergely Orosz's framing) persists and widens: Tier 1 = local/non-tech companies (~$70–110k new grad); Tier 2 = national tech companies and well-funded startups (~$110–160k); Tier 3 = Big Tech, AI labs, HFT (~$160–250k+ new grad total comp, with AI labs and quant firms at the top).
+- The **trimodal distribution** (Gergely Orosz's framing) persists and widens. To avoid confusion with this guide's *career* tiers, we call the three pay bands **modes**: Mode 1 = local/non-tech companies (~$70–110k new grad); Mode 2 = national tech companies and well-funded startups (~$110–160k); Mode 3 = Big Tech, AI labs, HFT (~$160–250k+ new-grad total comp, with AI labs and quant firms at the top). Which *mode* of employer you can reach matters more to your pay than which *field* you pick — and the reason Tier 1 fields matter is that they are the doors into Mode 3.
 - AI-specialist premium of roughly 20–40% over general SWE at the same level persists at least through 2031.
 - Hardware/semiconductor compensation, historically below software, has been closing the gap since 2023 (BLS median for computer hardware engineers, $155k, now exceeds software developers, $136k).
+
+### Five falsifiable predictions (check these in 2029 and 2031)
+
+We said these expectations are falsifiable. Here they are as numbers, so a reader in 2029 or 2031 can grade us — and re-tier the careers if we were wrong.
+
+| # | Prediction | Number to check | Where |
+|---|---|---|---|
+| P1 | Recent-grad CS unemployment falls back toward the all-majors average by the 2031 cycle | NY Fed CS recent-grad unemployment **< 5%** (vs ~6–7% in 2026) | NY Fed college labor market (Feb each year) |
+| P2 | The 2031 graduating CS cohort is smaller than the 2028 one | CRA Taulbee bachelor's degrees granted, 2031 **below** the 2028 peak | CRA Taulbee (June) |
+| P3 | US software postings recover but stay senior-tilted | Indeed software index **≥ 85%** of Feb-2020 level; senior share of postings still **> 50%** | Indeed Hiring Lab / FRED IHLIDXUSTPSOFTDEVE |
+| P4 | Hardware pay premium persists | BLS median for computer hardware engineers **still ≥** software developers | BLS OOH (May wage data) |
+| P5 | Security and data-science growth stay in the top three of the BLS computer group | Both **≥ +20%** in the 2026–36 projection cycle | BLS OOH projections (biennial) |
+
+If three of the five fail, the *cyclical-recovery* half of this guide's argument was wrong and you should lean harder on the moated, counter-cyclical careers (semis, defense, security, energy). If P1–P3 hold, the cobweb argument was right and you can afford to be more ambitious.
 
 ---
 

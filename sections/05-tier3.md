@@ -14,9 +14,11 @@ This section covers careers students ask about constantly and that deserve a can
 
 **Where generalist app development still works well:** early-stage startups (where you are a founding engineer owning everything), small companies in non-tech industries, agencies serving regulated clients, and as a *first* job before specializing.
 
+**Important distinction.** This verdict is about the *generalist web/app developer* whose value is implementing specified features. It is **not** a verdict on general software engineering at strong employers — the backend/product engineer at a Big Tech company or top startup who owns a system end-to-end. That career is profiled separately in Section 4.11 and rated Tier 2. The difference between the two is ownership and employer mode, not the programming language.
+
 | D1 | D2 | D3 | D4 | D5 | D6 |
 |---|---|---|---|---|---|
-| 3 | 2 | 1 | 3 | 4 | 5 |
+| 2 | 2 | 1 | 3 | 4 | 5 |
 
 ---
 
@@ -42,7 +44,7 @@ Similar story with a twist. Cross-platform frameworks (React Native, Flutter, Ko
 
 | D1 | D2 | D3 | D4 | D5 | D6 |
 |---|---|---|---|---|---|
-| 1–2 | 1 | 1 | 1–2 | 3 | 5 |
+| 1 | 1 | 1 | 1 | 3 | 5 |
 
 ---
 
@@ -70,13 +72,13 @@ Covered partly in 4.9. The game *industry* combines high passion supply with cyc
 
 ## 5.6 Research Scientist / Academia (PhD path)
 
-**The situation.** CS PhD production hit a record (1,909 in 2025, +51% in five years, CRA Taulbee) while new PhD enrollment fell 15%; 61% of new PhDs go to industry. Frontier AI labs pay research scientists $500k–$2M+ and have absorbed a large share of top talent. Tenure-track positions are scarce and pay a fraction of industry — but offer freedom and stability — and federal research funding is under pressure in the 2025–2027 budget cycles.
+**The situation.** CS PhD production hit a record (~1,900 in 2025 per CRA Taulbee, up roughly half in five years) while new PhD enrollment fell 15%; 61% of new PhDs go to industry. Frontier AI labs pay research scientists $500k–$2M+ and have absorbed a large share of top talent. Tenure-track positions are scarce and pay a fraction of industry — but offer freedom and stability — and federal research funding is under pressure in the 2025–2027 budget cycles.
 
 **Verdict.** A PhD is a **superb investment for a specific student**: one who has done serious undergraduate research, loves open-ended problems, and targets AI/ML, systems, security, architecture, robotics, or quantum — fields where a PhD unlocks the very top of industry pay. It is a poor choice as a way to "wait out" a bad job market or delay deciding. Do it for the research, with an industry exit in mind, and never pay for a CS PhD (they are funded).
 
 | D1 | D2 | D3 | D4 | D5 | D6 |
 |---|---|---|---|---|---|
-| 3 | 5 | 5 | 2 (academia) / 5 (lab research) | 4 | 1 |
+| 3 | 5 | 5 | 3 (2 academia / 5 industry labs) | 4 | 1 |
 
 ---
 
@@ -120,6 +122,8 @@ Areas we think are *under*-supplied in 2031 precisely because they are unfashion
 6. **Formal verification and high-assurance software** — seL4, Rust-for-Linux, Lean/Coq/Isabelle, DO-178C. As AI writes more code, *proving* it correct becomes more valuable. Tiny field, extraordinary moat.
 7. **Cryptography and post-quantum migration** — a decade-long, mandated (NIST / CNSA 2.0 timelines to 2030–2035), industry-wide project.
 8. **Accessibility and internationalization engineering** — regulation-driven (ADA, European Accessibility Act), under-staffed, unglamorous.
+9. **EDA (electronic design automation) software engineering** — building the tools chip designers use (Synopsys, Cadence, Siemens EDA, plus AI-for-EDA startups). A *software* job with a *hardware* moat: it needs algorithms (graph theory, optimization, SAT/SMT solvers), C++, and enough circuit knowledge to be dangerous. Cadence entered the top-20 US employers by software openings in 2026. Very few CS students know this career exists.
+10. **HPC and scientific computing** — national labs, weather/climate modeling, computational physics and chemistry, supercomputer systems software (MPI, Fortran/C++, GPU kernels). Aging workforce, strong government funding, deep overlap with AI infrastructure (the same GPU clusters), and a natural fit for CE or CS students who liked physics. Citizenship helps at DOE labs but is not universal.
 
 ---
 
@@ -137,4 +141,4 @@ Areas we think are *under*-supplied in 2031 precisely because they are unfashion
 | Law / policy | Strong contrarian opportunity |
 | Medicine | Long, expensive, extraordinarily durable |
 | Teaching | Meaningful; consider later-career |
-| Contrarian niches | Legacy, analog, OT, formal methods, PQC, medical firmware — under-supplied and durable |
+| Contrarian niches | Legacy, analog, OT, formal methods, PQC, medical firmware, EDA tools, HPC — under-supplied and durable |
